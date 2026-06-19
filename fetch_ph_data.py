@@ -257,11 +257,7 @@ def fetch_all_ai_tools(max_pages: int = 20) -> List[Dict]:
                     "ph_url": f"https://www.producthunt.com/products/{post.get('name', '').lower().replace(' ', '-')}"  # 使用 name 生成 slug
                 }
                 
-                # 下载缩略图到本地
-                if tool["thumbnail"]:
-                    print(f"  📥 [{len(all_tools)+1}/?] 下载 {tool['name']} 的缩略图...")
-                    tool["thumbnail"] = download_image(tool["thumbnail"], tool["id"], 0)
-                
+                # 缩略图直接使用 PH CDN URL（不下载到本地）
                 # 处理话题标签
                 if "topics" in post and "edges" in post["topics"]:
                     tool["topics"] = [
