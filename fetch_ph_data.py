@@ -287,11 +287,26 @@ def fetch_all_ai_tools(max_pages: int = 20) -> List[Dict]:
 
 def save_to_json(tools: List[Dict], filename: str = "tools.json"):
     """
-    保存工具数据到 JSON 文件
+    合并保存：新数据更新旧数据，旧工具保留不删除
     """
+    # 加载旧数据
+    old_dict = {}
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+            old_list = json.load(f)
+            old_dict = {t["id"]: t for t in old_list}
+    except FileNotFoundError:
+        pass
+    
+    # 合并：新数据覆盖旧数据对应ID，旧数据中不在新数据里的保留
+    new_ids = {t["id"] for t in tools}
+    merged = [old_dict[tid] for tid in old_dict if tid not in new_ids]  # 保留旧工具
+    merged.extend(tools)  # 加入新工具
+    merged.sort(key=lambda t: t.get("votesCount", 0), reverse=True)  # 按投票排序
+    
     with open(filename, "w", encoding="utf-8") as f:
-        json.dump(tools, f, ensure_ascii=False, indent=2)
-    print(f"💾 数据已保存到 {filename}")
+        json.dump(merged, f, ensure_ascii=False, indent=2)
+    print(f"💾 数据已保存: {len(merged)} 工具 (新增 {len(tools)-len([t for t in tools if t['id'] in old_dict])}，保留 {len(merged)-len(tools)} 个旧工具)")
 
 
 def main():
@@ -308,16 +323,9 @@ def main():
         print("❌ 没有获取到任何工具数据")
         return
     
-    # 加载旧数据（用于保留翻译和分类）
-    old_tools = {}
-    try:
-        old_tools = {t['id']: t for t in json.load(open("tools.json", "r", encoding="utf-8"))}
-    except:
-        pass
-    
-    # 保存新数据
+    # 保存新数据（自动合并旧数据）
     save_to_json(tools, "tools.json")
-    post_process(old_tools)
+    post_process()
     print("\n✅ 数据获取完成！")
     print(f"📊 统计信息:")
     print(f"   - 工具总数: {len(tools)}")
@@ -325,8 +333,8 @@ def main():
     print(f"   - 总评论数: {sum(t['commentsCount'] for t in tools):,}")
 
 
-def post_process(old_tools):
-    """数据后处理：生成 slug、保留已有翻译、匹配分类、更新 sitemap"""
+def post_process():
+    """数据后处理：生成 slug、匹配分类、更新 sitemap"""
     import re
     with open("tools.json", "r", encoding="utf-8") as f:
         tools = json.load(f)
@@ -334,10 +342,6 @@ def post_process(old_tools):
     for t in tools:
         t['slug'] = re.sub(r'[^a-z0-9]+', '-', t.get('name', '').lower()).strip('-')
         t['slug_url'] = f"{t['slug']}-{t['id']}.html"
-        if t['id'] in old_tools:
-            o = old_tools[t['id']]
-            for f in ['tagline_zh', 'description_zh', 'category']:
-                if o.get(f): t[f] = o[f]
     
     try:
         cats = json.load(open("categories.json", "r", encoding="utf-8")).get('categories', [])
