@@ -1,8 +1,8 @@
 // Serve detail.html for /tools/* URLs, preserving browser URL
-export async function onRequestGet(context) {
+export async function onRequest(context) {
   const url = new URL(context.request.url);
-  if (url.pathname.startsWith('/tools.json')) {
-    return context.next();
-  }
-  return context.env.ASSETS.fetch(new URL('/detail.html', context.request.url));
+  if (url.pathname === '/tools.json') return context.next();
+  const res = await fetch(new URL('/detail.html', url.origin));
+  const html = await res.text();
+  return new Response(html, {headers: {'Content-Type': 'text/html; charset=utf-8'}});
 }
