@@ -1,0 +1,11 @@
+<svg width="230" height="54" viewBox="0 0 230 54" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .ai-text  { font-family: Outfit, system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 31px; fill: #FFFFFF; }
+      .next-text { font-family: Outfit, system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 31px; fill: #3B2E2A; }
+    </style>
+  </defs>
+  <circle cx="26" cy="27" r="25" fill="#D45D4C"/>
+  <text x="26" y="38" text-anchor="middle" class="ai-text">AI</text>
+  <text x="54" y="38" class="next-text">Next</text>
+</svg>

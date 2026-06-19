@@ -1,0 +1,11 @@
+<svg width="200" height="120" viewBox="0 0 200 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stack-ai { font-family: Outfit, system-ui, -apple-system, sans-serif; font-weight: 800; font-size: 24px; fill: #FFFFFF; }
+      .stack-next { font-family: Outfit, system-ui, -apple-system, sans-serif; font-weight: 600; font-size: 30px; fill: #3B2E2A; }
+    </style>
+  </defs>
+  <circle cx="100" cy="42" r="32" fill="#D45D4C"/>
+  <text x="100" y="51" text-anchor="middle" class="stack-ai">AI</text>
+  <text x="100" y="110" text-anchor="middle" class="stack-next">Next</text>
+</svg>

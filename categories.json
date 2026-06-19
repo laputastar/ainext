@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "id": "writing",
+      "name": "写作 AI",
+      "name_zh": "写作 AI",
+      "icon": "✍️",
+      "description": "AI 写作助手、文案生成、内容创作工具",
+      "keywords": ["writing", "copywriting", "blogging", "content", "text", "email", "translation"]
+    },
+    {
+      "id": "coding",
+      "name": "编程 AI",
+      "name_zh": "编程 AI",
+      "icon": "💻",
+      "description": "AI 编程助手、代码生成、开发工具",
+      "keywords": ["coding", "developer", "github", "api", "software", "engineering", "programming"]
+    },
+    {
+      "id": "image",
+      "name": "图像 AI",
+      "name_zh": "图像 AI",
+      "icon": "🎨",
+      "description": "AI 图像生成、编辑、设计工具",
+      "keywords": ["image", "design", "art", "photo", "graphics", "illustration", "visual"]
+    },
+    {
+      "id": "video",
+      "name": "视频 AI",
+      "name_zh": "视频 AI",
+      "icon": "🎬",
+      "description": "AI 视频生成、编辑、特效工具",
+      "keywords": ["video", "animation", "editing", "motion", "film"]
+    },
+    {
+      "id": "productivity",
+      "name": "生产力 AI",
+      "name_zh": "生产力 AI",
+      "icon": "⚡",
+      "description": "AI 提升工作效率、任务管理、自动化工具",
+      "keywords": ["productivity", "task", "management", "automation", "workflow", "time", "schedule"]
+    },
+    {
+      "id": "marketing",
+      "name": "营销 AI",
+      "name_zh": "营销 AI",
+      "icon": "📣",
+      "description": "AI 营销、社交媒体、广告优化工具",
+      "keywords": ["marketing", "social", "media", "seo", "advertising", "branding", "sales"]
+    },
+    {
+      "id": "education",
+      "name": "教育 AI",
+      "name_zh": "教育 AI",
+      "icon": "📚",
+      "description": "AI 教育、学习、知识管理工具",
+      "keywords": ["education", "learning", "tutoring", "knowledge", "research", "study"]
+    },
+    {
+      "id": "finance",
+      "name": "金融 AI",
+      "name_zh": "金融 AI",
+      "icon": "💰",
+      "description": "AI 金融分析、投资、会计工具",
+      "keywords": ["finance", "fintech", "crypto", "trading", "investment", "accounting", "money"]
+    },
+    {
+      "id": "health",
+      "name": "健康 AI",
+      "name_zh": "健康 AI",
+      "icon": "💪",
+      "description": "AI 健康管理、健身、医疗工具",
+      "keywords": ["health", "fitness", "medical", "wearables", "wellness", "mental"]
+    },
+    {
+      "id": "chatbot",
+      "name": "对话 AI",
+      "name_zh": "对话 AI",
+      "icon": "💬",
+      "description": "AI 聊天机器人、虚拟助手、客服工具",
+      "keywords": ["chatbot", "assistant", "conversation", "customer", "support", "bot"]
+    }
+  ]
+}
