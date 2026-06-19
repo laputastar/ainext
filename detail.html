@@ -152,6 +152,7 @@
 async function loadDetail(){
   let toolId=null;
   const p=window.location.pathname;
+  console.log('Pathname:',p,'Href:',window.location.href);
   const m=p.match(/\/tools\/[a-z0-9-]+-(\d+)\.html/i);
   if(m){toolId=m[1]}
   else{
@@ -159,6 +160,7 @@ async function loadDetail(){
     if(m2)toolId=m2[1];
     else{const q=new URLSearchParams(window.location.search);toolId=q.get('id')}
   }
+  console.log('ToolId:',toolId);
   if(!toolId){document.getElementById('app').innerHTML='<div class="state-box"><h2>缺少工具 ID</h2><p>请从首页选择一个工具</p><p><a href="index.html" style="color:var(--color-primary)">← 返回首页</a></p></div>';return}
   const safeId=String(toolId).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   try{
