@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><script>
+var p=location.pathname,m=p.match(/\/tools\/[\w-]+-(\d+)\.html/i);
+if(m){location.replace('/detail.html?id='+m[1])}
+else{location.replace('/index.html')}
+</script></head><body></body></html>
