@@ -151,14 +151,10 @@
 <script>
 async function loadDetail(){
   let toolId=null;
-  const q=new URLSearchParams(window.location.search);
-  // 301 redirect from /tools/* → /detail.html?tool=goldfish-1153772.html
-  const toolParam=q.get('tool');
-  if(toolParam){const mid=toolParam.match(/(\d+)\.html/i);if(mid)toolId=mid[1]}
-  // Direct access: /tools/goldfish-1153772.html (when rewrite preserves URL)
-  if(!toolId){const p=window.location.pathname;const m=p.match(/\/tools\/[\w-]+-(\d+)\.html/i);if(m)toolId=m[1]}
-  // Legacy: /detail.html?id=1153772
-  if(!toolId)toolId=q.get('id')
+  const p=window.location.pathname;
+  const m=p.match(/\/tools\/[\w-]+-(\d+)\.html/i);
+  if(m){toolId=m[1]}
+  else{const q=new URLSearchParams(window.location.search);toolId=q.get('id')}
   if(!toolId){document.getElementById('app').innerHTML='<div class="state-box"><h2>缺少工具 ID</h2><p>请从首页选择一个工具</p><p><a href="index.html" style="color:var(--color-primary)">← 返回首页</a></p></div>';return}
   const safeId=String(toolId).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
   try{
