@@ -308,9 +308,16 @@ def main():
         print("❌ 没有获取到任何工具数据")
         return
     
-    # 保存 to tools.json
+    # 加载旧数据（用于保留翻译和分类）
+    old_tools = {}
+    try:
+        old_tools = {t['id']: t for t in json.load(open("tools.json", "r", encoding="utf-8"))}
+    except:
+        pass
+    
+    # 保存新数据
     save_to_json(tools, "tools.json")
-    post_process()
+    post_process(old_tools)
     print("\n✅ 数据获取完成！")
     print(f"📊 统计信息:")
     print(f"   - 工具总数: {len(tools)}")
@@ -318,17 +325,11 @@ def main():
     print(f"   - 总评论数: {sum(t['commentsCount'] for t in tools):,}")
 
 
-def post_process():
+def post_process(old_tools):
     """数据后处理：生成 slug、保留已有翻译、匹配分类、更新 sitemap"""
     import re
-    old_tools = {}
     with open("tools.json", "r", encoding="utf-8") as f:
         tools = json.load(f)
-    try:
-        old_data = json.load(open("tools.json", "r", encoding="utf-8"))
-        old_tools = {t['id']: t for t in old_data}
-    except:
-        pass
     
     for t in tools:
         t['slug'] = re.sub(r'[^a-z0-9]+', '-', t.get('name', '').lower()).strip('-')
