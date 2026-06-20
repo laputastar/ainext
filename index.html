@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AINext — 每日更新 Product Hunt 精选 AI 工具 | AI工具导航</title>
 <meta name="description" content="AINext 精选全球 AI 工具，基于 Product Hunt 数据每日更新。发现 ChatGPT、Midjourney 等热门 AI 产品。">
+<meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="common.css">
 <link rel="icon" type="image/svg+xml" href="ainext-icon.svg">
 <link rel="apple-touch-icon" href="ainext-icon.svg">
-<link rel="canonical" href="https://ainext.com/index.html">
+<link rel="canonical" href="https://ainext.com/">
 <meta property="og:title" content="AINext — 每日更新 Product Hunt 精选 AI 工具">
 <meta property="og:description" content="发现最好的 AI 工具 — 每日更新 Product Hunt 精选">
 <meta property="og:image" content="https://ainext.com/ainext-logo-stacked.svg">
@@ -239,7 +240,7 @@ function updateTag(){const t=document.getElementById('catTag');if(curCat){t.styl
 
 function renderFeat(){
   let pool=[...allTools];if(curCat)pool=pool.filter(t=>t.category===curCat);
-  document.getElementById('featGrid').innerHTML=pool.sort((a,b)=>b.votesCount-a.votesCount).slice(0,8).map((t,i)=>`<div class="feat-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="feat-rank">#${i+1}</div><div class="feat-header"><img src="${t.thumbnail}" class="feat-img" loading="lazy" onerror="this.style.display='none'"><div class="feat-info"><div class="feat-name">${t.name}</div><div class="feat-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="feat-footer"><div class="feat-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="feat-visit" onclick="event.stopPropagation()">访问 →</a></div></div>`).join('');
+  document.getElementById('featGrid').innerHTML=pool.sort((a,b)=>b.votesCount-a.votesCount).slice(0,8).map((t,i)=>`<div class="feat-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="feat-rank">#${i+1}</div><div class="feat-header"><img src="${t.thumbnail}" alt="${t.name}" class="feat-img" loading="lazy" onerror="this.style.display='none'"><div class="feat-info"><div class="feat-name">${t.name}</div><div class="feat-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="feat-footer"><div class="feat-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="feat-visit" onclick="event.stopPropagation()">访问 →</a></div></div>`).join('');
 }
 
 function renderGrid(){
@@ -268,7 +269,7 @@ function appendMore(){
     if(AD_SLOTS.includes(globalIdx)&&!curSearch&&!curCat){
       html+=`<div class="tool-card-ad"><div class="ad-label">广告</div><div style="color:var(--gray-400);font-size:13px">AdSense</div></div>`;
     }
-    html+=`<div class="tool-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="tool-card-header"><img src="${t.thumbnail}" class="tool-thumb" loading="lazy" onerror="this.style.display='none'"><div class="tool-info"><div class="tool-name">${t.name}</div><div class="tool-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="tool-topics">${(t.topics||[]).slice(0,3).map(tp=>`<span class="topic-tag">${tp.name}</span>`).join('')}</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>`;
+    html+=`<div class="tool-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="tool-card-header"><img src="${t.thumbnail}" alt="${t.name}" class="tool-thumb" loading="lazy" onerror="this.style.display='none'"><div class="tool-info"><div class="tool-name">${t.name}</div><div class="tool-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="tool-topics">${(t.topics||[]).slice(0,3).map(tp=>`<span class="topic-tag">${tp.name}</span>`).join('')}</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>`;
   }
   grid.insertAdjacentHTML('beforeend',html);
   currentPage++;

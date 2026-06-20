@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>工具详情 — AINext</title>
 <meta name="description" content="查看 AI 工具详细介绍和产品截图。基于 Product Hunt 数据。">
+<meta name="robots" content="index,follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -218,7 +219,7 @@ function renderDetail(tool,allTools){
           </div>
           ${mediaImages.length>1?`
             <div class="gallery-thumbs" id="galleryThumbs">
-              ${mediaImages.map((m,i)=>`<div class="gallery-thumb${i===0?' active':''}" onclick="setGalleryImage(${i})"><img src="${m.url}" loading="lazy" onerror="this.style.display='none'"></div>`).join('')}
+              ${mediaImages.map((m,i)=>`<div class="gallery-thumb${i===0?' active':''}" onclick="setGalleryImage(${i})"><img src="${m.url}" alt="${tool.name} 截图 ${i+1}" loading="lazy" onerror="this.style.display='none'"></div>`).join('')}
             </div>
           `:''}
         `:''}
@@ -251,7 +252,7 @@ function renderDetail(tool,allTools){
 
       <div style="margin-bottom:32px"><div class="ad-box">广告位 (响应式横幅)</div></div>
 
-      ${related.length?`<section class="section"><h2 class="section-title">🔗 相关推荐</h2><div class="related-grid">${related.map(r=>`<a href="tools/${r.slug}-${r.id}.html" class="related-card"><div class="related-top"><img src="${r.thumbnail}" class="related-img" loading="lazy" onerror="this.style.display='none'"><div class="related-name">${r.name}</div></div><div class="related-tagline">${r.tagline_zh||r.tagline}</div><div class="related-stats"><span>👍 ${r.votesCount.toLocaleString()}</span><span>💬 ${r.commentsCount}</span></div></a>`).join('')}</div></section>`:''}
+      ${related.length?`<section class="section"><h2 class="section-title">🔗 相关推荐</h2><div class="related-grid">${related.map(r=>`<a href="tools/${r.slug}-${r.id}.html" class="related-card"><div class="related-top"><img src="${r.thumbnail}" alt="${r.name}" class="related-img" loading="lazy" onerror="this.style.display='none'"><div class="related-name">${r.name}</div></div><div class="related-tagline">${r.tagline_zh||r.tagline}</div><div class="related-stats"><span>👍 ${r.votesCount.toLocaleString()}</span><span>💬 ${r.commentsCount}</span></div></a>`).join('')}</div></section>`:''}
     </div>`;
 
   if(mediaImages.length>1){
