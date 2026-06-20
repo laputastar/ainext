@@ -224,7 +224,7 @@ function init(){
   if(!allTools.length){document.getElementById('toolGrid').innerHTML='<div class="empty-state"><div class="empty-state-icon">📭</div><h3>暂无工具数据</h3><p>请检查 tools.json 文件</p></div>';return}
   const total=allTools.length;const latest=allTools.reduce((a,b)=>new Date(b.createdAt)>new Date(a.createdAt)?b:a);
   const d=latest?new Date(latest.createdAt).toLocaleDateString('zh-CN',{month:'short',day:'numeric'}):'—';
-  const d30=new Date();d30.setDate(d30.getDate()-30);const monthNew=allTools.filter(t=>new Date(t.createdAt)>=d30).length;
+  const ms=new Date(new Date().getFullYear(),new Date().getMonth(),1);const monthNew=allTools.filter(t=>new Date(t.createdAt)>=ms).length;
   document.getElementById('heroStats').innerHTML=`<div class="hero-stat"><div class="hero-stat-num">${monthNew}</div><div class="hero-stat-label">本月新增</div></div><div class="hero-stat"><div class="hero-stat-num">${total.toLocaleString()}</div><div class="hero-stat-label">收录工具</div></div><div class="hero-stat"><div class="hero-stat-num">${allCats.length}</div><div class="hero-stat-label">分类</div></div><div class="hero-stat"><div class="hero-stat-num">${d}</div><div class="hero-stat-label">最近更新</div></div>`;
   renderCats();renderFeat();renderGrid();
 }
@@ -247,7 +247,7 @@ function renderGrid(){
   let list=[...allTools];if(curCat)list=list.filter(t=>t.category===curCat);
   if(curSearch){const q=curSearch.toLowerCase();list=list.filter(t=>t.name.toLowerCase().includes(q)||t.tagline.toLowerCase().includes(q)||t.description.toLowerCase().includes(q))}
   if(curTab==='weekly'){const d7=new Date();d7.setDate(d7.getDate()-7);const d14=new Date();d14.setDate(d14.getDate()-14);list=list.filter(t=>{const d=new Date(t.createdAt);return d>=d14&&d<d7})}
-  if(curTab==='monthly'){const d30=new Date();d30.setDate(d30.getDate()-30);list=list.filter(t=>new Date(t.createdAt)>=d30)}
+  if(curTab==='monthly'){const ms=new Date(new Date().getFullYear(),new Date().getMonth(),1);list=list.filter(t=>new Date(t.createdAt)>=ms)}
   list.sort((a,b)=>curTab==='latest'?new Date(b.createdAt)-new Date(a.createdAt):b.votesCount-a.votesCount);
   filteredList=list;
   document.getElementById('toolCount').textContent=`共 ${list.length} 个工具`;
