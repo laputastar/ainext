@@ -42,17 +42,11 @@
 }
 </style>
 <script src="ga.js"></script>
+<script src="components.js"></script>
 </head>
 <body>
 
-<header class="header">
-  <div class="header-inner">
-    <div class="header-left">
-      <a href="index.html" class="logo"><svg width="115" height="27" viewBox="0 0 230 54"><circle cx="26" cy="27" r="25" fill="#D45D4C"/><text x="26" y="37" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="30" fill="#fff">AI</text><text x="54" y="37" font-family="system-ui,sans-serif" font-weight="600" font-size="30" fill="#3B2E2A">Next</text></svg></a>
-    </div>
-    <a href="index.html" class="back-link">← 返回首页</a>
-  </div>
-</header>
+<script>document.write(headerHTML('返回首页','index.html'))</script>
 
 <main class="page">
   <div class="container">
@@ -104,16 +98,7 @@
   </div>
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-links">
-      <a href="index.html">首页</a>
-      <a href="about.html">关于我们</a>
-      <a href="privacy.html">隐私政策</a>
-    </div>
-    <p>© 2026 AINext</p>
-  </div>
-</footer>
+<script>document.write(footerHTML())</script>
 
 <script src="ad.js"></script>
 </body>

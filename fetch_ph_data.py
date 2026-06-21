@@ -362,7 +362,7 @@ def post_process():
     save_to_json(tools, "tools.json")
     
     print("🗺️ 生成 sitemap...")
-    urls = ['https://ainext.com/index.html', 'https://ainext.com/about.html', 'https://ainext.com/privacy.html']
+    urls = ['https://ainext.com/index.html', 'https://ainext.com/about.html', 'https://ainext.com/privacy.html', 'https://ainext.com/terms.html']
     for t in tools: urls.append(f"https://ainext.com/tools/{t['slug']}-{t['id']}.html")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for u in urls: xml += f'  <url><loc>{u}</loc></url>\n'

@@ -126,6 +126,7 @@
 @media(max-width:768px){.tool-grid{grid-template-columns:repeat(2,1fr)}.feat-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:34px}.hero p{white-space:normal}.hero{padding:40px 0 32px}.hero-stats{gap:20px}.hero-stat-num{font-size:22px}.search-input{width:160px}}
 @media(max-width:640px){.tool-grid{grid-template-columns:1fr}.feat-grid{grid-template-columns:1fr}.hero h1{font-size:26px}.hero p{font-size:15px;white-space:normal}.hero{padding:32px 0 24px}.hero-stats{flex-wrap:wrap;gap:16px}.hero-stat-num{font-size:20px}.search-input{width:140px}.tabs{width:100%;justify-content:center}.tab{padding:8px 14px;font-size:13px}.toolbar-inner{flex-direction:column;align-items:stretch}.tool-count{text-align:center}.tool-card{padding:16px;gap:10px}.cat-pill{padding:5px 12px;font-size:13px}}
 </style>
+<script src="components.js"></script>
 <script src="ga.js"></script>
 </head>
 <body>
@@ -197,17 +198,7 @@
 
 <!-- Ad 2 -->
 <div class="container" style="padding-bottom:24px"><div class="ad-slot ad-slot-responsive">广告位招租 (响应式)</div></div>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-links">
-      <a href="index.html">首页</a>
-      <a href="about.html">关于我们</a>
-      <a href="privacy.html">隐私政策</a>
-    </div>
-    <p>© 2026 AINext</p>
-  </div>
-</footer>
+<script>document.write(footerHTML())</script>
 
 <script>
 let allTools=[],allCats=[],curCat='',curTab='latest',curSearch='';
