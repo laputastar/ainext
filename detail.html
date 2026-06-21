@@ -163,6 +163,8 @@ function renderDetail(tool,allTools){
   document.querySelector('meta[property="og:url"]')?.setAttribute('content','https://www.ainext.com/'+toolUrl);
   document.querySelector('meta[name="twitter:title"]')?.setAttribute('content',tool.name+' — AINext');
   document.querySelector('meta[name="twitter:description"]')?.setAttribute('content',md.length>155?md.slice(0,152)+'...':md);
+  const ld=document.querySelector('script[type="application/ld+json"]');
+  if(ld)ld.textContent=JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":tool.name,"url":"https://www.ainext.com/"+toolUrl});
   const dateStr=new Date(tool.createdAt).toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'});
   const topics=tool.topics||[];
   const mediaImages=(tool.media||[]).filter(m=>m.type==='image'&&m.url);
