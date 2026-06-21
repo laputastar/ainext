@@ -2,7 +2,11 @@
 export async function onRequest(context) {
   const url = new URL(context.request.url);
   if (url.pathname === '/tools.json') return context.next();
-  const res = await fetch(new URL('/detail.html', url.origin));
-  const html = await res.text();
-  return new Response(html, {headers: {'Content-Type': 'text/html; charset=utf-8'}});
+  
+  // Use ASSETS binding to fetch static detail.html
+  const res = await context.env.ASSETS.fetch(
+    new URL('/detail.html', url.origin),
+    context.request
+  );
+  return res;
 }
