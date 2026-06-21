@@ -1,1 +1,4 @@
 # handled by functions/tools/[[path]].js
+
+# Redirect non-www to www
+https://ainext.com/* https://www.ainext.com/:splat 301

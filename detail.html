@@ -12,17 +12,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="ainext-icon.svg">
 <link rel="apple-touch-icon" href="ainext-icon.svg">
-<link rel="canonical" href="https://ainext.com">
+<link rel="canonical" href="https://www.ainext.com">
 <meta property="og:title" content="AINext">
 <meta property="og:description" content="AI 工具详情">
-<meta property="og:image" content="https://ainext.com/ainext-logo-stacked.svg">
-<meta property="og:url" content="https://ainext.com">
+<meta property="og:image" content="https://www.ainext.com/ainext-logo-stacked.svg">
+<meta property="og:url" content="https://www.ainext.com">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AINext">
 <meta name="twitter:description" content="AI 工具详情">
-<meta name="twitter:image" content="https://ainext.com/ainext-logo-stacked.svg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"工具详情","url":"https://ainext.com"}</script>
+<meta name="twitter:image" content="https://www.ainext.com/ainext-logo-stacked.svg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"工具详情","url":"https://www.ainext.com"}</script>
 <link rel="stylesheet" href="common.css">
 <style>
 .container{max-width:960px}
@@ -157,10 +157,10 @@ function renderDetail(tool,allTools){
   const mEl=document.querySelector('meta[name="description"]');
   if(mEl)mEl.setAttribute('content',md.length>155?md.slice(0,152)+'...':md);
   const toolUrl='tools/'+tool.slug+'-'+tool.id+'.html';
-  document.querySelector('link[rel="canonical"]')?.setAttribute('href','https://ainext.com/'+toolUrl);
+  document.querySelector('link[rel="canonical"]')?.setAttribute('href','https://www.ainext.com/'+toolUrl);
   document.querySelector('meta[property="og:title"]')?.setAttribute('content',tool.name+' — AINext');
   document.querySelector('meta[property="og:description"]')?.setAttribute('content',md.length>155?md.slice(0,152)+'...':md);
-  document.querySelector('meta[property="og:url"]')?.setAttribute('content','https://ainext.com/'+toolUrl);
+  document.querySelector('meta[property="og:url"]')?.setAttribute('content','https://www.ainext.com/'+toolUrl);
   document.querySelector('meta[name="twitter:title"]')?.setAttribute('content',tool.name+' — AINext');
   document.querySelector('meta[name="twitter:description"]')?.setAttribute('content',md.length>155?md.slice(0,152)+'...':md);
   const dateStr=new Date(tool.createdAt).toLocaleDateString('zh-CN',{year:'numeric',month:'long',day:'numeric'});
