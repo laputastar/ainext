@@ -302,6 +302,16 @@ def save_to_json(tools: List[Dict], filename: str = "tools.json"):
     new_ids = {t["id"] for t in tools}
     merged = [old_dict[tid] for tid in old_dict if tid not in new_ids]  # 保留旧工具
     merged.extend(tools)  # 加入新工具
+    
+    # 保留旧工具的翻译数据（避免每次重翻）
+    for tool in tools:
+        tid = tool["id"]
+        if tid in old_dict:
+            old = old_dict[tid]
+            for field in ["tagline_zh", "description_zh", "name_zh"]:
+                if old.get(field) and not tool.get(field):
+                    tool[field] = old[field]
+    
     merged.sort(key=lambda t: t.get("votesCount", 0), reverse=True)  # 按投票排序
     
     with open(filename, "w", encoding="utf-8") as f:
