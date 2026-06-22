@@ -162,8 +162,33 @@ def translate_tools(tools_json_path: str, output_path: str = None, delay: float 
     批量翻译 tools.json 中的 tagline 和 description
     只翻译 _zh 字段为空的工具（增量更新）
     """
+    import subprocess
+    
     with open(tools_json_path, 'r', encoding='utf-8') as f:
         tools = json.load(f)
+
+    # 从 git 读取旧版 tools.json，继承已有翻译（兜底保护）
+    old_dict = {}
+    try:
+        old_raw = subprocess.run(
+            ['git', 'show', 'HEAD:tools.json'],
+            capture_output=True, text=True, timeout=10
+        )
+        if old_raw.returncode == 0 and old_raw.stdout.strip():
+            old_list = json.loads(old_raw.stdout)
+            old_dict = {t['id']: t for t in old_list}
+            inherited = 0
+            for t in tools:
+                tid = t['id']
+                if tid in old_dict:
+                    o = old_dict[tid]
+                    for f in ['tagline_zh', 'description_zh', 'name_zh']:
+                        if o.get(f) and not t.get(f):
+                            t[f] = o[f]
+                            inherited += 1
+            print(f"📋 从旧版继承了 {inherited} 条翻译")
+    except Exception as e:
+        print(f"⚠️ 读取旧版 tools.json 失败: {e}")
 
     # 收集需要翻译的文本
     to_translate = []  # [(tool_index, field, text)]
