@@ -150,7 +150,7 @@ def fetch_posts(after: str = None) -> tuple:
     """
     query = """
     query($first: Int!, $after: String) {
-      posts(first: $first, after: $after, order: VOTES) {
+      posts(first: $first, after: $after, order: RANKING) {
         edges {
           node {
             id

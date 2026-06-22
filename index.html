@@ -231,6 +231,8 @@ function updateTag(){const t=document.getElementById('catTag');if(curCat){t.styl
 
 function renderFeat(){
   let pool=[...allTools];if(curCat)pool=pool.filter(t=>t.category===curCat);
+  const d7=new Date();d7.setDate(d7.getDate()-7);
+  pool=pool.filter(t=>new Date(t.createdAt)>=d7);
   document.getElementById('featGrid').innerHTML=pool.sort((a,b)=>b.votesCount-a.votesCount).slice(0,8).map((t,i)=>`<div class="feat-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="feat-rank">#${i+1}</div><div class="feat-header"><img src="${t.thumbnail}" alt="${t.name}" class="feat-img" loading="lazy" onerror="this.style.display='none'"><div class="feat-info"><div class="feat-name">${t.name}</div><div class="feat-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="feat-footer"><div class="feat-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="feat-visit" onclick="event.stopPropagation()">访问 →</a></div></div>`).join('');
 }
 
