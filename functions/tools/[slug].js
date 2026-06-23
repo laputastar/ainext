@@ -64,13 +64,13 @@ function renderToolPage(tool, allTools, origin) {
 <link rel="canonical" href="${esc(canonicalUrl)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(metaDesc)}">
-<meta property="og:image" content="${thumb ? esc(thumb) : 'https://www.ainext.com/ainext-logo-stacked.svg'}">
+<meta property="og:image" content="${thumb ? esc(thumb) : 'https://www.ainext.com/og-image.png'}">
 <meta property="og:url" content="${esc(canonicalUrl)}">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(metaDesc)}">
-<meta name="twitter:image" content="${thumb ? esc(thumb) : 'https://www.ainext.com/ainext-logo-stacked.svg'}">
+<meta name="twitter:image" content="${thumb ? esc(thumb) : 'https://www.ainext.com/og-image.png'}">
 <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":tool.name,"url":canonicalUrl})}</script>
 <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AINext","item":"https://www.ainext.com/"},{"@type":"ListItem","position":2,"name":tool.name,"item":canonicalUrl}]})}</script>
 <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":tool.name,"description":metaDesc,"operatingSystem":"Web","applicationCategory":tool.category||"AI"})}</script>
