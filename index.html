@@ -152,7 +152,7 @@
     <h1>发现<span>下一代 AI 工具</span></h1>
     <p>AINext 精选全球最优秀的 AI 产品，帮你找到提升效率、激发创意的人工智能工具。</p>
     <div class="hero-stats" id="heroStats">
-      <div class="hero-stat"><div class="hero-stat-num">—</div><div class="hero-stat-label">本月新增</div></div>
+      <div class="hero-stat"><div class="hero-stat-num">—</div><div class="hero-stat-label">本周新增</div></div>
       <div class="hero-stat"><div class="hero-stat-num">—</div><div class="hero-stat-label">收录工具</div></div>
       <div class="hero-stat"><div class="hero-stat-num">—</div><div class="hero-stat-label">分类</div></div>
       <div class="hero-stat"><div class="hero-stat-num">—</div><div class="hero-stat-label">最近更新</div></div>
@@ -218,8 +218,8 @@ function init(){
   if(!allTools.length){document.getElementById('toolGrid').innerHTML='<div class="empty-state"><div class="empty-state-icon">📭</div><h3>暂无工具数据</h3><p>请检查 tools.json 文件</p></div>';return}
   const total=allTools.length;const latest=allTools.reduce((a,b)=>new Date(b.createdAt)>new Date(a.createdAt)?b:a);
   const d=latest?new Date(latest.createdAt).toLocaleDateString('zh-CN',{month:'short',day:'numeric'}):'—';
-  const ms=new Date(new Date().getFullYear(),new Date().getMonth(),1);const monthNew=allTools.filter(t=>new Date(t.createdAt)>=ms).length;
-  document.getElementById('heroStats').innerHTML=`<div class="hero-stat"><div class="hero-stat-num">${monthNew}</div><div class="hero-stat-label">本月新增</div></div><div class="hero-stat"><div class="hero-stat-num">${total.toLocaleString()}</div><div class="hero-stat-label">收录工具</div></div><div class="hero-stat"><div class="hero-stat-num">${allCats.length}</div><div class="hero-stat-label">分类</div></div><div class="hero-stat"><div class="hero-stat-num">${d}</div><div class="hero-stat-label">最近更新</div></div>`;
+  const d7=new Date();d7.setDate(d7.getDate()-7);const weekNew=allTools.filter(t=>new Date(t.createdAt)>=d7).length;
+  document.getElementById('heroStats').innerHTML=`<div class="hero-stat"><div class="hero-stat-num">${weekNew}</div><div class="hero-stat-label">本周新增</div></div><div class="hero-stat"><div class="hero-stat-num">${total.toLocaleString()}</div><div class="hero-stat-label">收录工具</div></div><div class="hero-stat"><div class="hero-stat-num">${allCats.length}</div><div class="hero-stat-label">分类</div></div><div class="hero-stat"><div class="hero-stat-num">${d}</div><div class="hero-stat-label">最近更新</div></div>`;
   renderCats();renderFeat();renderGrid();
 }
 
