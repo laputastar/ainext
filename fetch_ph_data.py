@@ -48,7 +48,7 @@ AI_TOPIC_SLUGS = {
 
 # 两步筛选法：AI 关键词列表（第二步，正则单词边界匹配）
 AI_KEYWORDS = [
-    r"\bai\b", r"\bgpt\b", r"\bllm\b", r"\bgenerative\b",
+    r"\bai\b", r"\bgpt\b", r"\bllms?\b", r"\bgenerative\b",
     r"\bagents?\b", r"\bcopilot\b", r"\bneural\b", r"\bchatbot\b",
     r"\bmachine learning\b", r"\bdeep learning\b",
     r"\bopenai\b", r"\bchatgpt\b", r"\bclaude\b", r"\bgemini\b",
@@ -56,6 +56,7 @@ AI_KEYWORDS = [
     r"\bopenrouter\b", r"\bjarvis\b",
     r"\bnatural language\b", r"\bai dictation\b",
     r"\btranscripts?\b", r"\btranscribes?\b",
+    r"\bhugging face\b",
     "人工智能", "机器学习", "深度学习"
 ]
 
