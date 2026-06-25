@@ -42,19 +42,19 @@ AI_TOPIC_SLUGS = {
     "llm",
     "deep-learning",
     "neural-network",
-    "automation",
-    "productivity",
-    "writing-assistant",
     "code-assistant",
     "ai-powered"
 }
 
-# 两步筛选法：AI 关键词列表（第二步）
-AI_KEYWORDS = {
-    "ai", "gpt", "llm", "machine learning", "deep learning",
-    "neural", "chatbot", "automation", "intelligent", "smart",
-    "人工智能", "机器学习", "深度学习", "神经网络", "智能"
-}
+# 两步筛选法：AI 关键词列表（第二步，正则单词边界匹配）
+AI_KEYWORDS = [
+    r"\bai\b", r"\bgpt\b", r"\bllm\b", r"\bgenerative\b",
+    r"\bagent\b", r"\bcopilot\b", r"\bneural\b", r"\bchatbot\b",
+    r"\bmachine learning\b", r"\bdeep learning\b",
+    r"\bopenai\b", r"\bchatgpt\b", r"\bclaude\b", r"\bgemini\b",
+    r"\bstable diffusion\b", r"\bmidjourney\b", r"\bdalle\b",
+    "人工智能", "机器学习", "深度学习"
+]
 
 # 创建图片目录
 Path(IMAGES_DIR).mkdir(exist_ok=True)
@@ -108,12 +108,13 @@ def is_ai_tool_by_topics(topics: List[Dict]) -> bool:
 
 def is_ai_tool_by_keywords(name: str, tagline: str, description: str) -> bool:
     """
-    第二步：按关键词筛选
+    第二步：按关键词筛选（正则单词边界匹配）
     对于第一步未匹配的产品，检查名称、标语、描述是否包含 AI 关键词
     """
+    import re
     text = f"{name} {tagline} {description}".lower()
     for keyword in AI_KEYWORDS:
-        if keyword.lower() in text:
+        if re.search(keyword, text):
             return True
     return False
 
