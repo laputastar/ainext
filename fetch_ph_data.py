@@ -49,10 +49,13 @@ AI_TOPIC_SLUGS = {
 # 两步筛选法：AI 关键词列表（第二步，正则单词边界匹配）
 AI_KEYWORDS = [
     r"\bai\b", r"\bgpt\b", r"\bllm\b", r"\bgenerative\b",
-    r"\bagent\b", r"\bcopilot\b", r"\bneural\b", r"\bchatbot\b",
+    r"\bagents?\b", r"\bcopilot\b", r"\bneural\b", r"\bchatbot\b",
     r"\bmachine learning\b", r"\bdeep learning\b",
     r"\bopenai\b", r"\bchatgpt\b", r"\bclaude\b", r"\bgemini\b",
     r"\bstable diffusion\b", r"\bmidjourney\b", r"\bdalle\b",
+    r"\bopenrouter\b", r"\bjarvis\b",
+    r"\bnatural language\b", r"\bai dictation\b",
+    r"\btranscripts?\b", r"\btranscribes?\b",
     "人工智能", "机器学习", "深度学习"
 ]
 
@@ -99,10 +102,18 @@ def is_ai_tool_by_topics(topics: List[Dict]) -> bool:
     """
     第一步：按话题标签筛选
     如果产品的话题标签匹配 AI_TOPIC_SLUGS → 直接判定为 AI 工具
+    同时检查话题描述是否包含 AI 关键词
     """
+    import re
     for topic in topics:
         if topic.get("slug", "").lower() in AI_TOPIC_SLUGS:
             return True
+        # 检查话题描述
+        desc = topic.get("description", "")
+        if desc:
+            for keyword in AI_KEYWORDS:
+                if re.search(keyword, desc.lower()):
+                    return True
     return False
 
 
@@ -176,6 +187,7 @@ def fetch_posts(after: str = None) -> tuple:
                 node {
                   name
                   slug
+                  description
                 }
               }
             }
@@ -265,6 +277,7 @@ def fetch_all_ai_tools(max_pages: int = 20) -> List[Dict]:
                         {
                             "name": edge["node"]["name"],
                             "slug": edge["node"]["slug"],
+                            "description": edge["node"].get("description", ""),
                             "name_zh": ""  # 待翻译
                         }
                         for edge in post["topics"]["edges"]
