@@ -50967,74 +50967,6 @@
     "category": "image"
   },
   {
-    "id": "1173789",
-    "name": "JuniorShield",
-    "tagline": "Teach your kid to think before they tap.",
-    "tagline_zh": "",
-    "description": "JuniorShield is a free 2-minute web game that helps kids 5–9 build instinct for tricky online moments — fake prizes, strangers, oversharing. They learn by making real choices, not by being lectured. No sign-up, and no data about your child is ever collected.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/7N5ORLXMTSSQOW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/87507b26-2de8-4f00-b1e1-21bf3a47e63d.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/e73c1b8d-b581-4ec1-9b09-2fabf8d521e5.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/21e7b177-4801-4886-ac33-39914e2d77ff.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/a2297634-39bf-466e-994c-95d90cee4f94.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/b6eedcdb-cb6e-4059-8d41-ef04784a159c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/705b99e6-57a2-49e5-9a78-6eff3d95db09.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/0273af12-82f3-4f8b-9521-b0a866f3cd37.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/e25d01e6-12d1-469f-bae3-8b0b878b44fa.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "Kids & Parenting",
-        "slug": "kids-parenting",
-        "description": "Kids & Parenting tools that help families with sleep, reading, safety, screen time, routines, journaling, and make-believe letters—practical picks for parents.",
-        "name_zh": ""
-      },
-      {
-        "name": "Security",
-        "slug": "security",
-        "description": "Security covers tools that protect logins, data, and payments: identity, password managers, compliance automation, web defense, and AI with enterprise controls.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/juniorshield",
-    "slug": "juniorshield",
-    "slug_url": "juniorshield-1173789.html",
-    "category": "education"
-  },
-  {
     "id": "1180810",
     "name": "VM",
     "tagline": "AI-Powered Long-Term Personal Insights",
@@ -51150,70 +51082,6 @@
     "ph_url": "https://www.producthunt.com/products/questlock",
     "slug": "questlock",
     "slug_url": "questlock-1181213.html",
-    "category": "productivity"
-  },
-  {
-    "id": "1179822",
-    "name": "DailySpark",
-    "tagline": "A journal that feels like a real book",
-    "tagline_zh": "",
-    "description": "DailySpark is a beautiful digital journal with realistic page turning, daily notes, to-do lists, personal insights and customizable themes.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/GG6MCJUDVJYU6T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/278a13da-db75-4c49-8787-678e5a4be59d.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/112d7e04-275d-4498-bd88-0630c5c3ecbe.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/589fa586-7b34-49cc-92c3-7186698288f4.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6bdcaf91-6ab9-44ae-b8c8-765810f6d713.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/0d036e27-f0ea-4907-ac2c-dfb152e49f51.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d24fd7bf-5493-435c-b100-8f6f7193fa87.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/9ad1dc44-8b40-488f-9fd0-39a977c02998.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Android",
-        "slug": "android",
-        "description": "One of the fastest growing platforms of all time, the little green bot lives in your pocket and does just about anything.",
-        "name_zh": ""
-      },
-      {
-        "name": "Productivity",
-        "slug": "productivity",
-        "description": "If time is most precious, this collection of lifehacks is so so precious. Be more productive and optimize your life.",
-        "name_zh": ""
-      },
-      {
-        "name": "Lifestyle",
-        "slug": "lifestyle",
-        "description": "Lifestyle tools that smooth living: plan weather and habits, journal growth, sell and shop goods, build communities, and chat with AI assistants for creators.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/dailyspark",
-    "slug": "dailyspark",
-    "slug_url": "dailyspark-1179822.html",
     "category": "productivity"
   },
   {
@@ -51501,58 +51369,6 @@
     "slug": "skimmy-read-faster-skip-the-fluff",
     "slug_url": "skimmy-read-faster-skip-the-fluff-1181126.html",
     "category": "productivity"
-  },
-  {
-    "id": "1178533",
-    "name": "AtmoVibe",
-    "tagline": "Slowed + Reverb for your own music — 100% offline",
-    "tagline_zh": "",
-    "description": "COMING SOON !!! A music player built around YOUR library — not a streaming catalog. Import any audio file (or extract the audio straight from a video), then explore it in a living honeycomb grid you pinch, drag and tap. Signature feature: turn any track into Slowed + Reverb or Speed Up in real time — the viral sound, on songs you actually own. Plus a 5-band EQ, Hi-Res playback, custom theme colors, playlists & favorites. 100% offline — no account, no ads",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/OPXPUL64RFYSKR?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/988b9e0c-691a-4d0d-b596-d0844268d130.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/7cced375-f580-40e5-b942-777e0a11e966.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/aa50e3c0-0081-4ec1-89f3-c03ff0419e62.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/05ae93ca-b0b4-44d0-ba59-00ea3d1e4976.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "iOS",
-        "slug": "ios",
-        "description": "The beloved \"phone\" that changed the way we communicate, play games, and snap photos. 📱",
-        "name_zh": ""
-      },
-      {
-        "name": "Music",
-        "slug": "music",
-        "description": "Skip or repeat? Is your new favorite tunage here? ",
-        "name_zh": ""
-      },
-      {
-        "name": "Audio",
-        "slug": "audio",
-        "description": "Audio covers tools for streaming music/podcasts, voice calls, and AI speech—TTS, STT, dubbing, voice agents—and the platforms to host, scale, integrate.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/atmovibe",
-    "slug": "atmovibe",
-    "slug_url": "atmovibe-1178533.html",
-    "category": "ai-tool"
   },
   {
     "id": "1178607",
@@ -51853,66 +51669,6 @@
     "slug": "oversight",
     "slug_url": "oversight-1181217.html",
     "category": "image"
-  },
-  {
-    "id": "1181351",
-    "name": "infraflow",
-    "tagline": "Build AWS infrastructure visually with Terraform",
-    "tagline_zh": "",
-    "description": "A visual AWS infrastructure builder that helps developers design cloud resources on an interactive canvas, generate Terraform files, deploy resources to AWS, monitor usage, and view cloud costs from one place. The app is still under development, with core features working, and I’m looking for early feedback to improve the workflow, UI, Terraform generation, and roadmap.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/V5VGNKL3IBVIVQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/a24e9e77-730f-46e3-8a23-d42474a7facf.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/80d4b7d6-485d-4a54-a97c-eb82f0b0398c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/338d4681-13da-4dbf-87f0-4b07a4c92e99.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/a033b4fa-d8de-4751-9799-8f0904d1f6fe.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/3f1b05b9-8219-47c7-81ce-05ee01d6658c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/61b7ab62-a5eb-4128-81c7-bb9cc8615270.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "SaaS",
-        "slug": "saas",
-        "description": "Software is eating the world. We've gathered the culprits here.",
-        "name_zh": ""
-      },
-      {
-        "name": "Software Engineering",
-        "slug": "software-engineering",
-        "description": "Software to help you write software.",
-        "name_zh": ""
-      },
-      {
-        "name": "Development",
-        "slug": "development",
-        "description": "Development covers tools that design, code, test, and deploy apps—UI design, components, repos/CI, backend, hosting, and AI agents—for prototypes to scale.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/infraflow",
-    "slug": "infraflow",
-    "slug_url": "infraflow-1181351.html",
-    "category": "coding"
   },
   {
     "id": "1181208",
@@ -52223,54 +51979,6 @@
     "category": "productivity"
   },
   {
-    "id": "1180584",
-    "name": "ToSCORM",
-    "tagline": "Convert PowerPoint to SCORM in Minutes",
-    "tagline_zh": "",
-    "description": "Convert PowerPoint and PPT files into LMS-ready SCORM 1.2 or SCORM 2004 packages online. Preview, validate, and export SCORM courses for your LMS.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/NLQ3KGJH33ZMLA?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/155d72eb-014c-4d91-be6e-169ba897afa4.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/3318ca99-7c69-4d14-b3f0-3e2a5b92df0c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6373c801-8f84-4900-8aec-379fff58f435.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "SaaS",
-        "slug": "saas",
-        "description": "Software is eating the world. We've gathered the culprits here.",
-        "name_zh": ""
-      },
-      {
-        "name": "Online Learning",
-        "slug": "online-learning",
-        "description": "Online learning delivers skills via web tools: AI tutors, cohort classes, discovery engines, and knowledge hubs—helping pros and students research and create.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/toscorm",
-    "slug": "toscorm",
-    "slug_url": "toscorm-1180584.html",
-    "category": "education"
-  },
-  {
     "id": "1169925",
     "name": "UX Agent",
     "tagline": "Find why shoppers don't convert, and what to fix first.",
@@ -52533,54 +52241,6 @@
     "category": "writing"
   },
   {
-    "id": "1180621",
-    "name": "Sheetize.App",
-    "tagline": "Brings the power of spreadsheets straight to your browser",
-    "tagline_zh": "",
-    "description": "Sheetize.app brings the power of spreadsheets straight to your browser, eliminating the need for downloads, installations, or any coding knowledge. Whether you work with Microsoft Excel (XLSX), Apple Numbers, or other spreadsheet formats, you can open, edit, and save your files online in seconds. The platform is built for non‑technical users who want fast, reliable, and secure document automation without the overhead of traditional desktop apps.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/VPAK3MKIXSI2UD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/33384b8f-df0b-40b4-8643-a5d7d93468ce.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/454ae260-292f-4070-8825-89af48747e2c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/b3812665-b717-4478-9603-9a56ba0b1036.jpeg?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Productivity",
-        "slug": "productivity",
-        "description": "If time is most precious, this collection of lifehacks is so so precious. Be more productive and optimize your life.",
-        "name_zh": ""
-      },
-      {
-        "name": "Spreadsheets",
-        "slug": "spreadsheets",
-        "description": "Giant tables of information for your organizational pleasure. Put numbers in them. Put words in them. Put GIFs in them! It's up to you.",
-        "name_zh": ""
-      },
-      {
-        "name": "Marketing automation",
-        "slug": "marketing-automation",
-        "description": "Marketing automation tools streamline lead capture, content and email campaigns, and app workflows for growth teams using AI, integrations, and no-code builders.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/sheetize.app",
-    "slug": "sheetize-app",
-    "slug_url": "sheetize-app-1180621.html",
-    "category": "productivity"
-  },
-  {
     "id": "1181243",
     "name": "Lenz Tales",
     "tagline": "The AI director in your pocket",
@@ -52635,62 +52295,6 @@
     "slug": "lenz-tales",
     "slug_url": "lenz-tales-1181243.html",
     "category": "image"
-  },
-  {
-    "id": "1181293",
-    "name": "Margo : Dating through emails",
-    "tagline": "A matchmaker who lives in your inbox",
-    "tagline_zh": "",
-    "description": "Margo is a personal matchmaker who works inside your inbox. You write to her, she gets to know you, and when there's someone worth meeting, she makes a private introduction, you correspond through an anonymous relay until you both choose to share details.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/6JMNPTT3S6GRBP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b3e09df0-6b33-440d-ab97-38938d413b44.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/195b432f-c7f6-4dea-9f92-c9c92a01fa2e.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/1d47d897-d243-48fd-8fbe-50b0b53506a6.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/20630813-9465-4d80-890f-c5c8bab8bc11.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/55f4820c-07b4-47f7-8422-3f904bcb9b9c.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Dating",
-        "slug": "dating",
-        "description": "Find your soulmate (or maybe just a new friend) in a few swipes, taps, and emojis exchanges. 😽",
-        "name_zh": ""
-      },
-      {
-        "name": "Couples",
-        "slug": "couples",
-        "description": "Communicate and share your love in private with your boo. 😘",
-        "name_zh": ""
-      },
-      {
-        "name": "Community",
-        "slug": "community",
-        "description": "Community gathers tools that help people connect, create, and grow—forums, launches, newsletters, payments, AI workflows, and meetups for builders and fans.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/margo-:-dating-through-emails",
-    "slug": "margo-dating-through-emails",
-    "slug_url": "margo-dating-through-emails-1181293.html",
-    "category": "ai-tool"
   },
   {
     "id": "1181282",
@@ -52883,86 +52487,6 @@
     "slug": "moneyment",
     "slug_url": "moneyment-1180048.html",
     "category": "image"
-  },
-  {
-    "id": "1181080",
-    "name": "Forman3D Cards",
-    "tagline": "Create and mail personalized postcards online.",
-    "tagline_zh": "",
-    "description": "Forman3D Cards lets you create, personalize, and physically mail real postcards entirely online. Skip the post office, stamps, and printers. Perfect for summer camp updates, personal thank-you notes, or independent businesses sending automated follow-ups. You design it on the web, and we handle the physical printing, postage, and USPS mailing.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/52TNAG7IBRPYSS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b3d828f4-740c-46a4-925a-aabeccee1380.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/7448f43b-81c6-4ed0-ac86-290d2a8cbf85.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/5f1c809c-0d09-4a15-8115-ae6de5003419.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/ed933f59-10a6-42fc-8666-4ee5cce16541.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d9a1c4bd-eeab-4987-a293-1d50c47b4e79.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/4d334e61-e521-479c-a5ce-ad99cbd443b0.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/b48cd799-5f63-4b7e-9dc9-4552a0453035.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/63ad175e-b008-4f60-ba8e-efa03bbfdb34.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/baaf3a1f-a47a-4e59-9bf6-155f1b673fd5.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/7195aefb-6f06-46d5-a938-f7a036bf5ad9.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/7064f9ed-27fc-4a06-9911-295c2c884ca7.jpeg?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Productivity",
-        "slug": "productivity",
-        "description": "If time is most precious, this collection of lifehacks is so so precious. Be more productive and optimize your life.",
-        "name_zh": ""
-      },
-      {
-        "name": "Graphic Design",
-        "slug": "graphic-design",
-        "description": "Graphic design turns ideas into visuals. These tools span AI editors, stock, photo cleanup, logos, sites, freelancing, and selling—serving marketers, SMBs, startups, and creators.",
-        "name_zh": ""
-      },
-      {
-        "name": "Marketing automation",
-        "slug": "marketing-automation",
-        "description": "Marketing automation tools streamline lead capture, content and email campaigns, and app workflows for growth teams using AI, integrations, and no-code builders.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/forman3d-cards",
-    "slug": "forman3d-cards",
-    "slug_url": "forman3d-cards-1181080.html",
-    "category": "productivity"
   },
   {
     "id": "1180883",
@@ -53173,50 +52697,6 @@
     "slug": "jooc",
     "slug_url": "jooc-1180869.html",
     "category": "image"
-  },
-  {
-    "id": "1180647",
-    "name": "Addressbox.com",
-    "tagline": "Commercial Shops for Sale in Thaltej, Ahmedabad | Addressbox",
-    "tagline_zh": "",
-    "description": "Looking to buy a commercial shop in Thaltej, Ahmedabad? Explore verified properties with updated prices and genuine photos. Find the right space for your business today.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 0,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/C2WSHVOH5LXIRT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/d62d8f83-3494-452d-8730-1a359b8c01dd.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/091916f5-efef-44e1-90f9-4c5586bc40cd.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Branding",
-        "slug": "branding",
-        "description": "Know who you are and make sure everyone else does to.",
-        "name_zh": ""
-      },
-      {
-        "name": "Advertising",
-        "slug": "advertising",
-        "description": "We get to use so many free services thanks to advertising. Get the most out of your ad budget and earn revenue with some of these tools.",
-        "name_zh": ""
-      },
-      {
-        "name": "Business",
-        "slug": "business",
-        "description": "Business tools that help founders research, launch, sell, and scale—covering search, funding, email growth, scheduling, communities, AI video, product insights.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/addressbox.com",
-    "slug": "addressbox-com",
-    "slug_url": "addressbox-com-1180647.html",
-    "category": "marketing"
   },
   {
     "id": "1180383",
@@ -53593,134 +53073,6 @@
     "category": "marketing"
   },
   {
-    "id": "1180709",
-    "name": "Proximity Lock",
-    "tagline": "Automatic Mac Security Powered by Your iPhone",
-    "tagline_zh": "",
-    "description": "Proximity Lock helps keep your Mac safe without changing the way you work. Your Mac locks itself when you walk away with your iPhone, so you never have to remember to lock it again. Turn on Café Mode to get a loud alarm if someone touches, moves, or unplugs your Mac. You can also lock your Mac from your iPhone, check its battery, view activity history, and manage trusted devices. No cloud, no account, just fast, private Bluetooth protection that simply works.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/RUPN5DRO3TX34T?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/4178a6a2-9fa1-4cf2-9f2a-608cf4f53e60.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/7702d2da-e325-45cd-8c48-30423ea57bbf.jpeg?auto=format",
-        "type": "video"
-      },
-      {
-        "url": "https://ph-files.imgix.net/62bd5f61-d72b-4549-895c-bc99cb01f236.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/30e17c4b-9ae0-44ca-aa36-233e8dad854c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/0c1f93f2-cedc-4d1e-8763-83ffd6505fdb.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6444d758-a19c-4929-b7bf-c834dc3f4a91.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "iOS",
-        "slug": "ios",
-        "description": "The beloved \"phone\" that changed the way we communicate, play games, and snap photos. 📱",
-        "name_zh": ""
-      },
-      {
-        "name": "Mac",
-        "slug": "mac",
-        "description": "The legendary foundations of Apple Computers. They're easy to use and easy to love. Go ahead, hop on the 🍎 bandwagon.",
-        "name_zh": ""
-      },
-      {
-        "name": "GitHub",
-        "slug": "github",
-        "description": "Software to help you write software.",
-        "name_zh": ""
-      },
-      {
-        "name": "YouTube",
-        "slug": "youtube",
-        "description": "The place to watch cats (and everything else on the internet)📽. Here are some apps and sites to YouTube better.",
-        "name_zh": ""
-      },
-      {
-        "name": "Security",
-        "slug": "security",
-        "description": "Security covers tools that protect logins, data, and payments: identity, password managers, compliance automation, web defense, and AI with enterprise controls.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/proximity-lock",
-    "slug": "proximity-lock",
-    "slug_url": "proximity-lock-1180709.html",
-    "category": "coding"
-  },
-  {
-    "id": "1179535",
-    "name": "Cozie",
-    "tagline": "Study Together ",
-    "tagline_zh": "",
-    "description": "Silent, friend-only co-study rooms. Share a 6-letter code, study together. No accounts, no mics, no strangers.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/AE6RFDWMX2NXVP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/e55b0fd4-18f5-4639-aa7c-9e5778e73628.jpeg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/5a789cb0-ed94-4320-8e10-ace12f91abb5.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/348928a5-a8b3-432e-9e10-255b84cdf6ef.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6c5a3dc6-b992-4d28-bace-31c1ff7e6467.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6182c009-ba5d-4966-a60e-50754a613810.gif?auto=format",
-        "type": "video"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Messaging",
-        "slug": "messaging",
-        "description": "Plain text can be so boring. Find a new way to spice up your communication.",
-        "name_zh": ""
-      },
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "School",
-        "slug": "school",
-        "description": "School picks that support studying, teaching, and life: AI note-making, exam prep, college guidance, homeschool tips, focus tools, and collaborative mapping.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/cozie",
-    "slug": "cozie",
-    "slug_url": "cozie-1179535.html",
-    "category": "education"
-  },
-  {
     "id": "1180921",
     "name": "SimSights Golf",
     "tagline": "AI insights from your golf launch monitor data",
@@ -53881,50 +53233,6 @@
     "slug": "atlas",
     "slug_url": "atlas-1176131.html",
     "category": "image"
-  },
-  {
-    "id": "1179114",
-    "name": "GoVote",
-    "tagline": "Daily Voting, Ranking & Debate Page on Known People",
-    "tagline_zh": "",
-    "description": "Vote daily on public people, political parties, companies using simple like or dislike votes. Users can watch rankings change across daily, weekly, monthly, and yearly leaderboards, recast votes over time, save favourites, search and filter entries, and join discussions through comments, replies, likes, edits, reporting, deletion, and muting. With audience stats by gender, age, ethnicity, and country, GoVote turns public opinion into a simple, social, and addictive daily leaderboard.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/SDISHWQOHURUSE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/4e7169d1-2819-4b99-a70c-00b1e119c216.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/64e021db-4fd3-4fdb-86b3-94ed95aeadfd.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Android",
-        "slug": "android",
-        "description": "One of the fastest growing platforms of all time, the little green bot lives in your pocket and does just about anything.",
-        "name_zh": ""
-      },
-      {
-        "name": "Analytics",
-        "slug": "analytics",
-        "description": "From analyzing website traffic to understanding customer behavior, these top analytics apps make getting valuable insights a cinch ",
-        "name_zh": ""
-      },
-      {
-        "name": "Entertainment",
-        "slug": "entertainment",
-        "description": "This category bundles things that captivate: on‑demand video, creator hubs, AI media makers, meme games, travel storytelling, roleplay, and interactive learning.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/govote",
-    "slug": "govote",
-    "slug_url": "govote-1179114.html",
-    "category": "ai-tool"
   },
   {
     "id": "1181381",
@@ -54161,54 +53469,6 @@
     "category": "coding"
   },
   {
-    "id": "1181321",
-    "name": "Grabshorts",
-    "tagline": "Grab Shorts. Download Fast.",
-    "tagline_zh": "",
-    "description": "**Grabshorts** is a fast and easy way to download short videos from your favorite platforms. Just paste the video link, and Grabshorts quickly saves your video in high quality—no complicated steps, no unnecessary waiting. Whether you're collecting inspiration, saving tutorials, or watching offline, Grabshorts makes downloading Shorts simple, reliable, and lightning fast.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/CBDGWNDUVYK6SS?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b5c8ecd2-b69a-43c5-881d-850bf8eaa102.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/f124b5a2-8b32-467d-8f66-3bad452d5ba4.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d866c6b4-feba-4fbc-9f3f-e25634ba6d68.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Music",
-        "slug": "music",
-        "description": "Skip or repeat? Is your new favorite tunage here? ",
-        "name_zh": ""
-      },
-      {
-        "name": "Audio",
-        "slug": "audio",
-        "description": "Audio covers tools for streaming music/podcasts, voice calls, and AI speech—TTS, STT, dubbing, voice agents—and the platforms to host, scale, integrate.",
-        "name_zh": ""
-      },
-      {
-        "name": "Video",
-        "slug": "video",
-        "description": "Video includes tools to meet, record screens, generate clips, transcribe speech, and make interactive demos—helping teams, creators, and devs collaborate.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/grabshorts",
-    "slug": "grabshorts",
-    "slug_url": "grabshorts-1181321.html",
-    "category": "video"
-  },
-  {
     "id": "1178613",
     "name": "Harmony of Consciousness",
     "tagline": "Where human intuition meets AI precision.",
@@ -54315,50 +53575,6 @@
     "slug": "prodintel",
     "slug_url": "prodintel-1181003.html",
     "category": "productivity"
-  },
-  {
-    "id": "1180858",
-    "name": "Saumya Studio",
-    "tagline": "Landing pages & MVPs, designed and shipped.",
-    "tagline_zh": "",
-    "description": "I design and build launch-ready landing pages and MVPs for founders. Fixed scope, fast turnaround, no agency overhead.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 0,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/PR4NVAXKNUTE4G?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/2e0b643a-3f72-4437-85c2-35d570b9a521.svg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/a73d236d-7b33-4628-8a3e-324211fcb1ab.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Web App",
-        "slug": "web-app",
-        "description": "You know that place with all those cat pics and GIFs? It also has some other neat stuff.",
-        "name_zh": ""
-      },
-      {
-        "name": "Development",
-        "slug": "development",
-        "description": "Development covers tools that design, code, test, and deploy apps—UI design, components, repos/CI, backend, hosting, and AI agents—for prototypes to scale.",
-        "name_zh": ""
-      },
-      {
-        "name": "Design",
-        "slug": "design",
-        "description": "Design here spans building, prototyping, presenting, and selling digital experiences—UI/UX, graphics, apps, newsletters, and compliant billing—for creators and teams.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/saumya-studio",
-    "slug": "saumya-studio",
-    "slug_url": "saumya-studio-1180858.html",
-    "category": "image"
   },
   {
     "id": "1181254",
@@ -54611,90 +53827,6 @@
     "category": "productivity"
   },
   {
-    "id": "1180861",
-    "name": "Caffè Pannone vendita caffè online",
-    "tagline": "Caffè Pannone è il vostro punto di riferimento del caffè",
-    "tagline_zh": "",
-    "description": "Tradizione e tostatura artigianale a casa tua. Gusta miscele uniche in cialde e capsule compatibili. Aroma intenso e freschezza garantita",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/47GBV6ITZWV2QU?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/a7e1da98-3558-4b74-a31d-a8a0582466d2.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/0f8e50a8-433d-4f65-af40-626df34657cc.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/30838249-7103-4b90-b94c-2729550d4900.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/9d66294d-3164-452f-8966-fb9b47921f9e.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/fef3756a-64a0-4475-94cf-4097ea93644c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/79b4ae29-b1e7-460d-ac28-d2ccfa04c8d4.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/f222573c-9941-40c5-b0ad-602914a250c5.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/980e880f-ce4b-4909-bfb6-b55dbab8e469.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d8963973-7271-4f1c-b714-445de826d644.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/fa49bb68-73d3-45b8-afc6-be582d0553ca.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/e08caea1-eb5b-4500-8bf1-2c5132c106d0.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/97b21250-70c8-44d9-aed7-251aba94d3b8.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/03ac1e6f-b354-466a-aa38-73b30a471a7b.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/dae16838-e02e-4eb9-92dc-448c530dae50.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/5738be39-4d61-474e-9ad2-ff32f683f7be.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Food & Drink",
-        "slug": "food-drink",
-        "description": "Food & Drink tools span recipe finders, AI meal ideas, cooking robots, calorie trackers, and dining recs—helping home cooks, travelers plan, cook, and discover.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/caffè-pannone-vendita-caffè-online",
-    "slug": "caff-pannone-vendita-caff-online",
-    "slug_url": "caff-pannone-vendita-caff-online-1180861.html",
-    "category": "ai-tool"
-  },
-  {
     "id": "1180890",
     "name": "AI Second Brain",
     "tagline": "An Obsidian vault your AI agents actually run",
@@ -54881,44 +54013,6 @@
     "slug": "digital-epigram",
     "slug_url": "digital-epigram-1156369.html",
     "category": "image"
-  },
-  {
-    "id": "1180663",
-    "name": "THIOSAN-8 Tablets ",
-    "tagline": "thiocolchicoside tablets manufacturers ",
-    "tagline_zh": "",
-    "description": "Sanes Pharmaceuticals – Leading manufacturer of Thiocolchicoside tablets for muscle spasm, pain management, and orthopedic care. Sanes Pharmaceuticals is a well-known, superior, and cooperative PCD pharma franchise company in India. We are renowned for producing complex medications that are used to treat a wide range of deadly and chronic illnesses.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 0,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/M3LGUABLCBQEQ7?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/eaa924da-233e-4688-ace3-55322f0369f4.jpeg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/33020cb0-76cd-4440-996b-ff30d1c44d0b.webp?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Medical",
-        "slug": "medical",
-        "description": "Smart appliances and technologies revolutioning medicine and healthcare",
-        "name_zh": ""
-      },
-      {
-        "name": "Business",
-        "slug": "business",
-        "description": "Business tools that help founders research, launch, sell, and scale—covering search, funding, email growth, scheduling, communities, AI video, product insights.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/thiosan-8-tablets-",
-    "slug": "thiosan-8-tablets",
-    "slug_url": "thiosan-8-tablets-1180663.html",
-    "category": "health"
   },
   {
     "id": "1181126",
@@ -55161,58 +54255,6 @@
     "category": "image"
   },
   {
-    "id": "1180641",
-    "name": "FryCalc",
-    "tagline": "Air fryer cooking times for 50+ foods, instantly",
-    "tagline_zh": "",
-    "description": "FryCalc gives you exact air fryer cooking times and temperatures for 50+ foods — all tested, not guessed. Pick a food, get the temp and time range instantly. Covers meat, seafood, veggies, frozen foods, and baked goods. Also includes an oven-to-air-fryer conversion tool. No sign-up, no app download, completely free. Works on any device. Built for home cooks who want consistent results every time.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/HBO4LLEPNB6CAV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/08a73d67-9e2e-4101-8045-07e2f1387ad2.vnd.microsoft.icon?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/61cf5ac0-b6e7-41e7-96a2-f31c8e52e04c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/8f8ef7fb-8be2-49ea-8846-c111d3dcd695.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/ca80ca78-08f5-4698-ba19-6bfd114387fe.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Productivity",
-        "slug": "productivity",
-        "description": "If time is most precious, this collection of lifehacks is so so precious. Be more productive and optimize your life.",
-        "name_zh": ""
-      },
-      {
-        "name": "Food & Drink",
-        "slug": "food-drink",
-        "description": "Food & Drink tools span recipe finders, AI meal ideas, cooking robots, calorie trackers, and dining recs—helping home cooks, travelers plan, cook, and discover.",
-        "name_zh": ""
-      },
-      {
-        "name": "Lifestyle",
-        "slug": "lifestyle",
-        "description": "Lifestyle tools that smooth living: plan weather and habits, journal growth, sell and shop goods, build communities, and chat with AI assistants for creators.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/frycalc",
-    "slug": "frycalc",
-    "slug_url": "frycalc-1180641.html",
-    "category": "productivity"
-  },
-  {
     "id": "1178870",
     "name": "Lattice Casa",
     "tagline": "A living map of websites, ideas, and relationships",
@@ -55327,94 +54369,6 @@
     "slug": "ai-slide-editor-by-cubeone",
     "slug_url": "ai-slide-editor-by-cubeone-1180381.html",
     "category": "productivity"
-  },
-  {
-    "id": "1180752",
-    "name": "Live Job Index",
-    "tagline": "Fast & Fresh tech jobs from top companies, daily",
-    "tagline_zh": "",
-    "description": "Find real-time openings at the world's leading tech companies. Filter instantly by location, seniority, and visa-aware hiring signals. Updated daily.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/6H5P44LDI2NATJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/9cf99c6b-6aac-4916-8f8d-4bd3480773d8.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/292476d5-111f-4004-a751-9d93777b5491.jpeg?auto=format",
-        "type": "video"
-      },
-      {
-        "url": "https://ph-files.imgix.net/3cf0a754-451a-4e84-ac04-325a638ec8bd.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/7eef9e08-05d8-41a6-96ea-50e055523d7c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/dd453e25-417e-469e-93cd-887c262362b2.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Hiring",
-        "slug": "hiring",
-        "description": "API-first products make it easy for developers to build, integrate, and scale software. Check out these categories to explore the tools and platforms teams use to ship and adopt APIs:\r\n\r\n- **[Unified APIs](https://www.producthunt.com/categories/unified-api)** – APIs that abstract multiple services behind a single interface, making integrations faster and reducing maintenance overhead.\r\n- **[Platforms](https://www.producthunt.com/categories/platforms)** – Developer platforms that expose APIs as the primary way to access infrastructure, data, or services.\r\n- **[Developer Tools](https://www.producthunt.com/categories/llm-developer-tools)** – Tools that help developers design, test, document, and maintain APIs throughout the development lifecycle.\r\n- **[AI Infrastructure](https://www.producthunt.com/categories/ai-infrastructure)** – Infrastructure products that provide APIs for model inference, embeddings, data pipelines, and AI system orchestration.\r\n- **[Authentication & Identity](https://www.producthunt.com/categories/authentication-identity)** – APIs for handling user authentication, authorization, identity management, and access control.",
-        "name_zh": ""
-      },
-      {
-        "name": "Career",
-        "slug": "career",
-        "description": "Explore career tools that power finding roles, hiring, and growth: networking, resume tailoring, screening, payroll, project tracking, and creator revenue.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/live-job-index",
-    "slug": "live-job-index",
-    "slug_url": "live-job-index-1180752.html",
-    "category": "ai-tool"
-  },
-  {
-    "id": "1180774",
-    "name": "Online BBA Program",
-    "tagline": "Explore the Online BBA program on LearningShala ",
-    "tagline_zh": "",
-    "description": "Explore the Online BBA program on LearningShala and build a strong foundation in business management, marketing, finance, and entrepreneurship. This flexible undergraduate course is ideal for students and working professionals seeking industry-relevant skills, leadership development, and career opportunities in management, startups, and corporate sectors.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 0,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/SYJ2DGXFSKABBM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b01488be-0f7d-4230-8f69-9974b2c5afcf.webp?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/a58fc54d-825e-46de-ac08-d53e01c7fb0a.webp?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "Online Learning",
-        "slug": "online-learning",
-        "description": "Online learning delivers skills via web tools: AI tutors, cohort classes, discovery engines, and knowledge hubs—helping pros and students research and create.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/online-bba-program",
-    "slug": "online-bba-program",
-    "slug_url": "online-bba-program-1180774.html",
-    "category": "education"
   },
   {
     "id": "1174516",
@@ -55887,52 +54841,6 @@
     "category": "image"
   },
   {
-    "id": "1180957",
-    "name": "murls",
-    "tagline": "Your business page. Ready in 60 seconds.",
-    "tagline_zh": "",
-    "description": "murls gives businesses a shareable page that combines contact details, WhatsApp, location, booking links, social profiles, and more in one place. Customers can save your contact directly to their phone, scan a QR code from a business card or storefront, and instantly access everything they need. Whether you're meeting someone at a networking event, a client meeting, a conference, or in your store, murls helps turn a quick introduction into a lasting connection.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/MH7FD2HSPXJHKN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/d3bf1879-2b39-4cf8-b2e7-5d4ffe25bd05.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/f11453f4-a7be-42c1-b462-43c64449709e.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d114042b-a1ba-49ce-8591-e2d133132086.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6ced42ee-e539-43a7-934d-95845b389f07.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "SaaS",
-        "slug": "saas",
-        "description": "Software is eating the world. We've gathered the culprits here.",
-        "name_zh": ""
-      },
-      {
-        "name": "Business",
-        "slug": "business",
-        "description": "Business tools that help founders research, launch, sell, and scale—covering search, funding, email growth, scheduling, communities, AI video, product insights.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/murls",
-    "slug": "murls",
-    "slug_url": "murls-1180957.html",
-    "category": "ai-tool"
-  },
-  {
     "id": "1181134",
     "name": "Cewsco",
     "tagline": "All-in-one AI assistant — chat, images, voice & market data",
@@ -56302,50 +55210,6 @@
     "ph_url": "https://www.producthunt.com/products/zetrax",
     "slug": "zetrax",
     "slug_url": "zetrax-1181021.html",
-    "category": "writing"
-  },
-  {
-    "id": "1180943",
-    "name": "ThisIsBS.wtf",
-    "tagline": "The distance between outrage and action is way too far.",
-    "tagline_zh": "",
-    "description": "Tired of the BS? ThisIsBS.wtf exists because the distance between outrage and action is way too far. You see a headline, you feel something, and then... nothing. You scroll. You forget. They win. We close that gap. We give you the shortest possible path from \"this is bullsh*t\" to \"I just told my representative exactly how I feel.\" No marching. No phone trees. No volunteer signups. Just action.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/37ARAOO5J3UCP5?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/1ce652d3-e677-4c4c-9840-9b4890cc271a.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/57ed8b19-702e-45ed-b4ac-f28be816c4ff.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Politics",
-        "slug": "politics",
-        "description": "Left wing, Right wing, Green Party, Anarchist, Tea Party... the list goes on. Get political!",
-        "name_zh": ""
-      },
-      {
-        "name": "Writing",
-        "slug": "writing",
-        "description": "Shakespeare didn't use fancy apps but we're not all Shakespeare. Here are a few things to help you write more good.",
-        "name_zh": ""
-      },
-      {
-        "name": "Community",
-        "slug": "community",
-        "description": "Community gathers tools that help people connect, create, and grow—forums, launches, newsletters, payments, AI workflows, and meetups for builders and fans.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/thisisbs.wtf",
-    "slug": "thisisbs-wtf",
-    "slug_url": "thisisbs-wtf-1180943.html",
     "category": "writing"
   },
   {
@@ -57079,66 +55943,6 @@
     "slug": "seoranktracker-uk",
     "slug_url": "seoranktracker-uk-1180301.html",
     "category": "marketing"
-  },
-  {
-    "id": "1180844",
-    "name": "BillionCore",
-    "tagline": "Score any card BIN for fraud risk in under 1ms",
-    "tagline_zh": "",
-    "description": "Score any card BIN for fraud risk and rebill value, and get an instant approve / decline / push decision — with the reasons behind it. Sub-millisecond API for payment, fraud and affiliate teams.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/5ULLUV6ZG6M6JK?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/74da7115-30d3-4939-9cf2-24d11ed8be55.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/5e6c483e-9ee8-453f-9960-08b4604c929f.jpeg?auto=format",
-        "type": "video"
-      },
-      {
-        "url": "https://ph-files.imgix.net/a612f1dc-7112-47ca-ad32-a5204fbb1e67.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/3f8fc43d-4fba-410a-82ce-d2bc1017a6c2.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/13f3160b-71b8-4eae-afee-b37e99fa82a8.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/91ec535b-2884-457f-a0c6-14f2bc9c1885.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "API",
-        "slug": "api-1",
-        "description": "API-first products make it easy for developers to build, integrate, and scale software. Check out these categories to explore the tools and platforms teams use to ship and adopt APIs:\r\n\r\n- **[Unified APIs](https://www.producthunt.com/categories/unified-api)** – APIs that abstract multiple services behind a single interface, making integrations faster and reducing maintenance overhead.\r\n- **[Platforms](https://www.producthunt.com/categories/platforms)** – Developer platforms that expose APIs as the primary way to access infrastructure, data, or services.\r\n- **[AI Infrastructure](https://www.producthunt.com/categories/ai-infrastructure)** – Infrastructure products that provide APIs for model inference, embeddings, data pipelines, and AI system orchestration.\r\n- **[Authentication & Identity](https://www.producthunt.com/categories/authentication-identity)** – APIs for handling user authentication, authorization, identity management, and access control.",
-        "name_zh": ""
-      },
-      {
-        "name": "Fintech",
-        "slug": "fintech",
-        "description": "Who's going to be the next Stripe, Coinbase, or Revolut?",
-        "name_zh": ""
-      },
-      {
-        "name": "Payments",
-        "slug": "payments",
-        "description": "Pay up! Exchange money using more than just those ancient papers and hunks of metal.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/billioncore",
-    "slug": "billioncore",
-    "slug_url": "billioncore-1180844.html",
-    "category": "coding"
   },
   {
     "id": "1180918",
@@ -57961,50 +56765,6 @@
     "category": "image"
   },
   {
-    "id": "1171870",
-    "name": "Trend Forge",
-    "tagline": "Every product needs their own brand",
-    "tagline_zh": "",
-    "description": "I will provide a highlighted detailed description shortly",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/IVPWX3YZVRRX64?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/8b8570a0-e4c6-4187-9298-7bd90c56d458.jpeg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/9f5c09bf-18c4-46eb-bb25-f58407089535.jpeg?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Productivity",
-        "slug": "productivity",
-        "description": "If time is most precious, this collection of lifehacks is so so precious. Be more productive and optimize your life.",
-        "name_zh": ""
-      },
-      {
-        "name": "Development",
-        "slug": "development",
-        "description": "Development covers tools that design, code, test, and deploy apps—UI design, components, repos/CI, backend, hosting, and AI agents—for prototypes to scale.",
-        "name_zh": ""
-      },
-      {
-        "name": "3D Modeling",
-        "slug": "3d-modeling",
-        "description": "3D modeling turns ideas into virtual objects for games, film, and AR/VR. This mix spans creation tools, AI asset generators, engines, GPUs, and collab hubs.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/trend-forge",
-    "slug": "trend-forge",
-    "slug_url": "trend-forge-1171870.html",
-    "category": "productivity"
-  },
-  {
     "id": "1181096",
     "name": "Subcult - IA transcription Tool ",
     "tagline": "Subcult - a tool to generate subtitles!",
@@ -58163,120 +56923,6 @@
     "slug": "mcp-peek",
     "slug_url": "mcp-peek-1180914.html",
     "category": "productivity"
-  },
-  {
-    "id": "1156145",
-    "name": "LightUp",
-    "tagline": "Social network for cigar afficionados",
-    "tagline_zh": "",
-    "description": "LightUp is a free cigar journal for logging your smokes, tracking your humidor, and discovering new cigars. No app to download — add it to your home screen.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/D7JHAGNW7WXE5O?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/5fc13742-476a-4534-88a4-b79a25f60010.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/68018c21-87f5-43fb-9875-8315e0a5a227.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/a7732bec-2b93-48ad-81fe-63915662417b.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Lifestyle",
-        "slug": "lifestyle",
-        "description": "Lifestyle tools that smooth living: plan weather and habits, journal growth, sell and shop goods, build communities, and chat with AI assistants for creators.",
-        "name_zh": ""
-      },
-      {
-        "name": "Social Networking",
-        "slug": "social-networking",
-        "description": "Social networking links people, creators, and teams via chat, video, microblogs, meetups, and publishing—plus CRMs, matching, and infra securing communities.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/lightup",
-    "slug": "lightup",
-    "slug_url": "lightup-1156145.html",
-    "category": "marketing"
-  },
-  {
-    "id": "1181121",
-    "name": "SUGGEST EAT Mobile",
-    "tagline": "Video-first restaurant discovery platform.",
-    "tagline_zh": "",
-    "description": "Last year, we launched our web MVP. Today, we introduce the native iOS & Android apps. Dining discovery shouldn't be static—it must be visual. SUGGEST EAT Mobile is a video-first platform that feels like TikTok, built for hospitality. Users get a swipeable video feed of local food, while restaurants get a powerful B2B growth engine to drive real reservations. We evolved from a directory into a mobile ecosystem.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/KOVXITLA2KHFQE?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/1ac6f0b6-fe19-4fa9-a62b-279b7c49e279.jpeg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/4d4769c7-014c-428d-9e04-84ebe63ff7c8.webp?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/8f05b7b2-81fd-4313-ad2a-7067ad5722d7.webp?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/0ddd8dc3-bd97-4a9a-9208-df5d9d95b78d.webp?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/8d487522-a62c-4a6d-b843-d2742bb44937.webp?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/5298cbc5-be05-4fa2-bf32-77ddb940dbba.webp?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/c7a8f9fa-7082-4d00-8b85-c890ab8ebd35.webp?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/18d6d9bf-03ad-4abf-8552-776a1224891c.webp?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d739a4d2-7600-4b36-b098-fb37e5d62e5e.webp?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Android",
-        "slug": "android",
-        "description": "One of the fastest growing platforms of all time, the little green bot lives in your pocket and does just about anything.",
-        "name_zh": ""
-      },
-      {
-        "name": "iOS",
-        "slug": "ios",
-        "description": "The beloved \"phone\" that changed the way we communicate, play games, and snap photos. 📱",
-        "name_zh": ""
-      },
-      {
-        "name": "Food & Drink",
-        "slug": "food-drink",
-        "description": "Food & Drink tools span recipe finders, AI meal ideas, cooking robots, calorie trackers, and dining recs—helping home cooks, travelers plan, cook, and discover.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/suggest-eat-mobile",
-    "slug": "suggest-eat-mobile",
-    "slug_url": "suggest-eat-mobile-1181121.html",
-    "category": "ai-tool"
   },
   {
     "id": "1180751",
@@ -58749,44 +57395,6 @@
     "category": "productivity"
   },
   {
-    "id": "1180774",
-    "name": "Online BBA Program",
-    "tagline": "Explore the Online BBA program on LearningShala ",
-    "tagline_zh": "",
-    "description": "Explore the Online BBA program on LearningShala and build a strong foundation in business management, marketing, finance, and entrepreneurship. This flexible undergraduate course is ideal for students and working professionals seeking industry-relevant skills, leadership development, and career opportunities in management, startups, and corporate sectors.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 0,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/SYJ2DGXFSKABBM?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b01488be-0f7d-4230-8f69-9974b2c5afcf.webp?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/a58fc54d-825e-46de-ac08-d53e01c7fb0a.webp?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "Online Learning",
-        "slug": "online-learning",
-        "description": "Online learning delivers skills via web tools: AI tutors, cohort classes, discovery engines, and knowledge hubs—helping pros and students research and create.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/online-bba-program",
-    "slug": "online-bba-program",
-    "slug_url": "online-bba-program-1180774.html",
-    "category": "education"
-  },
-  {
     "id": "1181091",
     "name": "SITREP",
     "tagline": "A daily world briefing that cuts through the noise.",
@@ -58887,52 +57495,6 @@
     "slug": "tokochi",
     "slug_url": "tokochi-1180901.html",
     "category": "image"
-  },
-  {
-    "id": "1180957",
-    "name": "murls",
-    "tagline": "Your business page. Ready in 60 seconds.",
-    "tagline_zh": "",
-    "description": "murls gives businesses a shareable page that combines contact details, WhatsApp, location, booking links, social profiles, and more in one place. Customers can save your contact directly to their phone, scan a QR code from a business card or storefront, and instantly access everything they need. Whether you're meeting someone at a networking event, a client meeting, a conference, or in your store, murls helps turn a quick introduction into a lasting connection.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/MH7FD2HSPXJHKN?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/d3bf1879-2b39-4cf8-b2e7-5d4ffe25bd05.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/f11453f4-a7be-42c1-b462-43c64449709e.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d114042b-a1ba-49ce-8591-e2d133132086.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6ced42ee-e539-43a7-934d-95845b389f07.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "SaaS",
-        "slug": "saas",
-        "description": "Software is eating the world. We've gathered the culprits here.",
-        "name_zh": ""
-      },
-      {
-        "name": "Business",
-        "slug": "business",
-        "description": "Business tools that help founders research, launch, sell, and scale—covering search, funding, email growth, scheduling, communities, AI video, product insights.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/murls",
-    "slug": "murls",
-    "slug_url": "murls-1180957.html",
-    "category": "ai-tool"
   },
   {
     "id": "1181249",
@@ -59483,64 +58045,6 @@
     "category": "image"
   },
   {
-    "id": "1180734",
-    "name": "School Bus Tracker",
-    "tagline": "Real-time school bus tracking for parents",
-    "tagline_zh": "",
-    "description": "School Bus Tracker helps parents know exactly where their child's school bus is in real time. Receive live location updates, arrival notifications, and estimated arrival times, giving families greater peace of mind and making school transportation more predictable",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/RDYAAJTUMSJM2F?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b1899752-d97a-4347-be87-c6cca55257f2.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/ba1c2b7e-6aa9-4921-ae7b-aa74e92f637f.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/1138be61-a6be-4a42-a6ee-3512f45cdccd.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/470a4af4-c807-4665-8850-c2c58f73556f.jpeg?auto=format",
-        "type": "video"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Android",
-        "slug": "android",
-        "description": "One of the fastest growing platforms of all time, the little green bot lives in your pocket and does just about anything.",
-        "name_zh": ""
-      },
-      {
-        "name": "Parenting",
-        "slug": "parenting",
-        "description": "Be knowledgeable and enjoy the wild ride of parenthood. If you need help, there are some great resources and apps for you and your family.",
-        "name_zh": ""
-      },
-      {
-        "name": "School",
-        "slug": "school",
-        "description": "School picks that support studying, teaching, and life: AI note-making, exam prep, college guidance, homeschool tips, focus tools, and collaborative mapping.",
-        "name_zh": ""
-      },
-      {
-        "name": "GPS",
-        "slug": "gps",
-        "description": "GPS picks that track workouts, tag photos, spoof location, and power geolocated media and maps. Plan trips, manage GPX, and discover or share nearby spots.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/school-bus-tracker",
-    "slug": "school-bus-tracker",
-    "slug_url": "school-bus-tracker-1180734.html",
-    "category": "ai-tool"
-  },
-  {
     "id": "1179595",
     "name": "AI Interactive Smart Plush Doll AI-power",
     "tagline": "AI Interactive Doll,An AI-powered talking robot for adults",
@@ -59807,48 +58311,6 @@
     "slug": "jooc",
     "slug_url": "jooc-1180869.html",
     "category": "image"
-  },
-  {
-    "id": "1179565",
-    "name": "LifeSimGrid",
-    "tagline": "Map 16 Tomodachi Life Mii personalities to MBTI types",
-    "tagline_zh": "",
-    "description": "Tomodachi Life MBTI — The 16-Personality Converter & Compatibility Calculator for Nintendo's Life Simulation Game If you've ever wondered which Myers-Briggs type your Tomodachi Life Mii really is — or which personalities make the best couples in-game — this tool is for you.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/MRUYMOFXUHHMZV?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/163b6369-0ea6-4ff9-8340-57394c523112.svg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/7d1662e4-28ac-4bd2-8c19-c8c2099b0b71.svg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/9472cfc9-5778-46c2-8b1f-ac31aa1a957c.svg?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "GitHub",
-        "slug": "github",
-        "description": "Software to help you write software.",
-        "name_zh": ""
-      },
-      {
-        "name": "Maker Tools",
-        "slug": "maker-tools",
-        "description": "Build, launch, and ship faster: plan, host, automate, sell, collect proof, record updates, get discovered. For indie devs, startups, and creators with AI.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/lifesimgrid",
-    "slug": "lifesimgrid",
-    "slug_url": "lifesimgrid-1179565.html",
-    "category": "coding"
   },
   {
     "id": "1181020",
@@ -60153,48 +58615,6 @@
     "category": "image"
   },
   {
-    "id": "1181390",
-    "name": "Dlyra",
-    "tagline": "Turn long videos into study packs",
-    "tagline_zh": "",
-    "description": "Dlyra turns long videos, lectures, and dense source material into study packs you can actually use: summaries, timelines, flashcards, assessments, and a Vault chat that stays grounded in the original content. It is built for students and self-learners who want to stop losing good learning material inside long videos.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/HKCTEI257ZF7QQ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/7e2d9901-3eec-447c-8f3a-e700301e4249.avif?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/5cb6c016-1841-4153-aa7e-62ab753eb931.avif?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/c310f8c7-c222-460c-bc6e-a957c140d88c.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "Online Learning",
-        "slug": "online-learning",
-        "description": "Online learning delivers skills via web tools: AI tutors, cohort classes, discovery engines, and knowledge hubs—helping pros and students research and create.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/dlyra",
-    "slug": "dlyra",
-    "slug_url": "dlyra-1181390.html",
-    "category": "education"
-  },
-  {
     "id": "1180635",
     "name": "LeadByte — Automate. Optimize. Outgrow.",
     "tagline": "Marketing Tool",
@@ -60253,56 +58673,6 @@
     "slug": "leadbyte-automate-optimize-outgrow",
     "slug_url": "leadbyte-automate-optimize-outgrow-1180635.html",
     "category": "marketing"
-  },
-  {
-    "id": "1180752",
-    "name": "Live Job Index",
-    "tagline": "Fast & Fresh tech jobs from top companies, daily",
-    "tagline_zh": "",
-    "description": "Find real-time openings at the world's leading tech companies. Filter instantly by location, seniority, and visa-aware hiring signals. Updated daily.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/6H5P44LDI2NATJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/9cf99c6b-6aac-4916-8f8d-4bd3480773d8.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/292476d5-111f-4004-a751-9d93777b5491.jpeg?auto=format",
-        "type": "video"
-      },
-      {
-        "url": "https://ph-files.imgix.net/3cf0a754-451a-4e84-ac04-325a638ec8bd.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/7eef9e08-05d8-41a6-96ea-50e055523d7c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/dd453e25-417e-469e-93cd-887c262362b2.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Hiring",
-        "slug": "hiring",
-        "description": "API-first products make it easy for developers to build, integrate, and scale software. Check out these categories to explore the tools and platforms teams use to ship and adopt APIs:\r\n\r\n- **[Unified APIs](https://www.producthunt.com/categories/unified-api)** – APIs that abstract multiple services behind a single interface, making integrations faster and reducing maintenance overhead.\r\n- **[Platforms](https://www.producthunt.com/categories/platforms)** – Developer platforms that expose APIs as the primary way to access infrastructure, data, or services.\r\n- **[Developer Tools](https://www.producthunt.com/categories/llm-developer-tools)** – Tools that help developers design, test, document, and maintain APIs throughout the development lifecycle.\r\n- **[AI Infrastructure](https://www.producthunt.com/categories/ai-infrastructure)** – Infrastructure products that provide APIs for model inference, embeddings, data pipelines, and AI system orchestration.\r\n- **[Authentication & Identity](https://www.producthunt.com/categories/authentication-identity)** – APIs for handling user authentication, authorization, identity management, and access control.",
-        "name_zh": ""
-      },
-      {
-        "name": "Career",
-        "slug": "career",
-        "description": "Explore career tools that power finding roles, hiring, and growth: networking, resume tailoring, screening, payroll, project tracking, and creator revenue.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/live-job-index",
-    "slug": "live-job-index",
-    "slug_url": "live-job-index-1180752.html",
-    "category": "ai-tool"
   },
   {
     "id": "1181391",
@@ -60431,48 +58801,6 @@
     "slug": "kwaku-zero-subscription-web-builder",
     "slug_url": "kwaku-zero-subscription-web-builder-1181209.html",
     "category": "image"
-  },
-  {
-    "id": "1156145",
-    "name": "LightUp",
-    "tagline": "Social network for cigar afficionados",
-    "tagline_zh": "",
-    "description": "LightUp is a free cigar journal for logging your smokes, tracking your humidor, and discovering new cigars. No app to download — add it to your home screen.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/D7JHAGNW7WXE5O?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/5fc13742-476a-4534-88a4-b79a25f60010.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/68018c21-87f5-43fb-9875-8315e0a5a227.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/a7732bec-2b93-48ad-81fe-63915662417b.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Lifestyle",
-        "slug": "lifestyle",
-        "description": "Lifestyle tools that smooth living: plan weather and habits, journal growth, sell and shop goods, build communities, and chat with AI assistants for creators.",
-        "name_zh": ""
-      },
-      {
-        "name": "Social Networking",
-        "slug": "social-networking",
-        "description": "Social networking links people, creators, and teams via chat, video, microblogs, meetups, and publishing—plus CRMs, matching, and infra securing communities.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/lightup",
-    "slug": "lightup",
-    "slug_url": "lightup-1156145.html",
-    "category": "marketing"
   },
   {
     "id": "1181251",
@@ -60663,38 +58991,6 @@
     "slug": "calbudget",
     "slug_url": "calbudget-1180853.html",
     "category": "image"
-  },
-  {
-    "id": "1180619",
-    "name": "Ponni Raw rice Wholesale",
-    "tagline": "#PonniRawRiceWholesale  #LakshmiWholesale",
-    "tagline_zh": "",
-    "description": "Premium quality Ponni Raw Rice available in bulk from Lakshmi Wholesale. A trusted staple for Indian and Asian kitchens, known for its soft texture, natural taste, and versatility in daily cooking. Ideal for retailers, supermarkets, restaurants, and catering businesses looking for reliable Indian Grocery Wholesale Online and Bulk Grocery Products Online supply.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/DX4FS2USLOMCMT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b085b919-919c-46da-93f5-e24007316a77.jpeg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/70b85630-339c-43bf-a45c-9553aa468dfb.jpeg?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Food & Drink",
-        "slug": "food-drink",
-        "description": "Food & Drink tools span recipe finders, AI meal ideas, cooking robots, calorie trackers, and dining recs—helping home cooks, travelers plan, cook, and discover.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/ponni-raw-rice-wholesale",
-    "slug": "ponni-raw-rice-wholesale",
-    "slug_url": "ponni-raw-rice-wholesale-1180619.html",
-    "category": "ai-tool"
   },
   {
     "id": "1181147",
@@ -60987,50 +59283,6 @@
     "category": "ai-tool"
   },
   {
-    "id": "1180647",
-    "name": "Addressbox.com",
-    "tagline": "Commercial Shops for Sale in Thaltej, Ahmedabad | Addressbox",
-    "tagline_zh": "",
-    "description": "Looking to buy a commercial shop in Thaltej, Ahmedabad? Explore verified properties with updated prices and genuine photos. Find the right space for your business today.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 0,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/C2WSHVOH5LXIRT?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/d62d8f83-3494-452d-8730-1a359b8c01dd.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/091916f5-efef-44e1-90f9-4c5586bc40cd.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Branding",
-        "slug": "branding",
-        "description": "Know who you are and make sure everyone else does to.",
-        "name_zh": ""
-      },
-      {
-        "name": "Advertising",
-        "slug": "advertising",
-        "description": "We get to use so many free services thanks to advertising. Get the most out of your ad budget and earn revenue with some of these tools.",
-        "name_zh": ""
-      },
-      {
-        "name": "Business",
-        "slug": "business",
-        "description": "Business tools that help founders research, launch, sell, and scale—covering search, funding, email growth, scheduling, communities, AI video, product insights.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/addressbox.com",
-    "slug": "addressbox-com",
-    "slug_url": "addressbox-com-1180647.html",
-    "category": "marketing"
-  },
-  {
     "id": "1180849",
     "name": "SentEdge",
     "tagline": "Track the market narrative behind crypto prices",
@@ -61133,54 +59385,6 @@
     "slug": "trustgate-ai",
     "slug_url": "trustgate-ai-1180383.html",
     "category": "image"
-  },
-  {
-    "id": "1180621",
-    "name": "Sheetize.App",
-    "tagline": "Brings the power of spreadsheets straight to your browser",
-    "tagline_zh": "",
-    "description": "Sheetize.app brings the power of spreadsheets straight to your browser, eliminating the need for downloads, installations, or any coding knowledge. Whether you work with Microsoft Excel (XLSX), Apple Numbers, or other spreadsheet formats, you can open, edit, and save your files online in seconds. The platform is built for non‑technical users who want fast, reliable, and secure document automation without the overhead of traditional desktop apps.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/VPAK3MKIXSI2UD?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/33384b8f-df0b-40b4-8643-a5d7d93468ce.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/454ae260-292f-4070-8825-89af48747e2c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/b3812665-b717-4478-9603-9a56ba0b1036.jpeg?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Productivity",
-        "slug": "productivity",
-        "description": "If time is most precious, this collection of lifehacks is so so precious. Be more productive and optimize your life.",
-        "name_zh": ""
-      },
-      {
-        "name": "Spreadsheets",
-        "slug": "spreadsheets",
-        "description": "Giant tables of information for your organizational pleasure. Put numbers in them. Put words in them. Put GIFs in them! It's up to you.",
-        "name_zh": ""
-      },
-      {
-        "name": "Marketing automation",
-        "slug": "marketing-automation",
-        "description": "Marketing automation tools streamline lead capture, content and email campaigns, and app workflows for growth teams using AI, integrations, and no-code builders.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/sheetize.app",
-    "slug": "sheetize-app",
-    "slug_url": "sheetize-app-1180621.html",
-    "category": "productivity"
   },
   {
     "id": "1180901",
@@ -61291,64 +59495,6 @@
     "category": "productivity"
   },
   {
-    "id": "1180734",
-    "name": "School Bus Tracker",
-    "tagline": "Real-time school bus tracking for parents",
-    "tagline_zh": "",
-    "description": "School Bus Tracker helps parents know exactly where their child's school bus is in real time. Receive live location updates, arrival notifications, and estimated arrival times, giving families greater peace of mind and making school transportation more predictable",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/RDYAAJTUMSJM2F?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b1899752-d97a-4347-be87-c6cca55257f2.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/ba1c2b7e-6aa9-4921-ae7b-aa74e92f637f.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/1138be61-a6be-4a42-a6ee-3512f45cdccd.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/470a4af4-c807-4665-8850-c2c58f73556f.jpeg?auto=format",
-        "type": "video"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Android",
-        "slug": "android",
-        "description": "One of the fastest growing platforms of all time, the little green bot lives in your pocket and does just about anything.",
-        "name_zh": ""
-      },
-      {
-        "name": "Parenting",
-        "slug": "parenting",
-        "description": "Be knowledgeable and enjoy the wild ride of parenthood. If you need help, there are some great resources and apps for you and your family.",
-        "name_zh": ""
-      },
-      {
-        "name": "School",
-        "slug": "school",
-        "description": "School picks that support studying, teaching, and life: AI note-making, exam prep, college guidance, homeschool tips, focus tools, and collaborative mapping.",
-        "name_zh": ""
-      },
-      {
-        "name": "GPS",
-        "slug": "gps",
-        "description": "GPS picks that track workouts, tag photos, spoof location, and power geolocated media and maps. Plan trips, manage GPX, and discover or share nearby spots.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/school-bus-tracker",
-    "slug": "school-bus-tracker",
-    "slug_url": "school-bus-tracker-1180734.html",
-    "category": "ai-tool"
-  },
-  {
     "id": "1180730",
     "name": "TradersQuant",
     "tagline": "AI-powered investing, research, and market insights",
@@ -61391,62 +59537,6 @@
     "slug": "tradersquant",
     "slug_url": "tradersquant-1180730.html",
     "category": "finance"
-  },
-  {
-    "id": "1180922",
-    "name": "Moonlit",
-    "tagline": "Read classical Chinese poetry with sound, rhythm and meaning",
-    "tagline_zh": "",
-    "description": "Moonlit is an immersive reading experience for classical Chinese poetry. Each poem is designed to be read, heard, and understood — combining structured reading flow, audio narration, and multilingual interpretation (Chinese, English, Japanese). Instead of treating poetry as static text, Moonlit turns it into a layered experience of rhythm, sound, and meaning.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/A66IHW6AEOU4GJ?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/de2a8b75-91db-473f-96d0-7f5a8980542e.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/20bebb06-5149-43ff-801e-12f246e5fd08.jpeg?auto=format",
-        "type": "video"
-      },
-      {
-        "url": "https://ph-files.imgix.net/79b9c343-b8d8-47b4-8b5e-857768026ff9.jpeg?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/d0c6f514-0874-4655-b295-06bc98bcdfc7.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/a35c01cb-9672-4524-852f-013ee33b6320.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Productivity",
-        "slug": "productivity",
-        "description": "If time is most precious, this collection of lifehacks is so so precious. Be more productive and optimize your life.",
-        "name_zh": ""
-      },
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "Online Learning",
-        "slug": "online-learning",
-        "description": "Online learning delivers skills via web tools: AI tutors, cohort classes, discovery engines, and knowledge hubs—helping pros and students research and create.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/moonlit",
-    "slug": "moonlit",
-    "slug_url": "moonlit-1180922.html",
-    "category": "productivity"
   },
   {
     "id": "1176131",
@@ -61907,74 +59997,6 @@
     "category": "coding"
   },
   {
-    "id": "1173789",
-    "name": "JuniorShield",
-    "tagline": "Teach your kid to think before they tap.",
-    "tagline_zh": "",
-    "description": "JuniorShield is a free 2-minute web game that helps kids 5–9 build instinct for tricky online moments — fake prizes, strangers, oversharing. They learn by making real choices, not by being lectured. No sign-up, and no data about your child is ever collected.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/7N5ORLXMTSSQOW?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/87507b26-2de8-4f00-b1e1-21bf3a47e63d.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/e73c1b8d-b581-4ec1-9b09-2fabf8d521e5.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/21e7b177-4801-4886-ac33-39914e2d77ff.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/a2297634-39bf-466e-994c-95d90cee4f94.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/b6eedcdb-cb6e-4059-8d41-ef04784a159c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/705b99e6-57a2-49e5-9a78-6eff3d95db09.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/0273af12-82f3-4f8b-9521-b0a866f3cd37.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/e25d01e6-12d1-469f-bae3-8b0b878b44fa.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "Kids & Parenting",
-        "slug": "kids-parenting",
-        "description": "Kids & Parenting tools that help families with sleep, reading, safety, screen time, routines, journaling, and make-believe letters—practical picks for parents.",
-        "name_zh": ""
-      },
-      {
-        "name": "Security",
-        "slug": "security",
-        "description": "Security covers tools that protect logins, data, and payments: identity, password managers, compliance automation, web defense, and AI with enterprise controls.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/juniorshield",
-    "slug": "juniorshield",
-    "slug_url": "juniorshield-1173789.html",
-    "category": "education"
-  },
-  {
     "id": "1180497",
     "name": "Seedance 2.5 AI Video",
     "tagline": "make 4K video from a single prompt",
@@ -62019,70 +60041,6 @@
     "slug": "seedance-2-5-ai-video",
     "slug_url": "seedance-2-5-ai-video-1180497.html",
     "category": "image"
-  },
-  {
-    "id": "1181145",
-    "name": "Loveboard",
-    "tagline": "A cozy, private digital universe for long distance couples.",
-    "tagline_zh": "",
-    "description": "Loveboard is a minimalist, zero latency PWA designed specifically for long-distance couples to stay synchronized. Listen to music together in real-time, draw on a shared canvas, play daily love games, and nurture an interactive relationship pet that evolves based on your shared memories. Seamlessly built to bridge the gap between hearts, no matter the distance.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/DWPMZWI2UP7EZC?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/f192a524-66ae-4b48-bb65-6038dff15247.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/932d9e5f-f148-4764-a52d-a9dc63cabf43.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/b18420f9-16c3-4a8e-aa0e-8b8fbd6b9af3.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/7d2fc4a9-b0b0-42c8-9ca8-0669d79a8ab3.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/8c25d94d-272c-471d-b1d0-90ed4fee0ebf.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/7f10b74e-3bab-4952-bba9-f43f765a1b8c.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/76b0e74b-4905-4a89-b992-ff7967930c10.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Web App",
-        "slug": "web-app",
-        "description": "You know that place with all those cat pics and GIFs? It also has some other neat stuff.",
-        "name_zh": ""
-      },
-      {
-        "name": "Music",
-        "slug": "music",
-        "description": "Skip or repeat? Is your new favorite tunage here? ",
-        "name_zh": ""
-      },
-      {
-        "name": "Lifestyle",
-        "slug": "lifestyle",
-        "description": "Lifestyle tools that smooth living: plan weather and habits, journal growth, sell and shop goods, build communities, and chat with AI assistants for creators.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/loveboard",
-    "slug": "loveboard",
-    "slug_url": "loveboard-1181145.html",
-    "category": "ai-tool"
   },
   {
     "id": "1181083",
@@ -62261,62 +60219,6 @@
     "category": "coding"
   },
   {
-    "id": "1181293",
-    "name": "Margo : Dating through emails",
-    "tagline": "A matchmaker who lives in your inbox",
-    "tagline_zh": "",
-    "description": "Margo is a personal matchmaker who works inside your inbox. You write to her, she gets to know you, and when there's someone worth meeting, she makes a private introduction, you correspond through an anonymous relay until you both choose to share details.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/6JMNPTT3S6GRBP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/b3e09df0-6b33-440d-ab97-38938d413b44.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/195b432f-c7f6-4dea-9f92-c9c92a01fa2e.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/1d47d897-d243-48fd-8fbe-50b0b53506a6.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/20630813-9465-4d80-890f-c5c8bab8bc11.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/55f4820c-07b4-47f7-8422-3f904bcb9b9c.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Dating",
-        "slug": "dating",
-        "description": "Find your soulmate (or maybe just a new friend) in a few swipes, taps, and emojis exchanges. 😽",
-        "name_zh": ""
-      },
-      {
-        "name": "Couples",
-        "slug": "couples",
-        "description": "Communicate and share your love in private with your boo. 😘",
-        "name_zh": ""
-      },
-      {
-        "name": "Community",
-        "slug": "community",
-        "description": "Community gathers tools that help people connect, create, and grow—forums, launches, newsletters, payments, AI workflows, and meetups for builders and fans.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/margo-:-dating-through-emails",
-    "slug": "margo-dating-through-emails",
-    "slug_url": "margo-dating-through-emails-1181293.html",
-    "category": "ai-tool"
-  },
-  {
     "id": "1181111",
     "name": "FindHaus",
     "tagline": "The AI-powered fast track to your next German Flatshare.",
@@ -62451,50 +60353,6 @@
     "slug": "witzdom",
     "slug_url": "witzdom-1180815.html",
     "category": "education"
-  },
-  {
-    "id": "1164659",
-    "name": "Welcome to the Jungle Jobs Scraper",
-    "tagline": "Export Welcome to the Jungle job listings",
-    "tagline_zh": "",
-    "description": "Scrape public Welcome to the Jungle job listings from keywords, WTTJ search URLs, or filters. Export clean job rows with titles, companies, locations, salaries, remote policy, contract type, URLs, and optional job details.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/HB7WFI4FHSBUR6?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/50957694-8d48-42a3-b11b-5959637b380d.png?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/a2ec176a-2f38-411f-aaa9-e7ff20168fde.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Hiring",
-        "slug": "hiring",
-        "description": "API-first products make it easy for developers to build, integrate, and scale software. Check out these categories to explore the tools and platforms teams use to ship and adopt APIs:\r\n\r\n- **[Unified APIs](https://www.producthunt.com/categories/unified-api)** – APIs that abstract multiple services behind a single interface, making integrations faster and reducing maintenance overhead.\r\n- **[Platforms](https://www.producthunt.com/categories/platforms)** – Developer platforms that expose APIs as the primary way to access infrastructure, data, or services.\r\n- **[Developer Tools](https://www.producthunt.com/categories/llm-developer-tools)** – Tools that help developers design, test, document, and maintain APIs throughout the development lifecycle.\r\n- **[AI Infrastructure](https://www.producthunt.com/categories/ai-infrastructure)** – Infrastructure products that provide APIs for model inference, embeddings, data pipelines, and AI system orchestration.\r\n- **[Authentication & Identity](https://www.producthunt.com/categories/authentication-identity)** – APIs for handling user authentication, authorization, identity management, and access control.",
-        "name_zh": ""
-      },
-      {
-        "name": "API",
-        "slug": "api-1",
-        "description": "API-first products make it easy for developers to build, integrate, and scale software. Check out these categories to explore the tools and platforms teams use to ship and adopt APIs:\r\n\r\n- **[Unified APIs](https://www.producthunt.com/categories/unified-api)** – APIs that abstract multiple services behind a single interface, making integrations faster and reducing maintenance overhead.\r\n- **[Platforms](https://www.producthunt.com/categories/platforms)** – Developer platforms that expose APIs as the primary way to access infrastructure, data, or services.\r\n- **[AI Infrastructure](https://www.producthunt.com/categories/ai-infrastructure)** – Infrastructure products that provide APIs for model inference, embeddings, data pipelines, and AI system orchestration.\r\n- **[Authentication & Identity](https://www.producthunt.com/categories/authentication-identity)** – APIs for handling user authentication, authorization, identity management, and access control.",
-        "name_zh": ""
-      },
-      {
-        "name": "SaaS",
-        "slug": "saas",
-        "description": "Software is eating the world. We've gathered the culprits here.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/welcome-to-the-jungle-jobs-scraper",
-    "slug": "welcome-to-the-jungle-jobs-scraper",
-    "slug_url": "welcome-to-the-jungle-jobs-scraper-1164659.html",
-    "category": "coding"
   },
   {
     "id": "1180781",
@@ -62655,62 +60513,6 @@
     "slug": "ai-crawler-visibility",
     "slug_url": "ai-crawler-visibility-1181395.html",
     "category": "coding"
-  },
-  {
-    "id": "1179535",
-    "name": "Cozie",
-    "tagline": "Study Together ",
-    "tagline_zh": "",
-    "description": "Silent, friend-only co-study rooms. Share a 6-letter code, study together. No accounts, no mics, no strangers.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 1,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/AE6RFDWMX2NXVP?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/e55b0fd4-18f5-4639-aa7c-9e5778e73628.jpeg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/5a789cb0-ed94-4320-8e10-ace12f91abb5.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/348928a5-a8b3-432e-9e10-255b84cdf6ef.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6c5a3dc6-b992-4d28-bace-31c1ff7e6467.png?auto=format",
-        "type": "image"
-      },
-      {
-        "url": "https://ph-files.imgix.net/6182c009-ba5d-4966-a60e-50754a613810.gif?auto=format",
-        "type": "video"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Messaging",
-        "slug": "messaging",
-        "description": "Plain text can be so boring. Find a new way to spice up your communication.",
-        "name_zh": ""
-      },
-      {
-        "name": "Education",
-        "slug": "education",
-        "description": "Learn, do, teach. Always be learning!",
-        "name_zh": ""
-      },
-      {
-        "name": "School",
-        "slug": "school",
-        "description": "School picks that support studying, teaching, and life: AI note-making, exam prep, college guidance, homeschool tips, focus tools, and collaborative mapping.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/cozie",
-    "slug": "cozie",
-    "slug_url": "cozie-1179535.html",
-    "category": "education"
   },
   {
     "id": "1181268",
@@ -62999,50 +60801,6 @@
     "slug": "seoranktracker-uk",
     "slug_url": "seoranktracker-uk-1180301.html",
     "category": "marketing"
-  },
-  {
-    "id": "1180858",
-    "name": "Saumya Studio",
-    "tagline": "Landing pages & MVPs, designed and shipped.",
-    "tagline_zh": "",
-    "description": "I design and build launch-ready landing pages and MVPs for founders. Fixed scope, fast turnaround, no agency overhead.",
-    "description_zh": "",
-    "createdAt": "2026-06-26T07:01:00Z",
-    "votesCount": 0,
-    "commentsCount": 0,
-    "reviewsRating": 0.0,
-    "website": "https://www.producthunt.com/r/PR4NVAXKNUTE4G?utm_campaign=producthunt-api&utm_medium=api-v2&utm_source=Application%3A+AI+Next+Directory+%28ID%3A+288054%29",
-    "thumbnail": "https://ph-files.imgix.net/2e0b643a-3f72-4437-85c2-35d570b9a521.svg?auto=format",
-    "media": [
-      {
-        "url": "https://ph-files.imgix.net/a73d236d-7b33-4628-8a3e-324211fcb1ab.png?auto=format",
-        "type": "image"
-      }
-    ],
-    "topics": [
-      {
-        "name": "Web App",
-        "slug": "web-app",
-        "description": "You know that place with all those cat pics and GIFs? It also has some other neat stuff.",
-        "name_zh": ""
-      },
-      {
-        "name": "Development",
-        "slug": "development",
-        "description": "Development covers tools that design, code, test, and deploy apps—UI design, components, repos/CI, backend, hosting, and AI agents—for prototypes to scale.",
-        "name_zh": ""
-      },
-      {
-        "name": "Design",
-        "slug": "design",
-        "description": "Design here spans building, prototyping, presenting, and selling digital experiences—UI/UX, graphics, apps, newsletters, and compliant billing—for creators and teams.",
-        "name_zh": ""
-      }
-    ],
-    "ph_url": "https://www.producthunt.com/products/saumya-studio",
-    "slug": "saumya-studio",
-    "slug_url": "saumya-studio-1180858.html",
-    "category": "image"
   },
   {
     "id": "1180661",
