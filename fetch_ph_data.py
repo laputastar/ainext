@@ -103,18 +103,10 @@ def is_ai_tool_by_topics(topics: List[Dict]) -> bool:
     """
     第一步：按话题标签筛选
     如果产品的话题标签匹配 AI_TOPIC_SLUGS → 直接判定为 AI 工具
-    同时检查话题描述是否包含 AI 关键词
     """
-    import re
     for topic in topics:
         if topic.get("slug", "").lower() in AI_TOPIC_SLUGS:
             return True
-        # 检查话题描述
-        desc = topic.get("description", "")
-        if desc:
-            for keyword in AI_KEYWORDS:
-                if re.search(keyword, desc.lower()):
-                    return True
     return False
 
 
