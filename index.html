@@ -81,8 +81,9 @@
 /* ── Toolbar ── */
 .toolbar{background:var(--gray-50);border-radius:12px;padding:10px 20px;margin-bottom:24px}
 .toolbar-inner{display:flex;align-items:center;gap:20px;flex-wrap:nowrap}
-.cat-row{display:flex;gap:4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;margin-right:auto}
-.cat-row::-webkit-scrollbar{display:none}
+.cat-scroll{overflow-x:auto;overflow-y:hidden;overscroll-behavior-x:contain;touch-action:pan-x;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;flex:1;min-width:0}
+.cat-scroll::-webkit-scrollbar{display:none}
+.cat-row{display:flex;gap:4px;flex-wrap:nowrap}
 .cat-link{padding:6px 14px;border-radius:8px;font-size:13px;font-weight:500;color:var(--gray-500);text-decoration:none;transition:all .2s;white-space:nowrap;flex-shrink:0}
 .cat-link:hover{color:var(--gray-900);background:var(--gray-200)}
 .cat-link.active{background:#fff;color:var(--gray-900);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.06)}
@@ -92,8 +93,8 @@
 .tab.active{color:var(--gray-900);background:#fff;font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.06)}
 .tool-count{font-size:13px;color:var(--gray-400);font-weight:500;white-space:nowrap;flex-shrink:0}
 .toolbar-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
-@media(max-width:768px){.toolbar-inner{flex-wrap:wrap;gap:12px}.toolbar-right{width:100%;justify-content:flex-end}}
-@media(max-width:640px){.toolbar-inner{flex-direction:column;align-items:stretch}.toolbar-right{width:100%;justify-content:space-between}.tool-count{text-align:center}}
+@media(max-width:768px){.toolbar-inner{flex-wrap:wrap;gap:12px}.cat-scroll{width:100%}.toolbar-right{width:100%;justify-content:flex-end}.cat-row{-webkit-overflow-scrolling:touch}}
+@media(max-width:640px){.toolbar-inner{flex-direction:column;align-items:stretch}.cat-scroll{width:100%}.toolbar-right{width:100%;justify-content:space-between}.tool-count{text-align:center}}
 
 /* ── Card Grid ── */
 .tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-5)}
@@ -172,7 +173,7 @@
 <!-- Toolbar: categories + sort -->
 <div class="container toolbar">
   <div class="toolbar-inner">
-    <div class="cat-row" id="catRow"></div>
+    <div class="cat-scroll"><div class="cat-row" id="catRow"></div></div>
     <div class="toolbar-right">
       <div class="tabs" id="tabs">
         <button class="tab active" data-tab="latest">✨ 最新</button>
