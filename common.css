@@ -47,7 +47,7 @@ input{font-family:inherit}
 
 /* ── Ad Slots ── */
 .ad-slot{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:center;width:100%}
-.ad-slot-index-top{padding-bottom:22px}
+.ad-slot-index-top{padding-bottom:12px}
 .ad-slot-index-mid{padding-bottom:24px}
 .ad-slot-detail-top{margin:24px 0 32px}
 .ad-slot-detail-bottom{margin-bottom:32px}
