@@ -41,7 +41,8 @@ export async function onRequest(context) {
 
 function renderCategoryPage(cat, tools, origin) {
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  const title = `AI ${cat.name} — AINext`;
+  const name = cat.name.replace(/ AI$/, '');
+  const title = `AI ${name}工具 — AINext`;
   const desc = cat.description;
   const canonical = `https://www.ainext.com/category/${cat.id}.html`;
 
@@ -110,10 +111,10 @@ function renderCategoryPage(cat, tools, origin) {
 </style>
 </head>
 <body>
-<script>document.write(headerHTML('','','搜索${esc(cat.name)}...'))</script>
-<div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>${esc(cat.name)}</span></div>
+<script>document.write(headerHTML('','','搜索${esc(name)}工具...'))</script>
+<div class="breadcrumb"><a href="index.html">首页</a><span>/</span><span>${esc(name)}</span></div>
 <div class="cat-header">
-  <h1>AI ${esc(cat.name)}</h1>
+  <h1>AI ${esc(name)}工具</h1>
   <p>${esc(desc)}</p>
   <div class="cat-count">共 ${tools.length} 款工具</div>
 </div>
