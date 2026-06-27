@@ -381,6 +381,8 @@ def post_process():
     print("🗺️ 生成 sitemap...")
     urls = ['https://www.ainext.com/index.html', 'https://www.ainext.com/about.html', 'https://www.ainext.com/privacy.html', 'https://www.ainext.com/terms.html']
     for t in tools: urls.append(f"https://www.ainext.com/tools/{t['slug']}-{t['id']}.html")
+    # Category pages
+    for c in categories: urls.append(f"https://www.ainext.com/category/{c['id']}.html")
     xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     for u in urls: xml += f'  <url><loc>{u}</loc></url>\n'
     xml += '</urlset>'

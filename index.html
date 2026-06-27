@@ -49,13 +49,7 @@
 .hero-stat{text-align:center}.hero-stat-num{font-size:28px;font-weight:800;color:var(--gray-900)}.hero-stat-label{font-size:13px;color:var(--gray-500);margin-top:4px}
 
 /* ── Category Strip (compact pills) ── */
-.cat-strip{padding:0 0 24px}
-.cat-strip-inner{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}
-.cat-pills{display:flex;gap:8px;flex-wrap:wrap}
-.cat-pill{display:inline-flex;align-items:center;gap:6px;padding:7px 16px;border-radius:8px;background:var(--gray-100);font-size:14px;font-weight:500;color:var(--gray-700);transition:all .15s;cursor:pointer;white-space:nowrap}
-.cat-pill:hover{background:var(--color-primary-light);color:var(--color-primary)}
-.cat-pill.active{background:var(--color-primary);color:#fff}
-.cat-pill-icon{font-size:15px;line-height:1}
+/* removed — categories now in toolbar */
 
 /* ── Featured Section ── */
 .section-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
@@ -85,17 +79,21 @@
 .ad-label{font-size:11px;font-weight:500;color:var(--gray-400);letter-spacing:.04em;text-transform:uppercase}
 
 /* ── Toolbar ── */
-.toolbar{padding:var(--space-6) 0 var(--space-8)}
-.toolbar-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--space-4)}
-.tabs{display:flex;gap:4px;background:var(--gray-100);padding:4px;border-radius:12px}
-.tab{padding:8px 20px;border-radius:10px;font-size:14px;font-weight:500;color:var(--gray-500);transition:all .15s;white-space:nowrap}
-.tab:hover{color:var(--gray-700)}
-.tab.active{color:var(--color-primary);background:#fff;font-weight:600;box-shadow:var(--shadow-xs)}
-.tool-count{font-size:14px;color:var(--gray-500);font-weight:500}
-
-.cat-tag{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:20px;background:var(--color-primary-light);color:var(--color-primary);font-size:13px;font-weight:600}
-.cat-tag span{cursor:pointer;font-size:15px;line-height:1}
-.cat-tag span:hover{color:var(--color-primary-dark)}
+.toolbar{background:var(--gray-50);border-radius:12px;padding:10px 20px;margin-bottom:24px}
+.toolbar-inner{display:flex;align-items:center;gap:20px;flex-wrap:nowrap}
+.cat-row{display:flex;gap:4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;margin-right:auto}
+.cat-row::-webkit-scrollbar{display:none}
+.cat-link{padding:6px 14px;border-radius:8px;font-size:13px;font-weight:500;color:var(--gray-500);text-decoration:none;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.cat-link:hover{color:var(--gray-900);background:var(--gray-200)}
+.cat-link.active{background:#fff;color:var(--gray-900);font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.tabs{display:flex;gap:4px;flex-shrink:0}
+.tab{padding:6px 14px;border-radius:8px;font-size:13px;font-weight:500;color:var(--gray-500);transition:all .15s;white-space:nowrap;background:none;border:none;cursor:pointer;font-family:inherit}
+.tab:hover{color:var(--gray-900);background:var(--gray-200)}
+.tab.active{color:var(--gray-900);background:#fff;font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.tool-count{font-size:13px;color:var(--gray-400);font-weight:500;white-space:nowrap;flex-shrink:0}
+.toolbar-right{display:flex;align-items:center;gap:12px;flex-shrink:0}
+@media(max-width:768px){.toolbar-inner{flex-wrap:wrap;gap:12px}.toolbar-right{width:100%;justify-content:flex-end}.cat-row{flex-wrap:wrap;overflow-x:visible}}
+@media(max-width:640px){.toolbar-inner{flex-direction:column;align-items:stretch}.toolbar-right{width:100%;justify-content:space-between}.tool-count{text-align:center}}
 
 /* ── Card Grid ── */
 .tool-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--space-5)}
@@ -126,7 +124,7 @@
 /* ── Responsive ── */
 @media(max-width:1024px){.tool-grid{grid-template-columns:repeat(3,1fr)}.feat-grid{grid-template-columns:repeat(3,1fr)}.search-input{width:200px}.hero h1{font-size:40px}}
 @media(max-width:768px){.tool-grid{grid-template-columns:repeat(2,1fr)}.feat-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:34px}.hero p{white-space:normal}.hero{padding:40px 0 32px}.hero-stats{gap:20px}.hero-stat-num{font-size:22px}.search-input{width:160px}}
-@media(max-width:640px){.tool-grid{grid-template-columns:1fr}.feat-grid{grid-template-columns:1fr}.hero h1{font-size:26px}.hero p{font-size:15px;white-space:normal}.hero{padding:32px 0 24px}.hero-stats{flex-wrap:wrap;gap:16px}.hero-stat-num{font-size:20px}.search-input{width:140px}.tabs{width:100%;justify-content:center}.tab{padding:8px 14px;font-size:13px}.toolbar-inner{flex-direction:column;align-items:stretch}.tool-count{text-align:center}.tool-card{padding:16px;gap:10px}.cat-pill{padding:5px 12px;font-size:13px}}
+@media(max-width:640px){.tool-grid{grid-template-columns:1fr}.feat-grid{grid-template-columns:1fr}.hero h1{font-size:26px}.hero p{font-size:15px;white-space:normal}.hero{padding:32px 0 24px}.hero-stats{flex-wrap:wrap;gap:16px}.hero-stat-num{font-size:20px}.search-input{width:140px}.tab{padding:8px 14px;font-size:13px}.tool-card{padding:16px;gap:10px}}
 </style>
 <script src="components.js"></script>
 <script src="ga.js"></script>
@@ -160,15 +158,6 @@
   </div>
 </section>
 
-<!-- Categories (compact pills) -->
-<div class="cat-strip">
-  <div class="container">
-    <div class="cat-strip-inner">
-      <div class="cat-pills" id="catPills"></div>
-    </div>
-  </div>
-</div>
-
 <!-- Featured -->
 <section class="feat-section">
   <div class="container">
@@ -180,16 +169,16 @@
 <!-- Ad slot 1 -->
 <div class="ad-slot ad-slot-index-top"><div class="ad-placeholder">广告位招租 (响应式)</div></div>
 
-<!-- Toolbar -->
+<!-- Toolbar: categories + sort -->
 <div class="container toolbar">
   <div class="toolbar-inner">
-    <div class="tabs" id="tabs">
-      <button class="tab active" data-tab="latest">✨ 最新上线</button>
-      <button class="tab" data-tab="weekly">🔥 上周热门</button>
-      <button class="tab" data-tab="monthly">🏆 本月热门</button>
-    </div>
-    <div style="display:flex;align-items:center;gap:12px">
-      <span class="cat-tag" id="catTag" style="display:none"><span id="catTagName"></span><span onclick="clearCat()">×</span></span>
+    <div class="cat-row" id="catRow"></div>
+    <div class="toolbar-right">
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-tab="latest">✨ 最新</button>
+        <button class="tab" data-tab="weekly">🔥 本周</button>
+        <button class="tab" data-tab="monthly">🏆 本月</button>
+      </div>
       <span class="tool-count" id="toolCount">共 — 个工具</span>
     </div>
   </div>
@@ -203,7 +192,7 @@
 <script>document.write(footerHTML())</script>
 
 <script>
-let allTools=[],allCats=[],curCat='',curTab='latest',curSearch='';
+let allTools=[],allCats=[],curTab='latest',curSearch='';
 let pageSize=24,currentPage=0,filteredList=[],nextAdAt=0;
 
 async function load(){
@@ -223,15 +212,11 @@ function init(){
 }
 
 function renderCats(){
-  document.getElementById('catPills').innerHTML=`<span class="cat-pill${!curCat?' active':''}" onclick="clearCat()">📋 全部</span>`+allCats.map(c=>`<span class="cat-pill${curCat===c.id?' active':''}" onclick="filterCat('${c.id}')"><span class="cat-pill-icon">${c.icon}</span>${c.name}</span>`).join('');
+  document.getElementById('catRow').innerHTML='<a href="index.html" class="cat-link active">全部</a>'+allCats.map(function(c){return '<a href="category/'+c.id+'.html" class="cat-link">'+c.name.replace(/ AI$/,'')+'</a>';}).join('');
 }
 
-function filterCat(id){curCat=curCat===id?'':id;renderCats();renderFeat();updateTag();renderGrid()}
-function clearCat(){curCat='';renderCats();renderFeat();updateTag();renderGrid()}
-function updateTag(){const t=document.getElementById('catTag');if(curCat){t.style.display='inline-flex';const c=allCats.find(x=>x.id===curCat);document.getElementById('catTagName').textContent=(c?c.icon+' '+c.name:'');}else t.style.display='none'}
-
 function renderFeat(){
-  let pool=[...allTools];if(curCat)pool=pool.filter(t=>t.category===curCat);
+  let pool=[...allTools];
   const d7=new Date();d7.setDate(d7.getDate()-7);
   pool=pool.filter(t=>new Date(t.createdAt)>=d7);
   document.getElementById('featGrid').innerHTML=pool.sort((a,b)=>b.votesCount-a.votesCount).slice(0,8).map((t,i)=>`<div class="feat-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="feat-rank">#${i+1}</div><div class="feat-header"><img src="${t.thumbnail}" alt="${t.name}" class="feat-img" loading="lazy" onerror="this.style.display='none'"><div class="feat-info"><div class="feat-name">${t.name}</div><div class="feat-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="feat-footer"><div class="feat-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="feat-visit" onclick="event.stopPropagation()">访问 →</a></div></div>`).join('');
@@ -240,7 +225,7 @@ function renderFeat(){
 function renderGrid(){
   currentPage=0;
   nextAdAt=5+Math.floor(Math.random()*5);  // 首个广告在 5~9 位置随机
-  let list=[...allTools];if(curCat)list=list.filter(t=>t.category===curCat);
+  let list=[...allTools];
   if(curSearch){const q=curSearch.toLowerCase();list=list.filter(t=>t.name.toLowerCase().includes(q)||t.tagline.toLowerCase().includes(q)||t.description.toLowerCase().includes(q))}
   if(curTab==='weekly'){const d7=new Date();d7.setDate(d7.getDate()-7);const d14=new Date();d14.setDate(d14.getDate()-14);list=list.filter(t=>{const d=new Date(t.createdAt);return d>=d14&&d<d7})}
   if(curTab==='monthly'){const ms=new Date(new Date().getFullYear(),new Date().getMonth(),1);list=list.filter(t=>new Date(t.createdAt)>=ms)}
@@ -261,7 +246,7 @@ function appendMore(){
   for(let i=0;i<batch.length;i++){
     const t=batch[i];
     const globalIdx=start+i;
-    if(globalIdx===nextAdAt&&!curSearch&&!curCat){
+    if(globalIdx===nextAdAt&&!curSearch){
       html+=window.buildNativeAdCard?window.buildNativeAdCard():"";
       nextAdAt=globalIdx+5+Math.floor(Math.random()*5);  // 下一个广告在 5~9 张之后
     }
