@@ -80,7 +80,7 @@ function renderCategoryPage(cat, tools, origin) {
 .breadcrumb a{color:var(--gray-500);text-decoration:none;transition:color .15s}
 .breadcrumb a:hover{color:var(--color-primary)}
 .breadcrumb span{color:var(--gray-900);font-weight:500}
-.cat-header{text-align:center;padding:20px 20px 24px;max-width:800px;margin:0 auto}
+.cat-header{text-align:center;padding:10px 20px 24px;max-width:800px;margin:0 auto}
 .cat-header h1{font-size:28px;font-weight:800;color:var(--gray-900);margin:0 0 8px}
 .cat-header p{font-size:15px;color:var(--gray-500);margin:0}
 .cat-header .cat-count{display:inline-block;margin-top:12px;background:var(--gray-100);color:var(--gray-600);padding:4px 14px;border-radius:20px;font-size:13px}
