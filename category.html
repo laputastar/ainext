@@ -161,6 +161,7 @@ Promise.all([
 
   updateCount();
   appendMore();
+  window.appendMore = appendMore;
 
   // No header search in fallback template — SSR handles that
 }).catch(function(e){

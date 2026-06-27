@@ -210,6 +210,7 @@ if (searchInput) {
 }
 
 appendMore();
+window.appendMore = appendMore;
 })();
 </script>
 </body>
