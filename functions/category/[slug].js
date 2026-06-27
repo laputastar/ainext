@@ -143,6 +143,8 @@ function cardHTML(t){
   return '<div class="tool-card" onclick="location.href=\\'tools/'+t.slug+'-'+t.id+'.html\\'" tabindex="0" onkeydown="if(event.key===\\'Enter\\')location.href=\\'tools/'+t.slug+'-'+t.id+'.html\\'" style="cursor:pointer"><div class="tool-card-header"><img src="'+t.thumbnail+'" alt="'+nm+'" class="tool-thumb" loading="lazy" onerror="this.style.display=\\'none\\'"><div class="tool-info"><div class="tool-name">'+nm+'</div><div class="tool-tagline">'+tl+'</div></div></div><div class="tool-topics">'+tpc+'</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 '+(t.votesCount||0).toLocaleString()+'</span><span>💬 '+(t.commentsCount||0)+'</span></div><a href="'+(t.website||'#')+'" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>';
 }
 
+var nextAdAt = 8 + Math.floor(Math.random() * 3); // shared across appendMore calls
+
 function appendMore(){
   if (!searchQuery) {
     if (sortMode === 'latest') {
@@ -157,11 +159,10 @@ function appendMore(){
   if (currentPage === 0) grid.innerHTML = '';
 
   var html = '';
-  var nextAdAt = 8 + Math.floor(Math.random() * 3);
   for (var i = 0; i < batch.length; i++){
     var globalIdx = start + i;
     if (globalIdx === nextAdAt && !searchQuery){
-      html += window.buildNativeAdCard ? window.buildNativeAdCard() : '';
+      html += (typeof window.buildNativeAdCard === 'function') ? window.buildNativeAdCard() : '';
       nextAdAt = globalIdx + 8 + Math.floor(Math.random() * 3);
     }
     html += cardHTML(batch[i]);

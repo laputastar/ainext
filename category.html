@@ -103,6 +103,7 @@ Promise.all([
   var PAGE_SIZE = 24;
   var currentPage = 0;
   var filteredList = ctools.slice();
+  var nextAdAt = 8 + Math.floor(Math.random() * 3);
   var searchQuery = '';
   var sortMode = 'hot';
 
@@ -127,11 +128,10 @@ Promise.all([
     if (currentPage === 0) grid.innerHTML = '';
 
     var html = '';
-    var nextAdAt = 8 + Math.floor(Math.random() * 3);
     for (var i = 0; i < batch.length; i++){
       var globalIdx = start + i;
       if (globalIdx === nextAdAt && !searchQuery){
-        html += window.buildNativeAdCard ? window.buildNativeAdCard() : '';
+        html += (typeof window.buildNativeAdCard === 'function') ? window.buildNativeAdCard() : '';
         nextAdAt = globalIdx + 8 + Math.floor(Math.random() * 3);
       }
       html += cardHTML(batch[i]);
