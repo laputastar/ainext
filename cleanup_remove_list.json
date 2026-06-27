@@ -1,0 +1,5076 @@
+[
+  {
+    "id": "1144083",
+    "name": "Mailwarm 2.0",
+    "tagline": "The email warmup tool, upgraded for deliverability.",
+    "topics": [
+      "Email",
+      "Email Marketing"
+    ],
+    "votes": 664
+  },
+  {
+    "id": "1146232",
+    "name": "SpotsNow",
+    "tagline": "Track who's advertising across podcasts w/ campaign insights",
+    "topics": [
+      "Analytics",
+      "Advertising",
+      "Radio"
+    ],
+    "votes": 520
+  },
+  {
+    "id": "1170432",
+    "name": "Vercel Drop",
+    "tagline": "Drop it. It's live.",
+    "topics": [
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 467
+  },
+  {
+    "id": "1163727",
+    "name": "Google Search Profiles",
+    "tagline": "Profile for publishers/creators to highlight work on Search",
+    "topics": [
+      "News",
+      "SEO",
+      "Search"
+    ],
+    "votes": 405
+  },
+  {
+    "id": "1153508",
+    "name": "ModelHub",
+    "tagline": "The missing menu bar app for local LLMs on Mac.",
+    "topics": [
+      "Open Source",
+      "Developer Tools",
+      "GitHub",
+      "Menu Bar Apps"
+    ],
+    "votes": 335
+  },
+  {
+    "id": "1159462",
+    "name": "Oura Ring 5",
+    "tagline": "The world’s smallest smart ring, now even better",
+    "topics": [
+      "Health & Fitness",
+      "Hardware",
+      "Wearables"
+    ],
+    "votes": 334
+  },
+  {
+    "id": "1166623",
+    "name": "Screen Charm",
+    "tagline": "Give your screen recordings more charm",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Video"
+    ],
+    "votes": 333
+  },
+  {
+    "id": "1161859",
+    "name": "Supaste",
+    "tagline": "Clipboard Manager for macOS",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Menu Bar Apps"
+    ],
+    "votes": 310
+  },
+  {
+    "id": "1163777",
+    "name": "CabinLink",
+    "tagline": "Flight map from cabin Wi-Fi",
+    "topics": [
+      "Weather",
+      "User Experience",
+      "Travel"
+    ],
+    "votes": 299
+  },
+  {
+    "id": "1150943",
+    "name": "prostir zvuku",
+    "tagline": "A spatial nature sound mixer for Mac",
+    "topics": [
+      "Health & Fitness",
+      "Productivity",
+      "Nature"
+    ],
+    "votes": 292
+  },
+  {
+    "id": "1164111",
+    "name": "Krisp Voice Translation API",
+    "tagline": "Real-time speech-to-speech translation API ",
+    "topics": [
+      "API",
+      "Developer Tools",
+      "Audio"
+    ],
+    "votes": 288
+  },
+  {
+    "id": "1153432",
+    "name": "WhatCable",
+    "tagline": "Know what your USB-C cable can really do",
+    "topics": [
+      "Hardware",
+      "Menu Bar Apps",
+      "Apple"
+    ],
+    "votes": 280
+  },
+  {
+    "id": "1163513",
+    "name": "Manus Shopify Connector",
+    "tagline": "Build and manage Shopify stores from one chat",
+    "topics": [
+      "User Experience",
+      "Developer Tools",
+      "E-Commerce"
+    ],
+    "votes": 277
+  },
+  {
+    "id": "1162954",
+    "name": "MAI-Image-2.5",
+    "tagline": "Generate and edit images with precise scene control",
+    "topics": [
+      "Design Tools",
+      "Social Media",
+      "Photography"
+    ],
+    "votes": 261
+  },
+  {
+    "id": "1155470",
+    "name": "QuakPit",
+    "tagline": "Meeting reminders that actually make you smile.",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Meetings",
+      "GitHub"
+    ],
+    "votes": 257
+  },
+  {
+    "id": "1169114",
+    "name": "HyperSleep",
+    "tagline": "Block social media until you've actually slept",
+    "topics": [
+      "Android",
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "votes": 236
+  },
+  {
+    "id": "1149669",
+    "name": "Exstats",
+    "tagline": "Track your browser extensions and competitors in one place",
+    "topics": [
+      "Browser Extensions",
+      "Analytics",
+      "Developer Tools"
+    ],
+    "votes": 229
+  },
+  {
+    "id": "1155045",
+    "name": "Tiny CV",
+    "tagline": "Resume builder that fits on one page",
+    "topics": [
+      "Hiring",
+      "Productivity",
+      "GitHub",
+      "Career"
+    ],
+    "votes": 204
+  },
+  {
+    "id": "1163550",
+    "name": "Smmall Cloud for iOS",
+    "tagline": "Simple file sharing on your iPad or iPhone",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 199
+  },
+  {
+    "id": "1164522",
+    "name": "QWERTYS by Smart Keys",
+    "tagline": "My keyboard fell apart. Now it's your problem.",
+    "topics": [
+      "Custom Keyboards",
+      "Puzzle Games",
+      "Games"
+    ],
+    "votes": 193
+  },
+  {
+    "id": "1172763",
+    "name": "VoiceOS",
+    "tagline": "Say it and it's done. JARVIS for your computer",
+    "topics": [
+      "Productivity",
+      "Audio"
+    ],
+    "votes": 191
+  },
+  {
+    "id": "1151121",
+    "name": "Auto Posts",
+    "tagline": "Schedule social post, Telegram messages + more",
+    "topics": [
+      "Social Media",
+      "Marketing",
+      "Alpha"
+    ],
+    "votes": 185
+  },
+  {
+    "id": "1171008",
+    "name": "Cloudback for Linear",
+    "tagline": "Automated backup and restore for Linear workspaces",
+    "topics": [
+      "Productivity",
+      "Software Engineering",
+      "Developer Tools"
+    ],
+    "votes": 182
+  },
+  {
+    "id": "1157577",
+    "name": "Angel Match 4.0",
+    "tagline": "A database of 125K+ angels and VCs to raise your seed round",
+    "topics": [
+      "Productivity",
+      "Venture Capital",
+      "Fundraising"
+    ],
+    "votes": 181
+  },
+  {
+    "id": "1172451",
+    "name": "Dopami",
+    "tagline": "Household chores without the mental load for ADHD",
+    "topics": [
+      "Productivity",
+      "Task Management",
+      "Home"
+    ],
+    "votes": 179
+  },
+  {
+    "id": "1152061",
+    "name": "moop",
+    "tagline": "A social network without media",
+    "topics": [
+      "Social Media",
+      "Books",
+      "Alpha"
+    ],
+    "votes": 178
+  },
+  {
+    "id": "1158147",
+    "name": "Linear Diffs",
+    "tagline": "A new way to review PRs, directly inside Linear",
+    "topics": [
+      "Productivity",
+      "Software Engineering",
+      "GitHub"
+    ],
+    "votes": 176
+  },
+  {
+    "id": "1155611",
+    "name": "Mojito",
+    "tagline": "Type to search for any emoji, symbol, or gif in seconds",
+    "topics": [
+      "Emoji",
+      "GIFs",
+      "Menu Bar Apps"
+    ],
+    "votes": 170
+  },
+  {
+    "id": "1161635",
+    "name": "Sigma File Manager",
+    "tagline": "Free, open-source, cross-platform, modern file manager app",
+    "topics": [
+      "Productivity",
+      "Open Source",
+      "GitHub",
+      "Tech"
+    ],
+    "votes": 162
+  },
+  {
+    "id": "1154221",
+    "name": "DynamicNotch",
+    "tagline": "Dynamic island for macOS",
+    "topics": [
+      "Productivity",
+      "GitHub",
+      "Apple"
+    ],
+    "votes": 155
+  },
+  {
+    "id": "1175510",
+    "name": "just f***ing send it",
+    "tagline": "Send any file, any size, straight from browser to browser",
+    "topics": [
+      "Web App",
+      "Productivity"
+    ],
+    "votes": 154
+  },
+  {
+    "id": "1151771",
+    "name": "Vivaldi 8.0",
+    "tagline": "New unified look for full customization",
+    "topics": [
+      "Productivity",
+      "Privacy"
+    ],
+    "votes": 152
+  },
+  {
+    "id": "1163721",
+    "name": "Gaming services by IFTTT",
+    "tagline": "Level up the way you play with Steam, Dota 2, and more",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Tech",
+      "Games"
+    ],
+    "votes": 151
+  },
+  {
+    "id": "1174501",
+    "name": "Retool",
+    "tagline": "Build anywhere. Govern in Retool.",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Vibe coding"
+    ],
+    "votes": 150
+  },
+  {
+    "id": "1162305",
+    "name": "TimeTuna.com",
+    "tagline": "If Calendly had gorgeous video backgrounds",
+    "topics": [
+      "Productivity",
+      "Meetings",
+      "Video Art"
+    ],
+    "votes": 149
+  },
+  {
+    "id": "1159972",
+    "name": "choclift",
+    "tagline": "Use iPhone to open apps, Apple Shortcuts and websites on Mac",
+    "topics": [
+      "iOS",
+      "Mac",
+      "Productivity"
+    ],
+    "votes": 145
+  },
+  {
+    "id": "1154237",
+    "name": "DockFlow",
+    "tagline": "Save, switch, and automate Dock layouts for every workflow",
+    "topics": [
+      "Productivity",
+      "Tech"
+    ],
+    "votes": 143
+  },
+  {
+    "id": "1123558",
+    "name": "hora Calendar",
+    "tagline": "Google calendar built for the Mac",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Calendar"
+    ],
+    "votes": 138
+  },
+  {
+    "id": "1149603",
+    "name": "SoMerch",
+    "tagline": "Merch for distributed teams, handled end to end",
+    "topics": [
+      "Marketing",
+      "Remote Work",
+      "Human Resources"
+    ],
+    "votes": 132
+  },
+  {
+    "id": "1162995",
+    "name": "FloatPic",
+    "tagline": "Ultra-minimalist, borderless macOS native image viewer",
+    "topics": [
+      "Mac",
+      "Design Tools",
+      "Productivity"
+    ],
+    "votes": 131
+  },
+  {
+    "id": "1169557",
+    "name": "ShellMate",
+    "tagline": "Manage SSH servers, credentials, and teams in one place",
+    "topics": [
+      "Productivity",
+      "Privacy",
+      "Developer Tools"
+    ],
+    "votes": 131
+  },
+  {
+    "id": "1152268",
+    "name": "Tacet",
+    "tagline": "The brain monitor for cognitive health scores",
+    "topics": [
+      "Android",
+      "Health & Fitness",
+      "Productivity",
+      "Tech"
+    ],
+    "votes": 129
+  },
+  {
+    "id": "1167299",
+    "name": "veridive",
+    "tagline": "Find the 30 seconds that matter in any video via chat",
+    "topics": [
+      "Productivity",
+      "YouTube",
+      "Search"
+    ],
+    "votes": 125
+  },
+  {
+    "id": "1153904",
+    "name": "Screen Ruler",
+    "tagline": "The go-to ruler for designers and developers",
+    "topics": [
+      "Chrome Extensions",
+      "Design Tools",
+      "Developer Tools"
+    ],
+    "votes": 124
+  },
+  {
+    "id": "1158375",
+    "name": "Fox Issue Tracker 4",
+    "tagline": "Track, plan, and release.",
+    "topics": [
+      "Productivity",
+      "Task Management",
+      "Developer Tools"
+    ],
+    "votes": 124
+  },
+  {
+    "id": "1153540",
+    "name": "AccountyCat",
+    "tagline": "A focus companion that actually gets context",
+    "topics": [
+      "Productivity",
+      "Open Source",
+      "GitHub",
+      "Menu Bar Apps"
+    ],
+    "votes": 124
+  },
+  {
+    "id": "1156789",
+    "name": "Stage",
+    "tagline": "Screen recording for demos, bugs, and updates",
+    "topics": [
+      "Productivity",
+      "Marketing",
+      "Video"
+    ],
+    "votes": 122
+  },
+  {
+    "id": "1166576",
+    "name": "Limelight",
+    "tagline": "Make your screen recordings easy to follow",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Education"
+    ],
+    "votes": 121
+  },
+  {
+    "id": "1175332",
+    "name": "Blazly Backlinker",
+    "tagline": "Automate your entire backlink generation",
+    "topics": [
+      "Email",
+      "Marketing",
+      "SEO"
+    ],
+    "votes": 121
+  },
+  {
+    "id": "1170378",
+    "name": "Tinfoil Pigeons",
+    "tagline": "See the aircraft flying over you on a retro radar scope",
+    "topics": [
+      "Travel"
+    ],
+    "votes": 120
+  },
+  {
+    "id": "1169971",
+    "name": "Foyer",
+    "tagline": "Build a room of ambient sound that lives in your notch",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Music"
+    ],
+    "votes": 118
+  },
+  {
+    "id": "1169527",
+    "name": "Tide",
+    "tagline": "Layered voice notes that paint themselves",
+    "topics": [
+      "Music",
+      "User Experience",
+      "Audio"
+    ],
+    "votes": 116
+  },
+  {
+    "id": "1160180",
+    "name": "Stella",
+    "tagline": "Local natural language search across all your files",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Search"
+    ],
+    "votes": 115
+  },
+  {
+    "id": "1139531",
+    "name": "Allergo",
+    "tagline": "Translate your allergies, anywhere.",
+    "topics": [
+      "Health & Fitness",
+      "Travel",
+      "Health"
+    ],
+    "votes": 115
+  },
+  {
+    "id": "1169774",
+    "name": " CueBuddy",
+    "tagline": "Record talking videos without manual scrolling",
+    "topics": [
+      "iOS",
+      "Productivity",
+      "Video"
+    ],
+    "votes": 115
+  },
+  {
+    "id": "1173076",
+    "name": "Dualora",
+    "tagline": "Record in both 16:9 and 9:16 at the same time",
+    "topics": [
+      "Android",
+      "Social Media",
+      "Photography",
+      "Photo & Video"
+    ],
+    "votes": 114
+  },
+  {
+    "id": "1171461",
+    "name": "Dropmatico",
+    "tagline": "Drop. Pick. Done.",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "E-Commerce"
+    ],
+    "votes": 113
+  },
+  {
+    "id": "1167705",
+    "name": "fort",
+    "tagline": "One command to audit and fix your Mac's security",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "GitHub",
+      "Security"
+    ],
+    "votes": 113
+  },
+  {
+    "id": "1174815",
+    "name": "Cliptop",
+    "tagline": "Clipboard history for Mac, right under the notch.",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Menu Bar Apps"
+    ],
+    "votes": 113
+  },
+  {
+    "id": "1159865",
+    "name": "GlowPulse",
+    "tagline": "Your Mac's camera is now a heart-rate sensor",
+    "topics": [
+      "Health & Fitness",
+      "Productivity",
+      "Menu Bar Apps"
+    ],
+    "votes": 112
+  },
+  {
+    "id": "1160816",
+    "name": "Typerino",
+    "tagline": "Screenwriting and playwriting for movies, television, stage.",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Writing"
+    ],
+    "votes": 110
+  },
+  {
+    "id": "1151424",
+    "name": "Ente Locker",
+    "tagline": "Shared vault for your most important documents",
+    "topics": [
+      "Storage",
+      "Privacy",
+      "Tech"
+    ],
+    "votes": 109
+  },
+  {
+    "id": "1167306",
+    "name": "Proxee",
+    "tagline": "Your localhost on your phone, synced.",
+    "topics": [
+      "Mac",
+      "Developer Tools",
+      "Maker Tools"
+    ],
+    "votes": 109
+  },
+  {
+    "id": "1176778",
+    "name": "oioi ",
+    "tagline": "a fast, glassy clipboard manager for macOS, Windows & Linux",
+    "topics": [
+      "Productivity",
+      "User Experience",
+      "Menu Bar Apps"
+    ],
+    "votes": 109
+  },
+  {
+    "id": "1166978",
+    "name": "NODUS PH Radar for Product Hunt",
+    "tagline": "Product Hunt analytics beyond the daily leaderboard",
+    "topics": [
+      "Browser Extensions",
+      "Chrome Extensions",
+      "Productivity",
+      "Analytics"
+    ],
+    "votes": 107
+  },
+  {
+    "id": "1153019",
+    "name": "Spantop: Laptop Display Extender",
+    "tagline": "Turn any Mac/Android Tablet into a real extended monitor",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Remote Work"
+    ],
+    "votes": 105
+  },
+  {
+    "id": "1156750",
+    "name": "CircadiaOS",
+    "tagline": "Sleep optimization, minus the $3,000 mattress pod",
+    "topics": [
+      "Health & Fitness",
+      "Wearables",
+      "Tech"
+    ],
+    "votes": 105
+  },
+  {
+    "id": "1157860",
+    "name": "Notchy",
+    "tagline": "Mac dynamic island with music, timers, clipboard, file drops",
+    "topics": [
+      "Productivity",
+      "Music",
+      "Apple"
+    ],
+    "votes": 104
+  },
+  {
+    "id": "1160179",
+    "name": "Paint By JSON | Figma API Client",
+    "tagline": "Real API data in your mockups made as easy as lorem ipsum.",
+    "topics": [
+      "Design Tools",
+      "UX Design",
+      "Vibe coding"
+    ],
+    "votes": 104
+  },
+  {
+    "id": "1157533",
+    "name": "Trovelo",
+    "tagline": "Plan and track your trips privately",
+    "topics": [
+      "iOS",
+      "Travel",
+      "Apple"
+    ],
+    "votes": 103
+  },
+  {
+    "id": "1163579",
+    "name": "Treadmill Pro",
+    "tagline": "Control your treadmill from your iPhone, wirelessly",
+    "topics": [
+      "Health & Fitness",
+      "Productivity",
+      "User Experience"
+    ],
+    "votes": 103
+  },
+  {
+    "id": "1158273",
+    "name": "Coffee Piano",
+    "tagline": "Browser music and piano studio with visual harmony tools",
+    "topics": [
+      "Music",
+      "Education",
+      "SaaS"
+    ],
+    "votes": 103
+  },
+  {
+    "id": "1168727",
+    "name": "Riven",
+    "tagline": "Your Apple Watch knows when you've truly hit muscle failure",
+    "topics": [
+      "Health & Fitness",
+      "Wearables",
+      "Fitness"
+    ],
+    "votes": 102
+  },
+  {
+    "id": "1175235",
+    "name": "QuackScreen",
+    "tagline": "Capture, drag, share all from the MacBook notch",
+    "topics": [
+      "Mac",
+      "Menu Bar Apps"
+    ],
+    "votes": 102
+  },
+  {
+    "id": "1161835",
+    "name": "FolderPlus",
+    "tagline": "Peek inside any folder without opening it",
+    "topics": [
+      "Mac",
+      "Productivity"
+    ],
+    "votes": 102
+  },
+  {
+    "id": "1161523",
+    "name": "RadianceKit",
+    "tagline": "Turn photos into 3D Gaussian Splats on your Mac",
+    "topics": [
+      "Mac",
+      "Design Tools",
+      "Photography"
+    ],
+    "votes": 102
+  },
+  {
+    "id": "1160870",
+    "name": "Mic Drop 3.0",
+    "tagline": "Mute your mic in any app—with your AirPods",
+    "topics": [
+      "Meetings",
+      "Menu Bar Apps",
+      "Remote Work"
+    ],
+    "votes": 101
+  },
+  {
+    "id": "1178556",
+    "name": "Steam Machine",
+    "tagline": "A tiny, powerful PC for big-screen gaming",
+    "topics": [
+      "Hardware",
+      "Games"
+    ],
+    "votes": 99
+  },
+  {
+    "id": "1176136",
+    "name": "Photoroom API",
+    "tagline": "Transform product images at scale with one image editing API",
+    "topics": [
+      "Photography",
+      "E-Commerce",
+      "Photo editing"
+    ],
+    "votes": 90
+  },
+  {
+    "id": "1172894",
+    "name": "prepros",
+    "tagline": "Run your brand shoots from start to finish",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "SaaS"
+    ],
+    "votes": 83
+  },
+  {
+    "id": "1178179",
+    "name": "wildbirds",
+    "tagline": "Birdwatchers app to share and discover birds socially",
+    "topics": [
+      "Social Media",
+      "Photography",
+      "Nature & Outdoors"
+    ],
+    "votes": 82
+  },
+  {
+    "id": "1178471",
+    "name": "Tufte",
+    "tagline": "CDN and Node package to generate ASCII graphs inline",
+    "topics": [
+      "Writing",
+      "Analytics",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 79
+  },
+  {
+    "id": "1174870",
+    "name": "Amnesia",
+    "tagline": "A Mac app that asks why you opened that tab",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Menu Bar Apps"
+    ],
+    "votes": 76
+  },
+  {
+    "id": "1178712",
+    "name": "HotkeyClash",
+    "tagline": "Find where your Mac keyboard shortcuts clash",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "GitHub",
+      "Menu Bar Apps"
+    ],
+    "votes": 72
+  },
+  {
+    "id": "1176590",
+    "name": "Beelink",
+    "tagline": "Meet a professional on video, right now",
+    "topics": [
+      "Social Media",
+      "LinkedIn",
+      "Tech"
+    ],
+    "votes": 23
+  },
+  {
+    "id": "1176336",
+    "name": "radiusHQ link in bio and booking in one ",
+    "tagline": "Let clients book you straight from your bio.",
+    "topics": [
+      "Productivity",
+      "Marketing",
+      "Calendar"
+    ],
+    "votes": 19
+  },
+  {
+    "id": "1174942",
+    "name": "MonoLisa v3",
+    "tagline": "A typeface built for you, the developers and creatives.",
+    "topics": [
+      "Productivity",
+      "Typography",
+      "Developer Tools"
+    ],
+    "votes": 18
+  },
+  {
+    "id": "1162830",
+    "name": "PrepIt",
+    "tagline": "Coffee shop operations software",
+    "topics": [
+      "SaaS",
+      "Coffee",
+      "E-Commerce"
+    ],
+    "votes": 18
+  },
+  {
+    "id": "1177948",
+    "name": "Orbl",
+    "tagline": "Turn your Mac wallpaper into a live dashboard",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Wallpaper"
+    ],
+    "votes": 18
+  },
+  {
+    "id": "1177687",
+    "name": "DEADLINE ",
+    "tagline": "Finish your novel. Or we start deleting it.",
+    "topics": [
+      "Productivity",
+      "Writing",
+      "Maker Tools"
+    ],
+    "votes": 17
+  },
+  {
+    "id": "1177029",
+    "name": "Lemonvite",
+    "tagline": "Digital invites and RSVPs. Five bucks per event. No ads.",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Events"
+    ],
+    "votes": 15
+  },
+  {
+    "id": "1177655",
+    "name": "Spoth",
+    "tagline": "Drop photo trails on a map — they vanish after a while",
+    "topics": [
+      "Android",
+      "Social Media",
+      "Maps"
+    ],
+    "votes": 11
+  },
+  {
+    "id": "1177654",
+    "name": "Reskin",
+    "tagline": "Modern Themes for YouTube",
+    "topics": [
+      "Design Tools",
+      "Product Hunt",
+      "YouTube"
+    ],
+    "votes": 10
+  },
+  {
+    "id": "1177408",
+    "name": "Free noise cancellation for your calls",
+    "tagline": "Krisp alternative — free, no GPU, no account needed",
+    "topics": [
+      "API",
+      "SaaS",
+      "Software Engineering"
+    ],
+    "votes": 10
+  },
+  {
+    "id": "1175429",
+    "name": "Maillune — Embeddable Email Builder SDK",
+    "tagline": "One web component. A full drag-and-drop email editor.",
+    "topics": [
+      "Email",
+      "SaaS",
+      "Developer Tools"
+    ],
+    "votes": 9
+  },
+  {
+    "id": "1177617",
+    "name": "Loomrate",
+    "tagline": "Quote prices against real profit, not gut feeling",
+    "topics": [
+      "Productivity",
+      "Freelance",
+      "GitHub",
+      "Money"
+    ],
+    "votes": 9
+  },
+  {
+    "id": "1177458",
+    "name": "Fupio 2.0",
+    "tagline": "Social RSS reader",
+    "topics": [
+      "Productivity",
+      "Internet of Things",
+      "Social Networking"
+    ],
+    "votes": 9
+  },
+  {
+    "id": "1177204",
+    "name": "Nourish - Better News",
+    "tagline": "Global news re-imagined, with no click-bait headlines.",
+    "topics": [
+      "Android",
+      "Health & Fitness",
+      "News"
+    ],
+    "votes": 9
+  },
+  {
+    "id": "1177849",
+    "name": "MyGiftType - Spiritual Gifts Test",
+    "tagline": "Discover your spiritual gift type in 3 minutes",
+    "topics": [
+      "Health & Fitness",
+      "Education",
+      "Spirituality"
+    ],
+    "votes": 9
+  },
+  {
+    "id": "1177729",
+    "name": "SparkDry: Car Wash Weather App",
+    "tagline": "Best Day to Wash your car: Weather, Pollen, Rain",
+    "topics": [
+      "Android",
+      "iOS",
+      "Weather",
+      "Cars"
+    ],
+    "votes": 8
+  },
+  {
+    "id": "1177623",
+    "name": "Grove ",
+    "tagline": "Video mail + video chat, instantly",
+    "topics": [
+      "Email",
+      "Video Streaming"
+    ],
+    "votes": 8
+  },
+  {
+    "id": "1178130",
+    "name": "NumUp",
+    "tagline": "A daily math puzzle",
+    "topics": [
+      "Puzzle Games",
+      "Games"
+    ],
+    "votes": 8
+  },
+  {
+    "id": "1177857",
+    "name": "ENSTA",
+    "tagline": "Energy is your greatest asset",
+    "topics": [
+      "iOS",
+      "Health & Fitness",
+      "Wearables"
+    ],
+    "votes": 7
+  },
+  {
+    "id": "1178518",
+    "name": "Trovr",
+    "tagline": "Job alerts from employer career pages, not job boards",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Career"
+    ],
+    "votes": 6
+  },
+  {
+    "id": "1177739",
+    "name": "Good Quote",
+    "tagline": "Price matching that never stores your personal details",
+    "topics": [
+      "Sales",
+      "Privacy",
+      "Accounting"
+    ],
+    "votes": 5
+  },
+  {
+    "id": "1171865",
+    "name": "Built For Small Business  2.0",
+    "tagline": "Free invoicing, expenses and payroll for UK small businesses",
+    "topics": [
+      "Productivity",
+      "Finance",
+      "Accounting"
+    ],
+    "votes": 5
+  },
+  {
+    "id": "1177753",
+    "name": "Super Session Manager",
+    "tagline": "Power tools for browser tabs, sessions, URLs and tab groups",
+    "topics": [
+      "Browser Extensions",
+      "Chrome Extensions",
+      "Productivity"
+    ],
+    "votes": 5
+  },
+  {
+    "id": "1178521",
+    "name": "Strava Widget",
+    "tagline": "Showcase your strava activities — in tailor-made widget!",
+    "topics": [
+      "Health & Fitness",
+      "Tech"
+    ],
+    "votes": 5
+  },
+  {
+    "id": "1167782",
+    "name": "Starlog",
+    "tagline": "Snap a receipt, it files itself in your Google Drive",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Finance"
+    ],
+    "votes": 5
+  },
+  {
+    "id": "1173059",
+    "name": "ZenTrip",
+    "tagline": "Track, split & settle group trip costs — end to end",
+    "topics": [
+      "Productivity",
+      "Fintech",
+      "Travel"
+    ],
+    "votes": 5
+  },
+  {
+    "id": "1177207",
+    "name": "Tab Hibernator Pro",
+    "tagline": "Sleep inactive tabs. Free RAM. Zero data sent.",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1164412",
+    "name": "Gmail Username Checker",
+    "tagline": "Check Gmail username availability in bulk",
+    "topics": [
+      "Marketing",
+      "Data & Analytics",
+      "Marketing automation"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1147318",
+    "name": "DockDineFuel",
+    "tagline": "Reserve your dock slip before you get on the boat",
+    "topics": [
+      "User Experience",
+      "Outdoors",
+      "Tech"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176027",
+    "name": "Traqcker",
+    "tagline": "Know if a stock is worth it. In seconds.",
+    "topics": [
+      "Fintech",
+      "Investing",
+      "Personal Finance"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176616",
+    "name": "BarkodSis",
+    "tagline": "Reliable POS & Barcode Software, trusted since 2007",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "E-Commerce"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177719",
+    "name": "BeamDrop",
+    "tagline": "Direct iPhone to PC transfer. No cloud, no cable.",
+    "topics": [
+      "iOS",
+      "Productivity"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176637",
+    "name": "Comperge",
+    "tagline": "The infinite-scaling, 100% client-side code diffing engine.",
+    "topics": [
+      "Web App",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177720",
+    "name": "HyperChrono",
+    "tagline": "Create Free Timelapse Videos with a Built-in Stopwatch",
+    "topics": [
+      "Social Media",
+      "Photography",
+      "Fitness"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176370",
+    "name": "handa",
+    "tagline": "The easiest and fastest way to find your unclaimed royalties",
+    "topics": [
+      "Music",
+      "Fintech",
+      "SaaS"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177224",
+    "name": "PauseSweep",
+    "tagline": "Automatically remove pauses from videos on macOS",
+    "topics": [
+      "Mac",
+      "Video"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177689",
+    "name": "QueckBiz",
+    "tagline": "Free invoice & receipt generator. No signup.",
+    "topics": [
+      "Productivity",
+      "SaaS"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177145",
+    "name": "Mock Data Generator",
+    "tagline": "Paste real JSON, get 1,000 coherent rows that match it",
+    "topics": [
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1175952",
+    "name": "Free QR Code Generator ",
+    "tagline": "Free QR codes for URLs, WiFi & more",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Marketing"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176224",
+    "name": "RowSink",
+    "tagline": "Send Data Straight to Your Spreadsheet",
+    "topics": [
+      "API",
+      "Spreadsheets",
+      "Developer Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177781",
+    "name": "MyCalculators.app",
+    "tagline": "200+ free, ad-free calculators for finance, health & math",
+    "topics": [
+      "Health & Fitness",
+      "Productivity",
+      "Finance"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176754",
+    "name": "Waivly Refer - 25% Recurring Commission",
+    "tagline": "Earn recurring commission by introducing people to Waivly",
+    "topics": [
+      "Marketing",
+      "SaaS",
+      "Affiliate marketing"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177661",
+    "name": "Service Pricing Tool",
+    "tagline": "Free calculators for local service costs",
+    "topics": [
+      "Productivity",
+      "SEO",
+      "SaaS"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177524",
+    "name": "Margin",
+    "tagline": "Bite-sized news, one card at a time, in your side panel",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "News"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1172731",
+    "name": "better-paas v1.8.4",
+    "tagline": "Deploy like Vercel but full-stack applications + databases",
+    "topics": [
+      "Open Source"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176755",
+    "name": "Valkence Connect - Your Unfair Advantage",
+    "tagline": "Connecting talent, brands, and attention in one place",
+    "topics": [
+      "Hiring",
+      "Social Media",
+      "Marketing"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176476",
+    "name": "Practice Rack",
+    "tagline": "A focused desktop practice rig for guitar and bass",
+    "topics": [
+      "Productivity",
+      "Music"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177531",
+    "name": "Flash 'n' Dash",
+    "tagline": "Interactive arcade flashcards with global leaderboards.",
+    "topics": [
+      "Android",
+      "Kids",
+      "Education"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177800",
+    "name": "Ugh, What Should I Eat?",
+    "tagline": "Fun way to decide what to cook or order in",
+    "topics": [
+      "Cooking",
+      "Food & Drink",
+      "Food Delivery"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177176",
+    "name": "Tinswin Dev Toolkit — Apitron + CacheBin",
+    "tagline": "Two macOS dev tools, built to fix small daily friction.",
+    "topics": [
+      "API",
+      "Developer Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177683",
+    "name": "Peek",
+    "tagline": "A quiet macOS menu bar switcher for keyboard-heavy work.",
+    "topics": [
+      "Productivity"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177175",
+    "name": "QuantX",
+    "tagline": "Learn financial markets, the smart way",
+    "topics": [
+      "Productivity",
+      "Education",
+      "Finance"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177992",
+    "name": "SelfForje",
+    "tagline": "The app that helps you forge who you want to become",
+    "topics": [
+      "Productivity",
+      "Social Network",
+      "Lifestyle"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1174059",
+    "name": "Peppolpdf",
+    "tagline": "Peppol XML into a complete, elegant and customer-ready PDF",
+    "topics": [
+      "API",
+      "Fintech",
+      "Developer Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178044",
+    "name": "Socket2",
+    "tagline": "Instant folder sharing",
+    "topics": [
+      "Marketing",
+      "Privacy",
+      "Developer Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177357",
+    "name": "SocialLife Diary: Your Social Timeline ",
+    "tagline": "Your social life, remembered privately, shared your way. ",
+    "topics": [
+      "Productivity",
+      "Social Media",
+      "Apple"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1170728",
+    "name": "BucketFlow",
+    "tagline": "Zero-based budgeting built like the Barefoot Investor system",
+    "topics": [
+      "Web App",
+      "Productivity",
+      "Personal Finance"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178336",
+    "name": "FaceGate ",
+    "tagline": "The only MacOS app-locker anyone would ever need. ",
+    "topics": [
+      "Mac",
+      "Open Source",
+      "GitHub",
+      "Menu Bar Apps"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1175570",
+    "name": "Blankie 2.0",
+    "tagline": "Open-source ambient sound mixer now on iOS, CarPlay and Mac",
+    "topics": [
+      "Health & Fitness",
+      "Meditation",
+      "Apple"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1175665",
+    "name": "Orbbis",
+    "tagline": "Build a Discord bot visually no code,no sign-up,free forever",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "GitHub",
+      "YouTube",
+      "Tech"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1175393",
+    "name": "Akrual",
+    "tagline": "Run structured-credit deals without parallel spreadsheets",
+    "topics": [
+      "Fintech",
+      "SaaS",
+      "Finance"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176688",
+    "name": "Backdrop Supply",
+    "tagline": "Free premium backgrounds for modern websites",
+    "topics": [
+      "No-Code",
+      "Web Design",
+      "Design resources"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178646",
+    "name": "YT Thumbnail Studio",
+    "tagline": "Download any YouTube thumbnail in Max HD",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Video"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178280",
+    "name": "PostlyBio",
+    "tagline": "The smarter link-in-bio for creators and businesses.",
+    "topics": [
+      "Productivity",
+      "Social Media",
+      "Marketing"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178726",
+    "name": "Veil",
+    "tagline": "A web scraper that uses the lightest method that works",
+    "topics": [
+      "Open Source",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178242",
+    "name": "Invoees",
+    "tagline": "100% private, client-side invoice generator.",
+    "topics": [
+      "Productivity",
+      "Freelance",
+      "SaaS"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178727",
+    "name": "TRAYL",
+    "tagline": "Animate windows & files with any emoji",
+    "topics": [
+      "Emoji",
+      "User Experience",
+      "Menu Bar Apps"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178482",
+    "name": "MediaOptim",
+    "tagline": " Free up gigabytes on your Mac",
+    "topics": [
+      "Mac",
+      "Productivity"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1164423",
+    "name": "OLX Scraper",
+    "tagline": "Export public OLX listing data to a dataset",
+    "topics": [
+      "E-Commerce",
+      "Data & Analytics",
+      "Marketing automation"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178566",
+    "name": "DataraIMG",
+    "tagline": "Convert any image, instantly!",
+    "topics": [
+      "Design Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178643",
+    "name": "Wheel of Names – Free Random Picker ",
+    "tagline": "Spin the wheel, pick a winner, and make decisions instantly.",
+    "topics": [
+      "Free Games",
+      "Games"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178029",
+    "name": "Orbibo",
+    "tagline": "Turn followers into an audience you actually own.",
+    "topics": [
+      "Instagram",
+      "Social Media",
+      "SaaS"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177692",
+    "name": "aHREFna",
+    "tagline": "One command for DNS, TLS, WHOIS, GEO, SEO, and DR.",
+    "topics": [
+      "Productivity",
+      "SEO",
+      "Developer Tools"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178059",
+    "name": "AddvCard",
+    "tagline": "The digital business card built for your wallet",
+    "topics": [
+      "Productivity",
+      "Sales",
+      "SaaS"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177926",
+    "name": "OddSharps",
+    "tagline": "Know who's on the other side of every Polymarket trade",
+    "topics": [
+      "Fintech",
+      "Web3"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178231",
+    "name": "Army Body Fat Calculator",
+    "tagline": "Pass the Army tape test — know before they tape you",
+    "topics": [
+      "Health & Fitness",
+      "Productivity",
+      "Education"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1174993",
+    "name": " HanClip",
+    "tagline": "Learn Chinese one sentence at a time, right-click to analyze",
+    "topics": [
+      "Chrome Extensions",
+      "Education",
+      "Languages"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1175554",
+    "name": "Stillory",
+    "tagline": "Scan, log, and remember every whiskey you drink",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Drinking",
+      "Tech"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1174953",
+    "name": "Les devinettes",
+    "tagline": "The quiz game that makes kids smarter!",
+    "topics": [
+      "Android",
+      "Kids",
+      "Education",
+      "Games"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178437",
+    "name": "VBORef",
+    "tagline": "Audit your business visibility across modern platforms",
+    "topics": [
+      "Email",
+      "Marketing",
+      "SaaS"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1175780",
+    "name": "PayTransparency",
+    "tagline": "Ensure your job postings are perfectly compliant nationwide",
+    "topics": [
+      "Hiring",
+      "Marketing",
+      "Human Resources"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1173677",
+    "name": "MoneyCal",
+    "tagline": "Free finance calculators. Simple, no signup, no fluff",
+    "topics": [
+      "Fintech",
+      "Personal Finance"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1171256",
+    "name": "Royal Access Chrome Extension",
+    "tagline": "Forms, surveys, quizzes, payments — no add-on store",
+    "topics": [
+      "Chrome Extensions",
+      "Design Tools",
+      "Inclusivity"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1158319",
+    "name": "Overtime & Paycheck Pro",
+    "tagline": " Calculate gross and net pay with overtime and deductions",
+    "topics": [
+      "Payments",
+      "Tech",
+      "Money"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1176339",
+    "name": "bookmarq.space",
+    "tagline": "Save your internet favorites, all in one space",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Storage",
+      "Privacy"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1175132",
+    "name": "Burnwiser",
+    "tagline": "Track every subscription. Know your real P&L.",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Finance"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177398",
+    "name": "OursCrypto Whale Monitor",
+    "tagline": "Track whale movements before the market reacts",
+    "topics": [
+      "Investing",
+      "Crypto",
+      "Bitcoin"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178535",
+    "name": "Tolodora",
+    "tagline": "Launch or find product- Software or Service",
+    "topics": [
+      "Marketing",
+      "Growth Hacking",
+      "SEO"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177120",
+    "name": "Thaibulksms",
+    "tagline": "Thailand's #1 SMS, Email & LINE messaging platform & API",
+    "topics": [
+      "Email Marketing",
+      "Marketing"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1178062",
+    "name": "WeatherSmart Ads",
+    "tagline": "Only run ads when your customers are ready to buy",
+    "topics": [
+      "Weather",
+      "Advertising"
+    ],
+    "votes": 4
+  },
+  {
+    "id": "1177755",
+    "name": "RestockAlerts",
+    "tagline": "Catch Hermes bag restocks before they vanish",
+    "topics": [
+      "Shopping"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177744",
+    "name": "Tambola Host",
+    "tagline": "Play Together, Not on Screens",
+    "topics": [
+      "Board Games",
+      "Games"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1175670",
+    "name": "TradeChains",
+    "tagline": "Trace every player moved in a trade and see who actually won",
+    "topics": [
+      "Analytics",
+      "Sports",
+      "Basketball"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177330",
+    "name": "Snapmarks",
+    "tagline": "Turn every new tab into a launchpad",
+    "topics": [
+      "Browser Extensions",
+      "Chrome Extensions",
+      "Productivity"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177746",
+    "name": "AAC Without Expensive Hardware",
+    "tagline": "Voxetu – Smart AAC for ALS, Stroke, Autism, and CP",
+    "topics": [
+      "Health & Fitness",
+      "User Experience",
+      "Tech"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177461",
+    "name": "SaaS Farm",
+    "tagline": "36 free online tools for productivity, health & daily life. ",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Developer Tools"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177723",
+    "name": "InvoiceAnt",
+    "tagline": "100% Free & No Sign-up - Forever.",
+    "topics": [
+      "Productivity",
+      "Fintech"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1149157",
+    "name": "ChartKit",
+    "tagline": "ThinkCell alternative for Google Slides",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Analytics",
+      "Spreadsheets"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177148",
+    "name": "calculatrice mauricette",
+    "tagline": "Calcul gratuit des heures de travail en ligne",
+    "topics": [
+      "Productivity",
+      "Time Tracking",
+      "Developer Tools"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1165754",
+    "name": "Wire Chord Studio",
+    "tagline": "FREE MIDI jam rooms for musicians",
+    "topics": [
+      "Music",
+      "Streaming Services",
+      "GitHub",
+      "Tech"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176042",
+    "name": "Money Clarity — Notion Finance Tracker",
+    "tagline": "Track every rupee. Know your net worth. In Notion.",
+    "topics": [
+      "Productivity",
+      "Notion"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1173563",
+    "name": "WhenAvailable",
+    "tagline": "Effortless, ad-free group scheduling",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Meetings",
+      "Calendar"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177730",
+    "name": "Warning Lab",
+    "tagline": "Compliance tools for high-risk, high-liability industries",
+    "topics": [
+      "SaaS"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1174031",
+    "name": "TheTools.World",
+    "tagline": "Free online tools for images, files, text, and everyday task",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Tech"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177413",
+    "name": "certpracticelab",
+    "tagline": "Free CompTIA practice tests with every answer explained",
+    "topics": [
+      "Tech",
+      "Online Learning",
+      "Security"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1175072",
+    "name": "mypage.cc",
+    "tagline": "Show your work, not just your links",
+    "topics": [
+      "Design Tools",
+      "Marketing",
+      "No-Code"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177180",
+    "name": "PitchLab",
+    "tagline": "The fastest way from pre-med to published.",
+    "topics": [
+      "Email",
+      "Productivity",
+      "School"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177521",
+    "name": "Pollix",
+    "tagline": "Simple polls & meeting scheduling with zero friction",
+    "topics": [
+      "Productivity",
+      "Meetings",
+      "Calendar",
+      "GitHub"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177606",
+    "name": "MailShot",
+    "tagline": "#newsletter #emails #builder",
+    "topics": [
+      "Design Tools",
+      "Newsletters",
+      "Marketing"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177068",
+    "name": "ChinaValidate",
+    "tagline": "Screen Chinese suppliers before you pay",
+    "topics": [
+      "SaaS",
+      "Legal",
+      "Business"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177465",
+    "name": "FreeByDate",
+    "tagline": "Debt shouldn’t be a mystery. We show the path to freedom.",
+    "topics": [
+      "Productivity",
+      "Fintech",
+      "Data Visualization"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177532",
+    "name": "CalculaFinanzas",
+    "tagline": "Free, no-signup financial calculators for Chile",
+    "topics": [
+      "Productivity",
+      "Fintech",
+      "Finance"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177351",
+    "name": "CartWatch",
+    "tagline": "Detect and remove spam abandoned checkouts from Shopify",
+    "topics": [
+      "Email Marketing",
+      "E-Commerce",
+      "Bots"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177539",
+    "name": "JEEA2Z - Structured JEE Problem Tracker",
+    "tagline": "Stop solving randomly. Start tracking systematically.",
+    "topics": [
+      "Productivity",
+      "Analytics",
+      "Education"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177806",
+    "name": "RootedLife",
+    "tagline": "Turn quitting bad habits into growing real forests. 🌳",
+    "topics": [
+      "Android",
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177596",
+    "name": "Dewan ETS Calculator",
+    "tagline": "Free EU & UK ETS carbon calculator for shipping voyages",
+    "topics": [
+      "Transportation",
+      "Climate Tech",
+      "Finance"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177443",
+    "name": "SunnyBill",
+    "tagline": "Free billing tools for freelancers, no signup",
+    "topics": [
+      "Productivity",
+      "Freelance",
+      "Accounting"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177522",
+    "name": "Keygent",
+    "tagline": "Run terminal commands with safely injected env vars",
+    "topics": [
+      "Productivity",
+      "Open Source",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177556",
+    "name": "ShipStreak.fyi",
+    "tagline": "The social accountability tool for makers who actually ship",
+    "topics": [
+      "Productivity",
+      "Task Management",
+      "Maker Tools"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177253",
+    "name": "Base64 Converter",
+    "tagline": "Fast, Secure & Free Base64 Conversions.",
+    "topics": [
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177714",
+    "name": "LawnTide",
+    "tagline": "Know the exact week to treat your lawn — free, by ZIP",
+    "topics": [
+      "Home",
+      "Outdoors"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1160868",
+    "name": "ClientKit",
+    "tagline": "Manage clients, projects, and GST invoices in one dashboard",
+    "topics": [
+      "Productivity",
+      "Freelance",
+      "SaaS"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1171159",
+    "name": "Tankly: Aquarium Tracker & Log",
+    "tagline": "Smart aquarium care, in your pocket",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Pets",
+      "Aquarium"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1174832",
+    "name": "Sami",
+    "tagline": "Smart Media Optimizer",
+    "topics": [
+      "Design Tools",
+      "Photography",
+      "Apple"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176671",
+    "name": "Backlink Checker",
+    "tagline": "Analyze Backlinks, Discover Opportunities, and Improve SEO",
+    "topics": [
+      "Productivity",
+      "Marketing",
+      "SEO"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177463",
+    "name": "MoldChem Tools",
+    "tagline": "63+ free chemistry tools. No login, no paywall, no tracking",
+    "topics": [
+      "Productivity",
+      "Science"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177245",
+    "name": "How Much Mulch Do I Need?",
+    "tagline": "Mulch Calculator",
+    "topics": [
+      "Home"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177236",
+    "name": "Prabzo",
+    "tagline": "Do more of what you love. Prabzo handles the rest",
+    "topics": [
+      "Productivity",
+      "Freelance",
+      "CRM"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177822",
+    "name": "Price optimizer AppStore",
+    "tagline": "Localized App Store pricing for all 175 countries",
+    "topics": [
+      "Developer Tools"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1172213",
+    "name": "BMR Calculator",
+    "tagline": "Calculate your basal metabolic rate instantly.",
+    "topics": [
+      "Health & Fitness",
+      "Health",
+      "Family"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177670",
+    "name": "Scribbles Now",
+    "tagline": "Pictionary with AirPlay",
+    "topics": [
+      "Games"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177706",
+    "name": "Story Saver",
+    "tagline": "Browser-based downloader for public Instagram content.",
+    "topics": [
+      "Productivity",
+      "Social Media",
+      "Marketing"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177199",
+    "name": "GLOWTRIS",
+    "tagline": "Free neon block puzzle with daily challenges and no ads.",
+    "topics": [
+      "Puzzle Games",
+      "Free Games",
+      "Games"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177457",
+    "name": "Outlast",
+    "tagline": "Steal the throne. Hold it. Win the pot.",
+    "topics": [
+      "Web App",
+      "Games",
+      "Entertainment"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1171258",
+    "name": "Meshr",
+    "tagline": "Connect anything, anywhere ",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "VPN"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178243",
+    "name": "Datacrecy",
+    "tagline": "Stop paying to verify leads you already paid for",
+    "topics": [
+      "Sales",
+      "Email Marketing",
+      "SaaS"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177842",
+    "name": "TypingProo",
+    "tagline": "Type through novels and games, not random words",
+    "topics": [
+      "Productivity",
+      "Education",
+      "Games"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178229",
+    "name": "Job Search OS",
+    "tagline": "Never lose track of a job application again.",
+    "topics": [
+      "Productivity",
+      "Career",
+      "Notion"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178288",
+    "name": "HoverAI",
+    "tagline": "Translate, rewrite, and summarize text anywhere on your Mac",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Menu Bar Apps"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1175392",
+    "name": "UnlockHabit",
+    "tagline": "The habit tracker that never goes online",
+    "topics": [
+      "iOS",
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178248",
+    "name": "Vigilmon",
+    "tagline": "Free uptime monitoring + SSL expiry alerts + status pages",
+    "topics": [
+      "SaaS",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178737",
+    "name": "Pulse",
+    "tagline": "Was the last hour consuming or producing?",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1175226",
+    "name": "Surfboard",
+    "tagline": "A daily standup that's easier than learning to standup.",
+    "topics": [
+      "Productivity",
+      "Meetings",
+      "Tech"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178124",
+    "name": "Eventra",
+    "tagline": "Find unused features before they become tech debt",
+    "topics": [
+      "Productivity",
+      "Analytics",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177015",
+    "name": "Nearby Chat",
+    "tagline": "Free anonymous city chat — meet people nearby, no signup",
+    "topics": [
+      "Android",
+      "Social Networking"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178603",
+    "name": "JSON Scraper & Playground",
+    "tagline": "Turn any webpage into a powerful JSON workbench.",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1170485",
+    "name": "Radar Auto",
+    "tagline": "Compare preços de carros usados com a FIPE em segundos",
+    "topics": [
+      "Productivity",
+      "Cars",
+      "Finance"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178540",
+    "name": "PropWise — Free Prop Firm Tools",
+    "tagline": "10 free trading calculators built for prop firm traders",
+    "topics": [
+      "Productivity"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1173806",
+    "name": "AllUnitConversions",
+    "tagline": "Type any unit conversion and get instant answers",
+    "topics": [
+      "Productivity",
+      "Education",
+      "Developer Tools"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1174069",
+    "name": "LetUsCalc",
+    "tagline": "Free developer, logistics, and self-employment calculators",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Tech"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176109",
+    "name": "Filo",
+    "tagline": "Budget, save, and pay off debt — all in one simple app",
+    "topics": [
+      "Android",
+      "Fintech",
+      "Personal Finance"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1175675",
+    "name": "panicslides",
+    "tagline": "masterpieces by racing hearts",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Education"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178167",
+    "name": "LessPhoto",
+    "tagline": "Find duplicates and similar photos, all on-device",
+    "topics": [
+      "Photography",
+      "Apple",
+      "Photo & Video"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176359",
+    "name": "Precision Telemed",
+    "tagline": "Doctor-led GLP-1, TRT, peptide therapy at transparent prices",
+    "topics": [
+      "Health & Fitness",
+      "Tech",
+      "Medical"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178226",
+    "name": "Name Generator",
+    "tagline": "Generate unique nicknames for games, fantasy, pets & more.",
+    "topics": [
+      "Branding",
+      "Pets",
+      "Games"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176753",
+    "name": "Fitpilot",
+    "tagline": "Programme fitness personnalisé, sans compter les calories",
+    "topics": [
+      "Health & Fitness",
+      "Food & Drink",
+      "Fitness"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1170628",
+    "name": "Ascendoria",
+    "tagline": "The freelance platform where skills earn rank.",
+    "topics": [
+      "Hiring",
+      "Freelance",
+      "SEO"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176288",
+    "name": "Shanghai Scorekeeper",
+    "tagline": "The premium iOS scorekeeper built for Shanghai card nights",
+    "topics": [
+      "iOS",
+      "Card Games",
+      "Party"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178609",
+    "name": "1Save ",
+    "tagline": "The bookmark app that stays",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Social Media",
+      "Privacy"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1158847",
+    "name": "Mira",
+    "tagline": "One clear timeline of your cancer journey",
+    "topics": [
+      "Health & Fitness",
+      "Health"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178233",
+    "name": "DearOrbit",
+    "tagline": "Future letters, drifting bottles, and quiet connections.",
+    "topics": [
+      "Productivity",
+      "Messaging",
+      "Social Networking"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1178588",
+    "name": "TherapyFor.us -Online Therapy Made Human",
+    "tagline": "Find affordable online therapy in English, Spanish & more",
+    "topics": [
+      "Health"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176429",
+    "name": "FotoDesk",
+    "tagline": "Native Mac CRM for photographers. No subscriptions.",
+    "topics": [
+      "Productivity",
+      "Photography",
+      "CRM"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1176011",
+    "name": "VaultLeap Money Clock",
+    "tagline": "A clock that shows your money growing in real time",
+    "topics": [
+      "Productivity",
+      "Fintech",
+      "Hardware"
+    ],
+    "votes": 3
+  },
+  {
+    "id": "1177452",
+    "name": "HypurrQuant",
+    "tagline": "Put your idle crypto to work — one-click LP yield",
+    "topics": [
+      "Fintech",
+      "Web3",
+      "Blockchain"
+    ],
+    "votes": 2
+  },
+  {
+    "id": "1177747",
+    "name": "TradeSync",
+    "tagline": "A trading journal that compounds your edge",
+    "topics": [
+      "Productivity",
+      "Analytics",
+      "SaaS"
+    ],
+    "votes": 2
+  },
+  {
+    "id": "1177153",
+    "name": "Tokuplay APK",
+    "tagline": "Streaming Tokusatsu untuk Android",
+    "topics": [
+      "Android",
+      "Video Streaming",
+      "Entertainment"
+    ],
+    "votes": 2
+  },
+  {
+    "id": "1175270",
+    "name": "TravelVisaRules",
+    "tagline": "Check visa rules for your passport",
+    "topics": [
+      "Productivity",
+      "Travel",
+      "Maps"
+    ],
+    "votes": 2
+  },
+  {
+    "id": "1177160",
+    "name": "OptiShrink Pro",
+    "tagline": "Daily life use tools that make life more easy and safe.",
+    "topics": [
+      "Design Tools",
+      "Privacy",
+      "Photography"
+    ],
+    "votes": 2
+  },
+  {
+    "id": "1177373",
+    "name": "Legibilize",
+    "tagline": "Read web articles without ads",
+    "topics": [
+      "Productivity",
+      "User Experience",
+      "Developer Tools"
+    ],
+    "votes": 2
+  },
+  {
+    "id": "1179644",
+    "name": "AZ Student Opportunity Hub",
+    "tagline": "AZ scholarship & opportunity directory for high sclers",
+    "topics": [
+      "Productivity",
+      "Education"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179127",
+    "name": "Business Vibe KE",
+    "tagline": "Track M-Pesa sales & marketing campaigns in Kenya",
+    "topics": [
+      "Sales",
+      "Social Media",
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179152",
+    "name": "QR Code Inspecter",
+    "tagline": "Scan Smart. Stay Safe.",
+    "topics": [
+      "Web App",
+      "Advertising",
+      "Webcam"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178940",
+    "name": "Bunwag Collapsible Baby Bathtub",
+    "tagline": "Smart, collapsible baby tub with a built-in thermometer.",
+    "topics": [
+      "Amazon",
+      "Home",
+      "Babies"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178876",
+    "name": "Copycat Studio",
+    "tagline": "A desktop toolkit for photographers.",
+    "topics": [
+      "Productivity",
+      "Photography"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179716",
+    "name": "9-5 Reset",
+    "tagline": "Movement breaks that fit your actual schedule",
+    "topics": [
+      "Chrome Extensions",
+      "Health & Fitness",
+      "Productivity",
+      "Calendar"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179656",
+    "name": "Blur It",
+    "tagline": "Blur sensitive info on your screen in seconds",
+    "topics": [
+      "Browser Extensions",
+      "Chrome Extensions",
+      "Privacy"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179256",
+    "name": "TI 84 calculator",
+    "tagline": "Free Ti-84 Calculator online",
+    "topics": [
+      "Productivity",
+      "Education",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1176634",
+    "name": "ZapQR",
+    "tagline": "Free static and editable dynamic QR codes",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179376",
+    "name": "Azure 30",
+    "tagline": "Go from zero to AZ-900 in 30 days",
+    "topics": [
+      "Productivity",
+      "Education",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1175304",
+    "name": "IbronEXO",
+    "tagline": "A vault app that doesn't trust anyone. Including you.",
+    "topics": [
+      "Android",
+      "Privacy",
+      "Security"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179322",
+    "name": "DayReplay",
+    "tagline": "Automatic time tracking that never leaves your machine",
+    "topics": [
+      "Productivity",
+      "Time Tracking",
+      "Privacy"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178954",
+    "name": "PromptCam - MacOS secret teleprompter",
+    "tagline": "Read script to your screen, screen recorder don't see.",
+    "topics": [
+      "Productivity",
+      "Marketing",
+      "Apple"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179022",
+    "name": "RoseVault",
+    "tagline": "Private period & cycle tracking. Your data stays yours.",
+    "topics": [
+      "Health & Fitness",
+      "Privacy"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179700",
+    "name": "Financial Tools Suite",
+    "tagline": "All-in-one financial calculators in one simple tool",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Finance"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179318",
+    "name": "Tuberflix",
+    "tagline": "Discover curated short films & web series on YouTube",
+    "topics": [
+      "Video Streaming",
+      "YouTube",
+      "Entertainment"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178846",
+    "name": "BulkFile Downloader Pro",
+    "tagline": "Download all files from any webpage  in one click.",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "User Experience",
+      "Internet of Things"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179029",
+    "name": "Noveli",
+    "tagline": "Your org chart, finally worth showing",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Human Resources"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178915",
+    "name": "wrkwrk workspace solution",
+    "tagline": "Flexible Workspaces for Modern Businesses",
+    "topics": [
+      "Productivity",
+      "Global Nomad",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178861",
+    "name": "ShareTextQR",
+    "tagline": "Share Text Online Instantly with QR Code",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1161662",
+    "name": "WindowHopper — find any window quickly",
+    "tagline": "Spotlight for every window and tab on your Mac",
+    "topics": [
+      "Mac",
+      "Menu Bar Apps",
+      "Apple"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179663",
+    "name": "Oto · Focus & Refresh",
+    "tagline": "Turn phone cravings into movement, not blocking",
+    "topics": [
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1176064",
+    "name": "Solitairy",
+    "tagline": "The Solitaire you iPhone deserves, zero Ads or distractions",
+    "topics": [
+      "iOS",
+      "Indie Games",
+      "Games"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178547",
+    "name": "UpTakes",
+    "tagline": "Sports camera app - your highlight reel builds as you film",
+    "topics": [
+      "Android",
+      "Sports",
+      "Video",
+      "Video cameras"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178636",
+    "name": "QUIETO: Snore Less, Sleep Better",
+    "tagline": "The world firs and only noninvasive snoring solution",
+    "topics": [
+      "Productivity",
+      "User Experience",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177673",
+    "name": "Stickyboard",
+    "tagline": "Your projects, on real sticky notes.",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Task Management"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179162",
+    "name": "Kuror",
+    "tagline": "Stop serial returners without blocking real customers",
+    "topics": [
+      "E-Commerce",
+      "Finance"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179061",
+    "name": "FreeWWW",
+    "tagline": "Smart farming calculators for modern agriculture",
+    "topics": [
+      "Marketing",
+      "Farming"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1174261",
+    "name": "Fin Screener",
+    "tagline": "Stock screener with Buffett/Graham/Lynch valuation built in",
+    "topics": [
+      "iOS",
+      "Fintech",
+      "Investing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178843",
+    "name": "CheckItNow",
+    "tagline": "Offline CRM for service businesses,your data stay on your PC",
+    "topics": [
+      "Productivity",
+      "Education",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178844",
+    "name": "Qevro",
+    "tagline": "50+ free dev tools in one place. No more messy tabs.",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178775",
+    "name": "LEAD Diligently ",
+    "tagline": "LEAD Diligently helps faith-driven ",
+    "topics": [
+      "User Experience"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179701",
+    "name": "Zero-G Paste",
+    "tagline": "Share secure, self-destructing text and code snippets.",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Security"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179106",
+    "name": "PerkStation",
+    "tagline": "Employee perks and discount platform for uk businesses",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Human Resources"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179392",
+    "name": "Syrtia",
+    "tagline": "Comprenez réellement vos investissements",
+    "topics": [
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179698",
+    "name": "Kids Disease",
+    "tagline": "Structured pediatric illness index & symptom triage matrix",
+    "topics": [
+      "Web App",
+      "Health & Fitness",
+      "Parenting",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179215",
+    "name": "Enhanced Summary Dashboard",
+    "tagline": "View high level metrics, and navigate into the weeds.",
+    "topics": [
+      "Analytics",
+      "E-Commerce",
+      "Marketing attribution"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178804",
+    "name": "LifePath Simulator",
+    "tagline": "Simulate your life choices and map out your future.",
+    "topics": [
+      "Productivity",
+      "User Experience",
+      "Education"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179308",
+    "name": "YardCompass",
+    "tagline": "Free calculators that tell you exactly how much to buy",
+    "topics": [
+      "Productivity",
+      "Home",
+      "DIY"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179210",
+    "name": "Image Clipboard",
+    "tagline": "Copy Discord emojis, stickers, and image links fast",
+    "topics": [
+      "Emoji",
+      "Productivity",
+      "GIFs"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179567",
+    "name": "Referly",
+    "tagline": "Share Referrals. Discover Promotions. Earn together",
+    "topics": [
+      "Productivity",
+      "Marketing",
+      "Social Networking"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178829",
+    "name": "Dermistry",
+    "tagline": "Simple Hair Care Solution for Hair Damage",
+    "topics": [
+      "Beauty"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179076",
+    "name": "FilenQ",
+    "tagline": "A native macOS file manager for power users",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179688",
+    "name": "SnapTik-Short Video Downloader",
+    "tagline": "Paste a link, save short videos in HD or MP3 — no watermark",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Marketing",
+      "Internet of Things"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178890",
+    "name": "Screen Recorder",
+    "tagline": "Screen Recorder - Select Area & Audio",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Developer Tools",
+      "Audio"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179001",
+    "name": "Zume",
+    "tagline": "Zume is a resume generator with templates and customization.",
+    "topics": [
+      "Productivity",
+      "Product Hunt",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1165680",
+    "name": "MiragePDF Pro",
+    "tagline": "112 free, private PDF tools – no uploads, no watermarks",
+    "topics": [
+      "Productivity",
+      "Privacy",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179197",
+    "name": "Lazy To-Do",
+    "tagline": "Lazy To-Do is a minimalist task and daily habit tracker",
+    "topics": [
+      "Task Management"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178993",
+    "name": "kithly",
+    "tagline": "Stop carrying your household in your head.",
+    "topics": [
+      "Productivity",
+      "Marketing",
+      "Calendar"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179572",
+    "name": "MainMarket Sports",
+    "tagline": "The only sports newsletter you need",
+    "topics": [
+      "Newsletters",
+      "Sports"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1173385",
+    "name": "MUA Studio",
+    "tagline": "The business app for professional makeup artists",
+    "topics": [
+      "Productivity",
+      "Freelance",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179580",
+    "name": "Umadle — Daily Uma Musume Guessing Game",
+    "tagline": "Guess the daily Uma Musume character",
+    "topics": [
+      "Funny",
+      "Puzzle Games",
+      "Games"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179695",
+    "name": "TreeMap-Disk Visualizer",
+    "tagline": "free open-source disk space visualizer for Mac/Windows/linux",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179489",
+    "name": "ClimaPal",
+    "tagline": "Your personal stylist for weather, outfits & travel packing",
+    "topics": [
+      "iOS",
+      "Productivity",
+      "Travel"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179578",
+    "name": "FormaPDF",
+    "tagline": "All-in-one PDF tools & secure e-signatures",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178862",
+    "name": "HostFiler",
+    "tagline": "Create guest guidebooks, checklists  manuals in minutes",
+    "topics": [
+      "SaaS",
+      "Vacation"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179359",
+    "name": "Flowo",
+    "tagline": "Gestiona clientes, proyectos y facturas. Gratis, sin límites",
+    "topics": [
+      "Productivity",
+      "Freelance",
+      "CRM"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1174120",
+    "name": "Sotto",
+    "tagline": "Never forget a memory again. Just speak.",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Privacy"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179109",
+    "name": "EMTA",
+    "tagline": "Jobs for Freshers ' Internship and Training Academy ",
+    "topics": [
+      "Hiring"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179104",
+    "name": "Positive Affirmations",
+    "tagline": "Daily affirmation cards for self-love and confidence",
+    "topics": [
+      "Health & Fitness",
+      "Meditation",
+      "Health"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1171774",
+    "name": "Thread Context Cards — Context for Gmail",
+    "tagline": "Hover any sender in Gmail. See everything instantly.",
+    "topics": [
+      "Chrome Extensions",
+      "Email",
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178902",
+    "name": "Scanvey",
+    "tagline": "See what matters across all your charts instantly",
+    "topics": [
+      "Productivity",
+      "Fintech",
+      "Analytics"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178881",
+    "name": "CRYPSIP",
+    "tagline": "Plan your crypto wealth with smart SIP calculators",
+    "topics": [
+      "User Experience",
+      "Investing",
+      "Education"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177319",
+    "name": "PasswordGen",
+    "tagline": "14-language password generator — truly free, zero tracking",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Security"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179233",
+    "name": "lucio.immo",
+    "tagline": "Chaque bien, son droit. En 30 secondes.",
+    "topics": [
+      "Search"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178865",
+    "name": "Reformat",
+    "tagline": "Automatic Formatting for Legal Documents",
+    "topics": [
+      "Productivity",
+      "Legal",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179025",
+    "name": "customer management system",
+    "tagline": "Django CRM Starter Kit – Launch Your Own CRM Business Faster",
+    "topics": [
+      "Sales",
+      "Freelance",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178871",
+    "name": "Strikethrough",
+    "tagline": "A to-do list as satisfying as crossing tasks off on paper",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Task Management"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178985",
+    "name": "Kendali Duit",
+    "tagline": "Debt tracker that bills via WhatsApp, no payer signup needed",
+    "topics": [
+      "Productivity",
+      "Finance"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179499",
+    "name": "ShrinkRay",
+    "tagline": "Compress files in your browser. No uploads, no sign-up.",
+    "topics": [
+      "Productivity",
+      "Privacy",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1175030",
+    "name": "RoomPaintCalc",
+    "tagline": "Free tool: calculate exactly how much paint your room needs.",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Home"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178873",
+    "name": "JavaScript Tools",
+    "tagline": "Privacy-first developer tools that run in your browser",
+    "topics": [
+      "Productivity",
+      "Privacy",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179032",
+    "name": "Realme P4 Power 5G India Insights",
+    "tagline": "Realme P4 Power 5G India Date Trending: Everything We Know",
+    "topics": [
+      "Productivity",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1165632",
+    "name": "Randomly.online",
+    "tagline": "Tool ecosystem known for its unique tools, premium designs",
+    "topics": [
+      "Text Editors",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178824",
+    "name": "EduCyber",
+    "tagline": "Strategic Thinking, Top Web Designers,Personal Attention,",
+    "topics": [
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1154420",
+    "name": "InstaLead",
+    "tagline": "Maximizing Leads - Instagram Marketing Automation",
+    "topics": [
+      "Instagram",
+      "CRM",
+      "Marketing automation"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178922",
+    "name": "Focus Feed - RSS Player",
+    "tagline": "Follow YouTube channels without the algorithm",
+    "topics": [
+      "Productivity",
+      "Video Streaming",
+      "Parenting"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177282",
+    "name": "Pathfinder — Find Your Direction",
+    "tagline": "Discover who you are, what you love, and where to go",
+    "topics": [
+      "Productivity",
+      "Education",
+      "Career"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178879",
+    "name": "UTexSave",
+    "tagline": "Never lose typed text again — saved locally on Windows",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Tech news"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179254",
+    "name": "Grid Crown",
+    "tagline": "Place blocks, clear lines and climb the global rankings",
+    "topics": [
+      "Android",
+      "Puzzle Games",
+      "Free Games",
+      "Games"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177745",
+    "name": "Stitch Keeper",
+    "tagline": "An ad-free row counter for knitters & crocheters",
+    "topics": [
+      "iOS",
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1175337",
+    "name": "Stop Loss & Trailing Stop Calculator",
+    "tagline": "Instantly calculate your stop-loss price and trailing stop %",
+    "topics": [
+      "Productivity",
+      "Investing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179050",
+    "name": "Unifi Pay Direct",
+    "tagline": "Accept stablecoin payments in 10 min, with 0% fees",
+    "topics": [
+      "Fintech",
+      "Payments",
+      "Web3"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179546",
+    "name": "Purchase.now",
+    "tagline": "Own a clean spot on the homepage of the internet",
+    "topics": [
+      "Payments",
+      "Marketing",
+      "Crypto"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178885",
+    "name": "ERP for Pharmaceutical Industry UK",
+    "tagline": "BatchMaster ERP for UK Pharmaceutical Companies",
+    "topics": [
+      "Business"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179615",
+    "name": "Steampunk",
+    "tagline": "A Platform to Watch Together",
+    "topics": [
+      "Productivity",
+      "User Experience",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178949",
+    "name": "RiskDesk",
+    "tagline": "Professional position sizing & trade analytics for traders.",
+    "topics": [
+      "Android",
+      "iOS",
+      "Productivity",
+      "Finance"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1173524",
+    "name": "Stippa",
+    "tagline": "Appointment & booking software, Dutch-first",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "Calendar"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179737",
+    "name": "Signa WiFi",
+    "tagline": "Wi-Fi signal strength, alive in your menu bar",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Menu Bar Apps"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180114",
+    "name": "Bingo Caller Pro & Tambola",
+    "tagline": "Professional bingo hosting without cages, paper, or subs",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Games",
+      "Entertainment"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180076",
+    "name": "Glitchwatch — CI and deploy alerts",
+    "tagline": "One webhook. Every CI failure in one inbox.",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179762",
+    "name": "OneClickTabs",
+    "tagline": "Save and launch website workspaces with one click",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180556",
+    "name": "HiRezGo!",
+    "tagline": "Share full-resolution images without compression",
+    "topics": [
+      "SaaS",
+      "Photography",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179865",
+    "name": "QuickGit",
+    "tagline": "1-Click GitHub repository creator directly from your browser",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1155720",
+    "name": "BounceProtect",
+    "tagline": "Smarter Email Validation for Better Deliverability",
+    "topics": [
+      "Email Marketing",
+      "SaaS",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180258",
+    "name": "Vieproide",
+    "tagline": "Product discovery platform for cool gadgets and items",
+    "topics": [
+      "Web App",
+      "E-Commerce",
+      "Shopping"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180218",
+    "name": "BelvedereTrack",
+    "tagline": "Free job search dashboard to manage applications",
+    "topics": [
+      "Hiring",
+      "Productivity",
+      "Career"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180136",
+    "name": "MentionGPT",
+    "tagline": "You've built something great. Now it's time to market it.",
+    "topics": [
+      "Marketing",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180446",
+    "name": "Habit Pocket",
+    "tagline": "Find out what's actually affecting your sleep, mood and life",
+    "topics": [
+      "Web App",
+      "Productivity",
+      "Quantified Self"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179848",
+    "name": "Pharma NOLT 300 Ampoules",
+    "tagline": "Joint Recovery and Tissue Repair",
+    "topics": [
+      "Health & Fitness",
+      "Fitness"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180273",
+    "name": "Loops Lane — Chord Flow",
+    "tagline": "Ripchord presets for R&B & Soul producers",
+    "topics": [
+      "Productivity",
+      "Music",
+      "Audio"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180161",
+    "name": "OnlySeeka",
+    "tagline": "The fastest OnlyFans creator search engine",
+    "topics": [
+      "Search"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179097",
+    "name": "Decaf: Caffeine Tracker",
+    "tagline": "Cut back on caffeine without the withdrawal crash",
+    "topics": [
+      "iOS",
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1155514",
+    "name": "Goto77",
+    "tagline": "Goto77 adalah platfrom game online tebak angka di indonesia",
+    "topics": [
+      "Games"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180523",
+    "name": "FastAPI Cloud",
+    "tagline": "Deploy FastAPI apps with one command",
+    "topics": [
+      "API",
+      "Software Engineering",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179891",
+    "name": "Portrait Drop",
+    "tagline": "Product Photograph for Online Sellers",
+    "topics": [
+      "Android",
+      "Marketing",
+      "Photography",
+      "E-Commerce"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177742",
+    "name": "bab.gg",
+    "tagline": "Talk your way past the guard - a new door every day",
+    "topics": [
+      "Games"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164651",
+    "name": "Arkham Intelligence Wallet Data Scraper",
+    "tagline": "Export Arkham wallet data from addresses or URLs",
+    "topics": [
+      "API",
+      "Analytics",
+      "Crypto"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180328",
+    "name": "GoWeb OS",
+    "tagline": "An immutable, framework-free single-file Web OS prototype",
+    "topics": [
+      "Productivity",
+      "Open Source",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180336",
+    "name": "LeLiveBoost",
+    "tagline": "Whatnot Live Boost: Seller Analytics, CRM & Tools",
+    "topics": [
+      "Productivity",
+      "Analytics"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179922",
+    "name": "SketchPop",
+    "tagline": "Photo-to-coloring-page magic + smart coloring for kids",
+    "topics": [
+      "Android",
+      "Art",
+      "Coloring"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179686",
+    "name": "RUCKUS2 TKP",
+    "tagline": "The ultimate street-surfing machine, pre-dialed to carve.",
+    "topics": [
+      "Sports",
+      "Hardware",
+      "Transportation"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164646",
+    "name": "Flight Scraper",
+    "tagline": "Scrape flight prices and schedules into clean datasets",
+    "topics": [
+      "API",
+      "Travel",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179391",
+    "name": "AutoGtg",
+    "tagline": "Revolutionizing automotive care in India",
+    "topics": [
+      "User Experience",
+      "SaaS",
+      "Tech"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179985",
+    "name": "Workout for Women: HomeFitPro",
+    "tagline": "Daily home workouts and weight loss",
+    "topics": [
+      "Health & Fitness"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179894",
+    "name": "Dynamic API Platform",
+    "tagline": "Open-source dynamic REST API platform",
+    "topics": [
+      "API",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180177",
+    "name": "Listening Post",
+    "tagline": "Your Mac as the scrobbling hub for *all* your Apple devices",
+    "topics": [
+      "iOS",
+      "Apple Watch",
+      "Music"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180002",
+    "name": "Synca",
+    "tagline": "Manage your performer team effortlessly",
+    "topics": [
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180093",
+    "name": "WorkCV",
+    "tagline": "Build a professional UK CV without a monthly subscription.",
+    "topics": [
+      "Hiring",
+      "Tech",
+      "Career"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180362",
+    "name": "ClearSkys",
+    "tagline": "Should I stargaze tonight? Go/no go, any location",
+    "topics": [
+      "Weather",
+      "Nature & Outdoors"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179801",
+    "name": "Kedarkul",
+    "tagline": "The smarter way to run your school.",
+    "topics": [
+      "Education",
+      "SaaS",
+      "School"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180047",
+    "name": "Link Notepad",
+    "tagline": "Free online notepad with shareable links.",
+    "topics": [
+      "Task Management",
+      "Alarms",
+      "Notes"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180304",
+    "name": "DravonX",
+    "tagline": "DRAVONX | PASSIVE INCOME GENERATOR",
+    "topics": [
+      "Monetization"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180135",
+    "name": "Excel spreadsheets to MARC21 Converter",
+    "tagline": "The fastest way to convert Excel to MARC21 for Koha",
+    "topics": [
+      "Spreadsheets"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180530",
+    "name": "MarkPhoto",
+    "tagline": "Cool Photo Border Tool – Level Up Your Film Photos Instantly",
+    "topics": [
+      "Photography"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180110",
+    "name": "WA Group Extractor",
+    "tagline": "Export WhatsApp group members to Excel in seconds",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179582",
+    "name": "ToolsNova",
+    "tagline": "154 free browser-based tools — no signup, works offline",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Web Design"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179753",
+    "name": "Self-Improvement & Mindset planner",
+    "tagline": "Build positive daily habits",
+    "topics": [
+      "Design Tools",
+      "Design templates",
+      "Notion"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1152488",
+    "name": "Sequence Tool",
+    "tagline": "Create What Matters - Toolkit for Final Cut & Resolve",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Video"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179902",
+    "name": "Kit Hub Tool",
+    "tagline": "your ultimate web toolkit for SEO images, and downloads",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179783",
+    "name": "Pacerio",
+    "tagline": "Running ans nutrition",
+    "topics": [
+      "Nutrition",
+      "Running"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180268",
+    "name": "Zeninvo",
+    "tagline": "Free invoicing for freelancers — get paid faster",
+    "topics": [
+      "Freelance",
+      "SaaS",
+      "Finance"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1152488",
+    "name": "Sequence Tool",
+    "tagline": "Create What Matters - Toolkit for Final Cut & Resolve",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Video"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180170",
+    "name": "PostDodo",
+    "tagline": "The social media scheduler that actually posts",
+    "topics": [
+      "Productivity",
+      "Social Media",
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179902",
+    "name": "Kit Hub Tool",
+    "tagline": "your ultimate web toolkit for SEO images, and downloads",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179783",
+    "name": "Pacerio",
+    "tagline": "Running ans nutrition",
+    "topics": [
+      "Nutrition",
+      "Running"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179801",
+    "name": "Kedarkul",
+    "tagline": "The smarter way to run your school.",
+    "topics": [
+      "Education",
+      "SaaS",
+      "School"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180516",
+    "name": "Klipzo",
+    "tagline": "82 tools. No signup. No ads. No nonsense",
+    "topics": [
+      "Productivity",
+      "Privacy",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180047",
+    "name": "Link Notepad",
+    "tagline": "Free online notepad with shareable links.",
+    "topics": [
+      "Task Management",
+      "Alarms",
+      "Notes"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180447",
+    "name": "LED Banner Plus",
+    "tagline": "Elegant Led Banner",
+    "topics": [
+      "Music",
+      "Travel",
+      "Lifestyle"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1178658",
+    "name": "Aqua Answers Pool Company",
+    "tagline": "Pool Services in Deer Park",
+    "topics": [
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180292",
+    "name": "https://www.shopncentives.com/",
+    "tagline": "shopncentives",
+    "topics": [
+      "Developer Tools",
+      "E-Commerce",
+      "Shopping"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180304",
+    "name": "DravonX",
+    "tagline": "DRAVONX | PASSIVE INCOME GENERATOR",
+    "topics": [
+      "Monetization"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179907",
+    "name": "Free JPEG XL Converter ",
+    "tagline": "Convert JXL, HEIC & more — free, private, in your browser",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Privacy"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180088",
+    "name": "GitHub",
+    "tagline": "Custom Linux OS bypassing GTK4 theme limits dynamically.",
+    "topics": [
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1158333",
+    "name": "Learner Quiz",
+    "tagline": "Free 60-second VARK quiz that reveals your learning style",
+    "topics": [
+      "Education",
+      "Tech",
+      "Online Learning"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164646",
+    "name": "Flight Scraper",
+    "tagline": "Scrape flight prices and schedules into clean datasets",
+    "topics": [
+      "API",
+      "Travel",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179951",
+    "name": "Grace",
+    "tagline": "Turn Git into a royal language.",
+    "topics": [
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180110",
+    "name": "WA Group Extractor",
+    "tagline": "Export WhatsApp group members to Excel in seconds",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1152488",
+    "name": "Sequence Tool",
+    "tagline": "Create What Matters - Toolkit for Final Cut & Resolve",
+    "topics": [
+      "Mac",
+      "Productivity",
+      "Video"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179630",
+    "name": "Reveald",
+    "tagline": "Get Paid First. Clients See Watermarks Till Payment Clears.",
+    "topics": [
+      "Design Tools",
+      "Freelance",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180197",
+    "name": "Photoluminescent Exit Signs",
+    "tagline": "Silent Safety. Powerful Protection Under Every Step",
+    "topics": [
+      "Productivity",
+      "Construction"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179714",
+    "name": "ScreenSize.net",
+    "tagline": "Live screen checker for responsive web development",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180304",
+    "name": "DravonX",
+    "tagline": "DRAVONX | PASSIVE INCOME GENERATOR",
+    "topics": [
+      "Monetization"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180401",
+    "name": "Color Dictionary",
+    "tagline": "240 colors: Japanese Traditional & CSS Named with Oigin",
+    "topics": [
+      "Design Tools",
+      "Web Design"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179754",
+    "name": "Arrow Game",
+    "tagline": "Test your reflexes with fast-paced arrow challenges",
+    "topics": [
+      "Productivity",
+      "Free Games",
+      "Games"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180101",
+    "name": "LlevoSan",
+    "tagline": "Manage rotating savings groups with clarity",
+    "topics": [
+      "Productivity",
+      "Fintech",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180490",
+    "name": "Temp Gmail for Essential Online Privacy",
+    "tagline": "Protect Your Identity with Secure Temporary Email",
+    "topics": [
+      "Email",
+      "Marketing",
+      "Privacy"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179848",
+    "name": "Pharma NOLT 300 Ampoules",
+    "tagline": "Joint Recovery and Tissue Repair",
+    "topics": [
+      "Health & Fitness",
+      "Fitness"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180517",
+    "name": "Ink Sync Notes & Checklist",
+    "tagline": "Simple, clean note-taking, sync across all your devices",
+    "topics": [
+      "Android",
+      "Productivity",
+      "Writing",
+      "Notes"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180444",
+    "name": "Dealer Bloom",
+    "tagline": "The dealership platform that knows it sells cars",
+    "topics": [
+      "Sales",
+      "Cars",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180273",
+    "name": "Loops Lane — Chord Flow",
+    "tagline": "Ripchord presets for R&B & Soul producers",
+    "topics": [
+      "Productivity",
+      "Music",
+      "Audio"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180261",
+    "name": "Dumqa",
+    "tagline": "Stop Guessing What to Study Next",
+    "topics": [
+      "Android",
+      "Hiring",
+      "Productivity",
+      "Education"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164651",
+    "name": "Arkham Intelligence Wallet Data Scraper",
+    "tagline": "Export Arkham wallet data from addresses or URLs",
+    "topics": [
+      "API",
+      "Analytics",
+      "Crypto"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180441",
+    "name": "YT Analyzer",
+    "tagline": "Outlier detection and analytics for YouTube creators",
+    "topics": [
+      "Chrome Extensions",
+      "YouTube"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177418",
+    "name": "CalcTrip: offline travel calculator",
+    "tagline": "The first app you open when you see a price abroad",
+    "topics": [
+      "Productivity",
+      "Travel",
+      "Money"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180444",
+    "name": "Dealer Bloom",
+    "tagline": "The dealership platform that knows it sells cars",
+    "topics": [
+      "Sales",
+      "Cars",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180273",
+    "name": "Loops Lane — Chord Flow",
+    "tagline": "Ripchord presets for R&B & Soul producers",
+    "topics": [
+      "Productivity",
+      "Music",
+      "Audio"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164651",
+    "name": "Arkham Intelligence Wallet Data Scraper",
+    "tagline": "Export Arkham wallet data from addresses or URLs",
+    "topics": [
+      "API",
+      "Analytics",
+      "Crypto"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180441",
+    "name": "YT Analyzer",
+    "tagline": "Outlier detection and analytics for YouTube creators",
+    "topics": [
+      "Chrome Extensions",
+      "YouTube"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177418",
+    "name": "CalcTrip: offline travel calculator",
+    "tagline": "The first app you open when you see a price abroad",
+    "topics": [
+      "Productivity",
+      "Travel",
+      "Money"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180276",
+    "name": "ROASintheBlack.com",
+    "tagline": "Know your break-even ROAS before spending a dollar on ads",
+    "topics": [
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179869",
+    "name": "DailyVox",
+    "tagline": "Speak 42 seconds a day — a private, on-device voice diary",
+    "topics": [
+      "iOS",
+      "Productivity",
+      "Privacy",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180444",
+    "name": "Dealer Bloom",
+    "tagline": "The dealership platform that knows it sells cars",
+    "topics": [
+      "Sales",
+      "Cars",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180273",
+    "name": "Loops Lane — Chord Flow",
+    "tagline": "Ripchord presets for R&B & Soul producers",
+    "topics": [
+      "Productivity",
+      "Music",
+      "Audio"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164651",
+    "name": "Arkham Intelligence Wallet Data Scraper",
+    "tagline": "Export Arkham wallet data from addresses or URLs",
+    "topics": [
+      "API",
+      "Analytics",
+      "Crypto"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180441",
+    "name": "YT Analyzer",
+    "tagline": "Outlier detection and analytics for YouTube creators",
+    "topics": [
+      "Chrome Extensions",
+      "YouTube"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1177418",
+    "name": "CalcTrip: offline travel calculator",
+    "tagline": "The first app you open when you see a price abroad",
+    "topics": [
+      "Productivity",
+      "Travel",
+      "Money"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180276",
+    "name": "ROASintheBlack.com",
+    "tagline": "Know your break-even ROAS before spending a dollar on ads",
+    "topics": [
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179869",
+    "name": "DailyVox",
+    "tagline": "Speak 42 seconds a day — a private, on-device voice diary",
+    "topics": [
+      "iOS",
+      "Productivity",
+      "Privacy",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180336",
+    "name": "LeLiveBoost",
+    "tagline": "Whatnot Live Boost: Seller Analytics, CRM & Tools",
+    "topics": [
+      "Productivity",
+      "Analytics"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179769",
+    "name": "Count My Boxes",
+    "tagline": "Inventory management you can set up this afternoon",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "E-Commerce"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180097",
+    "name": "Breklo - Online tools for all your needs",
+    "tagline": "Convert, compress, and edit files — fast, free, and private.",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180444",
+    "name": "Dealer Bloom",
+    "tagline": "The dealership platform that knows it sells cars",
+    "topics": [
+      "Sales",
+      "Cars",
+      "SaaS"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164651",
+    "name": "Arkham Intelligence Wallet Data Scraper",
+    "tagline": "Export Arkham wallet data from addresses or URLs",
+    "topics": [
+      "API",
+      "Analytics",
+      "Crypto"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180441",
+    "name": "YT Analyzer",
+    "tagline": "Outlier detection and analytics for YouTube creators",
+    "topics": [
+      "Chrome Extensions",
+      "YouTube"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180276",
+    "name": "ROASintheBlack.com",
+    "tagline": "Know your break-even ROAS before spending a dollar on ads",
+    "topics": [
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179869",
+    "name": "DailyVox",
+    "tagline": "Speak 42 seconds a day — a private, on-device voice diary",
+    "topics": [
+      "iOS",
+      "Productivity",
+      "Privacy",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1155514",
+    "name": "Goto77",
+    "tagline": "Goto77 adalah platfrom game online tebak angka di indonesia",
+    "topics": [
+      "Games"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180102",
+    "name": "Business Growth Consultant India",
+    "tagline": "Business Growth Consultant in India | Grow With Consultants",
+    "topics": [
+      "Productivity",
+      "Marketing",
+      "Human Resources"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180037",
+    "name": "Spendid — Budget. Survive. Flex later.",
+    "tagline": "The budgeting app that roasts you for overspending",
+    "topics": [
+      "Productivity",
+      "Fintech",
+      "Education"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179883",
+    "name": "Dash SaaS",
+    "tagline": "All In One Open Source ERP Software",
+    "topics": [
+      "Open Source",
+      "SaaS",
+      "CRM"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180526",
+    "name": "Signal Trading Bot",
+    "tagline": "Develop Intelligent Trading Automation Platforms",
+    "topics": [
+      "Fintech",
+      "Crypto",
+      "Blockchain"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180416",
+    "name": "Sheet2Nest",
+    "tagline": "Get More from Every Sheet.",
+    "topics": [
+      "Design Tools",
+      "Productivity",
+      "Graphics & Design"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179097",
+    "name": "Decaf: Caffeine Tracker",
+    "tagline": "Cut back on caffeine without the withdrawal crash",
+    "topics": [
+      "iOS",
+      "Health & Fitness",
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180462",
+    "name": "Mosaci",
+    "tagline": "Turn any image into a Color by number book in seconds.",
+    "topics": [
+      "Design Tools",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179865",
+    "name": "QuickGit",
+    "tagline": "1-Click GitHub repository creator directly from your browser",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity",
+      "Developer Tools",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180201",
+    "name": "CepBot",
+    "tagline": "Zero-VPS cloud automation bridge for TradingView & brokers",
+    "topics": [
+      "Fintech",
+      "Investing",
+      "Developer Tools"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180276",
+    "name": "ROASintheBlack.com",
+    "tagline": "Know your break-even ROAS before spending a dollar on ads",
+    "topics": [
+      "Marketing"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180237",
+    "name": "Zerion",
+    "tagline": "Encrypted P2P messenger over Tor. No servers, no accounts.",
+    "topics": [
+      "Android",
+      "Open Source",
+      "Privacy",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1164651",
+    "name": "Arkham Intelligence Wallet Data Scraper",
+    "tagline": "Export Arkham wallet data from addresses or URLs",
+    "topics": [
+      "API",
+      "Analytics",
+      "Crypto"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179813",
+    "name": "RemindPay 3.4.2",
+    "tagline": "Bills, subscriptions & warranties, all in one place",
+    "topics": [
+      "Productivity",
+      "Tech",
+      "Finance"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179686",
+    "name": "RUCKUS2 TKP",
+    "tagline": "The ultimate street-surfing machine, pre-dialed to carve.",
+    "topics": [
+      "Sports",
+      "Hardware",
+      "Transportation"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179899",
+    "name": "Numday",
+    "tagline": "A 90-second daily math challenge with rankings",
+    "topics": [
+      "Android",
+      "Free Games",
+      "Online Learning"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179855",
+    "name": "Builders At Your Service",
+    "tagline": "Home Extension Builder in Adelaide",
+    "topics": [
+      "Home"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179659",
+    "name": "DevStack",
+    "tagline": "Every tool a NZ property developer needs, in one place",
+    "topics": [
+      "Web App",
+      "Productivity",
+      "Home"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179915",
+    "name": "Actual Energy",
+    "tagline": "Actual Energy is all about delivering best energy management",
+    "topics": [
+      "Electric Cars"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180089",
+    "name": "chaininspectorsuite",
+    "tagline": "Spot rugs & honeypots before you ape in",
+    "topics": [
+      "Crypto",
+      "Web3",
+      "Security"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179988",
+    "name": "ATS Pro",
+    "tagline": "build better resumes",
+    "topics": [
+      "Education",
+      "Human Resources"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179816",
+    "name": "OneBag",
+    "tagline": "Personalized packing lists so you never overpack again",
+    "topics": [
+      "Android",
+      "iOS",
+      "Productivity",
+      "GitHub"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179840",
+    "name": "Anima Cycle",
+    "tagline": "Your cycle has a pattern. Use it.",
+    "topics": [
+      "Productivity",
+      "FemTech",
+      "Lifestyle"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179762",
+    "name": "OneClickTabs",
+    "tagline": "Save and launch website workspaces with one click",
+    "topics": [
+      "Chrome Extensions",
+      "Productivity"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180063",
+    "name": "Earned Screen Time App",
+    "tagline": "Do More, Scroll Less",
+    "topics": [
+      "Productivity",
+      "Developer Tools",
+      "Apple"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180362",
+    "name": "ClearSkys",
+    "tagline": "Should I stargaze tonight? Go/no go, any location",
+    "topics": [
+      "Weather",
+      "Nature & Outdoors"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1180315",
+    "name": "BusineSooq | سوق العمل",
+    "tagline": "The leading marketplace for local services.",
+    "topics": [
+      "Android",
+      "Marketing",
+      "Tech",
+      "Home services"
+    ],
+    "votes": 0
+  },
+  {
+    "id": "1179769",
+    "name": "Count My Boxes",
+    "tagline": "Inventory management you can set up this afternoon",
+    "topics": [
+      "Productivity",
+      "SaaS",
+      "E-Commerce"
+    ],
+    "votes": 0
+  }
+]

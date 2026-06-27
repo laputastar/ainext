@@ -1,28 +1,51 @@
-// AINext Ad Component
-// 统一管理全站 6 个广告位。上线后填入 AdSense 代码即可
-// 当前未配置时，保持原有占位样式不变
+// AINext Unified Ad Component
+// 全站广告位统一管理：占位符渲染 + AdSense 代码注入 + 原生广告卡
+// 上线后只需改下面 3 处：enabled、slots 里的 code、nativeAdCode
 
 const AD_CONFIG = {
   enabled: false,  // 上线后改为 true
-  slots: {
-    // 首页 Banner ×2（Hero 下方 + 工具列表中间）
-    '.ad-slot-responsive': '',  // 填入 <ins class="adsbygoogle"...>
-    
-    // 详情页 Banner ×2（评论上方 + 相关推荐上方）
-    '.ad-box': '',
-    
-    // 首页原生信息流 ×2（工具列表第5位 + 第13位）
-    '.tool-card-ad': '',
-  }
+
+  // 固定广告位：selector = 页面中的容器，placeholder = 未启用时的占位文字，code = AdSense 代码
+  slots: [
+    { selector: '.ad-slot-index-top',    placeholder: '广告位招租 (响应式)', code: '' },
+    { selector: '.ad-slot-index-mid',    placeholder: '广告位招租 (响应式)', code: '' },
+    { selector: '.ad-slot-detail-top',   placeholder: '广告位 (详情页)',     code: '' },
+    { selector: '.ad-slot-detail-bottom',placeholder: '广告位 (详情页)',     code: '' },
+  ],
+
+  // 流内原生广告：每 N 张工具卡之间插入一张广告卡
+  nativeAdInterval: 7,
+  nativeAdTemplate: '' // 填入 <ins class="adsbygoogle" data-ad-format="fluid" ...></ins>
 };
 
-(function initAds(){
-  if(!AD_CONFIG.enabled) return;
-  
-  Object.entries(AD_CONFIG.slots).forEach(([selector,code]) => {
-    if(!code) return;
-    document.querySelectorAll(selector).forEach(el => {
-      el.innerHTML = code;
+(function initAds() {
+  // 1. 固定广告位渲染
+  AD_CONFIG.slots.forEach(function(s) {
+    var els = document.querySelectorAll(s.selector);
+    els.forEach(function(el) {
+      if (AD_CONFIG.enabled && s.code) {
+        el.innerHTML = s.code;
+      } else {
+        el.innerHTML = '<div class="ad-placeholder">' + s.placeholder + '</div>';
+      }
     });
   });
+
+  // 2. 暴露广告卡 HTML 构建器（供 renderGrid 调用）
+  window.buildNativeAdCard = function() {
+    if (!AD_CONFIG.enabled || !AD_CONFIG.nativeAdTemplate) {
+      return '<div class="tool-card tool-card-ad"><div class="ad-placeholder">原生广告位</div></div>';
+    }
+    return '<div class="tool-card tool-card-ad">' + AD_CONFIG.nativeAdTemplate + '</div>';
+  };
+
+  // 3. 暴露投放间隔
+  window.getAdInterval = function() {
+    return AD_CONFIG.nativeAdInterval;
+  };
+
+  // 4. 暴露是否启用
+  window.isAdEnabled = function() {
+    return AD_CONFIG.enabled;
+  };
 })();

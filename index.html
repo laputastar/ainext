@@ -77,8 +77,8 @@
 .feat-visit:hover{color:var(--color-primary-hover)}
 
 /* ── Ad ── */
-.ad-slot{display:flex;align-items:center;justify-content:center;border:2px dashed var(--gray-300);border-radius:10px;background:var(--gray-100);color:var(--gray-400);font-size:13px;font-weight:500;margin:0 auto;min-height:90px;width:100%}
-.ad-slot-responsive{max-width:728px}
+
+
 /* Native ad card — blends into tool grid */
 .tool-card-ad{background:linear-gradient(135deg,#FFF7ED,#fff);border:1px dashed #D4A373;border-radius:14px;padding:var(--space-5);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;cursor:pointer;transition:all .2s;min-height:180px}
 .tool-card-ad:hover{border-color:var(--color-primary);box-shadow:0 2px 12px rgba(180,83,9,.1)}
@@ -177,8 +177,8 @@
   </div>
 </section>
 
-<!-- Ad 1 -->
-<div class="container" style="padding-bottom:48px"><div class="ad-slot ad-slot-responsive">广告位招租 (响应式)</div></div>
+<!-- Ad slot 1 -->
+<div class="ad-slot ad-slot-index-top"><div class="ad-placeholder">广告位招租 (响应式)</div></div>
 
 <!-- Toolbar -->
 <div class="container toolbar">
@@ -198,14 +198,13 @@
 <!-- Tool Grid -->
 <div class="container" style="padding-bottom:26px"><div class="tool-grid" id="toolGrid"><div class="empty-state"><p style="font-size:14px;color:var(--gray-400)">加载工具数据...</p></div></div></div>
 
-<!-- Ad 2 -->
-<div class="container" style="padding-bottom:24px"><div class="ad-slot ad-slot-responsive">广告位招租 (响应式)</div></div>
+<!-- Ad slot 2 -->
+<div class="ad-slot ad-slot-index-mid"><div class="ad-placeholder">广告位招租 (响应式)</div></div>
 <script>document.write(footerHTML())</script>
 
 <script>
 let allTools=[],allCats=[],curCat='',curTab='latest',curSearch='';
-let pageSize=24,currentPage=0,filteredList=[];
-const AD_SLOTS=[4,12];
+let pageSize=24,currentPage=0,filteredList=[],nextAdAt=0;
 
 async function load(){
   try{
@@ -240,6 +239,7 @@ function renderFeat(){
 
 function renderGrid(){
   currentPage=0;
+  nextAdAt=5+Math.floor(Math.random()*5);  // 首个广告在 5~9 位置随机
   let list=[...allTools];if(curCat)list=list.filter(t=>t.category===curCat);
   if(curSearch){const q=curSearch.toLowerCase();list=list.filter(t=>t.name.toLowerCase().includes(q)||t.tagline.toLowerCase().includes(q)||t.description.toLowerCase().includes(q))}
   if(curTab==='weekly'){const d7=new Date();d7.setDate(d7.getDate()-7);const d14=new Date();d14.setDate(d14.getDate()-14);list=list.filter(t=>{const d=new Date(t.createdAt);return d>=d14&&d<d7})}
@@ -261,8 +261,9 @@ function appendMore(){
   for(let i=0;i<batch.length;i++){
     const t=batch[i];
     const globalIdx=start+i;
-    if(AD_SLOTS.includes(globalIdx)&&!curSearch&&!curCat){
-      html+=`<div class="tool-card-ad"><div class="ad-label">广告</div><div style="color:var(--gray-400);font-size:13px">AdSense</div></div>`;
+    if(globalIdx===nextAdAt&&!curSearch&&!curCat){
+      html+=window.buildNativeAdCard?window.buildNativeAdCard():"";
+      nextAdAt=globalIdx+5+Math.floor(Math.random()*5);  // 下一个广告在 5~9 张之后
     }
     html+=`<div class="tool-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="tool-card-header"><img src="${t.thumbnail}" alt="${t.name}" class="tool-thumb" loading="lazy" onerror="this.style.display='none'"><div class="tool-info"><div class="tool-name">${t.name}</div><div class="tool-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="tool-topics">${(t.topics||[]).slice(0,3).map(tp=>`<span class="topic-tag">${tp.name}</span>`).join('')}</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>`;
   }

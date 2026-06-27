@@ -108,8 +108,6 @@ function renderToolPage(tool, allTools, origin) {
 .gallery-thumb img{width:100%;height:100%;object-fit:cover}
 .section{margin-bottom:32px}
 .section-title{font-size:18px;font-weight:700;color:var(--gray-900);margin-bottom:12px;display:flex;align-items:center;gap:6px}
-.ad-box{display:flex;align-items:center;justify-content:center;border:2px dashed var(--gray-300);border-radius:10px;background:var(--gray-100);color:var(--gray-400);font-size:13px;font-weight:500;margin:0 auto;min-height:90px;width:100%;max-width:728px}
-.ad-inline{margin:24px 0 32px}
 .desc-card{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-card);padding:24px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .desc-card p{font-size:15px;color:var(--gray-700);line-height:1.75;margin-bottom:12px}
 .desc-card p:last-child{margin-bottom:0}
@@ -201,7 +199,7 @@ function renderToolPage(tool, allTools, origin) {
       <span>🕐 ${dateStr}</span>
     </div>
 
-    <div class="ad-inline"><div class="ad-box">广告位 (响应式横幅)</div></div>
+    <div class="ad-slot ad-slot-detail-top"><div class="ad-placeholder">广告位 (响应式横幅)</div></div>
 
     <section class="section">
       <h2 class="section-title">💬 用户评论</h2>
@@ -221,7 +219,7 @@ function renderToolPage(tool, allTools, origin) {
       </div>
     </section>
 
-    <div style="margin-bottom:32px"><div class="ad-box">广告位 (响应式横幅)</div></div>
+    <div class="ad-slot ad-slot-detail-bottom"><div class="ad-placeholder">广告位 (响应式横幅)</div></div>
 
     ${related.length ? `<section class="section"><h2 class="section-title">🔗 相关推荐</h2><div class="related-grid">${related.map(r => `<a href="tools/${esc(r.slug)}-${esc(r.id)}.html" class="related-card"><div class="related-top"><img src="${esc(r.thumbnail || '')}" alt="${esc(r.name)}" class="related-img" loading="lazy" onerror="this.style.display='none'"><div class="related-name">${esc(r.name)}</div></div><div class="related-tagline">${esc(r.tagline_zh || r.tagline)}</div><div class="related-stats"><span>👍 ${r.votesCount.toLocaleString()}</span><span>💬 ${r.commentsCount}</span></div></a>`).join('')}</div></section>` : ''}
   </div>
