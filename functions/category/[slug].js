@@ -46,6 +46,27 @@ function renderCategoryPage(cat, tools, origin) {
   const desc = cat.description;
   const canonical = `https://www.ainext.com/category/${cat.id}.html`;
 
+  // Pre-render first 24 cards as SSR HTML (Googlebot-visible)
+  const SSR_PAGE = 24;
+  const page0 = tools.slice(0, SSR_PAGE);
+  let nextAd = 8 + Math.floor(Math.random() * 3);
+  let page0html = '';
+  const cesc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
+  for (let i = 0; i < page0.length; i++) {
+    const t = page0[i];
+    if (i === nextAd) {
+      page0html += '<div class="tool-card tool-card-ad"><div class="ad-placeholder">原生广告位</div></div>';
+      nextAd = i + 8 + Math.floor(Math.random() * 3);
+    }
+    const nm = cesc(t.name);
+    const tl = cesc(t.tagline_zh || t.tagline);
+    const tpc = (t.topics || []).slice(0, 3).map(tp => `<span class="topic-tag">${tp.name}</span>`).join('');
+    const vc = (t.votesCount || 0).toLocaleString();
+    const cc = (t.commentsCount || 0);
+    page0html += `<div class="tool-card" onclick="location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="tool-card-header"><img src="${t.thumbnail}" alt="${nm}" class="tool-thumb" loading="lazy" onerror="this.style.display='none'"><div class="tool-info"><div class="tool-name">${nm}</div><div class="tool-tagline">${tl}</div></div></div><div class="tool-topics">${tpc}</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 ${vc}</span><span>💬 ${cc}</span></div><a href="${t.website || '#'}" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>`;
+  }
+  const hasMore = tools.length > SSR_PAGE;
+
   return `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -122,7 +143,8 @@ function renderCategoryPage(cat, tools, origin) {
   <button class="cat-tab active" data-sort="hot">🔥 热度</button>
   <button class="cat-tab" data-sort="latest">🕐 最新</button>
 </div>
-<div class="tool-grid" id="toolGrid"></div>
+<div class="tool-grid" id="toolGrid">${page0html}</div>
+${hasMore ? '<button class="load-more" id="loadMoreBtn" onclick="appendMore()">加载更多 (' + (tools.length - SSR_PAGE) + ' 个剩余)</button>' : ''}
 <div class="cat-back"><a href="index.html">← 回到首页浏览全部工具</a></div>
 <script>document.write(footerHTML())</script>
 <script src="ad.js"></script>
@@ -131,7 +153,7 @@ function renderCategoryPage(cat, tools, origin) {
 var tools = ${JSON.stringify(tools)};
 var CAT_COUNT = tools.length;
 var PAGE_SIZE = 24;
-var currentPage = 0;
+var currentPage = 1; // page 0 pre-rendered by SSR
 var filteredList = tools.slice();
 var searchQuery = '';
 var sortMode = 'hot';
@@ -143,7 +165,7 @@ function cardHTML(t){
   return '<div class="tool-card" onclick="location.href=\\'tools/'+t.slug+'-'+t.id+'.html\\'" tabindex="0" onkeydown="if(event.key===\\'Enter\\')location.href=\\'tools/'+t.slug+'-'+t.id+'.html\\'" style="cursor:pointer"><div class="tool-card-header"><img src="'+t.thumbnail+'" alt="'+nm+'" class="tool-thumb" loading="lazy" onerror="this.style.display=\\'none\\'"><div class="tool-info"><div class="tool-name">'+nm+'</div><div class="tool-tagline">'+tl+'</div></div></div><div class="tool-topics">'+tpc+'</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 '+(t.votesCount||0).toLocaleString()+'</span><span>💬 '+(t.commentsCount||0)+'</span></div><a href="'+(t.website||'#')+'" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>';
 }
 
-var nextAdAt = 8 + Math.floor(Math.random() * 3); // shared across appendMore calls
+var nextAdAt = ${nextAd}; // continues from SSR first page
 
 function appendMore(){
   if (!searchQuery) {
@@ -210,7 +232,6 @@ if (searchInput) {
   });
 }
 
-appendMore();
 window.appendMore = appendMore;
 })();
 </script>
