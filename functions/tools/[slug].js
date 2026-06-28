@@ -24,11 +24,22 @@ export async function onRequest(context) {
   });
 }
 
+function buildSEOTitle(tool) {
+  const tagline = (tool.tagline_zh || tool.tagline || '').slice(0, 20);
+  let title = tagline ? `${tool.name}：${tagline} — AINext` : `${tool.name} — AINext`;
+  if (title.length > 60) {
+    const suffix = ' — AINext';
+    const maxName = 60 - suffix.length - tagline.length - 1; // 1 for `：`
+    title = tool.name.slice(0, maxName) + `：${tagline}` + suffix;
+  }
+  return title;
+}
+
 // ─── SSR HTML builder ───────────────────────────────────────────
 
 function renderToolPage(tool, allTools, origin) {
   const toolUrl = `tools/${tool.slug}-${tool.id}.html`;
-  const title = `${tool.name} — AINext`;
+  const title = buildSEOTitle(tool);
   const tagline = tool.tagline_zh || tool.tagline || '';
   const desc = (tool.description_zh || tool.description || '').replace(/\n/g, '<br>');
   const metaDesc = tagline.length > 155 ? tagline.slice(0, 152) + '...' : tagline;
