@@ -40,7 +40,7 @@ def load_env():
 ENGINES = [
     {
         "name": "Agnes-2.0-Flash",           # model_id: agnes-2.0-flash
-        "url": lambda: (os.environ.get("AGNES_API_URL", "") + "/chat/completions"),
+        "url": "https://apihub.agnes-ai.com/v1/chat/completions",
         "key": lambda: os.environ.get("AGNES_API_KEY", ""),
         "model": "agnes-2.0-flash",
     },
