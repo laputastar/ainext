@@ -140,7 +140,7 @@ def try_translate_batch(texts, tried_engines=None):
             try:
                 print(f"  [{engine['name']}] 尝试 {attempt}/{MAX_RETRIES}...", end=" ")
                 result = translate_batch_with_llm(texts, engine)
-                if len(result) >= len(texts):
+                if len(result) == len(texts):
                     print(f"✅ 成功 {len(result)} 条")
                     return result, engine["name"]
                 else:
@@ -249,10 +249,12 @@ def translate_tools(tools_json_path: str, output_path: str = None, force: bool =
                 tools[i][field] = result.strip()
                 translated += 1
 
-        # 每批存盘
+        # 每批原子存盘（先写临时文件，再替换，防止崩溃损坏）
         output = output_path or tools_json_path
-        with open(output, "w", encoding="utf-8") as f:
+        tmp_path = output + ".tmp"
+        with open(tmp_path, "w", encoding="utf-8") as f:
             json.dump(tools, f, ensure_ascii=False, indent=2)
+        os.replace(tmp_path, output)
 
         remaining = batches[bi + 1 :]
         save_checkpoint(remaining, translated)
