@@ -227,7 +227,7 @@ function renderGrid(){
   currentPage=0;
   nextAdAt=5+Math.floor(Math.random()*5);  // 首个广告在 5~9 位置随机
   let list=[...allTools];
-  if(curSearch){const q=curSearch.toLowerCase();list=list.filter(t=>t.name.toLowerCase().includes(q)||t.tagline.toLowerCase().includes(q)||t.description.toLowerCase().includes(q))}
+  if(curSearch){const q=curSearch.toLowerCase();list=list.filter(t=>t.name.toLowerCase().includes(q)||t.tagline.toLowerCase().includes(q)||(t.description||'').toLowerCase().includes(q))}
   if(curTab==='weekly'){const d7=new Date();d7.setDate(d7.getDate()-7);const d14=new Date();d14.setDate(d14.getDate()-14);list=list.filter(t=>{const d=new Date(t.createdAt);return d>=d14&&d<d7})}
   if(curTab==='monthly'){const ms=new Date(new Date().getFullYear(),new Date().getMonth(),1);list=list.filter(t=>new Date(t.createdAt)>=ms)}
   list.sort((a,b)=>curTab==='latest'?new Date(b.createdAt)-new Date(a.createdAt):b.votesCount-a.votesCount);
