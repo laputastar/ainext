@@ -198,7 +198,7 @@ let pageSize=24,currentPage=0,filteredList=[],nextAdAt=0;
 
 async function load(){
   try{
-    const [tr,cr]=await Promise.all([fetch('tools.json'),fetch('categories.json')]);
+    const [tr,cr]=await Promise.all([fetch('tools-slim.json'),fetch('categories.json')]);
     allTools=await tr.json();allCats=(await cr.json()).categories;init();
   }catch(e){document.getElementById('toolGrid').innerHTML='<div class="empty-state"><div class="empty-state-icon">⚠️</div><h3>数据加载失败</h3><p>请确认 tools.json 和 categories.json 存在</p></div>'}
 }

@@ -288,6 +288,23 @@ def translate_tools(tools_json_path: str, output_path: str = None, force: bool =
 
     print(f"\n✅ 翻译完成: {translated}/{total} 条成功")
     print(f"💾 已保存到: {output_path or tools_json_path}")
+
+    # 同步生成 tools-slim.json
+    slim = []
+    for t in tools:
+        slim.append({
+            "id": t["id"], "name": t["name"], "slug": t["slug"],
+            "tagline": t.get("tagline", ""), "tagline_zh": t.get("tagline_zh", ""),
+            "thumbnail": t.get("thumbnail", ""),
+            "votesCount": t.get("votesCount", 0), "commentsCount": t.get("commentsCount", 0),
+            "createdAt": t.get("createdAt", ""), "website": t.get("website", ""),
+            "category": t.get("category", ""),
+            "topics": [{"name": tp["name"]} for tp in (t.get("topics") or [])[:3]],
+        })
+    slim_path = "tools-slim.json"
+    with open(slim_path, "w", encoding="utf-8") as f:
+        json.dump(slim, f, ensure_ascii=False, indent=2)
+    print(f"📦 已同步生成 {slim_path} ({len(slim)} 条)")
     return tools
 
 

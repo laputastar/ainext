@@ -343,6 +343,22 @@ def main():
     # 保存新数据（自动合并旧数据）
     save_to_json(tools, "tools.json")
     post_process()
+    
+    print("📦 生成 tools-slim.json...")
+    slim = []
+    for t in tools:
+        slim.append({
+            "id": t["id"], "name": t["name"], "slug": t["slug"],
+            "tagline": t.get("tagline", ""), "tagline_zh": t.get("tagline_zh", ""),
+            "thumbnail": t.get("thumbnail", ""),
+            "votesCount": t.get("votesCount", 0), "commentsCount": t.get("commentsCount", 0),
+            "createdAt": t.get("createdAt", ""), "website": t.get("website", ""),
+            "category": t.get("category", ""),
+            "topics": [{"name": tp["name"]} for tp in (t.get("topics") or [])[:3]],
+        })
+    with open("tools-slim.json", "w", encoding="utf-8") as f:
+        json.dump(slim, f, ensure_ascii=False, indent=2)
+    print(f"  ✅ 已保存 {len(slim)} 条精简单数据")
     print("\n✅ 数据获取完成！")
     print(f"📊 统计信息:")
     print(f"   - 工具总数: {len(tools)}")

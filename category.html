@@ -79,7 +79,7 @@ var path = window.location.pathname;
 var slug = path.replace(/^\/category\//,'').replace(/\.html$/,'');
 
 Promise.all([
-  fetch('/tools.json').then(function(r){return r.json()}),
+  fetch('/tools-slim.json').then(function(r){return r.json()}),
   fetch('/categories.json').then(function(r){return r.json()})
 ]).then(function(results){
   var tools = results[0];
