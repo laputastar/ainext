@@ -3,7 +3,13 @@ name: Daily Update
 on:
   schedule:
     - cron: '0 0 * * *'  # UTC 00:00 = 北京时间 08:00
-  workflow_dispatch:     # 允许手动触发
+  workflow_dispatch:
+    inputs:
+      force_translate:
+        description: 'Force re-translate ALL tools (overwrite existing)'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   update:
@@ -27,7 +33,7 @@ jobs:
         run: python fetch_ph_data.py
 
       - name: Translate new tools (LLM)
-        run: python translate_llm.py tools.json
+        run: python translate_llm.py tools.json ${{ github.event.inputs.force_translate == 'true' && '--force' || '' }}
         env:
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           GLM45_API_KEY: ${{ secrets.GLM45_API_KEY }}
