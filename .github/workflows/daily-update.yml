@@ -30,6 +30,7 @@ jobs:
         run: python translate_llm.py tools.json
         env:
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          GLM45_API_KEY: ${{ secrets.GLM45_API_KEY }}
           AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
           AGNES_API_URL: ${{ secrets.AGNES_API_URL }}
 

@@ -42,6 +42,12 @@ ENGINES = [
         "model": "agnes-2.0-flash",
     },
     {
+        "name": "GLM-4.5-Air",
+        "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+        "key": lambda: os.environ.get("GLM45_API_KEY", ""),
+        "model": "glm-4.5-air",
+    },
+    {
         "name": "GLM-4.7-Flash",
         "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
         "key": lambda: os.environ.get("GLM_API_KEY", ""),
@@ -253,7 +259,7 @@ def translate_tools(tools_json_path: str, output_path: str = None, force: bool =
         print(f"  💾 已存盘 ({translated}/{total})")
 
         tried_engines.clear()
-        if engine_name == "GLM-4.7-Flash":
+        if engine_name and engine_name.startswith("GLM"):
             print(f"  ⏳ GLM 冷却 {GLM_COOLDOWN}s...")
             time.sleep(GLM_COOLDOWN)
         else:
