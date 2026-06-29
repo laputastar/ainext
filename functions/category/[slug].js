@@ -90,7 +90,6 @@ function renderCategoryPage(cat, tools, origin) {
 <meta name="twitter:description" content="${esc(desc)}">
 <meta name="twitter:image" content="https://www.ainext.com/og-image.png">
 <link rel="stylesheet" href="common.css">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5869913892462326" crossorigin="anonymous"></script>
 <script src="ga.js"></script>
 <script src="components.js"></script>
 <style>
