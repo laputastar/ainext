@@ -149,7 +149,12 @@ def try_translate_batch(texts, tried_engines=None):
                 else:
                     print(f"⚠️ 返回 {len(result)}/{len(texts)} 条，不完整")
             except Exception as e:
-                print(f"❌ {str(e)[:80]}")
+                err_str = str(e)
+                print(f"❌ {err_str[:80]}")
+                # 401/403 密钥失效，直接放弃该引擎不重试
+                if "401" in err_str or "403" in err_str or "invalid" in err_str.lower():
+                    print(f"  🔒 {engine['name']}: 密钥无效，跳过该引擎")
+                    break
 
             if attempt < MAX_RETRIES:
                 delay = BASE_DELAY * (2 ** (attempt - 1))
