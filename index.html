@@ -34,9 +34,6 @@
 .header-right{display:flex;align-items:center;gap:12px}
 .search-wrap{position:relative}
 .search-wrap svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--gray-400);pointer-events:none}
-.search-input{width:280px;padding:9px 16px 9px 38px;background:var(--gray-100);border:1.5px solid transparent;border-radius:10px;font-size:14px;color:var(--gray-900);outline:none;transition:all .15s}
-.search-input::placeholder{color:var(--gray-400)}
-.search-input:focus{background:#fff;border-color:var(--color-primary);box-shadow:0 0 0 3px rgba(180,83,9,.1)}
 
 /* ── Hero ── */
 .hero{padding:48px 0 36px;text-align:center;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(180,83,9,.04) 0%,transparent 70%)}
@@ -123,9 +120,9 @@
 .empty-state p{font-size:14px;color:var(--gray-500)}
 
 /* ── Responsive ── */
-@media(max-width:1024px){.tool-grid{grid-template-columns:repeat(3,1fr)}.feat-grid{grid-template-columns:repeat(3,1fr)}.search-input{width:200px}.hero h1{font-size:40px}}
-@media(max-width:768px){.tool-grid{grid-template-columns:repeat(2,1fr)}.feat-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:34px}.hero p{white-space:normal}.hero{padding:40px 0 32px}.hero-stats{gap:20px}.hero-stat-num{font-size:22px}.search-input{width:160px}}
-@media(max-width:640px){.tool-grid{grid-template-columns:1fr}.feat-grid{grid-template-columns:1fr}.hero h1{font-size:26px}.hero p{font-size:15px;white-space:normal}.hero{padding:32px 0 24px}.hero-stats{flex-wrap:wrap;gap:16px}.hero-stat-num{font-size:20px}.search-input{width:140px}.tab{padding:8px 14px;font-size:13px}.tool-card{padding:16px;gap:10px}}
+@media(max-width:1024px){.tool-grid{grid-template-columns:repeat(3,1fr)}.feat-grid{grid-template-columns:repeat(3,1fr)}.hero h1{font-size:40px}}
+@media(max-width:768px){.tool-grid{grid-template-columns:repeat(2,1fr)}.feat-grid{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:34px}.hero p{white-space:normal}.hero{padding:40px 0 32px}.hero-stats{gap:20px}.hero-stat-num{font-size:22px}}
+@media(max-width:640px){.tool-grid{grid-template-columns:1fr}.feat-grid{grid-template-columns:1fr}.hero h1{font-size:26px}.hero p{font-size:15px;white-space:normal}.hero{padding:32px 0 24px}.hero-stats{flex-wrap:wrap;gap:16px}.hero-stat-num{font-size:20px}.tab{padding:8px 14px;font-size:13px}.tool-card{padding:16px;gap:10px}}
 </style>
 <script src="components.js"></script>
 <script src="ga.js"></script>
