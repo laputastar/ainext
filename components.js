@@ -8,7 +8,7 @@ var headerHTML = function(backText, backHref, searchPlaceholder) {
   }
   var search = "";
   if (searchPlaceholder) {
-    search = '    <div class="header-right"><div class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" class="search-input header-search-input" placeholder="' + searchPlaceholder + '" autocomplete="off"></div></div>\n';
+    search = '    <div class="header-right"><div class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><input type="text" class="search-input" id="searchInput" placeholder="' + searchPlaceholder + '" autocomplete="off" aria-label="' + searchPlaceholder + '"></div></div>\n';
   }
   return '<header class="header">\n' +
     '  <div class="header-inner">\n' +
