@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-AI 工具翻译模块 — LLM 引擎（GLM-4.7-Flash 主，Agnes 备份）
+AI 工具翻译模块 — LLM 引擎（Agnes 主 / GLM-4.5-Air + GLM-4.7-Flash 备份）
 优势：批量翻译 / 指数重试 / 断点续跑 / 比百度 API 更稳定
 用法：python translate_llm.py tools.json
 """
