@@ -127,6 +127,8 @@ def try_translate_batch(texts, tried_engines=None):
     if tried_engines is None:
         tried_engines = set()
 
+    all_missing_keys = True
+
     for engine in ENGINES:
         if engine["name"] in tried_engines:
             continue
@@ -135,6 +137,7 @@ def try_translate_batch(texts, tried_engines=None):
             print(f"  ⏭ {engine['name']}: 未配置 API Key，跳过")
             tried_engines.add(engine["name"])
             continue
+        all_missing_keys = False
 
         for attempt in range(1, MAX_RETRIES + 1):
             try:
@@ -155,6 +158,10 @@ def try_translate_batch(texts, tried_engines=None):
 
         print(f"  🚫 {engine['name']}: 全部 {MAX_RETRIES} 次重试失败")
         tried_engines.add(engine["name"])
+
+    if all_missing_keys:
+        print("  ❌ 所有引擎均未配置 API Key，请检查环境变量或 GitHub Secrets")
+        return None, None
 
     return None, None
 
