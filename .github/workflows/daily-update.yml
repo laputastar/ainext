@@ -26,8 +26,12 @@ jobs:
       - name: Fetch latest data
         run: python fetch_ph_data.py
 
-      - name: Translate new tools
-        run: python translate.py tools.json
+      - name: Translate new tools (LLM)
+        run: python translate_llm.py tools.json
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
+          AGNES_API_URL: ${{ secrets.AGNES_API_URL }}
 
       - name: Commit & push if changed
         run: |
