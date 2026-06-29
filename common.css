@@ -8,7 +8,7 @@
   --color-primary: #B45309; --color-primary-hover: #92400E; --color-primary-light: #FFF7ED; --color-primary-dark: #78350F;
   --color-accent: #DC2626; --color-accent-light: #FEF2F2; --color-accent-dark: #B91C1C;
   --gray-50: #FAFAF9; --gray-100: #F5F5F4; --gray-200: #E7E5E4; --gray-300: #D6D3D1;
-  --gray-400: #A8A29E; --gray-500: #78716C; --gray-700: #44403C; --gray-900: #1C1917;
+  --gray-400: #A8A29E; --gray-500: #78716C; --gray-600: #57534E; --gray-700: #44403C; --gray-900: #1C1917;
   --color-surface: #FFFFFF; --color-border: #E7E5E4; --color-border-light: #F5F5F4;
   --color-success: #15803D; --color-success-light: #F0FDF4;
   --shadow-xs: 0 1px 2px rgba(0,0,0,.04); --shadow-sm: 0 1px 3px rgba(0,0,0,.04),0 1px 2px rgba(0,0,0,.06);
