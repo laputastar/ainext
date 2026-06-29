@@ -1,5 +1,7 @@
 // [slug].js — SSR for tool detail pages
 // Server-renders complete HTML with SEO content (Googlebot-visible)
+import { getTools, render404 } from '../_shared.js';
+
 export async function onRequest(context) {
   const { request, env } = context;
   const url = new URL(request.url);
@@ -270,30 +272,4 @@ ${mediaImages.length > 1 ? `
 <script src="ad.js"></script>
 </body>
 </html>`;
-}
-
-// ─── Cached tools.json reader ─────────────────────────────────────
-
-let cachedTools = null;
-let cacheTime = 0;
-const CACHE_TTL = 60 * 1000;
-
-async function getTools(env, origin) {
-  const now = Date.now();
-  if (cachedTools && now - cacheTime < CACHE_TTL) return cachedTools;
-  const res = await env.ASSETS.fetch(new Request(`${origin}/tools.json`));
-  if (!res.ok) throw new Error('Failed to load tools.json');
-  cachedTools = await res.json();
-  cacheTime = now;
-  return cachedTools;
-}
-
-// ─── 404 response ─────────────────────────────────────────────────
-
-async function render404(env, origin) {
-  const nf = await env.ASSETS.fetch(new Request(`${origin}/404.html`));
-  return new Response(await nf.text(), {
-    status: 404,
-    headers: { 'Content-Type': 'text/html; charset=utf-8' }
-  });
 }
