@@ -121,10 +121,6 @@ function renderToolPage(tool, allTools, origin) {
 .gallery-thumb img{width:100%;height:100%;object-fit:cover}
 .section{margin-bottom:32px}
 .section-title{font-size:18px;font-weight:700;color:var(--gray-900);margin-bottom:12px;display:flex;align-items:center;gap:6px}
-.desc-card{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-card);padding:24px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
-.desc-card p{font-size:15px;color:var(--gray-700);line-height:1.75;margin-bottom:12px}
-.desc-card p:last-child{margin-bottom:0}
-.desc-divider{border:none;border-top:1px solid var(--color-border-light);margin:16px 0}
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 28px;background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-card);padding:20px 24px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
 .info-item{font-size:14px}.info-label{color:var(--gray-400);margin-bottom:3px}.info-value{color:var(--gray-700);font-weight:500}
 .comments-box{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-card);padding:20px 24px;box-shadow:0 1px 2px rgba(0,0,0,.03)}
