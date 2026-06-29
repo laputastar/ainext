@@ -34,21 +34,24 @@ def load_env():
 
 
 # ── 引擎配置 ──────────────────────────────────────────
+# 添加新引擎：复制一个 {} 块，改 name/model/key 即可
+# name → 日志显示用（建议含厂商+模型名）
+# model → API 的 model 参数值
 ENGINES = [
     {
-        "name": "Agnes-2.0-Flash",
+        "name": "Agnes-2.0-Flash",           # model_id: agnes-2.0-flash
         "url": lambda: (os.environ.get("AGNES_API_URL", "") + "/chat/completions"),
         "key": lambda: os.environ.get("AGNES_API_KEY", ""),
         "model": "agnes-2.0-flash",
     },
     {
-        "name": "GLM-4.5-Air",
+        "name": "GLM-4.5-Air",               # model_id: glm-4.5-air
         "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
         "key": lambda: os.environ.get("GLM45_API_KEY", ""),
         "model": "glm-4.5-air",
     },
     {
-        "name": "GLM-4.7-Flash",
+        "name": "GLM-4.7-Flash",             # model_id: glm-4.7-flash
         "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
         "key": lambda: os.environ.get("GLM_API_KEY", ""),
         "model": "glm-4.7-flash",
