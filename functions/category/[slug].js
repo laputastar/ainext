@@ -1,5 +1,6 @@
 // [slug].js — SSR for category listing pages
 // Server-renders complete HTML with embedded tool data (Googlebot-visible)
+// ⚠️ cardHTML() logic here must stay in sync with components.js cardHTML()
 import { getTools, getCategories, render404 } from '../_shared.js';
 
 export async function onRequest(context) {

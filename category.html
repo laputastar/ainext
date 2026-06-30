@@ -93,46 +93,31 @@ Promise.all([
   var searchQuery = '';
   var sortMode = 'hot';
 
-  function cardHTML(t){
-    return '<div class="tool-card" onclick="location.href=\'tools/'+t.slug+'-'+t.id+'.html\'" tabindex="0" onkeydown="if(event.key===\'Enter\')location.href=\'tools/'+t.slug+'-'+t.id+'.html\'" style="cursor:pointer"><div class="tool-card-header"><img src="'+t.thumbnail+'" alt="'+t.name+'" class="tool-thumb" loading="lazy" onerror="this.style.display=\'none\'"><div class="tool-info"><div class="tool-name">'+t.name+'</div><div class="tool-tagline">'+(t.tagline_zh||t.tagline)+'</div></div></div><div class="tool-topics">'+(t.topics||[]).slice(0,3).map(function(tp){return '<span class="topic-tag">'+tp.name+'</span>';}).join('')+'</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 '+(t.votesCount||0).toLocaleString()+'</span><span>💬 '+(t.commentsCount||0)+'</span></div><a href="'+(t.website||'#')+'" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>';
-  }
+  // AMC config for shared appendMore
+  window.AMC = {
+    gridId: 'toolGrid', pageSize: 24, adInterval: 8, adRandom: 3,
+    isSearching: function() { return searchQuery; },
+    doSort: function(a, b) { return sortMode === 'latest' ? new Date(b.createdAt) - new Date(a.createdAt) : b.votesCount - a.votesCount; }
+  };
+  window.filteredList = filteredList;
+  window.currentPage = currentPage;
+  window.nextAdAt = nextAdAt;
 
   function updateCount(){
     document.querySelector('.cat-count').textContent = '共 ' + (searchQuery ? filteredList.length + ' / ' + CAT_COUNT : CAT_COUNT) + ' 款工具';
   }
 
-  function appendMore(){
-    if (!searchQuery) {
-      filteredList.sort(sortMode === 'latest' ?
-        function(a,b){return new Date(b.createdAt) - new Date(a.createdAt)} :
-        function(a,b){return b.votesCount - a.votesCount}
-      );
-    }
-    var start = currentPage * PAGE_SIZE;
-    var batch = filteredList.slice(start, start + PAGE_SIZE);
-    var grid = document.getElementById('toolGrid');
-    if (currentPage === 0) grid.innerHTML = '';
-
-    var html = '';
-    for (var i = 0; i < batch.length; i++){
-      var globalIdx = start + i;
-      if (globalIdx === nextAdAt && !searchQuery){
-        html += (typeof window.buildNativeAdCard === 'function') ? window.buildNativeAdCard() : '';
-        nextAdAt = globalIdx + 8 + Math.floor(Math.random() * 3);
-      }
-      html += cardHTML(batch[i]);
-    }
-
-    grid.insertAdjacentHTML('beforeend', html);
-    currentPage++;
-
-    var btn = document.getElementById('loadMoreBtn');
-    if (btn) btn.remove();
-    if (currentPage * PAGE_SIZE < filteredList.length){
-      var remain = filteredList.length - currentPage * PAGE_SIZE;
-      grid.insertAdjacentHTML('afterend', '<button class="load-more" id="loadMoreBtn" onclick="appendMore()">加载更多 ('+remain+' 个剩余)</button>');
-    }
-  }
+  // appendMore → components.js
+  // Sync globals after each call
+  var origAppendMore = appendMore;
+  appendMore = function() {
+    window.filteredList = filteredList;
+    window.currentPage = currentPage;
+    window.nextAdAt = nextAdAt;
+    origAppendMore();
+    currentPage = window.currentPage;
+    nextAdAt = window.nextAdAt;
+  };
 
   document.querySelectorAll('.cat-tab').forEach(function(tab){
     tab.addEventListener('click', function(){

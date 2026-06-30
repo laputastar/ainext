@@ -186,7 +186,7 @@ function renderFeat(){
 
 function renderGrid(){
   currentPage=0;
-  nextAdAt=5+Math.floor(Math.random()*5);  // 首个广告在 5~9 位置随机
+  nextAdAt=5+Math.floor(Math.random()*5);
   let list=[...allTools];
   if(curSearch){const q=curSearch.toLowerCase();list=list.filter(t=>t.name.toLowerCase().includes(q)||t.tagline.toLowerCase().includes(q)||(t.description||'').toLowerCase().includes(q))}
   if(curTab==='weekly'){const d7=new Date();d7.setDate(d7.getDate()-7);const d14=new Date();d14.setDate(d14.getDate()-14);list=list.filter(t=>{const d=new Date(t.createdAt);return d>=d14&&d<d7})}
@@ -195,33 +195,13 @@ function renderGrid(){
   filteredList=list;
   document.getElementById('toolCount').textContent=`共 ${list.length} 个工具`;
   if(!list.length){document.getElementById('toolGrid').innerHTML='<div class="empty-state"><div class="empty-state-icon">🔍</div><h3>没有找到相关工具</h3><p>试试其他关键词或分类</p></div>';return}
+  // AMC config for shared appendMore
+  window.AMC={gridId:'toolGrid',pageSize:24,adInterval:5,adRandom:5};
+  window.filteredList=filteredList;
+  window.currentPage=currentPage;
+  window.nextAdAt=nextAdAt;
   appendMore();
-  if(curSearch)document.querySelector('.toolbar').scrollIntoView({behavior:'smooth',block:'start'});
-}
-
-function appendMore(){
-  const start=currentPage*pageSize;
-  const batch=filteredList.slice(start,start+pageSize);
-  const grid=document.getElementById('toolGrid');
-  if(currentPage===0)grid.innerHTML='';
-  let html='';
-  for(let i=0;i<batch.length;i++){
-    const t=batch[i];
-    const globalIdx=start+i;
-    if(globalIdx===nextAdAt&&!curSearch){
-      html+=window.buildNativeAdCard?window.buildNativeAdCard():"";
-      nextAdAt=globalIdx+5+Math.floor(Math.random()*5);  // 下一个广告在 5~9 张之后
-    }
-    html+=`<div class="tool-card" onclick="window.location.href='tools/${t.slug}-${t.id}.html'" tabindex="0" onkeydown="if(event.key==='Enter')window.location.href='tools/${t.slug}-${t.id}.html'" style="cursor:pointer"><div class="tool-card-header"><img src="${t.thumbnail}" alt="${t.name}" class="tool-thumb" loading="lazy" onerror="this.style.display='none'"><div class="tool-info"><div class="tool-name">${t.name}</div><div class="tool-tagline">${t.tagline_zh||t.tagline}</div></div></div><div class="tool-topics">${(t.topics||[]).slice(0,3).map(tp=>`<span class="topic-tag">${tp.name}</span>`).join('')}</div><div class="tool-card-footer"><div class="tool-stats"><span>👍 ${t.votesCount.toLocaleString()}</span><span>💬 ${t.commentsCount}</span></div><a href="${t.website||'#'}" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a></div></div>`;
-  }
-  grid.insertAdjacentHTML('beforeend',html);
-  currentPage++;
-  const btn=document.getElementById('loadMoreBtn');
-  if(btn)btn.remove();
-  if(currentPage*pageSize<filteredList.length){
-    grid.insertAdjacentHTML('afterend',`<button class="load-more" id="loadMoreBtn" onclick="appendMore()">加载更多 (${filteredList.length-currentPage*pageSize} 个剩余)</button>`);
-  }
-}
+  currentPage=window.currentPage; nextAdAt=window.nextAdAt;}
 
 document.getElementById('tabs').addEventListener('click',e=>{const tab=e.target.closest('.tab');if(!tab)return;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));tab.classList.add('active');curTab=tab.dataset.tab;renderGrid()});
 let st;document.getElementById('searchInput').addEventListener('input',()=>{curSearch=document.getElementById('searchInput').value;clearTimeout(st);st=setTimeout(renderGrid,200)});

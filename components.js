@@ -34,3 +34,63 @@ var footerHTML = function() {
     '  </div>\n' +
     '</footer>';
 };
+
+// ═══════════════════════════════════════════════════════════════
+// Tool Card & Pagination — shared by index.html & category.html
+// ⚠️ SSR 对应版本见 functions/category/[slug].js，修改时需同步
+// ═══════════════════════════════════════════════════════════════
+
+var cardHTML = function(t) {
+  return '<div class="tool-card" onclick="location.href=\'tools/' + t.slug + '-' + t.id + '.html\'" tabindex="0" onkeydown="if(event.key===\'Enter\')location.href=\'tools/' + t.slug + '-' + t.id + '.html\'" style="cursor:pointer">' +
+    '<div class="tool-card-header">' +
+      '<img src="' + t.thumbnail + '" alt="' + t.name + '" class="tool-thumb" loading="lazy" onerror="this.style.display=\'none\'">' +
+      '<div class="tool-info">' +
+        '<div class="tool-name">' + t.name + '</div>' +
+        '<div class="tool-tagline">' + (t.tagline_zh || t.tagline) + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="tool-topics">' + (t.topics || []).slice(0, 3).map(function(tp) { return '<span class="topic-tag">' + tp.name + '</span>'; }).join('') + '</div>' +
+    '<div class="tool-card-footer">' +
+      '<div class="tool-stats"><span>👍 ' + (t.votesCount || 0).toLocaleString() + '</span><span>💬 ' + (t.commentsCount || 0) + '</span></div>' +
+      '<a href="' + (t.website || '#') + '" target="_blank" rel="noopener" class="btn-visit" onclick="event.stopPropagation()">访问官网 →</a>' +
+    '</div>' +
+  '</div>';
+};
+
+// appendMore() — batch-render cards + ad insertion + load-more button
+// Reads window.AMC (appendMore config), window.filteredList, window.currentPage, window.nextAdAt
+var appendMore = function() {
+  var cfg = window.AMC;
+  var start = window.currentPage * cfg.pageSize;
+  var batch = window.filteredList.slice(start, start + cfg.pageSize);
+  var grid = document.getElementById(cfg.gridId);
+  if (window.currentPage === 0) grid.innerHTML = '';
+
+  // Re-sort if needed (category page sorts inside appendMore)
+  if (cfg.doSort && !cfg.isSearching()) {
+    window.filteredList.sort(cfg.doSort);
+  }
+
+  var html = '';
+  for (var i = 0; i < batch.length; i++) {
+    var globalIdx = start + i;
+    if (!cfg.isSearching || !cfg.isSearching()) {
+      if (globalIdx === window.nextAdAt) {
+        html += (typeof window.buildNativeAdCard === 'function') ? window.buildNativeAdCard() : '';
+        window.nextAdAt = globalIdx + cfg.adInterval + Math.floor(Math.random() * cfg.adRandom);
+      }
+    }
+    html += cardHTML(batch[i]);
+  }
+
+  grid.insertAdjacentHTML('beforeend', html);
+  window.currentPage++;
+
+  var btn = document.getElementById('loadMoreBtn');
+  if (btn) btn.remove();
+  var loaded = window.currentPage * cfg.pageSize;
+  if (loaded < window.filteredList.length) {
+    grid.insertAdjacentHTML('afterend', '<button class="load-more" id="loadMoreBtn" onclick="appendMore()">加载更多 (' + (window.filteredList.length - loaded) + ' 个剩余)</button>');
+  }
+};
+
