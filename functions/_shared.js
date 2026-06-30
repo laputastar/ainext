@@ -26,6 +26,11 @@ export async function render404(env, origin) {
   const nf = await env.ASSETS.fetch(new Request(`${origin}/404.html`));
   return new Response(await nf.text(), {
     status: 404,
-    headers: { 'Content-Type': 'text/html; charset=utf-8' }
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
+      'X-Frame-Options': 'SAMEORIGIN',
+      'X-Content-Type-Options': 'nosniff',
+      'Referrer-Policy': 'strict-origin-when-cross-origin'
+    }
   });
 }
