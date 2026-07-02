@@ -201,7 +201,9 @@ function renderGrid(){
   window.currentPage=currentPage;
   window.nextAdAt=nextAdAt;
   appendMore();
-  currentPage=window.currentPage; nextAdAt=window.nextAdAt;}
+  currentPage=window.currentPage; nextAdAt=window.nextAdAt;
+  if(curSearch){const tb=document.querySelector('.toolbar');tb&&tb.scrollIntoView({behavior:'smooth',block:'start'})}
+}
 
 document.getElementById('tabs').addEventListener('click',e=>{const tab=e.target.closest('.tab');if(!tab)return;document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));tab.classList.add('active');curTab=tab.dataset.tab;renderGrid()});
 let st;document.getElementById('searchInput').addEventListener('input',()=>{curSearch=document.getElementById('searchInput').value;clearTimeout(st);st=setTimeout(renderGrid,200)});
