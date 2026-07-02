@@ -46,8 +46,9 @@ input{font-family:inherit}
 .footer-links a:hover{color:var(--color-primary)}
 .footer p{font-size:12px;color:var(--gray-400)}
 
-/* ── Ad Slots ── */
-.ad-slot{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:center;width:100%}
+/* ── Ad Slots (hidden pending AdSense approval; remove → below to enable) ── */
+.ad-slot, .tool-card-ad{display:none !important}
+/* .ad-slot{max-width:1200px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:center;width:100%} */
 .ad-slot-index-top{padding-bottom:12px}
 .ad-slot-index-mid{padding-bottom:24px}
 .ad-slot-detail-top{margin:24px 0 32px}
