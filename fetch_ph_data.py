@@ -99,6 +99,94 @@ def download_image(url: str, tool_id: str, index: int = 0) -> str:
         return url  # 返回原 URL 作为备用
 
 
+def load_website_map():
+    """加载 website redirect 缓存映射表"""
+    if os.path.exists("website_map.json"):
+        with open("website_map.json", "r") as f:
+            return json.load(f)
+    return {}
+
+
+def save_website_map(cache):
+    """保存 website redirect 缓存映射表"""
+    with open("website_map.json", "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+def resolve_website_url(ph_url, tool_id, cache):
+    """
+    解析 PH 重定向链接，获取真实官网 URL
+    使用缓存避免重复请求
+    """
+    if tool_id in cache:
+        return cache[tool_id]
+    
+    try:
+        resp = requests.head(
+            ph_url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
+            allow_redirects=True,
+            timeout=10
+        )
+        real_url = resp.url
+        if real_url and "producthunt.com" not in real_url:
+            cache[tool_id] = real_url
+            save_website_map(cache)
+            return real_url
+    except Exception:
+        pass
+    
+    # 回退到原 PH 链接
+    cache[tool_id] = ph_url
+    save_website_map(cache)
+    return ph_url
+
+
+def resolve_all_websites(tools):
+    """批量解析所有工具的 website 重定向"""
+    cache = load_website_map()
+    needs_resolve = sum(1 for t in tools if str(t["id"]) not in cache)
+    if needs_resolve == 0:
+        return cache
+    
+    print(f"\n🔗 解析 {needs_resolve} 个工具的官网重定向...")
+    resolved, total, skipped = 0, needs_resolve, len(tools) - needs_resolve
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    
+    # 找出需要解析的工具
+    to_resolve = [t for t in tools if str(t["id"]) not in cache]
+    
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        futures = {executor.submit(resolve_website_url, t["website"], str(t["id"]), cache): t for t in to_resolve}
+        for future in as_completed(futures):
+            t = futures[future]
+            try:
+                real_url = future.result()
+                cache[str(t["id"])] = real_url
+                resolved += 1
+                if resolved % 100 == 0:
+                    print(f"  ... {resolved}/{total}")
+            except Exception:
+                pass
+        # 最终保存
+        save_website_map(cache)
+    
+    print(f"  ✅ {resolved} 个已解析, {skipped} 个已有缓存")
+    return cache
+
+
+def apply_website_map(tools, cache):
+    """将解析后的真实 URL 写入 tools 数据"""
+    for t in tools:
+        tid = str(t["id"])
+        if tid in cache and "producthunt.com" not in cache[tid]:
+            t["website"] = cache[tid]
+            t["website_resolved"] = True
+    return tools
+
+
 def is_ai_tool_by_topics(topics: List[Dict]) -> bool:
     """
     第一步：按话题标签筛选
@@ -342,6 +430,13 @@ def main():
     
     # 保存新数据（自动合并旧数据）
     save_to_json(tools, "tools.json")
+    
+    # 解析 PH 重定向 → 真实官网 URL（全量工具）
+    all_tools = json.load(open("tools.json", "r", encoding="utf-8"))
+    website_cache = resolve_all_websites(all_tools)
+    all_tools = apply_website_map(all_tools, website_cache)
+    save_to_json(all_tools, "tools.json")
+    
     post_process()
     print("\n✅ 数据获取完成！")
     print(f"📊 统计信息:")
