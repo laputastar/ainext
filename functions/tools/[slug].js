@@ -229,7 +229,7 @@ function renderToolPage(tool, allTools, origin) {
         <div class="info-item"><div class="info-label">上线日期</div><div class="info-value">${dateStr}</div></div>
         <div class="info-item"><div class="info-label">点赞数</div><div class="info-value">${tool.votesCount.toLocaleString()}</div></div>
         <div class="info-item"><div class="info-label">评论数</div><div class="info-value">${tool.commentsCount}</div></div>
-        <div class="info-item"><div class="info-label">数据来源</div><div class="info-value">Product Hunt API</div></div>
+        <div class="info-item"><div class="info-label">数据来源</div><div class="info-value">网络公开数据</div></div>
       </div>
     </section>
 
