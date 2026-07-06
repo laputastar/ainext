@@ -1,0 +1,55 @@
+name: PH URL Backfill
+
+# 定期回填 PH 官方原生产品页 URL 到 tools.json 的 ph_url 字段。
+# 背景：单条 post(id) 查询约耗 86 复杂度点，PH 每 15 分钟仅 6250 点预算，
+# 全量 2120 无法短时完成。故采用"先高危、后逐步"的渐进策略 + 断点续传 + 限流自适应。
+on:
+  schedule:
+    - cron: '0 3 * * 0'   # 北京时间 每周日 11:00（与每日更新 08:00 错开）
+  workflow_dispatch:
+    inputs:
+      max_per_run:
+        description: '单次最多回填的非高危产品数（0=不限，靠限流自适应休眠）'
+        required: false
+        type: number
+        default: 300
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      # 第一步：优先把"名字含 数字/&/+/()/"的高风险产品全部回填为原生 URL
+      # （这些正则 slug 最可能和 PH 实际路径不符、会 404；每周先清零，保证高危永远原生）
+      - name: Backfill high-risk products first
+        run: python backfill_ph_url.py
+        env:
+          RISKY_ONLY: '1'
+
+      # 第二步：逐步回填其余产品（受 MAX_PER_RUN 限制，每周补一批，跨周完成全量）
+      - name: Gradually backfill the rest
+        run: python backfill_ph_url.py
+        env:
+          MAX_PER_RUN: ${{ github.event.inputs.max_per_run || '300' }}
+
+      # 仅提交变化的文件；先 rebase 再 push，避免与每日更新冲突
+      - name: Commit & push if changed
+        run: |
+          git config user.name "AINext Bot"
+          git config user.email "bot@ainext.com"
+          git add tools.json ph_url_map.json
+          git diff --staged --quiet || (git commit -m "Backfill PH native URLs: $(date +%Y-%m-%d)" && git pull --rebase --autostash && git push)

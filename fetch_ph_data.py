@@ -437,7 +437,9 @@ def fetch_all_ai_tools(max_pages: int = 20) -> List[Dict]:
                     "thumbnail": post.get("thumbnail", {}).get("url") if post.get("thumbnail") else None,
                     "media": [{"url": m.get("url"), "type": m.get("type")} for m in (post.get("media") or [])],
                     "topics": [],
-                    "ph_url": f"https://www.producthunt.com/products/{post.get('name', '').lower().replace(' ', '-')}"  # 使用 name 生成 slug
+                    # 直接使用 PH API 返回的权威产品页 URL（post.url），去掉 utm 归因 query 参数
+                    # 这是 PH 官方 canonical 地址，免疫任何命名格式（. / 2.0 等），比自行拼 slug 可靠
+                    "ph_url": (post.get("url") or "").split("?")[0] or "https://www.producthunt.com/products/" + re.sub(r'[^a-z0-9]+', '-', (post.get('name') or '').lower()).strip('-'),
                 }
                 
                 # 缩略图直接使用 PH CDN URL（不下载到本地）
