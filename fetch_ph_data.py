@@ -12,6 +12,7 @@ import requests
 import json
 import time
 import os
+import re
 from datetime import datetime, timedelta
 from typing import List, Dict, Any
 from pathlib import Path
@@ -113,67 +114,152 @@ def save_website_map(cache):
         json.dump(cache, f, ensure_ascii=False, indent=2)
 
 
+def _extract_real_url(html, fallback_url):
+    """
+    从 PH /r/ 跳转页 HTML 中提取真实官网 URL。
+    PH 的 /r/ 页面在服务端做 301/302，或在页面 og:url / canonical 里嵌着真实地址。
+    """
+    if fallback_url and "producthunt.com" not in fallback_url:
+        return fallback_url
+    if not html:
+        return None
+    # 优先级：og:url > canonical > JSON-LD url > meta refresh
+    patterns = [
+        r'<meta[^>]*property=["\']?og:url["\']?[^>]*content=["\']([^"\']+)',
+        r'<link[^>]*rel=["\']?canonical["\']?[^>]*href=["\']([^"\']+)',
+        r'"url"\s*:\s*"(https?://(?!producthunt)[^"]+)"',
+        r'<meta[^>]*http-equiv=["\']?refresh["\']?[^>]*url=([^"\'>\s]+)',
+    ]
+    for pat in patterns:
+        m = re.search(pat, html, re.I)
+        if m:
+            u = m.group(1).strip().strip('"\'')
+            if u and "producthunt.com" not in u:
+                return u
+    return None
+
+
 def resolve_website_url(ph_url, tool_id, cache):
     """
-    解析 PH 重定向链接，获取真实官网 URL
-    使用缓存避免重复请求
+    解析 PH 重定向链接 -> 真实官网 URL。
+    - 已是真实 URL（历史已替换）直接缓存，不再发请求
+    - 失败（PH 已删除/失效）不写入 cache，下次运行可重试，避免“假死”
     """
     if tool_id in cache:
         return cache[tool_id]
-    
+
+    # 已是真实官网 URL，无需解析
+    if not ph_url or "producthunt.com/r/" not in ph_url:
+        if ph_url and "producthunt.com" not in ph_url:
+            cache[tool_id] = ph_url
+        return ph_url
+
     try:
-        resp = requests.head(
+        resp = requests.get(
             ph_url,
             headers={
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             },
             allow_redirects=True,
-            timeout=10
+            timeout=12
         )
-        real_url = resp.url
-        if real_url and "producthunt.com" not in real_url:
-            cache[tool_id] = real_url
-            save_website_map(cache)
-            return real_url
+        real = _extract_real_url(resp.text, resp.url)
+        if real:
+            cache[tool_id] = real
+            return real
     except Exception:
         pass
-    
-    # 回退到原 PH 链接
-    cache[tool_id] = ph_url
-    save_website_map(cache)
-    return ph_url
+
+    # 失败：不缓存，留待下次重试
+    return None
 
 
-def resolve_all_websites(tools):
-    """批量解析所有工具的 website 重定向"""
+FAIL_CACHE_FILE = "website_fail.json"
+RETRY_AFTER_HOURS = 24  # 失败退避：超过该时长才重新尝试，避免被 Cloudflare 限流
+
+
+def load_fail_cache():
+    """加载失败时间戳缓存（用于退避重试）"""
+    if os.path.exists(FAIL_CACHE_FILE):
+        try:
+            with open(FAIL_CACHE_FILE, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:
+            return {}
+    return {}
+
+
+def save_fail_cache(cache):
+    with open(FAIL_CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+def resolve_all_websites(tools, max_workers=5, delay=0.0, retry_after_hours=RETRY_AFTER_HOURS):
+    """
+    批量解析 website 重定向。
+    - 成功结果持久化到 website_map.json（不再重解）
+    - 失败记录时间戳到 website_fail.json，超过 retry_after_hours 才重试，
+      既保证逐渐消化存量，又避免每日狂刷触发 Cloudflare 429 限流
+    """
     cache = load_website_map()
-    needs_resolve = sum(1 for t in tools if str(t["id"]) not in cache)
-    if needs_resolve == 0:
+    # 防御性清理：成功缓存里不应残留 PH 链接
+    dirty = False
+    for k in list(cache.keys()):
+        if "producthunt.com" in cache[k]:
+            del cache[k]
+            dirty = True
+    if dirty:
+        save_website_map(cache)
+
+    fails = load_fail_cache()
+    now = time.time()
+    threshold = now - retry_after_hours * 3600
+
+    to_resolve = []
+    for t in tools:
+        tid = str(t["id"])
+        if tid in cache:
+            continue
+        if tid in fails and fails[tid] > threshold:
+            continue  # 近期失败，冷却中，跳过
+        to_resolve.append(t)
+
+    if not to_resolve:
         return cache
-    
-    print(f"\n🔗 解析 {needs_resolve} 个工具的官网重定向...")
-    resolved, total, skipped = 0, needs_resolve, len(tools) - needs_resolve
+
+    print(f"\n🔗 解析 {len(to_resolve)} 个工具 (workers={max_workers}, delay={delay}s)...")
+    resolved = 0
     from concurrent.futures import ThreadPoolExecutor, as_completed
-    
-    # 找出需要解析的工具
-    to_resolve = [t for t in tools if str(t["id"]) not in cache]
-    
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        futures = {executor.submit(resolve_website_url, t["website"], str(t["id"]), cache): t for t in to_resolve}
+
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        if delay > 0:
+            # 温和模式：逐个提交并间隔，降低被限流概率
+            futures = {}
+            for t in to_resolve:
+                time.sleep(delay)
+                futures[executor.submit(resolve_website_url, t["website"], str(t["id"]), cache)] = t
+        else:
+            futures = {executor.submit(resolve_website_url, t["website"], str(t["id"]), cache): t for t in to_resolve}
         for future in as_completed(futures):
             t = futures[future]
+            tid = str(t["id"])
             try:
-                real_url = future.result()
-                cache[str(t["id"])] = real_url
-                resolved += 1
-                if resolved % 100 == 0:
-                    print(f"  ... {resolved}/{total}")
+                real = future.result()
+                if real and "producthunt.com" not in real:
+                    cache[tid] = real
+                    fails.pop(tid, None)
+                    resolved += 1
+                    if resolved % 100 == 0:
+                        save_website_map(cache)
+                        save_fail_cache(fails)
+                        print(f"  ... 已解析 {resolved} 个真实 URL")
+                else:
+                    fails[tid] = time.time()
             except Exception:
-                pass
-        # 最终保存
-        save_website_map(cache)
-    
-    print(f"  ✅ {resolved} 个已解析, {skipped} 个已有缓存")
+                fails[tid] = time.time()
+    save_website_map(cache)
+    save_fail_cache(fails)
+    print(f"  ✅ 本轮新增真实 URL: {resolved} 个；待重试失败: {len(fails)} 个")
     return cache
 
 
@@ -184,6 +270,9 @@ def apply_website_map(tools, cache):
         if tid in cache and "producthunt.com" not in cache[tid]:
             t["website"] = cache[tid]
             t["website_resolved"] = True
+        else:
+            # 未解析成功：保持 PH 跳转链接，标记未解析（下次可重试）
+            t["website_resolved"] = False
     return tools
 
 
@@ -432,8 +521,12 @@ def main():
     save_to_json(tools, "tools.json")
     
     # 解析 PH 重定向 → 真实官网 URL（全量工具）
+    # 支持环境变量调参，便于手动触发温和回填：RESOLVE_WORKERS / RESOLVE_DELAY / RESOLVE_RETRY_HOURS
     all_tools = json.load(open("tools.json", "r", encoding="utf-8"))
-    website_cache = resolve_all_websites(all_tools)
+    workers = int(os.environ.get("RESOLVE_WORKERS", "5"))
+    delay = float(os.environ.get("RESOLVE_DELAY", "0"))
+    retry = int(os.environ.get("RESOLVE_RETRY_HOURS", str(RETRY_AFTER_HOURS)))
+    website_cache = resolve_all_websites(all_tools, max_workers=workers, delay=delay, retry_after_hours=retry)
     all_tools = apply_website_map(all_tools, website_cache)
     save_to_json(all_tools, "tools.json")
     

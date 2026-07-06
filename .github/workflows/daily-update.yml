@@ -10,6 +10,11 @@ on:
         required: false
         type: boolean
         default: false
+      backfill:
+        description: 'Gentle backfill of unresolved website URLs (lower rate, avoids Cloudflare 429)'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   update:
@@ -31,6 +36,10 @@ jobs:
 
       - name: Fetch latest data
         run: python fetch_ph_data.py
+        env:
+          RESOLVE_WORKERS: ${{ github.event.inputs.backfill == 'true' && '3' || '5' }}
+          RESOLVE_DELAY: ${{ github.event.inputs.backfill == 'true' && '1.5' || '0' }}
+          RESOLVE_RETRY_HOURS: ${{ github.event.inputs.backfill == 'true' && '0' || '24' }}
 
       - name: Translate new tools (LLM)
         run: python translate_llm.py tools.json ${{ github.event.inputs.force_translate == 'true' && '--force' || '' }}
@@ -43,5 +52,5 @@ jobs:
         run: |
           git config user.name "AINext Bot"
           git config user.email "bot@ainext.com"
-          git add tools.json tools-slim.json sitemap.xml
+          git add tools.json tools-slim.json sitemap.xml website_map.json website_fail.json
           git diff --staged --quiet || (git commit -m "Daily update: $(date +%Y-%m-%d)" && git pull --rebase --autostash && git push)
