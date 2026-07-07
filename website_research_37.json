@@ -1,0 +1,372 @@
+[
+  {
+    "name": "Recursi",
+    "slug": "recursi",
+    "id": 1163592,
+    "found": "github-canonical",
+    "url": "https://github.com/RecursiveSelfImprovement/recursi",
+    "confidence": "medium",
+    "note": "无独立营销官网；GitHub 仓库为项目主页（README 与 PH tagline 一致）",
+    "decision": "applied"
+  },
+  {
+    "name": "Heartbeat Landing Pages",
+    "slug": "heartbeat-landing-pages",
+    "id": 1175610,
+    "found": "yes",
+    "url": "https://www.heartbeat.chat/feature/landing-pages",
+    "confidence": "high",
+    "note": "Heartbeat 社区平台的功能子页",
+    "decision": "applied"
+  },
+  {
+    "name": "Rasa Intelligence",
+    "slug": "rasa-intelligence",
+    "id": 1184010,
+    "found": "ambiguous",
+    "url": "https://tech-rasa.com",
+    "confidence": "low",
+    "note": "两候选：tech-rasa.com(带 PH ref) 与 rasa.duo-marketing.com(同 tagline)；需人工确认",
+    "decision": "applied"
+  },
+  {
+    "name": "Kai Londo",
+    "slug": "kai-londo",
+    "id": 1184596,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅聚合站 gaxonline 提及，无独立官网",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "IntentOne",
+    "slug": "intentone",
+    "id": 1176898,
+    "found": "ambiguous",
+    "url": "https://intent.one/",
+    "confidence": "medium",
+    "note": "intent.one 疑似（描述偏营销自动化）；intent.app/intenthq 为不同产品",
+    "decision": "applied"
+  },
+  {
+    "name": "TierOnePrep",
+    "slug": "tieroneprep",
+    "id": 1188829,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅相似竞品 faangprep.com，无 TierOnePrep 独立站",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "Stream Perfect",
+    "slug": "stream-perfect",
+    "id": 1188971,
+    "found": "yes",
+    "url": "https://www.stream-perfect.com/",
+    "confidence": "high",
+    "note": "",
+    "decision": "applied"
+  },
+  {
+    "name": "Technologies.lat",
+    "slug": "technologies-lat",
+    "id": 1162784,
+    "found": "yes",
+    "url": "http://technologies.lat/",
+    "confidence": "high",
+    "note": "http 非 https",
+    "decision": "applied"
+  },
+  {
+    "name": "Website Importer for Webflow",
+    "slug": "website-importer-for-webflow",
+    "id": 1178375,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅 Lovable/Webflow 转换器相关内容，无此特定产品官网",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "StudyMate AI",
+    "slug": "studymate-ai",
+    "id": 1182859,
+    "found": "ambiguous",
+    "url": "https://studymateai.tech/",
+    "confidence": "low",
+    "note": "多个 studymate* 域名，不确定哪个是工程学生版",
+    "decision": "kept-ph-fallback"
+  },
+  {
+    "name": "SharkCraw",
+    "slug": "sharkcraw",
+    "id": 1177911,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "搜索结果均为无关中文资讯，无独立官网",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "Inversora",
+    "slug": "inversora",
+    "id": 1182683,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅在 innolope/ai-hunt 等聚合站展示，无独立官网域名",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "WebLegal.ai",
+    "slug": "weblegal-ai",
+    "id": 1180842,
+    "found": "yes",
+    "url": "https://weblegal.ai/",
+    "confidence": "high",
+    "note": "",
+    "decision": "applied"
+  },
+  {
+    "name": "Tencent WorkBuddy",
+    "slug": "tencent-workbuddy",
+    "id": 1174258,
+    "found": "yes",
+    "url": "https://www.workbuddy.ai/",
+    "confidence": "high",
+    "note": "国际版官网；国内为 workbuddy.cn",
+    "decision": "applied"
+  },
+  {
+    "name": "NEURAVA",
+    "slug": "neurava",
+    "id": 1183166,
+    "found": "ambiguous",
+    "url": "https://neuravaai.com/",
+    "confidence": "medium",
+    "note": "neurava.com 是癫痫检测公司（不同产品）；neuravaai.com 才是 AI marketer",
+    "decision": "applied"
+  },
+  {
+    "name": "Alphatrade AI",
+    "slug": "alphatrade-ai",
+    "id": 1182688,
+    "found": "ambiguous",
+    "url": "https://alphatrade-ai.live/",
+    "confidence": "low",
+    "note": "多个 alphatrade* 域名，疑似有仿冒，需人工确认",
+    "decision": "applied"
+  },
+  {
+    "name": "Permitech",
+    "slug": "permitech",
+    "id": 1182670,
+    "found": "yes",
+    "url": "https://www.permitech.io/",
+    "confidence": "high",
+    "note": "",
+    "decision": "applied"
+  },
+  {
+    "name": "Fintly",
+    "slug": "fintly",
+    "id": 1187874,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅通用 AI companion 竞品，无 Fintly 独立站",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "Cyborg7",
+    "slug": "cyborg7",
+    "id": 1150128,
+    "found": "yes",
+    "url": "https://cyborg7.com/",
+    "confidence": "high",
+    "note": "此前 ph_url 高危未回填的产品，这里可一并修正 website",
+    "decision": "applied"
+  },
+  {
+    "name": "Book My Look",
+    "slug": "book-my-look",
+    "id": 1185399,
+    "found": "yes",
+    "url": "https://www.bookmylook.co/home",
+    "confidence": "medium",
+    "note": "美业预约站；另有 Brisbane 二手店同名需区分",
+    "decision": "applied"
+  },
+  {
+    "name": "TokenGO",
+    "slug": "tokengo-the-token-intelligence-grid",
+    "id": 1185184,
+    "found": "ambiguous",
+    "url": "https://tokengo.ai/",
+    "confidence": "medium",
+    "note": "官方文档在 doc.tokengo.ai（AI 模型聚合网关），主站疑似 tokengo.ai；tagline 略有出入需确认",
+    "decision": "applied"
+  },
+  {
+    "name": "PromptQuery",
+    "slug": "promptquery",
+    "id": 1179224,
+    "found": "yes",
+    "url": "https://www.promptquery.app/",
+    "confidence": "high",
+    "note": "",
+    "decision": "applied"
+  },
+  {
+    "name": "RetainIq",
+    "slug": "retainiq",
+    "id": 1173581,
+    "found": "ambiguous",
+    "url": "https://retainiqplatform.com/",
+    "confidence": "medium",
+    "note": "多个 retainiq* 域名；retainiqplatform.com 描述最匹配 tagline",
+    "decision": "applied"
+  },
+  {
+    "name": "XsiKOM",
+    "slug": "xsikom",
+    "id": 1180312,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅 innolope 聚合站；竞品 aiapply/loopcv，无 XsiKOM 官网",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "PromptMatrix AI",
+    "slug": "promptmatrix-ai",
+    "id": 1173241,
+    "found": "yes",
+    "url": "https://promptmatrix.online/",
+    "confidence": "medium",
+    "note": "promptmatrix.online 描述匹配；另有开源版 promptmatrix.github.io",
+    "decision": "applied"
+  },
+  {
+    "name": "Pitchbar",
+    "slug": "pitchbar",
+    "id": 1177840,
+    "found": "yes",
+    "url": "https://pitchbar.co/welcome",
+    "confidence": "high",
+    "note": "此前报告标记 REAL 可恢复，已确认",
+    "decision": "applied"
+  },
+  {
+    "name": "Questlock",
+    "slug": "questlock",
+    "id": 1181213,
+    "found": "yes",
+    "url": "https://www.usequestlock.com/",
+    "confidence": "high",
+    "note": "",
+    "decision": "applied"
+  },
+  {
+    "name": "DeepAlgo Sovereign",
+    "slug": "deepalgo-sovereign",
+    "id": 1163753,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅聚合站 gaxonline + GitHub SDK(deepalgo-intelligence)；无明确官方域名（疑似 deepalgo.ai 未证实）",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "Claude Tag",
+    "slug": "claude-tag",
+    "id": 1179452,
+    "found": "yes",
+    "url": "https://claude.com/product/tag",
+    "confidence": "high",
+    "note": "Anthropic 官方产品页",
+    "decision": "applied"
+  },
+  {
+    "name": "ojxo.com",
+    "slug": "ojxo-com",
+    "id": 1181079,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "搜索未返回 ojxo.com 本身（仅 innolope 聚合）；域名可能存在但未索引/已失效",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "Cewsco",
+    "slug": "cewsco",
+    "id": 1181134,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅 PH/hunted/aitoolsmap 聚合；无 cewsco 独立官网",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "AirPosture",
+    "slug": "airposture",
+    "id": 1181882,
+    "found": "yes",
+    "url": "https://airposture.github.io/",
+    "confidence": "medium",
+    "note": "开发者 GitHub Pages 官网；另有 getairposture.com，GitHub 警告有仿冒 App",
+    "decision": "applied"
+  },
+  {
+    "name": "Homelens",
+    "slug": "homelens",
+    "id": 1181098,
+    "found": "ambiguous",
+    "url": "https://homelensais.com/",
+    "confidence": "medium",
+    "note": "多个 homelens* 域名；homelensais.com 最匹配 'AI real estate advisor'",
+    "decision": "kept-ph-fallback"
+  },
+  {
+    "name": "AI Code Guard",
+    "slug": "ai-code-guard",
+    "id": 1183109,
+    "found": "ambiguous",
+    "url": "https://ai-code-guard-v2.onrender.com/",
+    "confidence": "low",
+    "note": "onrender 临时部署；另有 GitHub aiguard / PyPI ai-code-guard 同名项目，需确认",
+    "decision": "applied"
+  },
+  {
+    "name": "The Coming Heir",
+    "slug": "the-coming-heir",
+    "id": 1161732,
+    "found": "no",
+    "url": null,
+    "confidence": "n/a",
+    "note": "仅 AI+仲裁法 主题文章，无产品官网",
+    "decision": "no-site-kept-ph"
+  },
+  {
+    "name": "Unifers.ai",
+    "slug": "unifers-ai",
+    "id": 1186363,
+    "found": "yes",
+    "url": "https://unifers.ai/",
+    "confidence": "high",
+    "note": "域名与产品名一致",
+    "decision": "applied"
+  },
+  {
+    "name": "Visipage",
+    "slug": "visipage",
+    "id": 1186763,
+    "found": "yes",
+    "url": "https://visepage.com/",
+    "confidence": "medium",
+    "note": "visepage.com 博客主题 'What AI Gets Wrong About You' 与 tagline 吻合",
+    "decision": "applied"
+  }
+]
