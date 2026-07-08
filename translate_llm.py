@@ -188,6 +188,25 @@ def load_checkpoint():
     return None
 
 
+def _write_slim(tools: list):
+    """从工具列表同步生成 tools-slim.json（独立函数，确保所有路径都能调用）"""
+    slim = []
+    for t in tools:
+        slim.append({
+            "id": t["id"], "name": t["name"], "slug": t["slug"],
+            "tagline": t.get("tagline", ""), "tagline_zh": t.get("tagline_zh", ""),
+            "thumbnail": t.get("thumbnail", ""),
+            "votesCount": t.get("votesCount", 0), "commentsCount": t.get("commentsCount", 0),
+            "createdAt": t.get("createdAt", ""), "website": t.get("website", ""),
+            "category": t.get("category", ""),
+            "topics": [{"name": tp["name"]} for tp in (t.get("topics") or [])[:3]],
+        })
+    slim_path = "tools-slim.json"
+    with open(slim_path, "w", encoding="utf-8") as f:
+        json.dump(slim, f, ensure_ascii=False, indent=2)
+    print(f"📦 已同步生成 {slim_path} ({len(slim)} 条)")
+
+
 def translate_tools(tools_json_path: str, output_path: str = None, force: bool = False):
     """批量翻译 tools.json 中的 tagline 和 description
     默认增量模式（只翻译无 _zh 的），--force 覆盖全部已有翻译"""
@@ -228,6 +247,7 @@ def translate_tools(tools_json_path: str, output_path: str = None, force: bool =
 
     if not to_translate:
         print("✅ 所有工具已有中文翻译")
+        _write_slim(tools)
         return tools
 
     total = len(to_translate)
@@ -256,6 +276,7 @@ def translate_tools(tools_json_path: str, output_path: str = None, force: bool =
         if results is None:
             print(f"\n❌ 所有引擎均失败。已完成 {translated}/{total} 条，断点已保存。")
             save_checkpoint(batches[bi:], translated)
+            _write_slim(tools)
             return tools
 
         # 写回结果
@@ -290,21 +311,7 @@ def translate_tools(tools_json_path: str, output_path: str = None, force: bool =
     print(f"💾 已保存到: {output_path or tools_json_path}")
 
     # 同步生成 tools-slim.json
-    slim = []
-    for t in tools:
-        slim.append({
-            "id": t["id"], "name": t["name"], "slug": t["slug"],
-            "tagline": t.get("tagline", ""), "tagline_zh": t.get("tagline_zh", ""),
-            "thumbnail": t.get("thumbnail", ""),
-            "votesCount": t.get("votesCount", 0), "commentsCount": t.get("commentsCount", 0),
-            "createdAt": t.get("createdAt", ""), "website": t.get("website", ""),
-            "category": t.get("category", ""),
-            "topics": [{"name": tp["name"]} for tp in (t.get("topics") or [])[:3]],
-        })
-    slim_path = "tools-slim.json"
-    with open(slim_path, "w", encoding="utf-8") as f:
-        json.dump(slim, f, ensure_ascii=False, indent=2)
-    print(f"📦 已同步生成 {slim_path} ({len(slim)} 条)")
+    _write_slim(tools)
     return tools
 
 
@@ -316,4 +323,18 @@ if __name__ == "__main__":
     args = sys.argv[1:]
     force = "--force" in args
     path = next((a for a in args if not a.startswith("--")), "tools.json")
-    translate_tools(path, force=force)
+    try:
+        translate_tools(path, force=force)
+    except Exception as e:
+        import traceback
+        print(f"\n❌ translate_tools 异常: {e}")
+        traceback.print_exc()
+    finally:
+        # 兜底：无论 translate_tools 是否成功/提前返回/崩溃，
+        # 始终从 tools.json 重新生成 tools-slim.json，确保 slim 不丢失
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                tools_from_disk = json.load(f)
+            _write_slim(tools_from_disk)
+        except Exception as se:
+            print(f"⚠️ slim 兜底生成失败: {se}")
