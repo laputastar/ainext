@@ -433,7 +433,7 @@ def fetch_all_ai_tools(max_pages: int = 20) -> List[Dict]:
                     "votesCount": post.get("votesCount", 0),
                     "commentsCount": post.get("commentsCount", 0),
                     "reviewsRating": post.get("reviewsRating", 0),
-                    "website": post.get("website"),
+                    "website": post.get("website", "").split("?")[0] if post.get("website") else None,
                     "thumbnail": post.get("thumbnail", {}).get("url") if post.get("thumbnail") else None,
                     "media": [{"url": m.get("url"), "type": m.get("type")} for m in (post.get("media") or [])],
                     "topics": [],
