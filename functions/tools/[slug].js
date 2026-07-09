@@ -2,6 +2,13 @@
 // Server-renders complete HTML with SEO content (Googlebot-visible)
 import { getTools, render404 } from '../_shared.js';
 
+const CAT_CN = {
+  'ai-tool': '', chatbot: '对话', coding: '编程',
+  education: '教育', finance: '金融', health: '健康',
+  image: '图像', marketing: '营销', productivity: '效率',
+  video: '视频', writing: '写作',
+};
+
 export async function onRequest(context) {
   const { request, env } = context;
   const url = new URL(request.url);
@@ -50,7 +57,10 @@ function renderToolPage(tool, allTools, origin) {
   const title = buildSEOTitle(tool);
   const tagline = tool.tagline_zh || tool.tagline || '';
   const desc = (tool.description_zh || tool.description || '').replace(/\n/g, '<br>');
-  const metaDesc = tagline.length > 155 ? tagline.slice(0, 152) + '...' : tagline;
+  const catCN = CAT_CN[tool.category] || '';
+  const catLabel = catCN ? `AI${catCN}工具` : 'AI工具';
+  const shortDesc = (tool.description_zh || tool.description || tagline || '').replace(/\n/g, ' ').slice(0, 120);
+  const metaDesc = `${tool.name} 是一款 ${catLabel}。${shortDesc} - AINext 精选`;
   const thumb = tool.thumbnail || '';
   const dateStr = new Date(tool.createdAt).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
   const topics = tool.topics || [];
