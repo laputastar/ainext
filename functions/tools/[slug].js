@@ -59,8 +59,11 @@ function renderToolPage(tool, allTools, origin) {
   const desc = (tool.description_zh || tool.description || '').replace(/\n/g, '<br>');
   const catCN = CAT_CN[tool.category] || '';
   const catLabel = catCN ? `AI${catCN}工具` : 'AI工具';
-  const shortDesc = (tool.description_zh || tool.description || tagline || '').replace(/\n/g, ' ').slice(0, 120);
-  const metaDesc = `${tool.name} 是一款 ${catLabel}。${shortDesc} - AINext 精选`;
+  const rawDesc = (tool.description_zh || tool.description || tagline || '').replace(/\n/g, ' ');
+  let shortDesc = rawDesc.slice(0, 120);
+  const lastEnd = Math.max(shortDesc.lastIndexOf('。'), shortDesc.lastIndexOf('！'), shortDesc.lastIndexOf('？'));
+  if (lastEnd > 60) shortDesc = shortDesc.slice(0, lastEnd + 1);
+  const metaDesc = `${tool.name} 是一款 ${catLabel}。${shortDesc} | AINext 精选`;
   const thumb = tool.thumbnail || '';
   const dateStr = new Date(tool.createdAt).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
   const topics = tool.topics || [];
