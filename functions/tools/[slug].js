@@ -32,14 +32,15 @@ export async function onRequest(context) {
 }
 
 function buildSEOTitle(tool) {
-  const tagline = (tool.tagline_zh || tool.tagline || '').slice(0, 20);
-  let title = tagline ? `${tool.name}：${tagline} — AINext` : `${tool.name} — AINext`;
-  if (title.length > 60) {
-    const suffix = ' — AINext';
-    const maxName = 60 - suffix.length - tagline.length - 1; // 1 for `：`
-    title = tool.name.slice(0, maxName) + `：${tagline}` + suffix;
-  }
-  return title;
+  const taglineFull = tool.tagline_zh || tool.tagline || '';
+  const suffix = ' | AINext';
+  if (!taglineFull) return `${tool.name} | AINext`;
+  const sep = ' - ';
+  const full = `${tool.name}${sep}${taglineFull}${suffix}`;
+  if (full.length <= 60) return full;
+  const maxTagline = 60 - tool.name.length - sep.length - suffix.length;
+  if (maxTagline > 0) return `${tool.name}${sep}${taglineFull.slice(0, maxTagline)}${suffix}`;
+  return tool.name.slice(0, 60 - suffix.length) + suffix;
 }
 
 // ─── SSR HTML builder ───────────────────────────────────────────
