@@ -530,6 +530,17 @@ def main():
     retry = int(os.environ.get("RESOLVE_RETRY_HOURS", str(RETRY_AFTER_HOURS)))
     website_cache = resolve_all_websites(all_tools, max_workers=workers, delay=delay, retry_after_hours=retry)
     all_tools = apply_website_map(all_tools, website_cache)
+    
+    # 清理所有 website URL 的查询参数（每次运行都洗一遍，防止旧数据残留）
+    cleaned = 0
+    for t in all_tools:
+        w = t.get("website") or ""
+        if "?" in w:
+            t["website"] = w.split("?")[0]
+            cleaned += 1
+    if cleaned:
+        print(f"🧹 清理 {cleaned} 个 URL 参数")
+    
     save_to_json(all_tools, "tools.json")
     
     post_process()
