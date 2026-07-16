@@ -188,8 +188,13 @@ class RateLimiter:
 
 async def engine_worker(engine, queue, tools, stats, lock):
     """单引擎 worker：从队列取批次 → 翻译 → 回填 tools"""
+    name = engine["name"]
     limiter = RateLimiter(engine["rpm"])
-    session = aiohttp.ClientSession()
+    import ssl as _ssl
+    connector = aiohttp.TCPConnector(ssl=False)  # SSL 豁免（Agnes 证书在本机/CI 报错）
+    session = aiohttp.ClientSession(connector=connector)
+    eng_stats = {"ok": 0, "fail": 0}  # 单引擎统计
+    stats[f"_eng_{name}"] = eng_stats
 
     try:
         while True:
@@ -200,6 +205,7 @@ async def engine_worker(engine, queue, tools, stats, lock):
 
             batch_idx, batch = batch_items
             texts = [item[2] for item in batch]
+            ok = False
 
             for attempt in range(1, MAX_RETRIES + 1):
                 await limiter.wait()
@@ -210,19 +216,32 @@ async def engine_worker(engine, queue, tools, stats, lock):
                             if result and result.strip():
                                 tools[i][field] = result.strip()
                                 stats["translated"] += 1
-                    print(f"  [{engine['name']}] ✅ 批次 {batch_idx} ({len(texts)} 条)")
+                    eng_stats["ok"] += 1
+                    print(f"  [{name}] ✅ 批次 {batch_idx}", flush=True)
+                    ok = True
                     break
                 elif attempt < MAX_RETRIES:
                     wait = 2 ** attempt
-                    print(f"  [{engine['name']}] ⚠️ 批次 {batch_idx} 失败，{wait}s 后重试 {attempt+1}/{MAX_RETRIES}")
+                    print(f"  [{name}] ⚠️ 批次 {batch_idx} 重试 {attempt+1}/{MAX_RETRIES}", flush=True)
                     await asyncio.sleep(wait)
+            if not ok:
+                eng_stats["fail"] += 1
 
-            # 每完成 10 批存盘一次
             async with lock:
-                if stats["batches_done"] % 10 == 0:
+                stats["batches_done"] += 1
+                done = stats["batches_done"]
+                # 每 5 批输出汇总
+                if done % 5 == 0:
+                    parts = []
+                    for k, v in stats.items():
+                        if k.startswith("_eng_"):
+                            e = v
+                            parts.append(f"{k[5:]}:{e['ok']}/{e['ok']+e['fail']}")
+                    print(f"  📊 [{done}/{stats['total_batches']}] {' | '.join(parts)}  ✓{stats['translated']}", flush=True)
+                # 每 20 批存盘
+                if done % 20 == 0:
                     _save_tools(tools)
                     save_checkpoint([], stats["translated"])
-                stats["batches_done"] += 1
 
             queue.task_done()
     finally:
@@ -328,7 +347,7 @@ async def translate_tools(tools_json_path: str, force: bool = False):
             await queue.put(b)
 
     # 7. 启动并发 workers
-    stats = {"translated": ckpt["done"] if ckpt else 0, "batches_done": 0}
+    stats = {"translated": ckpt["done"] if ckpt else 0, "batches_done": 0, "total_batches": len(batches)}
     lock = asyncio.Lock()
 
     workers = [
