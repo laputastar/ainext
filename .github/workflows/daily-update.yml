@@ -32,7 +32,7 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install requests
+        run: pip install requests aiohttp
 
       - name: Fetch latest data
         run: python fetch_ph_data.py
@@ -41,12 +41,14 @@ jobs:
           RESOLVE_DELAY: ${{ github.event.inputs.backfill == 'true' && '1.5' || '0' }}
           RESOLVE_RETRY_HOURS: ${{ github.event.inputs.backfill == 'true' && '0' || '24' }}
 
-      - name: Translate new tools (LLM)
-        run: python translate_llm.py tools.json ${{ github.event.inputs.force_translate == 'true' && '--force' || '' }}
+      - name: Translate new tools (concurrent LLM)
+        run: python translate_concurrent.py tools.json ${{ github.event.inputs.force_translate == 'true' && '--force' || '' }}
         env:
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           GLM45_API_KEY: ${{ secrets.GLM45_API_KEY }}
+          GLM46_API_KEY: ${{ secrets.GLM46_API_KEY }}
           AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
+          AGNES_API_URL: ${{ secrets.AGNES_API_URL }}
 
       - name: Commit & push if changed
         run: |
