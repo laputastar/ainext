@@ -44,14 +44,7 @@ ENGINES = [
         "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
         "key_env": "GLM_API_KEY",
         "model": "glm-4.7-flash",
-        "rpm": 2,
-    },
-    {
-        "name": "Agnes-2.0-Flash",
-        "url": lambda: os.environ.get("AGNES_API_URL", "https://apihub.agnes-ai.com/v1/chat/completions"),
-        "key_env": "AGNES_API_KEY",
-        "model": "agnes-2.0-flash",
-        "rpm": 2,
+        "rpm": 1,
     },
     # Long-Cat — 请补充 API 地址和 model name
     # {
