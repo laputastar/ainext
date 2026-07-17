@@ -46,6 +46,14 @@ ENGINES = [
         "model": "glm-4.7-flash",
         "rpm": 1,
     },
+    {
+        "name": "Agnes-2.0-Flash",
+        "url": lambda: os.environ.get("AGNES_API_URL", "https://apihub.agnes-ai.com/v1/chat/completions"),
+        "key_env": "AGNES_API_KEY",
+        "model": "agnes-2.0-flash",
+        "rpm": 1,
+        "max_tokens": 8192,  # 推理模型需要更多 token：reasoning 会吃掉一部分
+    },
     # Long-Cat — 请补充 API 地址和 model name
     # {
     #     "name": "Long-Cat",
@@ -123,7 +131,7 @@ Output (JSON array only):"""
         "model": engine["model"],
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.3,
-        "max_tokens": 4096,
+        "max_tokens": engine.get("max_tokens", 4096),
     }
     headers = {
         "Content-Type": "application/json",
@@ -183,8 +191,7 @@ async def engine_worker(engine, queue, tools, stats, lock):
     """单引擎 worker：从队列取批次 → 翻译 → 回填 tools"""
     name = engine["name"]
     limiter = RateLimiter(engine["rpm"])
-    import ssl as _ssl
-    connector = aiohttp.TCPConnector(ssl=False)  # SSL 豁免（Agnes 证书在本机/CI 报错）
+    connector = aiohttp.TCPConnector(verify_ssl=False)  # Agnes 证书本机/CI 报错
     session = aiohttp.ClientSession(connector=connector)
     eng_stats = {"ok": 0, "fail": 0}  # 单引擎统计
     stats[f"_eng_{name}"] = eng_stats
