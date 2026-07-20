@@ -15,6 +15,7 @@ import traceback
 from pathlib import Path
 
 import aiohttp
+import ssl as _ssl
 
 # ── 配置 ──────────────────────────────────────────────
 BATCH_SIZE = 10
@@ -198,7 +199,10 @@ async def engine_worker(engine, queue, tools, stats, lock):
     """单引擎 worker：从队列取批次 → 翻译 → 回填 tools"""
     name = engine["name"]
     limiter = RateLimiter(engine["rpm"])
-    connector = aiohttp.TCPConnector(verify_ssl=False)  # Agnes 证书本机/CI 报错
+    ssl_ctx = _ssl.create_default_context()
+    ssl_ctx.check_hostname = False
+    ssl_ctx.verify_mode = _ssl.CERT_NONE
+    connector = aiohttp.TCPConnector(ssl=ssl_ctx)
     session = aiohttp.ClientSession(connector=connector)
     eng_stats = {"ok": 0, "fail": 0}  # 单引擎统计
     stats[f"_eng_{name}"] = eng_stats
