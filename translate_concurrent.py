@@ -56,11 +56,11 @@ ENGINES = [
         "max_tokens": 8192,  # 推理模型需要更多 token：reasoning 会吃掉一部分
     },
     {
-        "name": "NVIDIA-DeepSeek-V4",
+        "name": "NVIDIA-Llama-3.1-8B",
         "url": "https://integrate.api.nvidia.com/v1/chat/completions",
         "key_env": "NVIDIA_API_KEY",
-        "model": "deepseek-ai/deepseek-v4-flash",
-        "rpm": 2,
+        "model": "meta/llama-3.1-8b-instruct",
+        "rpm": 1,
     },
     # Long-Cat — 请补充 API 地址和 model name
     # {
