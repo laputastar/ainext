@@ -504,7 +504,7 @@ def save_to_json(tools: List[Dict], filename: str = "tools.json"):
     if os.path.exists(blocklist_path):
         try:
             with open(blocklist_path, "r", encoding="utf-8") as f:
-                blocked_ids = set(json.load(f))
+                blocked_ids = {str(x) for x in json.load(f)}
             before = len(merged)
             merged = [t for t in merged if t["id"] not in blocked_ids]
             blocked = before - len(merged)
