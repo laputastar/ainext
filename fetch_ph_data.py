@@ -498,11 +498,25 @@ def save_to_json(tools: List[Dict], filename: str = "tools.json"):
                 if old.get(field) and not tool.get(field):
                     tool[field] = old[field]
     
+    # 过滤阻止名单中的产品
+    blocked = 0
+    blocklist_path = os.path.join(os.path.dirname(__file__), "blocklist.json")
+    if os.path.exists(blocklist_path):
+        try:
+            with open(blocklist_path, "r", encoding="utf-8") as f:
+                blocked_ids = set(json.load(f))
+            before = len(merged)
+            merged = [t for t in merged if t["id"] not in blocked_ids]
+            blocked = before - len(merged)
+        except Exception:
+            pass
+    
     merged.sort(key=lambda t: t.get("votesCount", 0), reverse=True)  # 按投票排序
     
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
-    print(f"💾 数据已保存: {len(merged)} 工具 (新增 {len(tools)-len([t for t in tools if t['id'] in old_dict])}，保留 {len(merged)-len(tools)} 个旧工具)")
+    print(f"💾 数据已保存: {len(merged)} 工具 (新增 {len(tools)-len([t for t in tools if t['id'] in old_dict])}，保留 {len(merged)-len(tools)} 个旧工具)"
+          + (f"，阻止 {blocked} 个" if blocked else ""))
 
 
 def main():
