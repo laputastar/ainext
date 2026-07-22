@@ -48,14 +48,6 @@ ENGINES = [
         "rpm": 1,
     },
     {
-        "name": "Agnes-2.0-Flash",
-        "url": lambda: os.environ.get("AGNES_API_URL", "https://apihub.agnes-ai.com/v1/chat/completions"),
-        "key_env": "AGNES_API_KEY",
-        "model": "agnes-2.0-flash",
-        "rpm": 1,
-        "max_tokens": 8192,  # 推理模型需要更多 token：reasoning 会吃掉一部分
-    },
-    {
         "name": "NVIDIA-Llama-3.1-8B",
         "url": "https://integrate.api.nvidia.com/v1/chat/completions",
         "key_env": "NVIDIA_API_KEY",
