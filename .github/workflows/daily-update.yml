@@ -47,8 +47,6 @@ jobs:
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           GLM45_API_KEY: ${{ secrets.GLM45_API_KEY }}
           GLM46_API_KEY: ${{ secrets.GLM46_API_KEY }}
-          AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
-          AGNES_API_URL: ${{ secrets.AGNES_API_URL }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
 
       - name: Commit & push if changed
