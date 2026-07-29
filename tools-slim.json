@@ -519,6 +519,30 @@
     ]
   },
   {
+    "id": "1190808",
+    "name": "Prefactor",
+    "slug": "prefactor",
+    "tagline": "Evaluate your AI Agents in real-time",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/4ffa8a62-0b8a-4920-813e-e2f34bb5b68d.png?auto=format",
+    "votesCount": 533,
+    "commentsCount": 134,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://prefactor.tech/producthunt",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
     "id": "1163508",
     "name": "VC Boom",
     "slug": "vc-boom",
@@ -2346,6 +2370,30 @@
     ]
   },
   {
+    "id": "1195320",
+    "name": "Cekura",
+    "slug": "cekura",
+    "tagline": "The self-improvement loop for voice agents",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/a0348018-57b9-4835-bf5a-faf8d3bee8a0.jpeg?auto=format",
+    "votesCount": 349,
+    "commentsCount": 69,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.cekura.ai/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Audio"
+      }
+    ]
+  },
+  {
     "id": "1180569",
     "name": "ConnectMachine 2.0",
     "slug": "connectmachine-2-0",
@@ -2611,7 +2659,7 @@
     "name": "Buzzy",
     "slug": "buzzy",
     "tagline": "Your creative AI co-director",
-    "tagline_zh": "",
+    "tagline_zh": "您的创意AI副导演",
     "thumbnail": "https://ph-files.imgix.net/94d3fba9-137a-42b9-b1be-3a682cad6ad5.png?auto=format",
     "votesCount": 331,
     "commentsCount": 86,
@@ -3111,6 +3159,30 @@
     ]
   },
   {
+    "id": "1205253",
+    "name": "Lottie Creator 2.0",
+    "slug": "lottie-creator-2-0",
+    "tagline": "After Effects for the web, built on Lottie",
+    "tagline_zh": "基于Lottie构建的网页版After Effects",
+    "thumbnail": "https://ph-files.imgix.net/20670f6c-a217-4ffc-95bd-a5b42014f3a5.gif?auto=format",
+    "votesCount": 312,
+    "commentsCount": 95,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://creator.lottiefiles.com/",
+    "category": "video",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Graphics & Design"
+      },
+      {
+        "name": "Animation"
+      }
+    ]
+  },
+  {
     "id": "1145256",
     "name": "Revolte",
     "slug": "revolte",
@@ -3421,7 +3493,7 @@
     "name": "Athena by Shoplazza",
     "slug": "athena-by-shoplazza",
     "tagline": "An orchestrator agent for your entire commerce stack",
-    "tagline_zh": "",
+    "tagline_zh": "您整个商业堆栈的编排代理",
     "thumbnail": "https://ph-files.imgix.net/070fb73f-cbfd-450d-a087-e0e6b1ecf62b.png?auto=format",
     "votesCount": 292,
     "commentsCount": 77,
@@ -3865,7 +3937,7 @@
     "name": "Robynn AI",
     "slug": "robynn-ai",
     "tagline": "Websites that improve and heal with self-learning",
-    "tagline_zh": "",
+    "tagline_zh": "通过自学习改进和修复的网站",
     "thumbnail": "https://ph-files.imgix.net/c8c7132c-3f7c-4d42-9bed-248ff97223e3.png?auto=format",
     "votesCount": 266,
     "commentsCount": 59,
@@ -5779,7 +5851,7 @@
     "name": "Openbase",
     "slug": "openbase",
     "tagline": "Manage your team of AI agents by voice, from anywhere",
-    "tagline_zh": "",
+    "tagline_zh": "随时随地通过语音管理您的AI代理团队",
     "thumbnail": "https://ph-files.imgix.net/9b059430-9dce-4ca1-bd9b-80ac9702807d.png?auto=format",
     "votesCount": 190,
     "commentsCount": 47,
@@ -5912,6 +5984,27 @@
       },
       {
         "name": "Remote Work"
+      }
+    ]
+  },
+  {
+    "id": "1150287",
+    "name": "Leaping AI",
+    "slug": "leaping-ai",
+    "tagline": "AI agents that call and text in multi-day campaigns",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/3ed60734-850b-49ea-be66-eca197df5c21.png?auto=format",
+    "votesCount": 186,
+    "commentsCount": 21,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://leapingai.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Home improvement"
       }
     ]
   },
@@ -6641,6 +6734,30 @@
       },
       {
         "name": "Social media marketing"
+      }
+    ]
+  },
+  {
+    "id": "1208295",
+    "name": "EasyCircuit",
+    "slug": "easycircuit",
+    "tagline": "Hardware prototyping, as simple as vibe-coding",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/45c0c875-1c01-4cc0-b55c-526e0c935b8d.png?auto=format",
+    "votesCount": 168,
+    "commentsCount": 17,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://easycircuit.app",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Prototyping"
+      },
+      {
+        "name": "Hardware"
       }
     ]
   },
@@ -7451,6 +7568,30 @@
       },
       {
         "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205332",
+    "name": "Ycode AI Agents",
+    "slug": "ycode-ai-agents",
+    "tagline": "Build websites with AI",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/de055381-4c88-4ce2-835e-3d2e2674846d.png?auto=format",
+    "votesCount": 154,
+    "commentsCount": 14,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.ycode.com/ai-agents",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "Website Builder"
+      },
+      {
+        "name": "Web Design"
       }
     ]
   },
@@ -8431,7 +8572,7 @@
     "name": "PureBox.ai",
     "slug": "purebox-ai",
     "tagline": "Review-first AI cleanup for your real Gmail inbox.",
-    "tagline_zh": "",
+    "tagline_zh": "用 AI 清理您的真实 Gmail 收件箱。",
     "thumbnail": "https://ph-files.imgix.net/13d2e711-0ab6-4e1f-a6dc-1abca88a2e94.png?auto=format",
     "votesCount": 141,
     "commentsCount": 14,
@@ -9140,6 +9281,30 @@
       },
       {
         "name": "Vercel Day"
+      }
+    ]
+  },
+  {
+    "id": "1200340",
+    "name": "FlowTask 2.0",
+    "slug": "flowtask-2-0",
+    "tagline": "Company brain for AI Agents",
+    "tagline_zh": "公司脑部 AI 代理",
+    "thumbnail": "https://ph-files.imgix.net/6291f7ae-c326-4c98-ad14-2e38a0fdc865.png?auto=format",
+    "votesCount": 134,
+    "commentsCount": 13,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://flowtask.work",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -10470,6 +10635,30 @@
     ]
   },
   {
+    "id": "1192497",
+    "name": "Superunit",
+    "slug": "superunit",
+    "tagline": "AI agents that verify employment by phone, email & fax ",
+    "tagline_zh": "通过电话、电子邮件和传真验证雇员",
+    "thumbnail": "https://ph-files.imgix.net/bbd1f6c1-9090-41a4-8463-bc73bdfce698.vnd.microsoft.icon?auto=format",
+    "votesCount": 123,
+    "commentsCount": 12,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.superunit.com/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Human Resources"
+      },
+      {
+        "name": "Banking"
+      }
+    ]
+  },
+  {
     "id": "1154500",
     "name": "The Incident Challenge",
     "slug": "the-incident-challenge",
@@ -11643,6 +11832,27 @@
     ]
   },
   {
+    "id": "1207862",
+    "name": "Liminal",
+    "slug": "liminal",
+    "tagline": "A workspace & 2nd brain for you, your agent, and your team",
+    "tagline_zh": "工作空间和第二脑部",
+    "thumbnail": "https://ph-files.imgix.net/158b4a31-6da9-476b-a2a2-cc94777d131b.png?auto=format",
+    "votesCount": 115,
+    "commentsCount": 21,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://useliminal.xyz",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
     "id": "1162913",
     "name": "Boxes.dev",
     "slug": "boxes-dev",
@@ -11780,6 +11990,30 @@
       },
       {
         "name": "Games"
+      }
+    ]
+  },
+  {
+    "id": "1205866",
+    "name": "Conduit",
+    "slug": "conduit",
+    "tagline": "AI agents purpose-built for Hospitality",
+    "tagline_zh": "专门为酒店业打造的 AI 代理",
+    "thumbnail": "https://ph-files.imgix.net/81f76030-ce4c-445d-8d2f-b2a3110ded07.png?auto=format",
+    "votesCount": 114,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.conduit.ai/",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "Customer Communication"
+      },
+      {
+        "name": "Travel"
+      },
+      {
+        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -12642,6 +12876,30 @@
     ]
   },
   {
+    "id": "1206262",
+    "name": "Phantom",
+    "slug": "phantom",
+    "tagline": "Voice-first AI agent that operates your Mac",
+    "tagline_zh": "语音优先的AI助手，可操作你的Mac",
+    "thumbnail": "https://ph-files.imgix.net/14d4fa8f-b2cd-4530-bde1-49c8f3d8c993.png?auto=format",
+    "votesCount": 110,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.heyphantom.app",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
     "id": "1163767",
     "name": "Agent Browser Shield",
     "slug": "agent-browser-shield",
@@ -13338,6 +13596,27 @@
     ]
   },
   {
+    "id": "1205984",
+    "name": "RecipeBook by Shofo",
+    "slug": "recipebook-by-shofo",
+    "tagline": "Buy video training data by the hour featuring 25M+ clips",
+    "tagline_zh": "按小时购买包含2500万+个视频片段的视频训练数据",
+    "thumbnail": "https://ph-files.imgix.net/85d71800-62fd-45b4-ae0b-8cd1e37263ef.svg?auto=format",
+    "votesCount": 105,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://recipebook.shofo.ai/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
     "id": "1143265",
     "name": "Contextberg",
     "slug": "contextberg",
@@ -13770,6 +14049,30 @@
     ]
   },
   {
+    "id": "1207636",
+    "name": "SUB/WAVE",
+    "slug": "sub-wave",
+    "tagline": "Self-hosted radio with an AI DJ and one shared stream",
+    "tagline_zh": "配有AI DJ和一个共享流的自托管电台",
+    "thumbnail": "https://ph-files.imgix.net/4c8a77c9-0b96-43c0-a9ee-402b27dd61ce.png?auto=format",
+    "votesCount": 103,
+    "commentsCount": 11,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.getsubwave.com",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Music"
+      },
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "Streaming Services"
+      }
+    ]
+  },
+  {
     "id": "1161524",
     "name": "Forward",
     "slug": "forward",
@@ -13862,6 +14165,30 @@
       },
       {
         "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1208008",
+    "name": "Pinery Prose",
+    "slug": "pinery-prose",
+    "tagline": "AI co-author for books + every edit is a diff you approve",
+    "tagline_zh": "书籍的AI合著者 + 每次编辑都是您需要批准的差异",
+    "thumbnail": "https://ph-files.imgix.net/53167294-47f9-434e-b6b6-c2994849def7.png?auto=format",
+    "votesCount": 102,
+    "commentsCount": 7,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://pinery.app/",
+    "category": "writing",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Writing"
+      },
+      {
+        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -14054,6 +14381,30 @@
       },
       {
         "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1208449",
+    "name": "Lamoom",
+    "slug": "lamoom",
+    "tagline": "Run agent apps inside your Claude or sell your own",
+    "tagline_zh": "在您的Claude中运行代理应用或销售您自己的",
+    "thumbnail": "https://ph-files.imgix.net/0048cb32-97e1-4a2b-8b52-e6bd5090029c.png?auto=format",
+    "votesCount": 100,
+    "commentsCount": 12,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://lamoom.com",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -14542,7 +14893,7 @@
     "name": "Cynative Security Research Agent",
     "slug": "cynative-security-research-agent",
     "tagline": "Ask your cloud anything without breaking prod. Read-only.",
-    "tagline_zh": "",
+    "tagline_zh": "在生产环境中无需担心云端问题。只读模式。",
     "thumbnail": "https://ph-files.imgix.net/e49c6a81-06dc-4c02-b28e-78619233d833.png?auto=format",
     "votesCount": 94,
     "commentsCount": 16,
@@ -14673,6 +15024,30 @@
     ]
   },
   {
+    "id": "1204802",
+    "name": "Cardzen",
+    "slug": "cardzen",
+    "tagline": "Track every credit, perk, and point before it expires",
+    "tagline_zh": "跟踪每个信用额度、优惠和积分，直到它们过期",
+    "thumbnail": "https://ph-files.imgix.net/c11a8105-0653-4158-ac28-6dc0dabef1a3.png?auto=format",
+    "votesCount": 93,
+    "commentsCount": 13,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://cardzen.ai/",
+    "category": "finance",
+    "topics": [
+      {
+        "name": "Fintech"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Credit card"
+      }
+    ]
+  },
+  {
     "id": "1184058",
     "name": "AI Usage, Under Control",
     "slug": "ai-usage-under-control",
@@ -14797,7 +15172,7 @@
     "name": "iMessage Hermes on a Raspberry Pi",
     "slug": "imessage-hermes-on-a-raspberry-pi",
     "tagline": "An always-on AI agent that lives in your home",
-    "tagline_zh": "",
+    "tagline_zh": "您的家中的始终在线AI代理",
     "thumbnail": "https://ph-files.imgix.net/d4a08c09-6cc7-4260-9e56-14682dc4915e.png?auto=format",
     "votesCount": 92,
     "commentsCount": 9,
@@ -14821,7 +15196,7 @@
     "name": "Edit Mind × Strava",
     "slug": "edit-mind-strava",
     "tagline": "Every clip matched to the Strava activity it's from",
-    "tagline_zh": "",
+    "tagline_zh": "每个剪辑都与其对应的Strava活动匹配",
     "thumbnail": "https://ph-files.imgix.net/0022c433-ce97-4357-a41a-e0b662bc0926.png?auto=format",
     "votesCount": 92,
     "commentsCount": 10,
@@ -14837,6 +15212,30 @@
       },
       {
         "name": "Video"
+      }
+    ]
+  },
+  {
+    "id": "1208168",
+    "name": "Tag Your Photos",
+    "slug": "tag-your-photos",
+    "tagline": "AI-powered keywords for Apple Photos, 100% on your Mac",
+    "tagline_zh": "Apple Photos的AI关键词，100%在您的Mac上",
+    "thumbnail": "https://ph-files.imgix.net/bf759671-e9cf-4313-9033-5b6d36f54029.png?auto=format",
+    "votesCount": 92,
+    "commentsCount": 7,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://apps.apple.com/us/app/tag-your-photos/id6791743568",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Photography"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Apple"
       }
     ]
   },
@@ -15028,7 +15427,7 @@
     "name": "Repaint Socials",
     "slug": "repaint-socials",
     "tagline": "Build a website from Google Business, Instagram, or Facebook",
-    "tagline_zh": "",
+    "tagline_zh": "从 Google Business、Instagram 或 Facebook 构建网站",
     "thumbnail": "https://ph-files.imgix.net/8f017f16-0aa7-4a17-9381-fe76d2bd938d.png?auto=format",
     "votesCount": 89,
     "commentsCount": 6,
@@ -15044,6 +15443,30 @@
       },
       {
         "name": "Web Design"
+      }
+    ]
+  },
+  {
+    "id": "1046591",
+    "name": "ChatBeacon AIX",
+    "slug": "chatbeacon-aix",
+    "tagline": "AI support that resolves 87% of chats",
+    "tagline_zh": "解决 87% 聊天的 AI 支持",
+    "thumbnail": "https://ph-files.imgix.net/4698eab1-5065-4cc5-b39e-20bd5fe61359.webp?auto=format",
+    "votesCount": 89,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.chatbeacon.ai",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "Customer Success"
+      },
+      {
+        "name": "Customer Communication"
+      },
+      {
+        "name": "Bots"
       }
     ]
   },
@@ -15193,7 +15616,7 @@
     "name": "HeyZoku",
     "slug": "heyzoku",
     "tagline": "Orchestrate an army of coding agents with your voice.",
-    "tagline_zh": "",
+    "tagline_zh": "用您的声音指挥一支编码代理大军。",
     "thumbnail": "https://ph-files.imgix.net/fdf1c31d-a8a7-4465-9dba-ca5ba6b86e69.png?auto=format",
     "votesCount": 86,
     "commentsCount": 10,
@@ -16082,6 +16505,27 @@
       },
       {
         "name": "Business"
+      }
+    ]
+  },
+  {
+    "id": "1043667",
+    "name": "Snapr",
+    "slug": "snapr",
+    "tagline": "Capture thoughts, find them instantly",
+    "tagline_zh": "捕捉想法，即时找到它们",
+    "thumbnail": "https://ph-files.imgix.net/f9d4be68-ff4f-4f40-82e5-6ce94ffc03a7.png?auto=format",
+    "votesCount": 74,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.snapr.so/",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Notes"
       }
     ]
   },
@@ -17250,6 +17694,27 @@
     ]
   },
   {
+    "id": "1204242",
+    "name": "Sightivo",
+    "slug": "sightivo",
+    "tagline": "Get your startup seen in search and AI answers.",
+    "tagline_zh": "让您的初创公司出现在搜索结果和 AI 答案中。",
+    "thumbnail": "https://ph-files.imgix.net/5934bded-423e-4bf7-923f-970262c73c0b.png?auto=format",
+    "votesCount": 38,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://sightivo.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
     "id": "1182335",
     "name": "Mailgent",
     "slug": "mailgent",
@@ -17459,6 +17924,30 @@
       },
       {
         "name": "Notes"
+      }
+    ]
+  },
+  {
+    "id": "1190667",
+    "name": "Odella",
+    "slug": "odella",
+    "tagline": "Hire or build AI employees that work like your best people",
+    "tagline_zh": "雇佣或构建像你最佳员工一样工作的 AI 员工。",
+    "thumbnail": "https://ph-files.imgix.net/0544f946-5d0d-40f7-89a1-c352682485fd.png?auto=format",
+    "votesCount": 34,
+    "commentsCount": 9,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.odella.ai/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "No-Code"
       }
     ]
   },
@@ -18530,6 +19019,30 @@
       },
       {
         "name": "Photography"
+      }
+    ]
+  },
+  {
+    "id": "1148553",
+    "name": "neuroflash MCP",
+    "slug": "neuroflash-mcp",
+    "tagline": "Let your AI agent ask 1M real people before it writes",
+    "tagline_zh": "让你的 AI 代理在写作前先询问 100 万真实用户。",
+    "thumbnail": "https://ph-files.imgix.net/732420c3-97e6-4138-a771-df3d81c5b631.png?auto=format",
+    "votesCount": 24,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://neuroflash.com/digital-twins-mcp/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "SDK"
       }
     ]
   },
@@ -20268,6 +20781,30 @@
     ]
   },
   {
+    "id": "1196051",
+    "name": "Intura (for Marketing)",
+    "slug": "intura-for-marketing",
+    "tagline": "Create, Track, and Get Cited on AI",
+    "tagline_zh": "在 AI 上创建、追踪并获取引用。",
+    "thumbnail": "https://ph-files.imgix.net/8525a69c-91e1-4060-8040-c1437bf07583.png?auto=format",
+    "votesCount": 19,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://intura.co/en",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
     "id": "1185162",
     "name": "Slopdar",
     "slug": "slopdar",
@@ -20599,7 +21136,7 @@
     "name": "Japan Cat",
     "slug": "japan-cat",
     "tagline": "Learn Japanese while driving. Don't waste time.",
-    "tagline_zh": "",
+    "tagline_zh": "开车时学日语。别浪费时间。",
     "thumbnail": "https://ph-files.imgix.net/e57cd9b7-d31c-4552-8971-e5e7123d24a9.png?auto=format",
     "votesCount": 18,
     "commentsCount": 3,
@@ -21139,7 +21676,7 @@
     "name": "Jharu -A disk cleaner that can think.",
     "slug": "jharu-a-disk-cleaner-that-can-think",
     "tagline": "Free disk cleaner for your AI model and dev caches ",
-    "tagline_zh": "",
+    "tagline_zh": "用于 AI 模型和开发缓存的免费磁盘清理工具。",
     "thumbnail": "https://ph-files.imgix.net/b44fd854-a555-48ac-94d8-0df953bd5d77.png?auto=format",
     "votesCount": 17,
     "commentsCount": 13,
@@ -21155,6 +21692,30 @@
       },
       {
         "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205508",
+    "name": "AuditBadger",
+    "slug": "auditbadger",
+    "tagline": "SOC 2 & ISO 27001 with AI, not consultants",
+    "tagline_zh": "使用AI获取SOC 2和ISO 27001认证，而非咨询顾问",
+    "thumbnail": "https://ph-files.imgix.net/e570eaf9-e617-40b3-856a-5db7c0f85070.png?auto=format",
+    "votesCount": 17,
+    "commentsCount": 7,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://auditbadger.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Security"
       }
     ]
   },
@@ -22508,6 +23069,30 @@
       },
       {
         "name": "Data Science"
+      }
+    ]
+  },
+  {
+    "id": "1202845",
+    "name": "Rupt 3",
+    "slug": "rupt-3",
+    "tagline": "Fraud & abuse prevention for modern companies.",
+    "tagline_zh": "为现代企业提供欺诈与滥用预防",
+    "thumbnail": "https://ph-files.imgix.net/411ab651-d5f3-41fd-8023-7e4586a27186.png?auto=format",
+    "votesCount": 15,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://rupt.dev",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Security"
       }
     ]
   },
@@ -24748,7 +25333,7 @@
     "name": "Anacan: Flow, Pregnancy & Baby",
     "slug": "anacan-flow-pregnancy-baby",
     "tagline": "AI-Powered app for Period, Pregnancy, & Confident Parenting",
-    "tagline_zh": "",
+    "tagline_zh": "AI驱动的经期、怀孕及自信育儿应用",
     "thumbnail": "https://ph-files.imgix.net/08453fd2-4092-4d13-8aa4-da4ac2d1dcbf.png?auto=format",
     "votesCount": 13,
     "commentsCount": 2,
@@ -24772,7 +25357,7 @@
     "name": "Jump into hours of focus right now.",
     "slug": "jump-into-hours-of-focus-right-now",
     "tagline": "AI-powered focus music for deep work.",
-    "tagline_zh": "",
+    "tagline_zh": "AI驱动的深度工作专注音乐",
     "thumbnail": "https://ph-files.imgix.net/7bc59202-f0a3-4680-99b7-c445f5fbe8c1.png?auto=format",
     "votesCount": 13,
     "commentsCount": 3,
@@ -24785,6 +25370,30 @@
       },
       {
         "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207605",
+    "name": "Xolora AI",
+    "slug": "xolora-ai",
+    "tagline": "Your next ad decision, already clear.",
+    "tagline_zh": "您的下一个广告决策，已经清晰明了。",
+    "thumbnail": "https://ph-files.imgix.net/4b076235-f84d-4d29-b07e-564b8ee12445.png?auto=format",
+    "votesCount": 13,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://xolora.io/",
+    "category": "marketing",
+    "topics": [
+      {
+        "name": "Analytics"
+      },
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Advertising"
       }
     ]
   },
@@ -29466,6 +30075,78 @@
     ]
   },
   {
+    "id": "1193577",
+    "name": "Supahmation",
+    "slug": "supahmation",
+    "tagline": "The Stripe for AI Agents",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/cad062cd-a719-4169-8f65-87cd46166a8e.png?auto=format",
+    "votesCount": 11,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://supahmation.com",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1199782",
+    "name": "Kinlyze",
+    "slug": "kinlyze",
+    "tagline": "Know what breaks when a developer leaves - on autopilot",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/e27b7692-9fe0-47be-9945-cff66ce36e13.png?auto=format",
+    "votesCount": 11,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.kinlyze.com/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Analytics"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1203666",
+    "name": "ManyManyLogos",
+    "slug": "manymanylogos",
+    "tagline": "A real vector logo. Not a picture of one.",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/2ae67ad0-abb1-40b5-8b3a-04a0bfd953b2.png?auto=format",
+    "votesCount": 11,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://manymanylogos.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Branding"
+      },
+      {
+        "name": "Logo Design"
+      }
+    ]
+  },
+  {
     "id": "1177695",
     "name": "Voyage Health",
     "slug": "voyage-health",
@@ -32876,6 +33557,54 @@
       },
       {
         "name": "Audio"
+      }
+    ]
+  },
+  {
+    "id": "1207594",
+    "name": "AutoAgent",
+    "slug": "autoagent",
+    "tagline": "What Users are asking about your brand on chatgpt?",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/2b46f272-a3f0-4d84-a210-8acb32ba5622.jpeg?auto=format",
+    "votesCount": 10,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://autoagentlens.in/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Search"
+      }
+    ]
+  },
+  {
+    "id": "1208061",
+    "name": "Seerie",
+    "slug": "seerie",
+    "tagline": "Offline scam checker for India, private on-device AI",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/ffe8958a-7b67-4e07-ac82-0548d1e588f4.png?auto=format",
+    "votesCount": 10,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://play.google.com/store/apps/details",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Android"
+      },
+      {
+        "name": "Privacy"
+      },
+      {
+        "name": "Security"
       }
     ]
   },
@@ -37388,6 +38117,30 @@
       },
       {
         "name": "CRM"
+      }
+    ]
+  },
+  {
+    "id": "1206781",
+    "name": "Replyy",
+    "slug": "replyy",
+    "tagline": "Reply faster. Reply safer.",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/0755e65a-60a2-487a-9430-ae086d602935.png?auto=format",
+    "votesCount": 9,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://replyy-production.up.railway.app/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -42773,6 +43526,30 @@
       },
       {
         "name": "3D Modeling"
+      }
+    ]
+  },
+  {
+    "id": "1203657",
+    "name": "ViralScript AI: Video Writer",
+    "slug": "viralscript-ai-video-writer",
+    "tagline": "AI script generator for viral TikToks, Reels & Shorts",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/2337c20a-1d40-401f-b29b-6693ce5ab4aa.png?auto=format",
+    "votesCount": 8,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://play.google.com/store/apps/details",
+    "category": "video",
+    "topics": [
+      {
+        "name": "Android"
+      },
+      {
+        "name": "Social Media"
+      },
+      {
+        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -48946,7 +49723,7 @@
     "name": "Hyper",
     "slug": "hyper",
     "tagline": "Autonomous coding with proof, control, and hard cost caps",
-    "tagline_zh": "",
+    "tagline_zh": "自主编码，附带证明、控制和硬性成本上限",
     "thumbnail": "https://ph-files.imgix.net/636f094f-7dce-460e-9ac5-495b1bf50b7d.png?auto=format",
     "votesCount": 7,
     "commentsCount": 3,
@@ -48970,7 +49747,7 @@
     "name": "Autm",
     "slug": "autm",
     "tagline": "Connect your entire business and put AI to work",
-    "tagline_zh": "",
+    "tagline_zh": "连接您的整个业务，让AI开始工作",
     "thumbnail": "https://ph-files.imgix.net/bedb5666-50c0-47e5-8217-811d6a0ad1ff.png?auto=format",
     "votesCount": 7,
     "commentsCount": 2,
@@ -48994,7 +49771,7 @@
     "name": "PostPilot ",
     "slug": "postpilot",
     "tagline": "Run Instagram, WhatsApp & Google Business on autopilot",
-    "tagline_zh": "",
+    "tagline_zh": "自动运行Instagram、WhatsApp和Google Business",
     "thumbnail": "https://ph-files.imgix.net/7fe5ee4e-b2a3-4a4e-951f-65ca9b751a9a.png?auto=format",
     "votesCount": 7,
     "commentsCount": 5,
@@ -49055,6 +49832,144 @@
       },
       {
         "name": "Productivity"
+      }
+    ]
+  },
+  {
+    "id": "1208199",
+    "name": "Woocar",
+    "slug": "woocar",
+    "tagline": "Manage your fleet with AI, no apps or hardware needed\"",
+    "tagline_zh": "使用AI管理您的车队，无需应用程序或硬件",
+    "thumbnail": "https://ph-files.imgix.net/30bc93f1-a4e1-4316-bae5-7e0cb45cbd2e.png?auto=format",
+    "votesCount": 7,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://woocar.io/",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Cars"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Transportation"
+      }
+    ]
+  },
+  {
+    "id": "1206682",
+    "name": "Gapstr",
+    "slug": "gapstr",
+    "tagline": "Find market gaps. Build before everyone else.",
+    "tagline_zh": "发现市场空白。在其他人之前构建。",
+    "thumbnail": "https://ph-files.imgix.net/8be1842b-7a58-424e-9169-900f030aa253.png?auto=format",
+    "votesCount": 7,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.gapstr.co/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1206527",
+    "name": "TintenAI",
+    "slug": "tintenai",
+    "tagline": "Build a no-code AI assistant for your website in minutes",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/d0d29bf4-91be-421e-84de-a343deb7dac3.png?auto=format",
+    "votesCount": 7,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://tinten.ai/en",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208285",
+    "name": "Akir",
+    "slug": "akir",
+    "tagline": "Persistent project context for AI chats without memory loss",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/617d6b4a-bbc4-4729-8fab-65b935b7e255.png?auto=format",
+    "votesCount": 7,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.akir.app/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1198298",
+    "name": "FreeTTS.ai",
+    "slug": "freetts-ai",
+    "tagline": "Natural AI voices for anything you write, 322 of them, free",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/e32ed55e-e681-4036-a1ef-dc92955bf0c1.png?auto=format",
+    "votesCount": 7,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://freetts.ai",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Audio"
+      }
+    ]
+  },
+  {
+    "id": "1203617",
+    "name": "ArgusAI ",
+    "slug": "argusai",
+    "tagline": "AI firewall for LLM calls, MCP tools, and agentic workflows",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/89d4f941-9ee2-41f2-9c45-a44adc4f0675.jpeg?auto=format",
+    "votesCount": 7,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://argusai-tau.vercel.app/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Security"
       }
     ]
   },
@@ -58491,6 +59406,174 @@
     ]
   },
   {
+    "id": "1207789",
+    "name": "qRaptor",
+    "slug": "qraptor",
+    "tagline": "Turn business intent into production AI apps",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/705b5e48-0507-48c5-bbf2-fc5fdfb39cb6.svg?auto=format",
+    "votesCount": 6,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://qraptor.ai",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205831",
+    "name": "CAVOK: Study Buddy",
+    "slug": "cavok-study-buddy",
+    "tagline": "Private AI that answers only from your own textbook",
+    "tagline_zh": "仅基于你自己的教科书回答的专属 AI",
+    "thumbnail": "https://ph-files.imgix.net/943a3291-2ade-450e-98c1-6526cc09a5f4.png?auto=format",
+    "votesCount": 6,
+    "commentsCount": 8,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://apps.apple.com/us/app/cavok-study-buddy/id6791360164",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Mac"
+      },
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208145",
+    "name": "Infimium",
+    "slug": "infimium",
+    "tagline": "Your codebase's universal brain. ",
+    "tagline_zh": "你代码库的万能大脑",
+    "thumbnail": "https://ph-files.imgix.net/6c088947-f9dc-4d34-9ddf-eaa92c9506c1.png?auto=format",
+    "votesCount": 6,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://infimium.com",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208139",
+    "name": "my500 — Spanish through Stories",
+    "slug": "my500-spanish-through-stories",
+    "tagline": "Master your core 500 Spanish words through personal stories",
+    "tagline_zh": "通过个人故事掌握核心 500 个西班牙语单词",
+    "thumbnail": "https://ph-files.imgix.net/9e41c78f-d2a2-4fdf-88a6-e93231d660a4.png?auto=format",
+    "votesCount": 6,
+    "commentsCount": 11,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://lumela.app",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Languages"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207005",
+    "name": "JobTailor",
+    "slug": "jobtailor",
+    "tagline": "AI resume tailoring without made-up bullet points",
+    "tagline_zh": "不编造项目符号的 AI 简历定制",
+    "thumbnail": "https://ph-files.imgix.net/ba856f80-67fe-4f52-a5a2-88ad51d06619.png?auto=format",
+    "votesCount": 6,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.jobtailor.work/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1186682",
+    "name": "Sofos",
+    "slug": "sofos",
+    "tagline": "Claude Code, reimagined as a workspace for business teams",
+    "tagline_zh": "重塑为商业团队工作区的 Claude Code",
+    "thumbnail": "https://ph-files.imgix.net/30d08056-5651-47a8-9cee-93753a4fe0c9.png?auto=format",
+    "votesCount": 6,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://sofos.co/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Notes"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1202526",
+    "name": "PodView",
+    "slug": "podview",
+    "tagline": "Turn your podcast into an audience hub you own",
+    "tagline_zh": "让你的播客变成你拥有的听众中心",
+    "thumbnail": "https://ph-files.imgix.net/eb7080d6-ee10-438d-bf20-74774b9f4e41.png?auto=format",
+    "votesCount": 6,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://podview.com",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Spotify"
+      },
+      {
+        "name": "Website Builder"
+      },
+      {
+        "name": "YouTube"
+      }
+    ]
+  },
+  {
     "id": "1170213",
     "name": "Plexara Hub",
     "slug": "plexara-hub",
@@ -65733,7 +66816,7 @@
     "votesCount": 5,
     "commentsCount": 3,
     "createdAt": "2026-07-26T07:01:00Z",
-    "website": "https://www.producthunt.com/r/IRNMWOQEIACIQX",
+    "website": "https://ordinarymantrying.com/tools/ai-invest-os.html",
     "category": "productivity",
     "topics": [
       {
@@ -65984,6 +67067,408 @@
       },
       {
         "name": "Calendar"
+      }
+    ]
+  },
+  {
+    "id": "1203652",
+    "name": "Debate-Verdict",
+    "slug": "debate-verdict",
+    "tagline": "3 AI experts debate your trade before you risk a dollar",
+    "tagline_zh": "在你花一分钱之前，三位 AI 专家就你的行业展开辩论",
+    "thumbnail": "https://ph-files.imgix.net/be894876-b538-4ef2-956e-83496c43c56c.jpeg?auto=format",
+    "votesCount": 5,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://liuchen08.gumroad.com/l/debate-verdict",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205568",
+    "name": "ReadyCSV",
+    "slug": "readycsv",
+    "tagline": "Clean HubSpot import CSVs in your browser. No upload.",
+    "tagline_zh": "在浏览器中清洁 HubSpot 导入 CSV。无需上传",
+    "thumbnail": "https://ph-files.imgix.net/3021d043-b06e-4fd9-9966-fd99028b2bd6.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.readycsv.com",
+    "category": "marketing",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Privacy"
+      }
+    ]
+  },
+  {
+    "id": "1205505",
+    "name": "MergeWarden",
+    "slug": "mergewarden",
+    "tagline": "The change-control gate for AI-agent pull requests",
+    "tagline_zh": "AI 代理 PR 的变更控制门槛",
+    "thumbnail": "https://ph-files.imgix.net/aeb193e1-d22c-4128-8b6a-edc666d45b72.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://github.com/sjh9714/mergewarden",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1197640",
+    "name": "Foodius - AI Nutrition Assistant",
+    "slug": "foodius-ai-nutrition-assistant",
+    "tagline": "Personal AI nutrition coach and meal tracking",
+    "tagline_zh": "个人 AI 营养师和食物跟踪",
+    "thumbnail": "https://ph-files.imgix.net/e5910d62-0a9c-409c-afce-7f7c235bdc9a.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://foodius.app",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Nutrition"
+      }
+    ]
+  },
+  {
+    "id": "1207090",
+    "name": "Dagomi",
+    "slug": "dagomi",
+    "tagline": "Not another CRM — the assistant that acts for you",
+    "tagline_zh": "不是又一个CRM——为你行动的助手",
+    "thumbnail": "https://ph-files.imgix.net/98f5cedd-e135-4593-b865-ff188fd6d5f0.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://dagomi.de",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208129",
+    "name": "Conductor by Min15x - The Founder OS",
+    "slug": "conductor-by-min15x-the-founder-os",
+    "tagline": "Strategy, Structured, Shipped.",
+    "tagline_zh": "策略，结构，交付。",
+    "thumbnail": "https://ph-files.imgix.net/3b949c1d-124e-440a-90ca-b96499359599.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://min15x.com",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208355",
+    "name": "Weave Context Skills",
+    "slug": "weave-context-skills",
+    "tagline": "Repository-aware AI skills for engineering knowledge",
+    "tagline_zh": "面向工程知识的仓库感知AI技能",
+    "thumbnail": "https://ph-files.imgix.net/7c146d47-2848-4c7a-8781-2ea2022cc1f8.svg?auto=format",
+    "votesCount": 5,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://github.com/ManuelGil/weave-context-skills",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1186670",
+    "name": "Fitness Challenge",
+    "slug": "fitness-challenge",
+    "tagline": "Fitness challenges made social, competitive & fun",
+    "tagline_zh": "让健身挑战变得社交化、竞争性和有趣",
+    "thumbnail": "https://ph-files.imgix.net/108a3e61-167e-4cf2-a240-8429b4e04e54.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.fitnesschallenge.club/",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Social Impact"
+      }
+    ]
+  },
+  {
+    "id": "1208099",
+    "name": "StackEasy AI Connect",
+    "slug": "stackeasy-ai-connect",
+    "tagline": "Talk to your credit cards in ChatGPT and Claude",
+    "tagline_zh": "在ChatGPT和Claude中与您的信用卡对话",
+    "thumbnail": "https://ph-files.imgix.net/3a0e7c48-0912-4812-9e6b-d3fb893d07b7.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.stackeasy.ai/mcp",
+    "category": "finance",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Fintech"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1192805",
+    "name": "SelfSM",
+    "slug": "selfsm",
+    "tagline": "Client content workflows for ghostwriters & small agencies",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/1e2608e3-27fc-47cf-ba08-0826841e6105.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.selfsm.com/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Social Media"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205418",
+    "name": "ClaritX",
+    "slug": "claritx",
+    "tagline": "Free AI stock research — 9 perspectives, one clear verdict",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/2284840d-c919-4cea-a3eb-4c382357a020.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.claritx.ai",
+    "category": "finance",
+    "topics": [
+      {
+        "name": "Fintech"
+      },
+      {
+        "name": "Investing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1197750",
+    "name": "Semfora",
+    "slug": "semfora",
+    "tagline": "Semfora - AI governance in a way that linters never could.",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/e2f8746e-f9cc-4498-89c7-37a0e1989884.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://Semfora.ai",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "GitHub"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1208292",
+    "name": "Capsy",
+    "slug": "capsy",
+    "tagline": "caps lock keeps your mac awake. as simple as that.",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/223384a7-fc91-4c9e-a614-a152dc824669.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://capsy.dev",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "User Experience"
+      },
+      {
+        "name": "Menu Bar Apps"
+      }
+    ]
+  },
+  {
+    "id": "1198561",
+    "name": "TruthLens",
+    "slug": "truthlens",
+    "tagline": "See who actually broke the story — not who copied it",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/59298eff-ffc6-47a2-ad44-0a117a4d3049.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://truthlens.muonbits.com/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "News"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1194566",
+    "name": "ClipLab Pro",
+    "slug": "cliplab-pro",
+    "tagline": "AI gameplay editor that runs entirely on your PC",
+    "tagline_zh": "AI游戏编辑器，完全在您的PC上运行",
+    "thumbnail": "https://ph-files.imgix.net/c6ddd87f-c1e7-4e1b-8a9d-d54ee6531dc6.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://cliplabpro.com",
+    "category": "video",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Games"
+      },
+      {
+        "name": "Video"
+      }
+    ]
+  },
+  {
+    "id": "1195985",
+    "name": "AI Applyd MCP",
+    "slug": "ai-applyd-mcp",
+    "tagline": "Your job search inside Claude, with verified auto-apply",
+    "tagline_zh": "在Claude中进行的工作搜索，具有验证的自动申请",
+    "thumbnail": "https://ph-files.imgix.net/506bbfa4-dbdb-4d66-bb9f-4cab694d7204.png?auto=format",
+    "votesCount": 5,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://aiapplyd.com/mcps",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Career"
+      }
+    ]
+  },
+  {
+    "id": "1208366",
+    "name": "SeqBench",
+    "slug": "seqbench",
+    "tagline": "Sequence workbench for cloning, CRISPR, primers + MCP/API",
+    "tagline_zh": "克隆、CRISPR、引物+MCP/API的序列工作站",
+    "thumbnail": "https://ph-files.imgix.net/f76f121c-5713-4f34-9e5a-757a9a319e76.jpeg?auto=format",
+    "votesCount": 5,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://seqbench.com/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Science"
       }
     ]
   },
@@ -67935,7 +69420,7 @@
     "votesCount": 4,
     "commentsCount": 1,
     "createdAt": "2026-06-23T07:01:00Z",
-    "website": "https://www.producthunt.com/r/DO6B4W7G34BY3P",
+    "website": "https://importer.kvolts-lab.com",
     "category": "coding",
     "topics": [
       {
@@ -81478,7 +82963,7 @@
     "name": "whatbroke",
     "slug": "whatbroke",
     "tagline": "Diff two agent runs and see exactly what changed",
-    "tagline_zh": "",
+    "tagline_zh": "查看两个代理运行之间的差异",
     "thumbnail": "https://ph-files.imgix.net/7c28dc81-648b-4e0c-9b40-16d6309d3a0b.png?auto=format",
     "votesCount": 4,
     "commentsCount": 1,
@@ -81502,7 +82987,7 @@
     "name": "RepoAI.io",
     "slug": "repoai-io",
     "tagline": "The security-scored directory for MCP servers",
-    "tagline_zh": "",
+    "tagline_zh": "安全评分的MCP服务器目录",
     "thumbnail": "https://ph-files.imgix.net/be394401-c058-4b99-a1df-54de5aac5fbb.png?auto=format",
     "votesCount": 4,
     "commentsCount": 2,
@@ -81526,7 +83011,7 @@
     "name": "Project Aura Beta",
     "slug": "project-aura-beta",
     "tagline": "Circuit design, unplugged from the desktop",
-    "tagline_zh": "",
+    "tagline_zh": "脱离桌面束缚，电路设计",
     "thumbnail": "https://ph-files.imgix.net/99cee7b2-7acf-4b53-99c9-f230d4f76f37.png?auto=format",
     "votesCount": 4,
     "commentsCount": 2,
@@ -81550,7 +83035,7 @@
     "name": "dev101.io",
     "slug": "dev101-io",
     "tagline": "One box for every dev utility — runs in your browser",
-    "tagline_zh": "",
+    "tagline_zh": "一个工具箱，包含所有开发工具——在浏览器中运行",
     "thumbnail": "https://ph-files.imgix.net/8f7dbbe5-0f59-40fc-bcad-3245454a697d.png?auto=format",
     "votesCount": 4,
     "commentsCount": 4,
@@ -81574,7 +83059,7 @@
     "name": "TenTags API & AI generate",
     "slug": "tentags-api-ai-generate",
     "tagline": "API-first document generation for HTML, PDF, XLSX & DOCX",
-    "tagline_zh": "",
+    "tagline_zh": "针对 HTML、PDF、XLSX 和 DOCX 的 API 优先文档生成",
     "thumbnail": "https://ph-files.imgix.net/95007084-c4de-4215-9c87-b629d9cd37eb.png?auto=format",
     "votesCount": 4,
     "commentsCount": 7,
@@ -81712,7 +83197,7 @@
     "name": "DueGently",
     "slug": "duegently",
     "tagline": "Get paid without the awkward follow-up",
-    "tagline_zh": "",
+    "tagline_zh": "无需尴尬催款，轻松收到款项",
     "thumbnail": "https://ph-files.imgix.net/136b5795-03d4-42e2-859e-3ad4955e2831.png?auto=format",
     "votesCount": 4,
     "commentsCount": 3,
@@ -81728,6 +83213,3024 @@
       },
       {
         "name": "Finance"
+      }
+    ]
+  },
+  {
+    "id": "1208409",
+    "name": "Chocho Journal",
+    "slug": "chocho-journal",
+    "tagline": "AI-native conversational health management companion",
+    "tagline_zh": "原生 AI 对话式健康管理伴侣",
+    "thumbnail": "https://ph-files.imgix.net/40377b49-edf2-4557-84a3-9f25899ce25a.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://chochojournal.com",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Medical"
+      },
+      {
+        "name": "Health"
+      }
+    ]
+  },
+  {
+    "id": "1201381",
+    "name": "Ravecho",
+    "slug": "ravecho",
+    "tagline": "Voice conversations with history and family",
+    "tagline_zh": "与历史和家人进行语音对话",
+    "thumbnail": "https://ph-files.imgix.net/537cb490-a535-484f-a1dd-854758d7afe3.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://ravecho.com",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Family"
+      }
+    ]
+  },
+  {
+    "id": "1208316",
+    "name": "RevelRaw",
+    "slug": "revelraw",
+    "tagline": "The shortest distance between RAW and awesome photography",
+    "tagline_zh": "从RAW照片到精彩摄影的最短距离",
+    "thumbnail": "https://ph-files.imgix.net/b33fb4bd-1cbb-4191-bde3-028d3165d26b.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://revelraw.com",
+    "category": "video",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Photography"
+      },
+      {
+        "name": "Photo editing"
+      }
+    ]
+  },
+  {
+    "id": "1206260",
+    "name": "ScreenExplain —  anything on your screen",
+    "slug": "screenexplain-anything-on-your-screen",
+    "tagline": "Hit a hotkey, drag a box, get an instant answer",
+    "tagline_zh": "按下热键，拖动方框，获得即时答案",
+    "thumbnail": "https://ph-files.imgix.net/7cc6eec2-c08c-4981-a181-3ef94b03da2e.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://screenexplane.life/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Windows"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207784",
+    "name": "Model Boss",
+    "slug": "model-boss",
+    "tagline": "Delegate code to cheaper models. Keep frontier judgment.",
+    "tagline_zh": "将代码委托给更便宜的模型。保持前沿判断。",
+    "thumbnail": "https://ph-files.imgix.net/9bfa0610-1bd3-4e57-bb67-6b15531a91a0.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://github.com/vincemakes/model-boss",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1145414",
+    "name": "Tickstem",
+    "slug": "tickstem",
+    "tagline": "Cron jobs, monitoring & status pages — under one API key",
+    "tagline_zh": "Cron任务、监控和状态页面——只需一个API密钥",
+    "thumbnail": "https://ph-files.imgix.net/24d39ead-402e-48e3-86cb-ec8a138a4759.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://tickstem.dev",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Developer Tools"
+      }
+    ]
+  },
+  {
+    "id": "1206446",
+    "name": "Frostle",
+    "slug": "frostle",
+    "tagline": "Freeze your screen and ask AI about any part of it",
+    "tagline_zh": "冻结屏幕，向AI询问任意部分",
+    "thumbnail": "https://ph-files.imgix.net/fca36bff-5c55-45c7-b3df-1454b1e2806b.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://frostle.org",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Windows"
+      },
+      {
+        "name": "Productivity"
+      }
+    ]
+  },
+  {
+    "id": "1194356",
+    "name": "Lunara",
+    "slug": "lunara",
+    "tagline": "CBT-I sleep coaching — the treatment doctors recommend",
+    "tagline_zh": "CBT-I睡眠指导——医生推荐的治疗方法",
+    "thumbnail": "https://ph-files.imgix.net/1a2ef081-33dd-4387-bfac-e902c4ce984e.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://lunara-sleep-ai.com",
+    "category": "health",
+    "topics": [
+      {
+        "name": "iOS"
+      },
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208002",
+    "name": "LaunchPilot — It markets while you build",
+    "slug": "launchpilot-it-markets-while-you-build",
+    "tagline": "It markets while you build.",
+    "tagline_zh": "您构建时，它负责营销。",
+    "thumbnail": "https://ph-files.imgix.net/00952d63-4a29-4788-894b-73a486c73448.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://uselaunchpilot.com/index.html",
+    "category": "writing",
+    "topics": [
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Email Marketing"
+      },
+      {
+        "name": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": "1197692",
+    "name": "Zeplik",
+    "slug": "zeplik",
+    "tagline": "Every AI model, one chat. GPT, Claude, Gemini, Grok",
+    "tagline_zh": "所有AI模型，一个聊天。GPT、Claude、Gemini、Grok",
+    "thumbnail": "https://ph-files.imgix.net/4f624b74-c426-4778-8745-9ab1446847a6.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://zeplik.ai",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Bots"
+      }
+    ]
+  },
+  {
+    "id": "1208196",
+    "name": "CraftScore",
+    "slug": "craftscore",
+    "tagline": "Measure engineering craft, not AI output.",
+    "tagline_zh": "衡量工程技艺，而非AI输出。",
+    "thumbnail": "https://ph-files.imgix.net/9093470e-eca8-43cf-acf1-ff500f510f4d.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://craftscore.app",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Developer Tools"
+      }
+    ]
+  },
+  {
+    "id": "1200290",
+    "name": "Nexsus",
+    "slug": "nexsus",
+    "tagline": "Give your AI a memory that outlives the chat",
+    "tagline_zh": "让 AI 拥有超越聊天的持久记忆",
+    "thumbnail": "https://ph-files.imgix.net/111f338b-7956-4e01-ba3e-501a0b3164c8.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.nexsus.com.au",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207917",
+    "name": "Stickfur",
+    "slug": "stickfur",
+    "tagline": "Turn your cat's photo into custom AI stickers",
+    "tagline_zh": "将猫咪照片转换为定制 AI 贴纸",
+    "thumbnail": "https://ph-files.imgix.net/7f205760-a092-4785-b39d-1ac3e4d1444c.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://stickfur.com/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Cats"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1200253",
+    "name": "ListingLoom",
+    "slug": "listingloom",
+    "tagline": "Etsy listings that follow Etsy's actual rules, not vibes",
+    "tagline_zh": "遵循 Etsy 实际规则而非凭感觉的 Listing",
+    "thumbnail": "https://ph-files.imgix.net/62dcef15-ef63-4b99-ae0e-ff93f7bd3473.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.listingloom.app",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "E-Commerce"
+      }
+    ]
+  },
+  {
+    "id": "1206989",
+    "name": "Interview Fury",
+    "slug": "interview-fury",
+    "tagline": "Real-time AI interview help with live coaching",
+    "tagline_zh": "实时 AI 面试辅助，配备现场指导",
+    "thumbnail": "https://ph-files.imgix.net/ffe8ed5d-6061-451f-8ba6-5a86ba0253f0.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://interviewfury.com/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Career"
+      }
+    ]
+  },
+  {
+    "id": "1206390",
+    "name": "Maestrly",
+    "slug": "maestrly",
+    "tagline": "One cockpit for all your AI coding agents",
+    "tagline_zh": "所有 AI 编码代理的一体化控制台",
+    "thumbnail": "https://ph-files.imgix.net/e0c1d57c-a34f-44f6-9aa1-5770ac76aef6.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.maestrly.com/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203397",
+    "name": "QikLM",
+    "slug": "qiklm",
+    "tagline": "The easiest way to manage local and remote AI",
+    "tagline_zh": "管理本地和远程AI最简单的方式",
+    "thumbnail": "https://ph-files.imgix.net/c6d2b3b0-dee1-4111-9165-0666373c3d25.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://qiklm.ai",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1206942",
+    "name": "DSearch",
+    "slug": "dsearch",
+    "tagline": "Neutral bulk domain checker with AI naming",
+    "tagline_zh": "带AI命名功能的公正批量域名检查器",
+    "thumbnail": "https://ph-files.imgix.net/14980dc2-d2c1-4502-b051-4ffd5242ec0f.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://dsearch.app",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208263",
+    "name": "Routara",
+    "slug": "routara",
+    "tagline": "One API for multi-provider AI models, tools, and MCP",
+    "tagline_zh": "一个API，支持多供应商的AI模型、工具和MCP",
+    "thumbnail": "https://ph-files.imgix.net/225ceef6-df18-4981-897a-391b99ab93cc.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://routara.ai",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207824",
+    "name": "Rank Partners",
+    "slug": "rank-partners",
+    "tagline": "Get found & recommended by AI search — turn it into leads. ",
+    "tagline_zh": "通过AI搜索被发现和推荐——转化为潜在客户。",
+    "thumbnail": "https://ph-files.imgix.net/e18e79e6-c10c-4aa3-b55f-40514af5199e.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://rank.partners",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "SEO"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203397",
+    "name": "QikLM",
+    "slug": "qiklm",
+    "tagline": "The easiest way to manage local and remote AI",
+    "tagline_zh": "管理本地和远程AI最简单的方式",
+    "thumbnail": "https://ph-files.imgix.net/c6d2b3b0-dee1-4111-9165-0666373c3d25.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://qiklm.ai",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205249",
+    "name": "Featurevote 2.0",
+    "slug": "featurevote-2-0",
+    "tagline": "Paste your URL, get a feature-voting board in 60 seconds",
+    "tagline_zh": "粘贴你的网址，60秒内获得功能投票板",
+    "thumbnail": "https://ph-files.imgix.net/e2c0a811-a98f-4aa5-ac63-dcb92cca0848.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://featurevote.app",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "Customer Success"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207624",
+    "name": "Mass Link",
+    "slug": "mass-link",
+    "tagline": "Export & qualify LinkedIn leads without Sales Navigator",
+    "tagline_zh": "无需Sales Navigator即可导出和筛选LinkedInleads",
+    "thumbnail": "https://ph-files.imgix.net/a62efc20-a51c-4246-a00e-26503d07ea19.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://criticalmass.tech/masslink",
+    "category": "marketing",
+    "topics": [
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "LinkedIn"
+      }
+    ]
+  },
+  {
+    "id": "1204947",
+    "name": "NeuralCleave",
+    "slug": "neuralcleave",
+    "tagline": "The intelligence layer for every conversation.",
+    "tagline_zh": "每个对话的智能层",
+    "thumbnail": "https://ph-files.imgix.net/81bfa14a-3598-45b1-927a-8d5f5afde5c7.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://neuralcleave.com/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208227",
+    "name": "agentglass",
+    "slug": "agentglass",
+    "tagline": "Mission control for every AI coding agent on your machine",
+    "tagline_zh": "每台机器上的AI编程代理的指挥中心",
+    "thumbnail": "https://ph-files.imgix.net/7fce7c10-6244-4f0b-9512-b4f69575a556.gif?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://sirallap.github.io/agentglass/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208476",
+    "name": "Velokey",
+    "slug": "velokey",
+    "tagline": "Access AI models through one API and save 20–80% on costs.",
+    "tagline_zh": "通过一个API访问AI模型，节省20-80%的成本",
+    "thumbnail": "https://ph-files.imgix.net/8c4ff2db-620e-40fc-8412-d257432ee36f.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://velokey.ai",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "API"
+      }
+    ]
+  },
+  {
+    "id": "1208014",
+    "name": "\tAI Visibility Checker",
+    "slug": "ai-visibility-checker",
+    "tagline": "Check how your brand appears across 9 AI models",
+    "tagline_zh": "检查您的品牌在9个AI模型中的表现",
+    "thumbnail": "https://ph-files.imgix.net/e273c5cb-0c91-46e3-9197-45d89a972296.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://brandaivisibility.com/tools/ai-visibility-checker",
+    "category": "image",
+    "topics": [
+      {
+        "name": "SEO"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Growth Hacks "
+      }
+    ]
+  },
+  {
+    "id": "1205480",
+    "name": "yeeapi API",
+    "slug": "yeeapi-api",
+    "tagline": "One API for China's Best LLMs at 95% Lower Cost",
+    "tagline_zh": "一个API，以95%更低成本接入中国最佳LLM",
+    "thumbnail": "https://ph-files.imgix.net/a5ff961c-5253-4e64-9df8-b05c3900ff36.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://api.yeeapi.online",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Developer Tools"
+      }
+    ]
+  },
+  {
+    "id": "1207581",
+    "name": "Pigfox",
+    "slug": "pigfox",
+    "tagline": "Verify the recruiter, the domain, and the photo",
+    "tagline_zh": "验证招聘者、域名和照片",
+    "thumbnail": "https://ph-files.imgix.net/95d23ed7-566f-4fdf-829e-484030a0b142.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://pigfox.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Blockchain"
+      },
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  {
+    "id": "1208217",
+    "name": "Rosply Server app",
+    "slug": "rosply-server-app",
+    "tagline": "Remote control Rosply right from your Windows desktop",
+    "tagline_zh": "直接从您的Windows桌面远程控制Rosply",
+    "thumbnail": "https://ph-files.imgix.net/464dca9d-4c4b-45fe-8fe9-ebda185c9a85.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://rosply.com/",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Windows"
+      },
+      {
+        "name": "Productivity"
+      }
+    ]
+  },
+  {
+    "id": "1204750",
+    "name": "DocuTruth",
+    "slug": "docutruth",
+    "tagline": "Catch fabricated citations before they wreck your reputation",
+    "tagline_zh": "在虚假引用损害您的声誉之前捕获它们",
+    "thumbnail": "https://ph-files.imgix.net/4b191392-00fa-4a8d-93a6-06d8601bd3a1.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://docutruth.ai",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1208460",
+    "name": "PicSeal",
+    "slug": "picseal",
+    "tagline": "Seal and restore sensitive content in editable documents",
+    "tagline_zh": "在可编辑文档中密封和恢复敏感内容",
+    "thumbnail": "https://ph-files.imgix.net/66d49b92-ccf9-4c98-9d7f-74efe00f3790.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://picseal.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  {
+    "id": "1205760",
+    "name": "Agorion",
+    "slug": "agorion",
+    "tagline": "Trade skills, not money. The AI writes your listing.",
+    "tagline_zh": "交易技能，而非金钱。AI 为您撰写列表。",
+    "thumbnail": "https://ph-files.imgix.net/1adb6abc-02b9-4750-a81f-ac1766eb5aba.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/DKEFOFTIRNBPT3",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Online Learning"
+      }
+    ]
+  },
+  {
+    "id": "1204316",
+    "name": "Complete Content Creation Bundle",
+    "slug": "complete-content-creation-bundle",
+    "tagline": "Create better content faster with AI-powered tools",
+    "tagline_zh": "使用 AI 驱动的工具更快地创建更好的内容",
+    "thumbnail": "https://ph-files.imgix.net/08febd15-2340-49bf-a93f-647f7b9c40d1.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://smartpixelstudio24.gumroad.com/l/CompleteContentCreation",
+    "category": "marketing",
+    "topics": [
+      {
+        "name": "Freelance"
+      },
+      {
+        "name": "Social Media"
+      },
+      {
+        "name": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": "1207413",
+    "name": "Gard",
+    "slug": "gard",
+    "tagline": "Gard against typos during internal QA review of graphics",
+    "tagline_zh": "在图形内部 QA 审查期间防止拼写错误",
+    "thumbnail": "https://ph-files.imgix.net/423693f3-45a1-45be-a0f9-b173f4c83d4c.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://trygard.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208279",
+    "name": "smolanalytics",
+    "slug": "smolanalytics",
+    "tagline": "Analytics your coding agent can actually read",
+    "tagline_zh": "您的编码代理真正能读取的分析",
+    "thumbnail": "https://ph-files.imgix.net/5b3d8db3-b599-4bb2-9856-d7b7d77472e4.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://smolanalytics.com",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Analytics"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1207012",
+    "name": "AskYourDocs",
+    "slug": "askyourdocs",
+    "tagline": "Chat with your documents. Get instant answers",
+    "tagline_zh": "与文档对话，即时获取答案",
+    "thumbnail": "https://ph-files.imgix.net/8d1a941a-471a-41be-89ea-1a254065a505.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://askyourdocs.app",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207413",
+    "name": "Gard",
+    "slug": "gard",
+    "tagline": "Gard against typos during internal QA review of graphics",
+    "tagline_zh": "在图形内部 QA 审查期间防范拼写错误",
+    "thumbnail": "https://ph-files.imgix.net/423693f3-45a1-45be-a0f9-b173f4c83d4c.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://trygard.com",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208455",
+    "name": "Yesapi.online",
+    "slug": "yesapi-online",
+    "tagline": "Low-cost AI API gateway for OpenAI-compatible developer tool",
+    "tagline_zh": "面向 OpenAI 兼容开发者工具的低成本 AI API 网关",
+    "thumbnail": "https://ph-files.imgix.net/2ff46189-9f2c-4884-a373-44a275e1a871.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://yesapi.online",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Vibe coding"
+      }
+    ]
+  },
+  {
+    "id": "1204750",
+    "name": "DocuTruth",
+    "slug": "docutruth",
+    "tagline": "Catch fabricated citations before they wreck your reputation",
+    "tagline_zh": "在损害您的声誉之前发现伪造的引用",
+    "thumbnail": "https://ph-files.imgix.net/4b191392-00fa-4a8d-93a6-06d8601bd3a1.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://docutruth.ai",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1208433",
+    "name": "Mathify API",
+    "slug": "mathify-api",
+    "tagline": "Generate math animations from natural language via API",
+    "tagline_zh": "通过 API 从自然语言生成数学动画",
+    "thumbnail": "https://ph-files.imgix.net/16668ea5-cc55-4d55-9059-fe5344ec1632.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/JVMV4KZUAMDLWR",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208279",
+    "name": "smolanalytics",
+    "slug": "smolanalytics",
+    "tagline": "Analytics your coding agent can actually read",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/5b3d8db3-b599-4bb2-9856-d7b7d77472e4.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://smolanalytics.com",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Analytics"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1204316",
+    "name": "Complete Content Creation Bundle",
+    "slug": "complete-content-creation-bundle",
+    "tagline": "Create better content faster with AI-powered tools",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/08febd15-2340-49bf-a93f-647f7b9c40d1.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://smartpixelstudio24.gumroad.com/l/CompleteContentCreation",
+    "category": "marketing",
+    "topics": [
+      {
+        "name": "Freelance"
+      },
+      {
+        "name": "Social Media"
+      },
+      {
+        "name": "Marketing"
+      }
+    ]
+  },
+  {
+    "id": "1207683",
+    "name": "Neuropdf",
+    "slug": "neuropdf",
+    "tagline": "Neuropdf",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/f8fd8bba-a0ae-4184-972d-759db8dc6bf0.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.neuropdf.it/",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208434",
+    "name": "CareerSpark",
+    "slug": "careerspark",
+    "tagline": "AI-powered Career Intelligence for candidates and recruiters",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/4998da7d-3927-4554-ab97-3a8a134a146f.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://aicareerspark.com/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Career"
+      }
+    ]
+  },
+  {
+    "id": "1208054",
+    "name": "Migrately",
+    "slug": "migrately",
+    "tagline": "Think Tinder, for your next place to live",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/38ebacae-595f-4de6-999c-4674a757d18f.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://migrately.to/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Global Nomad"
+      },
+      {
+        "name": "Travel"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207800",
+    "name": "VulX Watch Launch",
+    "slug": "vulx-watch-launch",
+    "tagline": "Your AI wrote it. We read it.",
+    "tagline_zh": "你的AI创作，我们审阅。",
+    "thumbnail": "https://ph-files.imgix.net/f9566bab-8a04-476b-a91e-8c33cb91bd8d.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://vulx.ai",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Analytics"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1202564",
+    "name": "Reversi NEXT",
+    "slug": "reversi-next",
+    "tagline": "Reversi where the board expands when it fills up",
+    "tagline_zh": "棋盘填满时会扩展的黑白棋",
+    "thumbnail": "https://ph-files.imgix.net/6821ccbb-f2d1-4784-af81-f2a8386e73c5.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/OTWHEYUXC7CFUS",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "iOS"
+      },
+      {
+        "name": "Board Games"
+      },
+      {
+        "name": "Games"
+      }
+    ]
+  },
+  {
+    "id": "1207915",
+    "name": "Clarity",
+    "slug": "clarity",
+    "tagline": "Turn client calls into clear next steps—no meeting bot",
+    "tagline_zh": "将客户通话转化为明确的下一步行动—无需会议机器人",
+    "thumbnail": "https://ph-files.imgix.net/3ef475de-387e-4422-8354-cfe30aa5e3e9.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/LCCWRYFIISJHDR",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Productivity"
+      }
+    ]
+  },
+  {
+    "id": "1206714",
+    "name": "Vox Invite",
+    "slug": "vox-invite",
+    "tagline": "Personalized Video Communication & Event Management Platform",
+    "tagline_zh": "个性化视频通信与活动管理平台",
+    "thumbnail": "https://ph-files.imgix.net/ac1a5005-060e-419c-a32b-3b07720bbb38.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/BJL7PMXCJHU52N",
+    "category": "video",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Video"
+      }
+    ]
+  },
+  {
+    "id": "1204668",
+    "name": "Intarvee — Walk into any interview ready",
+    "slug": "intarvee-walk-into-any-interview-ready",
+    "tagline": "Personalized interview briefings in under a minute",
+    "tagline_zh": "一分钟内获得个性化面试简报",
+    "thumbnail": "https://ph-files.imgix.net/a6c3feac-f7cc-4e64-9aa8-6fb4d7895233.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CT6XCIOQXQOK2V",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Career"
+      }
+    ]
+  },
+  {
+    "id": "1207701",
+    "name": "FYN AI investment ",
+    "slug": "fyn-ai-investment",
+    "tagline": "AI investment analysis for crypto, stocks and forex",
+    "tagline_zh": "AI投资分析工具，涵盖加密货币、股票和外汇",
+    "thumbnail": "https://ph-files.imgix.net/35105191-a4ba-4e09-93d4-61df2e2baf8a.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CRXGW6PJW5XEIA",
+    "category": "finance",
+    "topics": [
+      {
+        "name": "Fintech"
+      },
+      {
+        "name": "Investing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208348",
+    "name": "Taste Lens",
+    "slug": "taste-lens",
+    "tagline": "Decode why any design works, then export the system",
+    "tagline_zh": "解释任何设计的工作原理，然后导出系统",
+    "thumbnail": "https://ph-files.imgix.net/a063e584-2638-40c6-8df5-a190a2959ec4.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/BMS54OMZ3N7EW2",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Design resources"
+      }
+    ]
+  },
+  {
+    "id": "1205499",
+    "name": "Pixelbank Studio",
+    "slug": "pixelbank-studio",
+    "tagline": "Place objects. Prompt the style. Let AI render the result.",
+    "tagline_zh": "放置对象。提示风格。让AI渲染结果",
+    "thumbnail": "https://ph-files.imgix.net/72dc0028-d6d0-45c2-b3cb-93b408920b09.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/XCQLAFNCS5IOQ4",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207010",
+    "name": "BandCheck",
+    "slug": "bandcheck",
+    "tagline": "Practice all 4 IELTS sections with an AI examiner",
+    "tagline_zh": "练习所有4个IELTS部分的AI考官",
+    "thumbnail": "https://ph-files.imgix.net/6dab5f0a-8f9d-4553-88f7-aea75cc9d6f0.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/UT7MDIOU3GIZGS",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Online Learning"
+      }
+    ]
+  },
+  {
+    "id": "1206348",
+    "name": "Web Data AI Extract for Google Sheets™",
+    "slug": "web-data-ai-extract-for-google-sheets",
+    "tagline": "Extract website data in Google Sheets™ using AI",
+    "tagline_zh": "使用AI在Google表格中提取网站数据",
+    "thumbnail": "https://ph-files.imgix.net/63fc3975-e199-4ef6-96c1-7ffd04c64bed.gif?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/YZYB6T4TF5MPZ5",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Spreadsheets"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207643",
+    "name": "Brkandcnct",
+    "slug": "brkandcnct",
+    "tagline": "Highly Advanced AI-Software Engineer",
+    "tagline_zh": "高级 AI 软件工程师",
+    "thumbnail": "https://ph-files.imgix.net/28de4b6f-76ad-4a83-abe8-17db68c15fee.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/2YBVPOFUWVE3VO",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Software Engineering"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1204660",
+    "name": "CoreBase",
+    "slug": "corebase",
+    "tagline": "Ship AI Agents Your Customers Can Trust.",
+    "tagline_zh": "部署客户值得信赖的 AI 代理。",
+    "thumbnail": "https://ph-files.imgix.net/5acd270e-e4c2-4189-b6ab-8ff8b623de06.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CU5ONVCSJVODG7",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1187630",
+    "name": "Boltweb",
+    "slug": "boltweb",
+    "tagline": "Building a Website That Actually Wins Customer",
+    "tagline_zh": "构建真正能赢得客户的网站",
+    "thumbnail": "https://ph-files.imgix.net/fc5d31b2-1162-4f10-8fc7-e4eaf0bb173e.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/MPQWOEK5CH4WZW",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Website Builder"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205156",
+    "name": "Navor AI",
+    "slug": "navor-ai",
+    "tagline": "One API for leading Chinese AI models",
+    "tagline_zh": "一套 API 对接领先的中文 AI 模型",
+    "thumbnail": "https://ph-files.imgix.net/618af719-d41e-480d-8dbd-87b2f00484b8.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/6LV25AO6H7JXIW",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208056",
+    "name": "SmartTeacher.ai — Teacher",
+    "slug": "smartteacher-ai-teacher",
+    "tagline": "No More Worksheets - Interactive Lesson Generator",
+    "tagline_zh": "告别工作表 - 互动课程生成器",
+    "thumbnail": "https://ph-files.imgix.net/82219ca5-2e16-4a5e-b02d-d44a06c1721a.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/HCPEUW7NBX7VOC",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "School"
+      }
+    ]
+  },
+  {
+    "id": "1205571",
+    "name": "Olipasto",
+    "slug": "olipasto",
+    "tagline": "Transform Images into Refined Oil Pastel Artwork",
+    "tagline_zh": "将图像转化为精致的油画棒艺术作品",
+    "thumbnail": "https://ph-files.imgix.net/39eb8148-46fe-4fad-985d-5b0c81a4ef67.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/NVGVX4SJYYXLON",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Art"
+      }
+    ]
+  },
+  {
+    "id": "1208150",
+    "name": "Buildostore",
+    "slug": "buildostore",
+    "tagline": "AI online store builder — launch in minutes, no code",
+    "tagline_zh": "AI 在线商店构建器 — 无需代码，几分钟内上线",
+    "thumbnail": "https://ph-files.imgix.net/8728c43a-0b9b-4619-9ae1-f25c76b5beb2.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/DB4ZT6D7S3EJL7",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "E-Commerce"
+      },
+      {
+        "name": "No-Code"
+      }
+    ]
+  },
+  {
+    "id": "1203615",
+    "name": "AlphaForge",
+    "slug": "alphaforge",
+    "tagline": "The quant CLI your AI agent drives — backtest to Pine v6",
+    "tagline_zh": "您的 AI 驱动的量化 CLI — 回测至 Pine v6",
+    "thumbnail": "https://ph-files.imgix.net/66dea952-9b0a-48d4-bf8f-a215c1813f23.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/O7JWS6T66GYHNI",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Investing"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203545",
+    "name": "Oneirox Dream Decoder",
+    "slug": "oneirox-dream-decoder",
+    "tagline": "Neurobiology-first dream decoder — not a symbol dictionary",
+    "tagline_zh": "以神经生物学为先的梦境解码器 — 不是符号词典",
+    "thumbnail": "https://ph-files.imgix.net/58cbc35f-f178-48e2-a0b9-221a2e3b4958.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/BTYHBQPBI7FUS4",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207529",
+    "name": "Study Focus",
+    "slug": "study-focus",
+    "tagline": "Study faster and better!",
+    "tagline_zh": "更快更好地学习！",
+    "thumbnail": "https://ph-files.imgix.net/7bc4c321-9b69-43a5-94fb-04e37d40d03f.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/AJOVFW3QNRGURC",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Online Learning"
+      }
+    ]
+  },
+  {
+    "id": "1208067",
+    "name": "ZyoraAI",
+    "slug": "zyoraai",
+    "tagline": "AI interior design from a single room photo",
+    "tagline_zh": "AI室内设计，只需一张房间照片",
+    "thumbnail": "https://ph-files.imgix.net/8f459f50-8a6f-4fc4-a891-6820d458e12c.webp?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/2GY4WU6J5DONP6",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Interior design"
+      }
+    ]
+  },
+  {
+    "id": "1207662",
+    "name": "NovlAI: AI Novel Writer",
+    "slug": "novlai-ai-novel-writer",
+    "tagline": "AI novel writing that remembers your whole story",
+    "tagline_zh": "AI小说写作，记住你的整个故事",
+    "thumbnail": "https://ph-files.imgix.net/e477a55c-3f1b-4b05-ae06-7fef92425762.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/VKSYJGB5TQTQEI",
+    "category": "writing",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Writing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207965",
+    "name": "ai stem separation",
+    "slug": "ai-stem-separation",
+    "tagline": "Split songs into 2/4/6 stems online with AI",
+    "tagline_zh": "使用AI在线将歌曲分成2/4/6个音轨",
+    "thumbnail": "https://ph-files.imgix.net/21ef566d-af62-4b9f-8f2d-41b1184dcda5.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/XXUECXMKDDSVDI",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Music"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Audio"
+      }
+    ]
+  },
+  {
+    "id": "1204660",
+    "name": "CoreBase",
+    "slug": "corebase",
+    "tagline": "Ship AI Agents Your Customers Can Trust.",
+    "tagline_zh": "发布客户可以信任的AI代理",
+    "thumbnail": "https://ph-files.imgix.net/5acd270e-e4c2-4189-b6ab-8ff8b623de06.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CU5ONVCSJVODG7",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1205821",
+    "name": "BaseThread",
+    "slug": "basethread",
+    "tagline": "Your team's AI tools, finally on the same page",
+    "tagline_zh": "你团队的AI工具，终于统一了",
+    "thumbnail": "https://ph-files.imgix.net/76f184aa-174c-4e0c-b776-e162ca929705.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/QIGAWNUMAIHFDW",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203750",
+    "name": "Zentrex  AI Receptionist",
+    "slug": "zentrex-ai-receptionist",
+    "tagline": "AI that answers calls and books appointments 24/7",
+    "tagline_zh": "24/7接听电话和预约的AI助手",
+    "thumbnail": "https://ph-files.imgix.net/1d82aad1-1646-464c-9721-07d9a229d785.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/LDVSV3TWBKBLVG",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Virtual Assistants"
+      }
+    ]
+  },
+  {
+    "id": "1207999",
+    "name": "Firme360",
+    "slug": "firme360",
+    "tagline": "Financial data and risk scores for every Romanian company",
+    "tagline_zh": "罗马尼亚每家公司的财务数据和风险评分",
+    "thumbnail": "https://ph-files.imgix.net/7199d1f7-f356-4394-9878-8fc8ed2b26c4.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/OKLDPHH3BSWNWX",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Business"
+      },
+      {
+        "name": "Business Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207989",
+    "name": "Comber",
+    "slug": "comber",
+    "tagline": "It clicks everything. You hear about what broke.",
+    "tagline_zh": "它会点击所有内容。您会收到故障报告。",
+    "thumbnail": "https://ph-files.imgix.net/63c1ce29-4250-4f1f-90b9-dbf1b68c7850.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/53KSCRK2F3HYVO",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Software Engineering"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208380",
+    "name": "AI Hairstyle Changer — Try Free Online",
+    "slug": "ai-hairstyle-changer-try-free-online",
+    "tagline": "try this free AI hairstyle generator and changer online.",
+    "tagline_zh": "试试这个免费的在线AI发型生成器和更换工具。",
+    "thumbnail": "https://ph-files.imgix.net/2e65a010-f305-4173-bd8b-707010bebfee.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/HUSALJULVZXH6A",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Fashion"
+      },
+      {
+        "name": "Beauty"
+      },
+      {
+        "name": "Lifestyle"
+      }
+    ]
+  },
+  {
+    "id": "1203545",
+    "name": "Oneirox Dream Decoder",
+    "slug": "oneirox-dream-decoder",
+    "tagline": "Neurobiology-first dream decoder — not a symbol dictionary",
+    "tagline_zh": "基于神经生物学的梦境解码器 — 不是符号词典",
+    "thumbnail": "https://ph-files.imgix.net/58cbc35f-f178-48e2-a0b9-221a2e3b4958.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/BTYHBQPBI7FUS4",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207643",
+    "name": "Brkandcnct",
+    "slug": "brkandcnct",
+    "tagline": "Highly Advanced AI-Software Engineer",
+    "tagline_zh": "高级人工智能软件工程师",
+    "thumbnail": "https://ph-files.imgix.net/28de4b6f-76ad-4a83-abe8-17db68c15fee.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/2YBVPOFUWVE3VO",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Software Engineering"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1207680",
+    "name": "OfferHack.ai",
+    "slug": "offerhack-ai",
+    "tagline": "Stress-test your resume in 60 seconds",
+    "tagline_zh": "在 60 秒内测试你的简历",
+    "thumbnail": "https://ph-files.imgix.net/a8b17040-3a3b-4f36-b01f-e7b9b6d1a106.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/UV2ZR32K2TF6TH",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Career"
+      }
+    ]
+  },
+  {
+    "id": "1204660",
+    "name": "CoreBase",
+    "slug": "corebase",
+    "tagline": "Ship AI Agents Your Customers Can Trust.",
+    "tagline_zh": "将客户信任的 AI 代理推送",
+    "thumbnail": "https://ph-files.imgix.net/5acd270e-e4c2-4189-b6ab-8ff8b623de06.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CU5ONVCSJVODG7",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208150",
+    "name": "Buildostore",
+    "slug": "buildostore",
+    "tagline": "AI online store builder — launch in minutes, no code",
+    "tagline_zh": "AI 在线商店构建器 —— 在分钟内启动，无代码",
+    "thumbnail": "https://ph-files.imgix.net/8728c43a-0b9b-4619-9ae1-f25c76b5beb2.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/DB4ZT6D7S3EJL7",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "E-Commerce"
+      },
+      {
+        "name": "No-Code"
+      }
+    ]
+  },
+  {
+    "id": "1203750",
+    "name": "Zentrex  AI Receptionist",
+    "slug": "zentrex-ai-receptionist",
+    "tagline": "AI that answers calls and books appointments 24/7",
+    "tagline_zh": "24/7 的 AI 接听和预约",
+    "thumbnail": "https://ph-files.imgix.net/1d82aad1-1646-464c-9721-07d9a229d785.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/LDVSV3TWBKBLVG",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Virtual Assistants"
+      }
+    ]
+  },
+  {
+    "id": "1207310",
+    "name": "AI Visibility Checker",
+    "slug": "ai-visibility-checker",
+    "tagline": "Is your brand cited by ChatGPT? Check in one click",
+    "tagline_zh": "你的品牌被 ChatGPT 提及了吗？一键检查",
+    "thumbnail": "https://ph-files.imgix.net/6b927d7b-09f7-4f4c-8aac-f56c98bfe1df.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/QKSOCFQNAJZ2PE",
+    "category": "marketing",
+    "topics": [
+      {
+        "name": "SEO"
+      }
+    ]
+  },
+  {
+    "id": "1203494",
+    "name": "NOVA - نوفا",
+    "slug": "nova",
+    "tagline": "Automation with AI agents that truly understand your context",
+    "tagline_zh": "使用真正理解上下文的 AI 代理进行自动化",
+    "thumbnail": "https://ph-files.imgix.net/5d822cc0-c8b0-4bde-98c8-c4f7185258ee.x-icon?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/5WCVQEMQKAOQP3",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207662",
+    "name": "NovlAI: AI Novel Writer",
+    "slug": "novlai-ai-novel-writer",
+    "tagline": "AI novel writing that remembers your whole story",
+    "tagline_zh": "记住你整个故事的 AI 小说创作工具",
+    "thumbnail": "https://ph-files.imgix.net/e477a55c-3f1b-4b05-ae06-7fef92425762.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/VKSYJGB5TQTQEI",
+    "category": "writing",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Writing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208444",
+    "name": "ApexCognito",
+    "slug": "apexcognito",
+    "tagline": "Contrata bien, todo el tiempo.",
+    "tagline_zh": "明智投资，始终如一。",
+    "thumbnail": "https://ph-files.imgix.net/4812da41-82e1-46a5-9260-9b56ce7784d8.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/NTWG2AVAMWF52O",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Human Resources"
+      }
+    ]
+  },
+  {
+    "id": "1204660",
+    "name": "CoreBase",
+    "slug": "corebase",
+    "tagline": "Ship AI Agents Your Customers Can Trust.",
+    "tagline_zh": "交付客户值得信赖的 AI 代理。",
+    "thumbnail": "https://ph-files.imgix.net/5acd270e-e4c2-4189-b6ab-8ff8b623de06.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CU5ONVCSJVODG7",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "API"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208162",
+    "name": "InfluencerForge.app",
+    "slug": "influencerforge-app",
+    "tagline": "AI influencer for creators, brands, and agencies",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/b7e69dd1-99c6-4cdd-a563-778fa9924197.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/MEJ3VWCEZT3ALC",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Social Media"
+      },
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203750",
+    "name": "Zentrex  AI Receptionist",
+    "slug": "zentrex-ai-receptionist",
+    "tagline": "AI that answers calls and books appointments 24/7",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/1d82aad1-1646-464c-9721-07d9a229d785.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/LDVSV3TWBKBLVG",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Virtual Assistants"
+      }
+    ]
+  },
+  {
+    "id": "1205952",
+    "name": "Motion Text",
+    "slug": "motion-text",
+    "tagline": "Turn the assets you already have into video",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/db209e64-31a1-4541-a769-c075b86b9e52.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/ZXBAPMDBP45WFE",
+    "category": "video",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Video"
+      }
+    ]
+  },
+  {
+    "id": "1201690",
+    "name": "Sunglasses",
+    "slug": "sunglasses",
+    "tagline": "The input firewall for AI agents",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/74412428-ce9a-4065-87f4-3542c1a64f26.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/WVJD3XUVCIWNI6",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1203837",
+    "name": "Preflight7 beta",
+    "slug": "preflight7-beta",
+    "tagline": "Consulting-backed RFP Engine",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/0e7768e8-afdc-44b3-8876-ebaf21b8e4cc.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/6CFTOAUOFI4CX4",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208272",
+    "name": "Frappe Inspector",
+    "slug": "frappe-inspector",
+    "tagline": "Static analysis for Frappe and ERPNext projects",
+    "tagline_zh": "Frappe 和 ERPNext 项目的静态分析",
+    "thumbnail": "https://ph-files.imgix.net/28ff289c-146c-4fc1-ac1d-817a1ed1addb.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/NCGQY3V72S667U",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1188218",
+    "name": "TopStartNow",
+    "slug": "topstartnow",
+    "tagline": "One-click US company formation. No SSN needed",
+    "tagline_zh": "一键式美国公司注册。无需 SSN",
+    "thumbnail": "https://ph-files.imgix.net/560a4fc1-9595-4caf-9f54-a851f3a18a1a.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/3ONP4VPBLGDPVA",
+    "category": "image",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Startup Lessons"
+      },
+      {
+        "name": "Remote Work"
+      }
+    ]
+  },
+  {
+    "id": "1206094",
+    "name": "ExcelDashboard AI 4.0",
+    "slug": "exceldashboard-ai-4-0",
+    "tagline": "Create editable data reports & dashboards—refine with AI",
+    "tagline_zh": "创建可编辑的数据报告和仪表板—使用 AI 精细化",
+    "thumbnail": "https://ph-files.imgix.net/1ab4e05a-e4a3-4c37-8f76-6512efe6ed1b.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/T3FM7ZY3ZOMABO",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Analytics"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207949",
+    "name": "Latte art tips in your pocket",
+    "slug": "latte-art-tips-in-your-pocket",
+    "tagline": "It’s all about how you use your hands. Ask Ava.",
+    "tagline_zh": "关键在于如何使用您的双手。询问 Ava。",
+    "thumbnail": "https://ph-files.imgix.net/cec4813b-5c44-468d-816e-f00affa6c099.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/WGC46DMP2SNENY",
+    "category": "chatbot",
+    "topics": [
+      {
+        "name": "Coffee"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Bots"
+      }
+    ]
+  },
+  {
+    "id": "1207965",
+    "name": "ai stem separation",
+    "slug": "ai-stem-separation",
+    "tagline": "Split songs into 2/4/6 stems online with AI",
+    "tagline_zh": "使用 AI 在线将歌曲分割为 2/4/6 个音轨",
+    "thumbnail": "https://ph-files.imgix.net/21ef566d-af62-4b9f-8f2d-41b1184dcda5.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/XXUECXMKDDSVDI",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Music"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Audio"
+      }
+    ]
+  },
+  {
+    "id": "1205571",
+    "name": "Olipasto",
+    "slug": "olipasto",
+    "tagline": "Transform Images into Refined Oil Pastel Artwork",
+    "tagline_zh": "将图片转化为精美油画艺术作品",
+    "thumbnail": "https://ph-files.imgix.net/39eb8148-46fe-4fad-985d-5b0c81a4ef67.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/NVGVX4SJYYXLON",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Art"
+      }
+    ]
+  },
+  {
+    "id": "1208272",
+    "name": "Frappe Inspector",
+    "slug": "frappe-inspector",
+    "tagline": "Static analysis for Frappe and ERPNext projects",
+    "tagline_zh": "Frappe 和 ERPNext 项目的静态分析",
+    "thumbnail": "https://ph-files.imgix.net/28ff289c-146c-4fc1-ac1d-817a1ed1addb.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/NCGQY3V72S667U",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1204920",
+    "name": "PostOwl",
+    "slug": "postowl",
+    "tagline": "Let Claude Code or Codex post to your socials",
+    "tagline_zh": "让 Claude Code 或 Codex 为您的社交媒体发帖",
+    "thumbnail": "https://ph-files.imgix.net/e500fe21-eb55-4a90-81a1-c516099defb7.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/KYCKLJ27VGLJMF",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Social Media"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207570",
+    "name": "LoopBudget",
+    "slug": "loopbudget",
+    "tagline": "Soft warn, hard stop, receipts for Cursor & Claude Code",
+    "tagline_zh": "Cursor 和 Claude Code 的软警告、硬停止和发票",
+    "thumbnail": "https://ph-files.imgix.net/35a6a829-be35-4d82-8b81-28fa65bbc3c1.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/NESRPKAMUWMVCO",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Fintech"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203867",
+    "name": "learngeni",
+    "slug": "learngeni",
+    "tagline": "Master AI in your language 30guides,free resume &certificate",
+    "tagline_zh": "在您的语言中掌握 AI，30 个指南，免费简历和证书",
+    "thumbnail": "https://ph-files.imgix.net/ceab3ede-f127-44cd-b11a-82ce9e629e5d.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/ZKOTGTTARM3YFT",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1186894",
+    "name": "TestOptim AI",
+    "slug": "testoptim-ai",
+    "tagline": "AI QA that writes and heals your tests",
+    "tagline_zh": "能够编写并自愈测试的 AI 质量保证工具",
+    "thumbnail": "https://ph-files.imgix.net/c040c002-d6df-4e2a-8ac4-441f82f2466a.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/R4SHONJQN3FRNM",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "No-Code"
+      }
+    ]
+  },
+  {
+    "id": "1200432",
+    "name": "Electryion",
+    "slug": "electryion",
+    "tagline": "Hire AI employees that do real work while you sleep",
+    "tagline_zh": "雇佣在你睡觉时也能处理实际工作的 AI 员工",
+    "thumbnail": "https://ph-files.imgix.net/43f63d43-b998-4158-a2d6-6ef1933bf91f.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/Z6AGCJJE7ZECUV",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1200432",
+    "name": "Electryion",
+    "slug": "electryion",
+    "tagline": "Hire AI employees that do real work while you sleep",
+    "tagline_zh": "雇佣在你睡觉时也能处理实际工作的 AI 员工",
+    "thumbnail": "https://ph-files.imgix.net/43f63d43-b998-4158-a2d6-6ef1933bf91f.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/Z6AGCJJE7ZECUV",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203275",
+    "name": "OneSearch",
+    "slug": "onesearch",
+    "tagline": "Turn web search results into AI-organized folders",
+    "tagline_zh": "将网络搜索结果转化为 AI 整理的文件夹",
+    "thumbnail": "https://ph-files.imgix.net/30efdf49-2129-4132-a529-843d704eaa25.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CPVVOJRWG3AR7X",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Search"
+      }
+    ]
+  },
+  {
+    "id": "1204304",
+    "name": "RadarIQ",
+    "slug": "radariq",
+    "tagline": "Research any B2B prospect in 5 minutes, not hours",
+    "tagline_zh": "在 5 分钟内完成任何 B2B 潜在客户的调研，而非数小时",
+    "thumbnail": "https://ph-files.imgix.net/4b39e85c-ba89-40c8-8212-f90cb42a918e.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/TOWPJBW6KA3R3F",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Marketing automation"
+      }
+    ]
+  },
+  {
+    "id": "1203915",
+    "name": "Health Check-In",
+    "slug": "health-check-in",
+    "tagline": "Track how you feel. Test what helps.",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/61720baf-7099-4566-8358-71fdb9680cb7.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/6X7UPMBOALK5J7",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Android"
+      },
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1192014",
+    "name": "OpenHermit",
+    "slug": "openhermit",
+    "tagline": "One script tag makes any website discoverable and uable by ",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/2cc6c9f5-8a66-48c2-adec-192a68884865.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/GRWSH2VTAG7XNI",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Productivity"
+      }
+    ]
+  },
+  {
+    "id": "1203258",
+    "name": "Fluxnar",
+    "slug": "fluxnar",
+    "tagline": "Generate dozens of AI images in one click",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/218a76a3-a692-4518-8d23-c52d46010072.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/QNYXZSH5PGZ6O5",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1182282",
+    "name": "Frost Aura",
+    "slug": "frost-aura",
+    "tagline": "AI desk device that tracks hydration, focus & movement",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/2144f4ec-7827-403d-93b4-e1fcd6d03d8d.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/JSZTGIBQUMRYOC",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Hardware"
+      }
+    ]
+  },
+  {
+    "id": "1189925",
+    "name": "Veehive SnapaPro",
+    "slug": "veehive-snapapro",
+    "tagline": "3 AI agents to plan, engage & track your projects",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/27f034b8-95cd-4f38-ab75-dc805fc41b5d.svg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/4JR4RSPJ3KKZWP",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Task Management"
+      },
+      {
+        "name": "SaaS"
+      }
+    ]
+  },
+  {
+    "id": "1199355",
+    "name": "Levh",
+    "slug": "levh",
+    "tagline": "Local-first memory for AI agents and workflows",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/6e461378-6319-4d41-80ba-d2685e6acc99.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/JI7V3A4QWJJVTW",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1203915",
+    "name": "Health Check-In",
+    "slug": "health-check-in",
+    "tagline": "Track how you feel. Test what helps.",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/61720baf-7099-4566-8358-71fdb9680cb7.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/6X7UPMBOALK5J7",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Android"
+      },
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1207656",
+    "name": "SalesDen",
+    "slug": "salesden",
+    "tagline": "AI-Powered Sales Workflow Orchestration Platform",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/4b16a778-1141-4233-8224-191a8b49dc09.x-icon?auto=format",
+    "votesCount": 4,
+    "commentsCount": 0,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CJ6MJZVOG5ICXC",
+    "category": "marketing",
+    "topics": [
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "CRM"
+      }
+    ]
+  },
+  {
+    "id": "1192856",
+    "name": "NovaKit",
+    "slug": "novakit",
+    "tagline": "Downloadable Claude AI skills w/ live research on every run",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/2d16e5a6-d9c4-4a18-884e-4f363129eac0.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CYUM26F6WO5VCE",
+    "category": "writing",
+    "topics": [
+      {
+        "name": "Writing"
+      },
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1199355",
+    "name": "Levh",
+    "slug": "levh",
+    "tagline": "Local-first memory for AI agents and workflows",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/6e461378-6319-4d41-80ba-d2685e6acc99.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/JI7V3A4QWJJVTW",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208024",
+    "name": "StaffingLeads",
+    "slug": "staffingleads",
+    "tagline": "Find companies hiring before your competitors.",
+    "tagline_zh": "在竞争对手之前找到正在招聘的公司。",
+    "thumbnail": "https://ph-files.imgix.net/8d018460-03b1-4fee-8273-42f0f0aad2b9.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/PIU4ZLSECNLM53",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1202151",
+    "name": "Ora Network",
+    "slug": "ora-network",
+    "tagline": "AI receptionist that books patients on WhatsApp",
+    "tagline_zh": "通过 WhatsApp 预约患者的 AI 接待员",
+    "thumbnail": "https://ph-files.imgix.net/59cd2fae-168b-43eb-b133-ba90680a3954.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/I75ANGXXGBKD2U",
+    "category": "health",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Health"
+      }
+    ]
+  },
+  {
+    "id": "1203275",
+    "name": "OneSearch",
+    "slug": "onesearch",
+    "tagline": "Turn web search results into AI-organized folders",
+    "tagline_zh": "将网络搜索结果转化为 AI 整理的文件夹",
+    "thumbnail": "https://ph-files.imgix.net/30efdf49-2129-4132-a529-843d704eaa25.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/CPVVOJRWG3AR7X",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Search"
+      }
+    ]
+  },
+  {
+    "id": "1182282",
+    "name": "Frost Aura",
+    "slug": "frost-aura",
+    "tagline": "AI desk device that tracks hydration, focus & movement",
+    "tagline_zh": "追踪水分、专注度和活动的 AI 桌面设备",
+    "thumbnail": "https://ph-files.imgix.net/2144f4ec-7827-403d-93b4-e1fcd6d03d8d.jpeg?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/JSZTGIBQUMRYOC",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Hardware"
+      }
+    ]
+  },
+  {
+    "id": "1202559",
+    "name": "ALFA Finder",
+    "slug": "alfa-finder",
+    "tagline": "AI-powered NSE/BSE alerts, delivered instantly on WhatsApp",
+    "tagline_zh": "通过 WhatsApp 即时传递的 AI 驱动的 NSE/BSE 警报",
+    "thumbnail": "https://ph-files.imgix.net/f28a1a6f-0af3-4aca-92dc-f2a84e9fee50.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/7MGURFPAMUQBCS",
+    "category": "image",
+    "topics": [
+      {
+        "name": "News"
+      },
+      {
+        "name": "Messaging"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208030",
+    "name": "OptiCreator -Tools for smarter creators.",
+    "slug": "opticreator-tools-for-smarter-creators",
+    "tagline": "Create smarter. Grow faster.",
+    "tagline_zh": "更智能地创作，更快地成长。",
+    "thumbnail": "https://ph-files.imgix.net/929de330-6602-4c3f-be4f-58b43be2d4e2.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/ALALMAUPOBOPE6",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Design Tools"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Analytics"
+      }
+    ]
+  },
+  {
+    "id": "1198269",
+    "name": "Mobrial",
+    "slug": "mobrial",
+    "tagline": "Compare smartphone specs, prices, and features",
+    "tagline_zh": "比较智能手机规格、价格和功能",
+    "thumbnail": "https://ph-files.imgix.net/da3e4839-c709-495a-88a5-98e90858a5c4.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/SOHVTA6L2CMRTX",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      },
+      {
+        "name": "Shopping"
+      }
+    ]
+  },
+  {
+    "id": "1202151",
+    "name": "Ora Network",
+    "slug": "ora-network",
+    "tagline": "AI receptionist that books patients on WhatsApp",
+    "tagline_zh": "通过 WhatsApp 预约患者的 AI 接待员",
+    "thumbnail": "https://ph-files.imgix.net/59cd2fae-168b-43eb-b133-ba90680a3954.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/I75ANGXXGBKD2U",
+    "category": "health",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Health"
+      }
+    ]
+  },
+  {
+    "id": "1208024",
+    "name": "StaffingLeads",
+    "slug": "staffingleads",
+    "tagline": "Find companies hiring before your competitors.",
+    "tagline_zh": "在竞争对手之前找到正在招聘的公司。",
+    "thumbnail": "https://ph-files.imgix.net/8d018460-03b1-4fee-8273-42f0f0aad2b9.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/PIU4ZLSECNLM53",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Hiring"
+      },
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1200655",
+    "name": "HyperIntel",
+    "slug": "hyperintel",
+    "tagline": "Real-time whale tracking & analytics for Hyperliquid traders",
+    "tagline_zh": "针对 Hyperliquid 交易者的实时鲸鱼追踪与分析",
+    "thumbnail": "https://ph-files.imgix.net/964d5dfb-1cf0-4988-aba7-5920ee9109be.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/TD775W7KTRQZZ2",
+    "category": "finance",
+    "topics": [
+      {
+        "name": "Crypto"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Web3"
+      }
+    ]
+  },
+  {
+    "id": "1204304",
+    "name": "RadarIQ",
+    "slug": "radariq",
+    "tagline": "Research any B2B prospect in 5 minutes, not hours",
+    "tagline_zh": "5 分钟内搞定任何 B2B 潜在客户调研，无需数小时。",
+    "thumbnail": "https://ph-files.imgix.net/4b39e85c-ba89-40c8-8212-f90cb42a918e.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/TOWPJBW6KA3R3F",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Marketing automation"
+      }
+    ]
+  },
+  {
+    "id": "1205513",
+    "name": "Lumina",
+    "slug": "lumina",
+    "tagline": "AI Workplace Wellness Companion",
+    "tagline_zh": "AI 职场健康伴侣",
+    "thumbnail": "https://ph-files.imgix.net/e1c33d23-1d66-4acb-818e-b38e6b5eb793.png?auto=format",
+    "votesCount": 4,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/SRHNOO4KMR27SM",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Health & Fitness"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Fundraising"
       }
     ]
   },
@@ -96736,7 +101239,7 @@
     "name": "PurinCare",
     "slug": "purincare",
     "tagline": "AI food scanner to track your low-purine diet for gout",
-    "tagline_zh": "",
+    "tagline_zh": "用于追踪痛风低嘌呤饮食的 AI 食物扫描仪",
     "thumbnail": "https://ph-files.imgix.net/b67947b0-e666-4c19-a223-4b50ae8f9bdc.png?auto=format",
     "votesCount": 3,
     "commentsCount": 1,
@@ -97465,7 +101968,7 @@
     "name": "Rhetis",
     "slug": "rhetis",
     "tagline": "Turn scattered sources into clear, editable slides",
-    "tagline_zh": "",
+    "tagline_zh": "将零散信息转化为清晰、可编辑的幻灯片",
     "thumbnail": "https://ph-files.imgix.net/08f2591e-bb0c-4eec-9e3a-2d9d6a14f5c6.jpeg?auto=format",
     "votesCount": 3,
     "commentsCount": 6,
@@ -97489,7 +101992,7 @@
     "name": "Cobalt",
     "slug": "cobalt",
     "tagline": "The world's first Agentic Accelerator browser",
-    "tagline_zh": "",
+    "tagline_zh": "全球首款 Agentic 加速器浏览器",
     "thumbnail": "https://ph-files.imgix.net/1077f0a8-37a4-4822-a795-0a6150192534.png?auto=format",
     "votesCount": 3,
     "commentsCount": 3,
@@ -97513,7 +102016,7 @@
     "name": "Mimette",
     "slug": "mimette",
     "tagline": "The AI stylist who gets your style and vibe, not your closet",
-    "tagline_zh": "",
+    "tagline_zh": "拥有你的风格和氛围的AI风格师，不是你的衣柜",
     "thumbnail": "https://ph-files.imgix.net/354fb490-622d-4827-a5c6-f07d507ebca1.png?auto=format",
     "votesCount": 3,
     "commentsCount": 5,
@@ -97537,7 +102040,7 @@
     "name": "Niyojan",
     "slug": "niyojan",
     "tagline": "Your events run in WhatsApp. Niyojan lets nothing slip past.",
-    "tagline_zh": "",
+    "tagline_zh": "你的活动都在WhatsApp上。Niyojan让什么也不会溜过去。",
     "thumbnail": "https://ph-files.imgix.net/f082caf8-3709-4b07-b441-3b86a20d9529.png?auto=format",
     "votesCount": 3,
     "commentsCount": 1,
@@ -98752,7 +103255,7 @@
     "name": "unjargon — jargon for your agents",
     "slug": "unjargon-jargon-for-your-agents",
     "tagline": "Turn your agents' jargon into a learning trail.",
-    "tagline_zh": "",
+    "tagline_zh": "将你的代理的术语转化为学习路径",
     "thumbnail": "https://ph-files.imgix.net/7f08ed5a-e4db-4143-9f23-61e7655bcf9e.jpeg?auto=format",
     "votesCount": 3,
     "commentsCount": 1,
@@ -98776,7 +103279,7 @@
     "name": "Kiddo Stories",
     "slug": "kiddo-stories",
     "tagline": "A new bedtime story for your child. Every night.",
-    "tagline_zh": "",
+    "tagline_zh": "给你的孩子讲一个新的睡前故事。每晚。",
     "thumbnail": "https://ph-files.imgix.net/8dcd8e6a-40aa-45cc-bbf5-6a0a2b33c8a8.png?auto=format",
     "votesCount": 3,
     "commentsCount": 3,
@@ -98800,7 +103303,7 @@
     "name": "Receipt Vault - Proofy",
     "slug": "receipt-vault-proofy",
     "tagline": "Find any receipt. Prove any purchase.",
-    "tagline_zh": "",
+    "tagline_zh": "找到任何一张收据。证明任何一笔购买。",
     "thumbnail": "https://ph-files.imgix.net/5f7c85af-7b12-40e6-97b6-d3d49a56a945.png?auto=format",
     "votesCount": 3,
     "commentsCount": 1,
@@ -99139,7 +103642,7 @@
     "name": "PYRATREND",
     "slug": "pyratrend",
     "tagline": "Finding the best products to sell in the US market.",
-    "tagline_zh": "",
+    "tagline_zh": "寻找美国市场上最畅销的产品。",
     "thumbnail": "https://ph-files.imgix.net/65ac65c5-5b67-4288-a5f2-30ab7ae668a8.webp?auto=format",
     "votesCount": 3,
     "commentsCount": 2,
@@ -99163,7 +103666,7 @@
     "name": "Data Lens",
     "slug": "data-lens",
     "tagline": " the in‑browser, AI‑native analytics studio",
-    "tagline_zh": "",
+    "tagline_zh": "浏览器内 AI 原生分析平台。",
     "thumbnail": "https://ph-files.imgix.net/acf07be8-b879-49e2-b3f8-d72877ec6944.png?auto=format",
     "votesCount": 3,
     "commentsCount": 1,
@@ -99187,7 +103690,7 @@
     "name": "ShopCraft AI",
     "slug": "shopcraft-ai",
     "tagline": "AI-powered listings, titles, and ads for online sellers",
-    "tagline_zh": "",
+    "tagline_zh": "为在线卖家提供 AI 驱动的商品列表、标题和广告。",
     "thumbnail": "https://ph-files.imgix.net/931c0b0c-cae5-4246-b484-7cca0fcf97f7.png?auto=format",
     "votesCount": 3,
     "commentsCount": 1,
@@ -99307,7 +103810,7 @@
     "name": "SayGM",
     "slug": "saygm",
     "tagline": "Say gm to AI | One private API for Claude, GPT & Gemini",
-    "tagline_zh": "",
+    "tagline_zh": "对 AI 说 gm | Claude、GPT 和 Gemini 的统一私有 API。",
     "thumbnail": "https://ph-files.imgix.net/ffd73498-b2eb-4d8d-9f68-69d2d5da1c7c.png?auto=format",
     "votesCount": 3,
     "commentsCount": 3,
@@ -99331,7 +103834,7 @@
     "name": "Spieltag.Studio",
     "slug": "spieltag-studio",
     "tagline": "Professional social media graphics for amateur sports Clubs",
-    "tagline_zh": "",
+    "tagline_zh": "业余体育俱乐部的专业社交媒体图片。",
     "thumbnail": "https://ph-files.imgix.net/184468c6-43a9-4853-80cf-6106ed736e88.png?auto=format",
     "votesCount": 3,
     "commentsCount": 5,
@@ -99355,7 +103858,7 @@
     "name": "Trakeo",
     "slug": "trakeo",
     "tagline": "Your gym memory, on WhatsApp",
-    "tagline_zh": "",
+    "tagline_zh": "在WhatsApp上的健身记忆",
     "thumbnail": "https://ph-files.imgix.net/c8f4d5a2-574c-4f28-950d-7b2271a195a5.png?auto=format",
     "votesCount": 3,
     "commentsCount": 6,
@@ -99826,267 +104329,6 @@
     "name": "Tinify.dev",
     "slug": "tinify-dev",
     "tagline": "An image API with honest results",
-    "tagline_zh": "一个诚实的图像API",
-    "thumbnail": "https://ph-files.imgix.net/198b33da-9153-4a28-a902-8c74fd813ea7.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://tinify.dev",
-    "category": "image",
-    "topics": [
-      {
-        "name": "API"
-      },
-      {
-        "name": "Developer Tools"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1207337",
-    "name": "ReadByBots",
-    "slug": "readbybots",
-    "tagline": "See which AI bots read your site ",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/dc39e348-f6f8-4012-89e4-92f5e0d4e7e2.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 1,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://readbybots.com",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Analytics"
-      },
-      {
-        "name": "SEO"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1206522",
-    "name": "YANTA",
-    "slug": "yanta",
-    "tagline": "Fast, modern notes for people who prefer the keyboard",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/ab078d45-d12d-4bf8-a6cf-9c60f3a8822c.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://yanta.mrg.sh",
-    "category": "coding",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Open Source"
-      },
-      {
-        "name": "Notes"
-      }
-    ]
-  },
-  {
-    "id": "1207496",
-    "name": "Finola",
-    "slug": "finola",
-    "tagline": "Make Financial Research more Reliable",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/5fb68a21-845c-4e6f-80f2-dacc96780d6b.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://www.finola.work/",
-    "category": "finance",
-    "topics": [
-      {
-        "name": "Fintech"
-      },
-      {
-        "name": "Investing"
-      },
-      {
-        "name": "Finance"
-      }
-    ]
-  },
-  {
-    "id": "1207337",
-    "name": "ReadByBots",
-    "slug": "readbybots",
-    "tagline": "See which AI bots read your site ",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/dc39e348-f6f8-4012-89e4-92f5e0d4e7e2.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 1,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://readbybots.com",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Analytics"
-      },
-      {
-        "name": "SEO"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1207478",
-    "name": "Motiscope",
-    "slug": "motiscope",
-    "tagline": "Screen record any animation, get the code",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/ffed3d1e-3219-4f6f-a0b6-6ee5a5e4452f.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://kumarsashank.github.io/motiscope/index.html",
-    "category": "video",
-    "topics": [
-      {
-        "name": "Developer Tools"
-      },
-      {
-        "name": "GitHub"
-      },
-      {
-        "name": "No-Code"
-      }
-    ]
-  },
-  {
-    "id": "1205552",
-    "name": "MeetJoe",
-    "slug": "meetjoe",
-    "tagline": "Your AI SDR for Hyperpersonalized Agentic Emails at Scale",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/3bab0275-094a-4932-a173-72eca31dd036.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://meetjoe.ai/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Email"
-      },
-      {
-        "name": "Sales"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1206872",
-    "name": "Cherimo",
-    "slug": "cherimo",
-    "tagline": "Your private relationship memory, powered by AI",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/6c8c5305-6f2e-46b7-bfb5-23d0e59544c1.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://cherimo.app/ja",
-    "category": "ai-tool",
-    "topics": [
-      {
-        "name": "Android"
-      },
-      {
-        "name": "SaaS"
-      }
-    ]
-  },
-  {
-    "id": "1206861",
-    "name": "VibeDeck",
-    "slug": "vibedeck",
-    "tagline": "Know which coding agent needs you without checking terminals",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/f35c7381-1b35-4820-a06b-e29d8b09fb85.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://getvibedeck.com",
-    "category": "coding",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Developer Tools"
-      },
-      {
-        "name": "Vibe coding"
-      }
-    ]
-  },
-  {
-    "id": "1206525",
-    "name": "Spoof Me",
-    "slug": "spoof-me",
-    "tagline": "Switch browser identities. Reduce fingerprint tracking.",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/8bc6a834-6bdb-4896-a36f-36303ebf413a.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://chromewebstore.google.com/detail/spoof-me/onbjkmhileedchimkcmieeiomipdljki",
-    "category": "ai-tool",
-    "topics": [
-      {
-        "name": "Browser Extensions"
-      },
-      {
-        "name": "Chrome Extensions"
-      },
-      {
-        "name": "Security"
-      }
-    ]
-  },
-  {
-    "id": "1205552",
-    "name": "MeetJoe",
-    "slug": "meetjoe",
-    "tagline": "Your AI SDR for Hyperpersonalized Agentic Emails at Scale",
-    "tagline_zh": "",
-    "thumbnail": "https://ph-files.imgix.net/3bab0275-094a-4932-a173-72eca31dd036.png?auto=format",
-    "votesCount": 3,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://meetjoe.ai/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Email"
-      },
-      {
-        "name": "Sales"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1206183",
-    "name": "Tinify.dev",
-    "slug": "tinify-dev",
-    "tagline": "An image API with honest results",
     "tagline_zh": "一个结果真实的图像 API",
     "thumbnail": "https://ph-files.imgix.net/198b33da-9153-4a28-a902-8c74fd813ea7.png?auto=format",
     "votesCount": 3,
@@ -100103,30 +104345,6 @@
       },
       {
         "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1206863",
-    "name": "Clipus ",
-    "slug": "clipus",
-    "tagline": "Opus Clip| Turn videos into viral TikToks, Reels & Shorts",
-    "tagline_zh": "Opus Clip | 将视频转化为爆款 TikTok、Reels 和 Shorts",
-    "thumbnail": "https://ph-files.imgix.net/8b581f5b-531c-45f6-ba16-1503d5adfe55.svg?auto=format",
-    "votesCount": 3,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://clipus.app/",
-    "category": "video",
-    "topics": [
-      {
-        "name": "SaaS"
-      },
-      {
-        "name": "Video"
-      },
-      {
-        "name": "Vibe coding"
       }
     ]
   },
@@ -100151,6 +104369,195 @@
       },
       {
         "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1206522",
+    "name": "YANTA",
+    "slug": "yanta",
+    "tagline": "Fast, modern notes for people who prefer the keyboard",
+    "tagline_zh": "为键盘爱好者设计的快速、现代笔记应用",
+    "thumbnail": "https://ph-files.imgix.net/ab078d45-d12d-4bf8-a6cf-9c60f3a8822c.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://yanta.mrg.sh",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Open Source"
+      },
+      {
+        "name": "Notes"
+      }
+    ]
+  },
+  {
+    "id": "1207496",
+    "name": "Finola",
+    "slug": "finola",
+    "tagline": "Make Financial Research more Reliable",
+    "tagline_zh": "让财务研究更可靠",
+    "thumbnail": "https://ph-files.imgix.net/5fb68a21-845c-4e6f-80f2-dacc96780d6b.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 3,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://www.finola.work/",
+    "category": "finance",
+    "topics": [
+      {
+        "name": "Fintech"
+      },
+      {
+        "name": "Investing"
+      },
+      {
+        "name": "Finance"
+      }
+    ]
+  },
+  {
+    "id": "1207478",
+    "name": "Motiscope",
+    "slug": "motiscope",
+    "tagline": "Screen record any animation, get the code",
+    "tagline_zh": "屏幕录制任何动画，获取代码",
+    "thumbnail": "https://ph-files.imgix.net/ffed3d1e-3219-4f6f-a0b6-6ee5a5e4452f.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://kumarsashank.github.io/motiscope/index.html",
+    "category": "video",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "GitHub"
+      },
+      {
+        "name": "No-Code"
+      }
+    ]
+  },
+  {
+    "id": "1205552",
+    "name": "MeetJoe",
+    "slug": "meetjoe",
+    "tagline": "Your AI SDR for Hyperpersonalized Agentic Emails at Scale",
+    "tagline_zh": "你的 AI SDR，用于大规模超个性化智能邮件",
+    "thumbnail": "https://ph-files.imgix.net/3bab0275-094a-4932-a173-72eca31dd036.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 3,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://meetjoe.ai/",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Email"
+      },
+      {
+        "name": "Sales"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1206872",
+    "name": "Cherimo",
+    "slug": "cherimo",
+    "tagline": "Your private relationship memory, powered by AI",
+    "tagline_zh": "你的私人关系记忆，依靠人工智能",
+    "thumbnail": "https://ph-files.imgix.net/6c8c5305-6f2e-46b7-bfb5-23d0e59544c1.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://cherimo.app/ja",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Android"
+      },
+      {
+        "name": "SaaS"
+      }
+    ]
+  },
+  {
+    "id": "1206861",
+    "name": "VibeDeck",
+    "slug": "vibedeck",
+    "tagline": "Know which coding agent needs you without checking terminals",
+    "tagline_zh": "了解哪个编码代理需要你而不需要检查终端",
+    "thumbnail": "https://ph-files.imgix.net/f35c7381-1b35-4820-a06b-e29d8b09fb85.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://getvibedeck.com",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Vibe coding"
+      }
+    ]
+  },
+  {
+    "id": "1206525",
+    "name": "Spoof Me",
+    "slug": "spoof-me",
+    "tagline": "Switch browser identities. Reduce fingerprint tracking.",
+    "tagline_zh": "切换浏览器身份。减少指纹追踪",
+    "thumbnail": "https://ph-files.imgix.net/8bc6a834-6bdb-4896-a36f-36303ebf413a.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://chromewebstore.google.com/detail/spoof-me/onbjkmhileedchimkcmieeiomipdljki",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Browser Extensions"
+      },
+      {
+        "name": "Chrome Extensions"
+      },
+      {
+        "name": "Security"
+      }
+    ]
+  },
+  {
+    "id": "1206863",
+    "name": "Clipus ",
+    "slug": "clipus",
+    "tagline": "Opus Clip| Turn videos into viral TikToks, Reels & Shorts",
+    "tagline_zh": "Opus Clip | 将视频转化为爆款 TikTok、Reels 和 Shorts",
+    "thumbnail": "https://ph-files.imgix.net/8b581f5b-531c-45f6-ba16-1503d5adfe55.svg?auto=format",
+    "votesCount": 3,
+    "commentsCount": 3,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://clipus.app/",
+    "category": "video",
+    "topics": [
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Video"
+      },
+      {
+        "name": "Vibe coding"
       }
     ]
   },
@@ -100183,7 +104590,7 @@
     "name": "Agentica",
     "slug": "agentica",
     "tagline": "Automated AI-agent investing across global tokenized assets",
-    "tagline_zh": "跨全球代币化资产的自动化 AI 代理投资",
+    "tagline_zh": "全球token化资产的自动化 AI 代理投资",
     "thumbnail": "https://ph-files.imgix.net/e839fe65-70a5-49b1-94ed-061972756c3b.x-icon?auto=format",
     "votesCount": 3,
     "commentsCount": 4,
@@ -100221,23 +104628,314 @@
     ]
   },
   {
-    "id": "1205147",
-    "name": "Agentica",
-    "slug": "agentica",
-    "tagline": "Automated AI-agent investing across global tokenized assets",
-    "tagline_zh": "全球token化资产的自动化 AI 代理投资",
-    "thumbnail": "https://ph-files.imgix.net/e839fe65-70a5-49b1-94ed-061972756c3b.x-icon?auto=format",
+    "id": "1198620",
+    "name": "FeatureFlight",
+    "slug": "featureflight",
+    "tagline": "Project management and invoicing built for service teams",
+    "tagline_zh": "项目管理和发票建模，专为服务团队设计",
+    "thumbnail": "https://ph-files.imgix.net/c6b4f862-2039-4da0-b21b-4471a766eedd.png?auto=format",
     "votesCount": 3,
-    "commentsCount": 4,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://agentica.trade/",
-    "category": "finance",
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/EP7VRUOBPIVLQ2",
+    "category": "image",
     "topics": [
       {
-        "name": "Crypto"
+        "name": "Productivity"
       },
       {
-        "name": "DeFi"
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1194367",
+    "name": "Mydrop AI - Social Media OS for Agencies",
+    "slug": "mydrop-ai-social-media-os-for-agencies",
+    "tagline": "The social media OS for agencies and multi-brand teams",
+    "tagline_zh": "社交媒体操作系统，为机构和多品牌团队",
+    "thumbnail": "https://ph-files.imgix.net/19c817ab-1163-4153-b9c1-1a4ef56d22fa.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/YDQH7EDRULAYMF",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Social Media"
+      },
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1187975",
+    "name": "Onevyu",
+    "slug": "onevyu",
+    "tagline": "Turn DMs into deals-CRM for solopreneur,coaches & consultant",
+    "tagline_zh": "将私信转化为商机-CRM，专为个体创业者、教练和顾问设计",
+    "thumbnail": "https://ph-files.imgix.net/b2344b00-221c-4169-b4aa-92901b837d55.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/R5P7Z4RZGCO3WG",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "CRM"
+      }
+    ]
+  },
+  {
+    "id": "1194724",
+    "name": "AdoreYou",
+    "slug": "adoreyou",
+    "tagline": "Personalized song gifting — from birthdays to memorials.",
+    "tagline_zh": "个性化歌曲礼物——从生日到纪念。",
+    "thumbnail": "https://ph-files.imgix.net/d106920d-f9c2-4b35-a41a-dc401e7b9612.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/FXVLTEITBVHXJZ",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Music"
+      },
+      {
+        "name": "User Experience"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208176",
+    "name": "SeekBox",
+    "slug": "seekbox",
+    "tagline": "See what 5 AIs say — side by side - plus 15 Analysis Modes",
+    "tagline_zh": "查看 5 个 AI 的回答——并排显示——外加 15 种分析模式",
+    "thumbnail": "https://ph-files.imgix.net/0676dadc-a50e-4fd8-aab0-95de18d18eb3.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 3,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/XPDRQ7AIFHANTC",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1194765",
+    "name": "MyAI",
+    "slug": "myai",
+    "tagline": "Signup-free, private local AI client with zero data tracking",
+    "tagline_zh": "无需注册、隐私优先的本地 AI 客户端，零数据追踪",
+    "thumbnail": "https://ph-files.imgix.net/9b75635d-1984-4570-bd52-debd73ee2744.vnd.microsoft.icon?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/FGEOOKYF66WNCP",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Privacy"
+      },
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208453",
+    "name": "Ombaia",
+    "slug": "ombaia",
+    "tagline": "AI marketing assistant built for B2B",
+    "tagline_zh": "为 B2B 打造的 AI 营销助手",
+    "thumbnail": "https://ph-files.imgix.net/57d154ca-ee45-451a-bdee-2045bb2c5d4b.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/2OQMYBHQKW4VMR",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "SaaS"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1206982",
+    "name": "Ember",
+    "slug": "ember",
+    "tagline": "A compassionate, AI-powered companion for habit recovery",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/ca89276f-aa0c-4e4a-8c39-2cd928335ba7.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/ZIKJFY4353E5FU",
+    "category": "health",
+    "topics": [
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Health"
+      }
+    ]
+  },
+  {
+    "id": "1206178",
+    "name": "StandIn",
+    "slug": "standin",
+    "tagline": "Your AI teammate in Microsoft Teams calls",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/ac028e40-2919-4056-abe8-34fbbb78a5c9.svg?auto=format",
+    "votesCount": 3,
+    "commentsCount": 5,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/VJMTW4UKHWNMCC",
+    "category": "coding",
+    "topics": [
+      {
+        "name": "Developer Tools"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "GitHub"
+      }
+    ]
+  },
+  {
+    "id": "1207281",
+    "name": "Ideon ",
+    "slug": "ideon",
+    "tagline": "Scroll your own ideas",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/c14ceb2a-af6f-421c-bf61-128386ba5430.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 6,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/FRG2RACQG5VUXU",
+    "category": "productivity",
+    "topics": [
+      {
+        "name": "iOS"
+      },
+      {
+        "name": "Productivity"
+      },
+      {
+        "name": "Notes"
+      }
+    ]
+  },
+  {
+    "id": "1207819",
+    "name": "SOSEI",
+    "slug": "sosei",
+    "tagline": "AI rebuilds your outdated site into a modern, AI-ready one",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/fe147a08-abc5-4e36-855b-d7d60b7a24aa.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 1,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/KU4BLKWSXNOTSW",
+    "category": "image",
+    "topics": [
+      {
+        "name": "SEO"
+      },
+      {
+        "name": "Website Builder"
+      },
+      {
+        "name": "Artificial Intelligence"
+      }
+    ]
+  },
+  {
+    "id": "1208390",
+    "name": "SeeThrough",
+    "slug": "seethrough",
+    "tagline": "Visibility is a possibility",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/85eed3ae-4dd5-4db0-a16c-f43da99044d7.png?auto=format",
+    "votesCount": 3,
+    "commentsCount": 2,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/6MKI7NZU76KDQS",
+    "category": "education",
+    "topics": [
+      {
+        "name": "Education"
+      },
+      {
+        "name": "Artificial Intelligence"
+      },
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
+    "id": "1203225",
+    "name": "LLM SEO",
+    "slug": "llm-seo",
+    "tagline": "The Google Search Console for AI search engines.",
+    "tagline_zh": "",
+    "thumbnail": "https://ph-files.imgix.net/6cbba924-5cc1-44fb-8be8-104c7cf2b73e.jpeg?auto=format",
+    "votesCount": 3,
+    "commentsCount": 4,
+    "createdAt": "2026-07-28T07:01:00Z",
+    "website": "https://www.producthunt.com/r/ZGCXJLFYOVTDY4",
+    "category": "image",
+    "topics": [
+      {
+        "name": "Marketing"
+      },
+      {
+        "name": "SEO"
+      },
+      {
+        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -109498,7 +114196,7 @@
     "name": "RenderMeter",
     "slug": "rendermeter",
     "tagline": "Plan your AI content: real cost, real timeline, no hype",
-    "tagline_zh": "",
+    "tagline_zh": "规划你的 AI 内容：真实成本，真实时间表，无虚假",
     "thumbnail": "https://ph-files.imgix.net/1967b0a0-a976-4123-b1a2-6a28327539b6.svg?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -110338,7 +115036,7 @@
     "name": "Outcome V12.2.2 starten",
     "slug": "outcome-v12-2-2-starten",
     "tagline": "Personal AI that understands you and learns what truly works",
-    "tagline_zh": "",
+    "tagline_zh": "了解你，学习真正有效的个人 AI",
     "thumbnail": "https://ph-files.imgix.net/733483e6-809e-4f73-af6d-68b956b5c4b5.png?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -110356,7 +115054,7 @@
     "name": "Crewtron",
     "slug": "crewtron",
     "tagline": "Field Service Management Software",
-    "tagline_zh": "",
+    "tagline_zh": "现场服务管理软件",
     "thumbnail": "https://ph-files.imgix.net/b8e3f9da-c727-4ea1-8251-d883eb5db1cb.png?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -110380,7 +115078,7 @@
     "name": "Charlie",
     "slug": "charlie",
     "tagline": "AI that remembers professional relationships, not just chats",
-    "tagline_zh": "",
+    "tagline_zh": "记住专业关系，而不是仅仅聊天的 AI",
     "thumbnail": "https://ph-files.imgix.net/bd787a13-1e9e-40f4-bc9c-63477fbf1653.png?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -110404,7 +115102,7 @@
     "name": "Aether Ledger",
     "slug": "aether-ledger",
     "tagline": "AI-powered trading journal and personal trading coach",
-    "tagline_zh": "",
+    "tagline_zh": "AI 助手交易日记和个人交易教练",
     "thumbnail": "https://ph-files.imgix.net/4bcb0fdd-46e3-405e-97f4-9ba946ae5881.png?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -110428,7 +115126,7 @@
     "name": "PDFCrate",
     "slug": "pdfcrate",
     "tagline": "35 free PDF tools + AI summarizer — no signup, no watermarks",
-    "tagline_zh": "",
+    "tagline_zh": "35 个免费 PDF 工具 + AI 摘要生成器 —— 无需注册，无水印",
     "thumbnail": "https://ph-files.imgix.net/d865ee9a-3db5-4a4d-a422-e222a6af1224.png?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -110892,30 +115590,6 @@
     ]
   },
   {
-    "id": "1205703",
-    "name": "Collty",
-    "slug": "collty",
-    "tagline": "Create projects and teams with AI, collaborate with teams.",
-    "tagline_zh": "使用 AI 创建项目和团队，协同工作。",
-    "thumbnail": "https://ph-files.imgix.net/9d58f987-574c-42e4-8f94-3b436077dd76.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 6,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://collty.com",
-    "category": "productivity",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Analytics"
-      },
-      {
-        "name": "Delivery"
-      }
-    ]
-  },
-  {
     "id": "1206864",
     "name": "Remapdb",
     "slug": "remapdb",
@@ -110944,7 +115618,7 @@
     "name": "Insight Helix",
     "slug": "insight-helix",
     "tagline": "AI stock research and multi-currency tracking for beginners.",
-    "tagline_zh": "",
+    "tagline_zh": "适合初学者的 AI 股票研究和多币种追踪。",
     "thumbnail": "https://ph-files.imgix.net/dc86b46f-4d67-4e26-ad7f-f5c8044e4881.png?auto=format",
     "votesCount": 2,
     "commentsCount": 7,
@@ -110968,7 +115642,7 @@
     "name": "TamargiAI",
     "slug": "tamargiai",
     "tagline": "AI symptom checker with smart specialty guidance",
-    "tagline_zh": "",
+    "tagline_zh": "具有智能专科指导的 AI 症状检查工具。",
     "thumbnail": "https://ph-files.imgix.net/33e47ca1-1862-4895-aad9-e5502fed7cb7.png?auto=format",
     "votesCount": 2,
     "commentsCount": 5,
@@ -110992,7 +115666,7 @@
     "name": "LaunchGuardian",
     "slug": "launchguardian",
     "tagline": "Know if your AI-built app is actually production-ready",
-    "tagline_zh": "",
+    "tagline_zh": "知道你的 AI 构建的应用是否真的已具备生产就绪能力。",
     "thumbnail": "https://ph-files.imgix.net/b0914b04-d0f4-4b0d-8060-5949dca3add4.png?auto=format",
     "votesCount": 2,
     "commentsCount": 4,
@@ -111013,7 +115687,7 @@
     "name": "CODERCOPS",
     "slug": "codercops",
     "tagline": "Hire vetted software developers, or get hired",
-    "tagline_zh": "",
+    "tagline_zh": "雇佣经过筛选的软件开发者，或求职。",
     "thumbnail": "https://ph-files.imgix.net/a6da3d09-95a9-4b74-a62d-38c8e65cfb3c.png?auto=format",
     "votesCount": 2,
     "commentsCount": 6,
@@ -111037,7 +115711,7 @@
     "name": "CVboosta",
     "slug": "cvboosta",
     "tagline": "Make your resume visible in seconds",
-    "tagline_zh": "",
+    "tagline_zh": "秒钟内让你的简历可见",
     "thumbnail": "https://ph-files.imgix.net/a9e25eaa-859f-4ad4-b0fa-315bfaa077c1.png?auto=format",
     "votesCount": 2,
     "commentsCount": 3,
@@ -111098,54 +115772,6 @@
       },
       {
         "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1205670",
-    "name": "Video2Skill",
-    "slug": "video2skill",
-    "tagline": "Let any AI truly understand your videos",
-    "tagline_zh": "让任何 AI 真正理解您的视频",
-    "thumbnail": "https://ph-files.imgix.net/ffe69039-98bf-45d0-a1e0-32699273abb5.svg?auto=format",
-    "votesCount": 2,
-    "commentsCount": 4,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://www.video2skill.app/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Developer Tools"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1186373",
-    "name": "Kithora – Privacy-First Group Organizer",
-    "slug": "kithora-privacy-first-group-organizer",
-    "tagline": "Privacy-first app to organize life with your people",
-    "tagline_zh": "隐私优先应用，与亲友共同规划生活",
-    "thumbnail": "https://ph-files.imgix.net/96350953-1d2c-45e0-a11a-f5a26c214fc7.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://kithora.app",
-    "category": "productivity",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Travel"
-      },
-      {
-        "name": "Family"
       }
     ]
   },
@@ -111298,7 +115924,7 @@
     "name": "Pairbly",
     "slug": "pairbly",
     "tagline": "Your AI Manager for Influencers and AI Marketer For Brands!",
-    "tagline_zh": "您的AI管理者，专为影响力和品牌营销人员!",
+    "tagline_zh": "影响者的AI经理和品牌的AI营销者！",
     "thumbnail": "https://ph-files.imgix.net/d63c24fd-86f6-49f6-85bb-6a013d04a164.jpeg?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -111346,7 +115972,7 @@
     "name": "ZenCubed: 3D Block Puzzle",
     "slug": "zencubed-3d-block-puzzle",
     "tagline": "A calm 3D block puzzle that makes you think",
-    "tagline_zh": "让您放松的3D方块 puzzle",
+    "tagline_zh": "一个让你思考的平静3D方块拼图",
     "thumbnail": "https://ph-files.imgix.net/4a12d377-a56c-46fb-b578-6c90b5ff9569.png?auto=format",
     "votesCount": 2,
     "commentsCount": 2,
@@ -111370,7 +115996,7 @@
     "name": "Dotaiz",
     "slug": "dotaiz",
     "tagline": "Technical research, compressed into one decision surface.",
-    "tagline_zh": "将技术研究压缩到一个决策面板",
+    "tagline_zh": "技术研究，压缩到一个决策表面。",
     "thumbnail": "https://ph-files.imgix.net/d72eb9a4-71d0-4cbd-b13f-a626666e1e80.svg?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -111394,7 +116020,7 @@
     "name": "LATW Multilingual",
     "slug": "latw-multilingual",
     "tagline": "Run your WordPress site in unlimited languages, free",
-    "tagline_zh": "在无限语言中运行您的WordPress站点，免费",
+    "tagline_zh": "免费以无限语言运行您的WordPress网站",
     "thumbnail": "https://ph-files.imgix.net/96a7f14d-0350-4edd-912b-0e14b0fa7cfd.png?auto=format",
     "votesCount": 2,
     "commentsCount": 3,
@@ -111418,7 +116044,7 @@
     "name": "Monstro",
     "slug": "monstro",
     "tagline": "AI product agent for etalon PRD, USM etc. documents",
-    "tagline_zh": "",
+    "tagline_zh": "AI 产品代理人，用于 etalon PRD、USM 等文档",
     "thumbnail": "https://ph-files.imgix.net/e76c9b1b-68c3-4285-977c-89a20d749abf.png?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -111442,7 +116068,7 @@
     "name": "Growthmenti",
     "slug": "growthmenti",
     "tagline": "Learn. Rise. Thrive.",
-    "tagline_zh": "",
+    "tagline_zh": "学习。崛起。茁壮成长。",
     "thumbnail": "https://ph-files.imgix.net/7c75f6f1-db19-461e-8b42-d5f10396e32c.svg?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -111466,7 +116092,7 @@
     "name": "GitHub Roast ",
     "slug": "github-roast",
     "tagline": "Brutally honest AI feedback for your GitHub profile",
-    "tagline_zh": "",
+    "tagline_zh": "对你的 GitHub 个人主页的残酷真实的 AI 反馈",
     "thumbnail": "https://ph-files.imgix.net/eca104af-8d50-4925-8f90-00d8aafa2cfb.png?auto=format",
     "votesCount": 2,
     "commentsCount": 2,
@@ -111490,7 +116116,7 @@
     "name": "QuoteBuilder",
     "slug": "quotebuilder",
     "tagline": "AI-powered quote builder with instant EU/KBO company search",
-    "tagline_zh": "",
+    "tagline_zh": "实时 EU/KBO 公司搜索的 AI 驱动的报价生成器",
     "thumbnail": "https://ph-files.imgix.net/afcc5f4d-7d25-4cb2-a0c9-75c428265b74.png?auto=format",
     "votesCount": 2,
     "commentsCount": 2,
@@ -111514,7 +116140,7 @@
     "name": "Halfday",
     "slug": "halfday",
     "tagline": "Fasting timer with stages and streaks. Free forever, no ads",
-    "tagline_zh": "",
+    "tagline_zh": "带有阶段和连续记录的禁食计时器。永久免费，无广告",
     "thumbnail": "https://ph-files.imgix.net/b9f58946-56f6-4ca0-9a01-3ce9f0b88cdd.png?auto=format",
     "votesCount": 2,
     "commentsCount": 2,
@@ -111538,7 +116164,7 @@
     "name": "quickstud-e",
     "slug": "quickstud-e",
     "tagline": "Educational AI platform",
-    "tagline_zh": "教育类 AI 平台",
+    "tagline_zh": "教育性AI平台",
     "thumbnail": "https://ph-files.imgix.net/34223cba-25ba-4938-ba7f-c86a00af2ff0.vnd.microsoft.icon?auto=format",
     "votesCount": 2,
     "commentsCount": 5,
@@ -111562,7 +116188,7 @@
     "name": "Prompt Visible",
     "slug": "prompt-visible",
     "tagline": "See how invisible your business is to AI,  and fix it",
-    "tagline_zh": "查看您的业务在 AI 面前有多隐形，并加以修复",
+    "tagline_zh": "查看你的业务对AI的可见度，并修复它",
     "thumbnail": "https://ph-files.imgix.net/cba361be-adbd-45b1-a6e0-51a578b09eed.png?auto=format",
     "votesCount": 2,
     "commentsCount": 4,
@@ -111586,7 +116212,7 @@
     "name": "Applique AI",
     "slug": "applique-ai",
     "tagline": "Everything You Need Before Your Next Interview.",
-    "tagline_zh": "下一次面试前所需的一切。",
+    "tagline_zh": "面试前所需的一切",
     "thumbnail": "https://ph-files.imgix.net/17dd87f5-9800-4367-b3a0-5c769330884d.vnd.microsoft.icon?auto=format",
     "votesCount": 2,
     "commentsCount": 5,
@@ -111675,30 +116301,6 @@
     ]
   },
   {
-    "id": "1204679",
-    "name": "Dotaiz",
-    "slug": "dotaiz",
-    "tagline": "Technical research, compressed into one decision surface.",
-    "tagline_zh": "技术研究，压缩到一个决策表面。",
-    "thumbnail": "https://ph-files.imgix.net/d72eb9a4-71d0-4cbd-b13f-a626666e1e80.svg?auto=format",
-    "votesCount": 2,
-    "commentsCount": 1,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://dotaiz.com/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Education"
-      },
-      {
-        "name": "Artificial Intelligence"
-      },
-      {
-        "name": "Tech"
-      }
-    ]
-  },
-  {
     "id": "1207064",
     "name": "KeywordStat",
     "slug": "keywordstat",
@@ -111727,7 +116329,7 @@
     "name": "QuriOS AI",
     "slug": "qurios-ai",
     "tagline": "The AI learning companion for curious minds",
-    "tagline_zh": "好奇心灵的AI学习伴侣",
+    "tagline_zh": "好奇者的AI学习伴侣",
     "thumbnail": "https://ph-files.imgix.net/bee6589d-825e-4586-a9f3-bcbfd3063705.png?auto=format",
     "votesCount": 2,
     "commentsCount": 3,
@@ -111743,30 +116345,6 @@
       },
       {
         "name": "Augmented Reality"
-      }
-    ]
-  },
-  {
-    "id": "1195301",
-    "name": "LATW Multilingual",
-    "slug": "latw-multilingual",
-    "tagline": "Run your WordPress site in unlimited languages, free",
-    "tagline_zh": "免费以无限语言运行您的WordPress网站",
-    "thumbnail": "https://ph-files.imgix.net/96a7f14d-0350-4edd-912b-0e14b0fa7cfd.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://llm-automatic-translation.top/latw-multilingual/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "SEO"
-      },
-      {
-        "name": "WordPress"
-      },
-      {
-        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -111819,35 +116397,11 @@
     ]
   },
   {
-    "id": "1207064",
-    "name": "KeywordStat",
-    "slug": "keywordstat",
-    "tagline": "AI-powered keyword research for modern SEO",
-    "tagline_zh": "现代SEO的AI驱动关键词研究",
-    "thumbnail": "https://ph-files.imgix.net/79c9d8e6-32c4-4623-adb5-b7533baa1dec.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://keywordstat.co/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Marketing"
-      },
-      {
-        "name": "SEO"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
     "id": "1206539",
     "name": "SpecGraph",
     "slug": "specgraph",
     "tagline": "The graph between roadmap and code",
-    "tagline_zh": "路线图与代码之间的图表",
+    "tagline_zh": "产品路线图与代码之间的图表",
     "thumbnail": "https://ph-files.imgix.net/b8f26ab4-17d3-4ac5-b599-f29e4d23bc21.jpeg?auto=format",
     "votesCount": 2,
     "commentsCount": 3,
@@ -111867,59 +116421,11 @@
     ]
   },
   {
-    "id": "1204126",
-    "name": "ZenCubed: 3D Block Puzzle",
-    "slug": "zencubed-3d-block-puzzle",
-    "tagline": "A calm 3D block puzzle that makes you think",
-    "tagline_zh": "一个让你思考的平静3D方块拼图",
-    "thumbnail": "https://ph-files.imgix.net/4a12d377-a56c-46fb-b578-6c90b5ff9569.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://bricksandchips.co/zencubed",
-    "category": "ai-tool",
-    "topics": [
-      {
-        "name": "Indie Games"
-      },
-      {
-        "name": "Puzzle Games"
-      },
-      {
-        "name": "Games"
-      }
-    ]
-  },
-  {
-    "id": "1199881",
-    "name": "quickstud-e",
-    "slug": "quickstud-e",
-    "tagline": "Educational AI platform",
-    "tagline_zh": "教育性AI平台",
-    "thumbnail": "https://ph-files.imgix.net/34223cba-25ba-4938-ba7f-c86a00af2ff0.vnd.microsoft.icon?auto=format",
-    "votesCount": 2,
-    "commentsCount": 5,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://www.quickstud-e.com/",
-    "category": "education",
-    "topics": [
-      {
-        "name": "User Experience"
-      },
-      {
-        "name": "Education"
-      },
-      {
-        "name": "Online Learning"
-      }
-    ]
-  },
-  {
     "id": "1206910",
     "name": "ClaimlyFit — Own Your Workout Zone",
     "slug": "claimlyfit-own-your-workout-zone",
     "tagline": "Turn your neighborhood into a fitness battleground",
-    "tagline_zh": "将你的邻里变成一个健身战场",
+    "tagline_zh": "将你的社区变成健身战场",
     "thumbnail": "https://ph-files.imgix.net/1e8d3098-fa7a-4259-8efa-56dad03c8457.png?auto=format",
     "votesCount": 2,
     "commentsCount": 1,
@@ -111988,7 +116494,7 @@
     "name": "VeggieFit: AI Nutrition Coach",
     "slug": "veggiefit-ai-nutrition-coach",
     "tagline": "The AI companion for healthy vegetarian living.",
-    "tagline_zh": "健康素食生活的AI伴侣",
+    "tagline_zh": "健康素食生活的智能伴侣。",
     "thumbnail": "https://ph-files.imgix.net/083a5574-9e49-4c01-9fd5-263d474cf2c5.png?auto=format",
     "votesCount": 2,
     "commentsCount": 2,
@@ -112004,165 +116510,6 @@
       },
       {
         "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1206157",
-    "name": "Prompt Visible",
-    "slug": "prompt-visible",
-    "tagline": "See how invisible your business is to AI,  and fix it",
-    "tagline_zh": "查看您的业务在 AI 面前有多隐形，并加以修复。",
-    "thumbnail": "https://ph-files.imgix.net/cba361be-adbd-45b1-a6e0-51a578b09eed.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 4,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://promptvisible.ai/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "SEO"
-      },
-      {
-        "name": "Artificial Intelligence"
-      },
-      {
-        "name": "Search"
-      }
-    ]
-  },
-  {
-    "id": "1206768",
-    "name": "ZWPlayer",
-    "slug": "zwplayer",
-    "tagline": "Free HTML5 video player with AI subtitles & interactivity",
-    "tagline_zh": "带有 AI 字幕和交互功能的免费 HTML5 视频播放器。",
-    "thumbnail": "https://ph-files.imgix.net/c440fad4-e67d-4b1c-aadd-a067d2c110be.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://www.producthunt.com/r/5CIOUSBBI2RU5X",
-    "category": "video",
-    "topics": [
-      {
-        "name": "WordPress"
-      },
-      {
-        "name": "Developer Tools"
-      },
-      {
-        "name": "Video"
-      }
-    ]
-  },
-  {
-    "id": "1204126",
-    "name": "ZenCubed: 3D Block Puzzle",
-    "slug": "zencubed-3d-block-puzzle",
-    "tagline": "A calm 3D block puzzle that makes you think",
-    "tagline_zh": "一款舒缓的 3D 方块拼图，考验您的脑力。",
-    "thumbnail": "https://ph-files.imgix.net/4a12d377-a56c-46fb-b578-6c90b5ff9569.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://bricksandchips.co/zencubed",
-    "category": "ai-tool",
-    "topics": [
-      {
-        "name": "Indie Games"
-      },
-      {
-        "name": "Puzzle Games"
-      },
-      {
-        "name": "Games"
-      }
-    ]
-  },
-  {
-    "id": "1206539",
-    "name": "SpecGraph",
-    "slug": "specgraph",
-    "tagline": "The graph between roadmap and code",
-    "tagline_zh": "路线图与代码之间的关联图谱。",
-    "thumbnail": "https://ph-files.imgix.net/b8f26ab4-17d3-4ac5-b599-f29e4d23bc21.jpeg?auto=format",
-    "votesCount": 2,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://specgraph-landing.vercel.app/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Developer Tools"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1201411",
-    "name": "Converg3nce",
-    "slug": "converg3nce",
-    "tagline": "Get brands verified and trusted by agents and ai",
-    "tagline_zh": "让品牌获得验证并赢得智能体和 AI 的信任。",
-    "thumbnail": "https://ph-files.imgix.net/d25bab3f-fc14-4538-86aa-70e14e3ee6ab.svg?auto=format",
-    "votesCount": 2,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://www.producthunt.com/r/GKIKTPBXPFUI6Y",
-    "category": "ai-tool",
-    "topics": [
-      {
-        "name": "Tech"
-      }
-    ]
-  },
-  {
-    "id": "1206910",
-    "name": "ClaimlyFit — Own Your Workout Zone",
-    "slug": "claimlyfit-own-your-workout-zone",
-    "tagline": "Turn your neighborhood into a fitness battleground",
-    "tagline_zh": "将你的社区变成健身战场",
-    "thumbnail": "https://ph-files.imgix.net/1e8d3098-fa7a-4259-8efa-56dad03c8457.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 1,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://claimlyfit.com/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Health & Fitness"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1206973",
-    "name": "Halfday",
-    "slug": "halfday",
-    "tagline": "Fasting timer with stages and streaks. Free forever, no ads",
-    "tagline_zh": "带有阶段和连续记录的禁食计时器。永久免费，无广告",
-    "thumbnail": "https://ph-files.imgix.net/b9f58946-56f6-4ca0-9a01-3ce9f0b88cdd.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://play.google.com/store/apps/details",
-    "category": "health",
-    "topics": [
-      {
-        "name": "Android"
-      },
-      {
-        "name": "Health & Fitness"
-      },
-      {
-        "name": "Lifestyle"
       }
     ]
   },
@@ -112191,6 +116538,24 @@
     ]
   },
   {
+    "id": "1201411",
+    "name": "Converg3nce",
+    "slug": "converg3nce",
+    "tagline": "Get brands verified and trusted by agents and ai",
+    "tagline_zh": "让品牌获得验证并赢得智能体和 AI 的信任。",
+    "thumbnail": "https://ph-files.imgix.net/d25bab3f-fc14-4538-86aa-70e14e3ee6ab.svg?auto=format",
+    "votesCount": 2,
+    "commentsCount": 2,
+    "createdAt": "2026-07-27T07:01:00Z",
+    "website": "https://www.producthunt.com/r/GKIKTPBXPFUI6Y",
+    "category": "ai-tool",
+    "topics": [
+      {
+        "name": "Tech"
+      }
+    ]
+  },
+  {
     "id": "1202258",
     "name": "Fit Ninja",
     "slug": "fit-ninja",
@@ -112211,123 +116576,6 @@
       },
       {
         "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1206448",
-    "name": "VeggieFit: AI Nutrition Coach",
-    "slug": "veggiefit-ai-nutrition-coach",
-    "tagline": "The AI companion for healthy vegetarian living.",
-    "tagline_zh": "健康素食生活的AI伴侣。",
-    "thumbnail": "https://ph-files.imgix.net/083a5574-9e49-4c01-9fd5-263d474cf2c5.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://veggiefit.space-z.ai/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Health & Fitness"
-      },
-      {
-        "name": "Analytics"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1204724",
-    "name": "QuriOS AI",
-    "slug": "qurios-ai",
-    "tagline": "The AI learning companion for curious minds",
-    "tagline_zh": "好奇者的AI学习伴侣",
-    "thumbnail": "https://ph-files.imgix.net/bee6589d-825e-4586-a9f3-bcbfd3063705.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://www.producthunt.com/r/PI4TQPNUQMR76Z",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Education"
-      },
-      {
-        "name": "Artificial Intelligence"
-      },
-      {
-        "name": "Augmented Reality"
-      }
-    ]
-  },
-  {
-    "id": "1206921",
-    "name": "Applique AI",
-    "slug": "applique-ai",
-    "tagline": "Everything You Need Before Your Next Interview.",
-    "tagline_zh": "面试前所需的一切",
-    "thumbnail": "https://ph-files.imgix.net/17dd87f5-9800-4367-b3a0-5c769330884d.vnd.microsoft.icon?auto=format",
-    "votesCount": 2,
-    "commentsCount": 5,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://www.applique.ai/",
-    "category": "productivity",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Career"
-      }
-    ]
-  },
-  {
-    "id": "1206157",
-    "name": "Prompt Visible",
-    "slug": "prompt-visible",
-    "tagline": "See how invisible your business is to AI,  and fix it",
-    "tagline_zh": "查看你的业务对AI的可见度，并修复它",
-    "thumbnail": "https://ph-files.imgix.net/cba361be-adbd-45b1-a6e0-51a578b09eed.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 4,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://promptvisible.ai/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "SEO"
-      },
-      {
-        "name": "Artificial Intelligence"
-      },
-      {
-        "name": "Search"
-      }
-    ]
-  },
-  {
-    "id": "1198021",
-    "name": "Pairbly",
-    "slug": "pairbly",
-    "tagline": "Your AI Manager for Influencers and AI Marketer For Brands!",
-    "tagline_zh": "影响者的AI经理和品牌的AI营销者！",
-    "thumbnail": "https://ph-files.imgix.net/d63c24fd-86f6-49f6-85bb-6a013d04a164.jpeg?auto=format",
-    "votesCount": 2,
-    "commentsCount": 1,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://pairbly.com",
-    "category": "image",
-    "topics": [
-      {
-        "name": "SaaS"
-      },
-      {
-        "name": "Artificial Intelligence"
-      },
-      {
-        "name": "Influencer marketing"
       }
     ]
   },
@@ -112380,54 +116628,6 @@
     ]
   },
   {
-    "id": "1206539",
-    "name": "SpecGraph",
-    "slug": "specgraph",
-    "tagline": "The graph between roadmap and code",
-    "tagline_zh": "产品路线图与代码之间的图表",
-    "thumbnail": "https://ph-files.imgix.net/b8f26ab4-17d3-4ac5-b599-f29e4d23bc21.jpeg?auto=format",
-    "votesCount": 2,
-    "commentsCount": 3,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://specgraph-landing.vercel.app/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Productivity"
-      },
-      {
-        "name": "Developer Tools"
-      },
-      {
-        "name": "Artificial Intelligence"
-      }
-    ]
-  },
-  {
-    "id": "1204126",
-    "name": "ZenCubed: 3D Block Puzzle",
-    "slug": "zencubed-3d-block-puzzle",
-    "tagline": "A calm 3D block puzzle that makes you think",
-    "tagline_zh": "一个让你思考的平静3D方块拼图",
-    "thumbnail": "https://ph-files.imgix.net/4a12d377-a56c-46fb-b578-6c90b5ff9569.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://bricksandchips.co/zencubed",
-    "category": "ai-tool",
-    "topics": [
-      {
-        "name": "Indie Games"
-      },
-      {
-        "name": "Puzzle Games"
-      },
-      {
-        "name": "Games"
-      }
-    ]
-  },
-  {
     "id": "1206193",
     "name": "Reality Twin",
     "slug": "reality-twin",
@@ -112472,30 +116672,6 @@
       },
       {
         "name": "Photo editing"
-      }
-    ]
-  },
-  {
-    "id": "1206448",
-    "name": "VeggieFit: AI Nutrition Coach",
-    "slug": "veggiefit-ai-nutrition-coach",
-    "tagline": "The AI companion for healthy vegetarian living.",
-    "tagline_zh": "健康素食生活的智能伴侣。",
-    "thumbnail": "https://ph-files.imgix.net/083a5574-9e49-4c01-9fd5-263d474cf2c5.png?auto=format",
-    "votesCount": 2,
-    "commentsCount": 2,
-    "createdAt": "2026-07-27T07:01:00Z",
-    "website": "https://veggiefit.space-z.ai/",
-    "category": "image",
-    "topics": [
-      {
-        "name": "Health & Fitness"
-      },
-      {
-        "name": "Analytics"
-      },
-      {
-        "name": "Artificial Intelligence"
       }
     ]
   },
@@ -116173,7 +120349,7 @@
     "name": "Morg by Measy",
     "slug": "morg-by-measy",
     "tagline": "A better way to organize",
-    "tagline_zh": "",
+    "tagline_zh": "更好的组织方式",
     "thumbnail": "https://ph-files.imgix.net/fad4cba9-66de-4fdf-8982-7886c8df5596.jpeg?auto=format",
     "votesCount": 1,
     "commentsCount": 1,
@@ -116197,7 +120373,7 @@
     "name": "ideatoart",
     "slug": "ideatoart",
     "tagline": "Turn your inspiration into AI art",
-    "tagline_zh": "",
+    "tagline_zh": "将您的灵感转化为AI艺术",
     "thumbnail": "https://ph-files.imgix.net/2bbe6895-5bae-4857-b229-10fc12ad5cc9.jpeg?auto=format",
     "votesCount": 1,
     "commentsCount": 0,
