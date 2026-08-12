@@ -34,6 +34,15 @@ jobs:
       - name: Install dependencies
         run: pip install requests aiohttp
 
+      - name: Decompress tools.json (if gz exists)
+        run: |
+          if [ -f tools.json.gz ]; then
+            gunzip -f tools.json.gz
+            echo "✅ 已解压 tools.json.gz"
+          else
+            echo "ℹ️ 无 gz，使用仓库内 tools.json（首次迁移）"
+          fi
+
       - name: Fetch latest data
         run: python fetch_ph_data.py
         env:
@@ -49,9 +58,14 @@ jobs:
           GLM46_API_KEY: ${{ secrets.GLM46_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
 
+      - name: Compress tools.json before commit
+        run: |
+          gzip -f tools.json
+          echo "✅ 已压缩 tools.json → tools.json.gz ($(du -h tools.json.gz | cut -f1))"
+
       - name: Commit & push if changed
         run: |
           git config user.name "AINext Bot"
           git config user.email "bot@ainext.com"
-          git add tools.json tools-slim.json sitemap.xml website_map.json website_fail.json
+          git add tools.json.gz tools-slim.json sitemap.xml website_map.json website_fail.json
           git diff --staged --quiet || (git commit -m "Daily update: $(date +%Y-%m-%d)" && git pull --rebase --autostash && git push)

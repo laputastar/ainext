@@ -1,0 +1,3 @@
+# tools.json exceeds CF Pages 25MB per-file limit.
+# Runtime reads the gzip-compressed tools.json.gz instead (see functions/_shared.js).
+tools.json

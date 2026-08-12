@@ -33,6 +33,15 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
+      - name: Decompress tools.json (if gz exists)
+        run: |
+          if [ -f tools.json.gz ]; then
+            gunzip -f tools.json.gz
+            echo "✅ 已解压 tools.json.gz"
+          else
+            echo "ℹ️ 无 gz，使用仓库内 tools.json（首次迁移）"
+          fi
+
       # 第一步：优先把"名字含 数字/&/+/()/"的高风险产品全部回填为原生 URL
       # （这些正则 slug 最可能和 PH 实际路径不符、会 404；每周先清零，保证高危永远原生）
       - name: Backfill high-risk products first
@@ -46,10 +55,16 @@ jobs:
         env:
           MAX_PER_RUN: ${{ github.event.inputs.max_per_run || '300' }}
 
+      # 提交前压缩 tools.json
+      - name: Compress tools.json before commit
+        run: |
+          gzip -f tools.json
+          echo "✅ 已压缩 tools.json → tools.json.gz ($(du -h tools.json.gz | cut -f1))"
+
       # 仅提交变化的文件；先 rebase 再 push，避免与每日更新冲突
       - name: Commit & push if changed
         run: |
           git config user.name "AINext Bot"
           git config user.email "bot@ainext.com"
-          git add tools.json ph_url_map.json
+          git add tools.json.gz ph_url_map.json
           git diff --staged --quiet || (git commit -m "Backfill PH native URLs: $(date +%Y-%m-%d)" && git pull --rebase --autostash && git push)

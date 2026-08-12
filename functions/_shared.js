@@ -8,9 +8,19 @@ const CACHE_TTL = 5 * 60 * 1000; // 5 min
 export async function getTools(env, origin) {
   const now = Date.now();
   if (cachedTools && now - cacheTime < CACHE_TTL) return cachedTools;
-  const res = await env.ASSETS.fetch(new Request(`${origin}/tools.json`));
-  if (!res.ok) throw new Error('Failed to load tools.json');
-  cachedTools = await res.json();
+  const res = await env.ASSETS.fetch(new Request(`${origin}/tools.json.gz`));
+  if (!res.ok) {
+    // 迁移期兜底：gz 未生成时读旧 tools.json
+    const fallback = await env.ASSETS.fetch(new Request(`${origin}/tools.json`));
+    if (!fallback.ok) throw new Error('Failed to load tools data');
+    cachedTools = await fallback.json();
+    cacheTime = now;
+    return cachedTools;
+  }
+  // 解压 gzip（Workers 原生支持 DecompressionStream）
+  const blob = await res.blob();
+  const decompressed = await new Response(blob.stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  cachedTools = JSON.parse(decompressed);
   cacheTime = now;
   return cachedTools;
 }
