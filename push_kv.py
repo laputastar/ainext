@@ -25,6 +25,10 @@ BASE = "https://api.cloudflare.com/client/v4"
 BULK_CHUNK = 900          # 单批最大写入数（免费限额 1000/天，留余量）
 MAX_WRITES = 900          # 单次运行写入上限，防爆配额
 
+# 初始化状态标记（存在 = KV 已完成首次全量灌入）
+INIT_MARKER = "__ainext_init_done"
+CURSOR_KEY = "__ainext_init_cursor"
+
 
 def api_token():
     tok = os.environ.get("CLOUDFLARE_API_TOKEN", "")
@@ -98,6 +102,52 @@ def kv_delete_bulk(account, ns, keys):
     return 0
 
 
+def kv_get_single(account, ns, key):
+    """读取单个 key，返回字符串或 None（key 不存在时）"""
+    try:
+        r = urllib.request.Request(f"{BASE}/accounts/{account}/storage/kv/namespaces/{ns}/values/{key}")
+        r.add_header("Authorization", f"Bearer {api_token()}")
+        with urllib.request.urlopen(r, timeout=20) as resp:
+            return resp.read().decode()
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return None
+        print(f"  ⚠️ 读取 {key} 失败: HTTP {e.code}")
+        return None
+
+
+def kv_put_single(account, ns, key, value):
+    """写入单个 key"""
+    body = json.dumps(value).encode()
+    r = urllib.request.Request(
+        f"{BASE}/accounts/{account}/storage/kv/namespaces/{ns}/values/{key}",
+        method="PUT", data=body)
+    r.add_header("Authorization", f"Bearer {api_token()}")
+    r.add_header("Content-Type", "application/json")
+    try:
+        with urllib.request.urlopen(r, timeout=20) as resp:
+            return resp.status == 200
+    except urllib.error.HTTPError as e:
+        print(f"  ⚠️ 写入 {key} 失败: HTTP {e.code}")
+        return False
+
+
+def kv_delete_single(account, ns, key):
+    """删除单个 key"""
+    r = urllib.request.Request(
+        f"{BASE}/accounts/{account}/storage/kv/namespaces/{ns}/values/{key}",
+        method="DELETE")
+    r.add_header("Authorization", f"Bearer {api_token()}")
+    try:
+        with urllib.request.urlopen(r, timeout=20) as resp:
+            return resp.status == 200
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return True
+        print(f"  ⚠️ 删除 {key} 失败: HTTP {e.code}")
+        return False
+
+
 def tool_hash(tool):
     """生成工具哈希，用于判断字段是否变化"""
     # 仅对比核心字段，忽略不稳定顺序
@@ -163,18 +213,73 @@ def main():
     cur_tools = load_json(tools_path)
     prev_path = "tools.prev.json"
 
-    if full:
-        puts = [(f"tool:{str(t['id'])}", json.dumps(t, ensure_ascii=False)) for t in cur_tools]
-        deletes = []
-        mode = "全量"
-    elif os.path.exists(prev_path):
+    account = get_account_id()
+    ns = namespace_id()
+    print(f"🔧 account={account[:8]}..., ns={ns[:8]}...")
+
+    # 判断 KV 是否已完成首次初始化
+    init_done = kv_get_single(account, ns, INIT_MARKER) is not None
+
+    if dry:
+        # dry-run 只展示逻辑，不连 KV
+        if full or not init_done:
+            cursor = 0
+            if not full:
+                try:
+                    cursor = int(kv_get_single(account, ns, CURSOR_KEY) or 0)
+                except Exception:
+                    cursor = 0
+            batch = cur_tools[cursor:cursor + MAX_WRITES]
+            print(f"🧪 Dry-run: 初始化模式，将写入 {len(batch)} 条 (游标 {cursor})")
+        else:
+            if os.path.exists(prev_path):
+                prev_tools = load_json(prev_path)
+                puts, deletes = diff_prev(cur_tools, prev_tools)
+                print(f"🧪 Dry-run: 增量模式，将写入 {len(puts)} 条、删除 {len(deletes)} 条")
+            else:
+                print(f"🧪 Dry-run: 增量模式（无 prev），将写入 0 条")
+        print("✅ Dry-run 完成")
+        return
+
+    # ── 初始化模式：KV 还没灌过数据 ──
+    if full or not init_done:
+        if full:
+            cursor = 0
+            print("🚀 强制全量模式")
+        else:
+            cursor = int(kv_get_single(account, ns, CURSOR_KEY) or 0)
+            print(f"🔍 初始化模式，游标: {cursor}/{len(cur_tools)}")
+
+        batch = cur_tools[cursor:cursor + MAX_WRITES]
+        if not batch:
+            print("✅ 初始化已完成（游标越界），写入完成标记")
+            kv_put_single(account, ns, INIT_MARKER, "1")
+            kv_delete_single(account, ns, CURSOR_KEY)
+            return
+
+        puts = [(f"tool:{str(t['id'])}", json.dumps(t, ensure_ascii=False)) for t in batch]
+        print(f"📦 本轮写入 {len(puts)} 条 (游标 {cursor} → {cursor + len(batch)})")
+        n_put = kv_put_bulk(account, ns, puts)
+
+        new_cursor = cursor + len(batch)
+        if new_cursor >= len(cur_tools):
+            print("🎉 初始化完成！写入完成标记")
+            kv_put_single(account, ns, INIT_MARKER, "1")
+            kv_delete_single(account, ns, CURSOR_KEY)
+        else:
+            kv_put_single(account, ns, CURSOR_KEY, str(new_cursor))
+            print(f"📌 已保存游标 {new_cursor}，下次继续")
+        print(f"\n✅ 完成: 写入 {n_put}")
+        return
+
+    # ── 增量模式：KV 已初始化，只同步变化 ──
+    if os.path.exists(prev_path):
         prev_tools = load_json(prev_path)
         puts, deletes = diff_prev(cur_tools, prev_tools)
         mode = f"增量 (对比 {prev_path})"
     else:
-        puts = [(f"tool:{str(t['id'])}", json.dumps(t, ensure_ascii=False)) for t in cur_tools]
-        deletes = []
-        mode = "全量 (无上一轮快照)"
+        puts, deletes = [], []
+        mode = "增量 (无 prev 快照，跳过)"
 
     print(f"🔍 模式: {mode}")
     print(f"📦 工具总数: {len(cur_tools)}, 待写入: {len(puts)}, 待删除: {len(deletes)}")
@@ -183,20 +288,7 @@ def main():
         print(f"  ⚠️ 待写入 {len(puts)} 超过单次上限 {MAX_WRITES}，截断。剩余变更将随下次运行继续。")
         puts = puts[:MAX_WRITES]
 
-    if dry:
-        print("\n🧪 Dry-run（不实际推送）:")
-        for k, _ in puts[:5]:
-            print(f"  PUT    {k}")
-        for k in deletes[:5]:
-            print(f"  DELETE {k}")
-        if len(puts) > 5: print(f"  ... 共 {len(puts)} 条")
-        print("✅ Dry-run 完成")
-        return
-
-    account = get_account_id()
-    ns = namespace_id()
-
-    print(f"\n🚀 开始同步到 KV (account={account[:8]}..., ns={ns[:8]}...)")
+    print(f"\n🚀 开始同步到 KV")
     n_put = kv_put_bulk(account, ns, puts)
     n_del = kv_delete_bulk(account, ns, deletes)
     print(f"\n✅ 完成: 写入 {n_put}, 删除 {n_del}")
