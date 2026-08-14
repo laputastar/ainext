@@ -1,6 +1,6 @@
 // [slug].js — SSR for tool detail pages
 // Server-renders complete HTML with SEO content (Googlebot-visible)
-import { getTools, render404 } from '../_shared.js';
+import { getTool, getSlim, getTools, render404 } from '../_shared.js';
 
 const CAT_CN = {
   'ai-tool': '', chatbot: '对话', coding: '编程',
@@ -20,13 +20,32 @@ export async function onRequest(context) {
 
   const toolId = idMatch[1];
 
-  // Load tools.json
-  const tools = await getTools(env, url.origin);
-  const tool = tools.find(t => String(t.id) === toolId);
-  if (!tool) return render404(env, url.origin);
+  // 主路径：KV 单条读取（快、省内存）
+  let tool = await getTool(env, toolId);
+
+  // 兜底路径：KV miss（未初始化/写入延迟）→ 全量 gz 解压查询
+  let tools = null;
+  if (!tool) {
+    tools = await getTools(env, url.origin);
+    tool = tools.find(t => String(t.id) === toolId);
+    if (!tool) return render404(env, url.origin);
+  }
+
+  // related：优先用 slim（轻量），KV 兜底路径时用全量 tools
+  let relatedTools = null;
+  try {
+    const slim = await getSlim(env, url.origin);
+    relatedTools = slim;
+  } catch {
+    relatedTools = tools;
+  }
+  const related = (relatedTools || [])
+    .filter(t => t.category === tool.category && String(t.id) !== toolId)
+    .sort((a, b) => b.votesCount - a.votesCount)
+    .slice(0, 6);
 
   // Build SSR HTML
-  const html = renderToolPage(tool, tools, url.origin);
+  const html = renderToolPage(tool, related, url.origin);
   return new Response(html, {
     status: 200,
     headers: {
@@ -52,7 +71,7 @@ function buildSEOTitle(tool) {
 
 // ─── SSR HTML builder ───────────────────────────────────────────
 
-function renderToolPage(tool, allTools, origin) {
+function renderToolPage(tool, related, origin) {
   const toolUrl = `tools/${tool.slug}-${tool.id}.html`;
   const title = buildSEOTitle(tool);
   const tagline = tool.tagline_zh || tool.tagline || '';
@@ -69,12 +88,6 @@ function renderToolPage(tool, allTools, origin) {
   const topics = tool.topics || [];
   const mediaImages = (tool.media || []).filter(m => m.type === 'image' && m.url);
   const canonicalUrl = `https://www.ainext.com/${toolUrl}`;
-
-  // Related tools (same category, same for everyone viewing this page)
-  const related = allTools
-    .filter(t => t.category === tool.category && t.id !== tool.id)
-    .sort((a, b) => b.votesCount - a.votesCount)
-    .slice(0, 6);
 
   // Escape helper
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -276,9 +289,9 @@ ${mediaImages.length > 1 ? `
 })();
 ` : ''}
 
-// Refresh dynamic stats (votes/comments) from latest tools.json
+// Refresh dynamic stats (votes/comments) from latest tools-slim.json
 (function(){
-  fetch('/tools.json').then(function(r){ return r.json(); }).then(function(all){
+  fetch('/tools-slim.json').then(function(r){ return r.json(); }).then(function(all){
     var t = all.find(function(x){ return String(x.id) === '${tool.id}'; });
     if(!t) return;
     var bar = document.getElementById('metaBar');

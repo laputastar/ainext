@@ -1,15 +1,15 @@
 // [slug].js — SSR for category listing pages
 // Server-renders complete HTML with embedded tool data (Googlebot-visible)
 // ⚠️ cardHTML() logic here must stay in sync with components.js cardHTML()
-import { getTools, getCategories, render404 } from '../_shared.js';
+import { getSlim, getCategories, render404 } from '../_shared.js';
 
 export async function onRequest(context) {
   const { request, env } = context;
   const url = new URL(request.url);
   const slug = context.params.slug.replace(/\.html$/, '');
 
-  // Load tools and categories
-  const tools = await getTools(env, url.origin);
+  // Load tools (slim) and categories
+  const tools = await getSlim(env, url.origin);
   const cats = await getCategories(env, url.origin);
   const cat = cats.find(c => c.id === slug);
   if (!cat) return render404(env, url.origin);

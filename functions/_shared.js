@@ -5,6 +5,34 @@ let cachedTools = null;
 let cacheTime = 0;
 const CACHE_TTL = 5 * 60 * 1000; // 5 min
 
+let cachedSlim = null;
+let slimTime = 0;
+const SLIM_TTL = 5 * 60 * 1000; // 5 min
+
+// 通过 KV 按 ID 读取单个工具（主路径）
+export async function getTool(env, toolId) {
+  if (!env.TOOLS) return null;
+  const raw = await env.TOOLS.get(`tool:${toolId}`, { type: 'text' });
+  if (!raw) return null;
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+// 读取 tools-slim.json（列表/related 用，字段轻量）
+export async function getSlim(env, origin) {
+  const now = Date.now();
+  if (cachedSlim && now - slimTime < SLIM_TTL) return cachedSlim;
+  const res = await env.ASSETS.fetch(new Request(`${origin}/tools-slim.json`));
+  if (!res.ok) throw new Error('Failed to load tools-slim.json');
+  cachedSlim = await res.json();
+  slimTime = now;
+  return cachedSlim;
+}
+
+// 全量读取（兜底路径：KV 不可用或迁移期）
 export async function getTools(env, origin) {
   const now = Date.now();
   if (cachedTools && now - cacheTime < CACHE_TTL) return cachedTools;
