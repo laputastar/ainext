@@ -117,8 +117,8 @@ def kv_get_single(account, ns, key):
 
 
 def kv_put_single(account, ns, key, value):
-    """写入单个 key"""
-    body = json.dumps(value).encode()
+    """写入单个 key（value 为原始字符串，不做 JSON 编码）"""
+    body = str(value).encode()
     r = urllib.request.Request(
         f"{BASE}/accounts/{account}/storage/kv/namespaces/{ns}/values/{key}",
         method="PUT", data=body)
@@ -226,7 +226,8 @@ def main():
             cursor = 0
             if not full:
                 try:
-                    cursor = int(kv_get_single(account, ns, CURSOR_KEY) or 0)
+                    raw = kv_get_single(account, ns, CURSOR_KEY) or "0"
+                    cursor = int(raw.strip('"').strip())
                 except Exception:
                     cursor = 0
             batch = cur_tools[cursor:cursor + MAX_WRITES]
@@ -247,7 +248,8 @@ def main():
             cursor = 0
             print("🚀 强制全量模式")
         else:
-            cursor = int(kv_get_single(account, ns, CURSOR_KEY) or 0)
+            raw = kv_get_single(account, ns, CURSOR_KEY) or "0"
+            cursor = int(raw.strip('"').strip())  # 兼容旧版 json.dumps 残留的引号
             print(f"🔍 初始化模式，游标: {cursor}/{len(cur_tools)}")
 
         batch = cur_tools[cursor:cursor + MAX_WRITES]
