@@ -195,7 +195,7 @@ function renderToolPage(tool, related, origin) {
 </head>
 <body>
 
-<script>document.write(headerHTML('Back to list','index.html','Search AI tools...'))</script>
+<script>document.write(headerHTML('Back to list','index.html'))</script>
 
 <main>
   <div class="container" style="max-width:960px">
