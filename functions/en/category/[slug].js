@@ -44,7 +44,14 @@ export async function onRequest(context) {
 
 function renderCategoryPage(cat, tools, origin) {
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-  const name = cat.name.replace(/ AI$/, '');
+  // Map Chinese category names to English
+  const CAT_EN = {
+    writing: 'Writing', coding: 'Coding', image: 'Image',
+    video: 'Video', productivity: 'Productivity', marketing: 'Marketing',
+    education: 'Education', finance: 'Finance', health: 'Health',
+    chatbot: 'Chatbot', 'ai-tool': 'AI',
+  };
+  const name = CAT_EN[cat.id] || cat.name.replace(/ AI$/, '');
   const title = `${name} AI Tools — AINext`;
   const desc = cat.description;
   const canonical = `https://www.ainext.com/en/category/${cat.id}.html`;
