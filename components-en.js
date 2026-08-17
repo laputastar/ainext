@@ -14,10 +14,10 @@ var headerHTML = function(backText, backHref, searchPlaceholder) {
     '  <div class="header-inner">\n' +
     '    <div class="header-left">\n' +
     '      <a href="index.html" class="logo"><svg width="115" height="36" viewBox="0 0 220 68"><circle cx="32" cy="34" r="30" fill="#D45D4C"/><text x="32" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="40" fill="#fff">AI</text><text x="68" y="48" font-family="system-ui,sans-serif" font-weight="600" font-size="40" fill="#3B2E2A">Next</text></svg></a>\n' +
-    '      <a href="/" class="lang-switch">中文</a>\n' +
     '    </div>\n' +
     link +
     search +
+    '    <a href="/" class="lang-switch">中文</a>\n' +
     '  </div>\n' +
     '</header>';
 };
