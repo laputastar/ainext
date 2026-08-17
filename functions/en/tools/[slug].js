@@ -1,12 +1,13 @@
-// [slug].js — SSR for tool detail pages
-// Server-renders complete HTML with SEO content (Googlebot-visible)
-import { getTool, getSlim, getTools, render404 } from '../_shared.js';
+// en/tools/[slug].js — SSR for English tool detail pages
+// Server-renders complete English HTML with SEO content (Googlebot-visible)
+// Uses English original fields (tagline/description), NOT _zh translations
+import { getTool, getSlim, getTools, render404 } from '../../_shared.js';
 
-const CAT_CN = {
-  'ai-tool': '', chatbot: '对话', coding: '编程',
-  education: '教育', finance: '金融', health: '健康',
-  image: '图像', marketing: '营销', productivity: '效率',
-  video: '视频', writing: '写作',
+const CAT_EN = {
+  'ai-tool': 'AI', chatbot: 'Chatbot', coding: 'Coding',
+  education: 'Education', finance: 'Finance', health: 'Health',
+  image: 'Image', marketing: 'Marketing', productivity: 'Productivity',
+  video: 'Video', writing: 'Writing',
 };
 
 export async function onRequest(context) {
@@ -20,10 +21,10 @@ export async function onRequest(context) {
 
   const toolId = idMatch[1];
 
-  // 主路径：KV 单条读取（快、省内存）
+  // Primary path: KV single read
   let tool = await getTool(env, toolId);
 
-  // 兜底路径：KV miss（未初始化/写入延迟）→ 全量 gz 解压查询
+  // Fallback: KV miss → full gz decompress
   let tools = null;
   if (!tool) {
     tools = await getTools(env, url.origin);
@@ -31,7 +32,7 @@ export async function onRequest(context) {
     if (!tool) return render404(env, url.origin);
   }
 
-  // related：优先用 slim（轻量），KV 兜底路径时用全量 tools
+  // Related tools from slim (English fields)
   let relatedTools = null;
   try {
     const slim = await getSlim(env, url.origin);
@@ -44,7 +45,6 @@ export async function onRequest(context) {
     .sort((a, b) => b.votesCount - a.votesCount)
     .slice(0, 6);
 
-  // Build SSR HTML
   const html = renderToolPage(tool, related, url.origin);
   return new Response(html, {
     status: 200,
@@ -58,7 +58,7 @@ export async function onRequest(context) {
 }
 
 function buildSEOTitle(tool) {
-  const taglineFull = tool.tagline_zh || tool.tagline || '';
+  const taglineFull = tool.tagline || '';
   const suffix = ' | AINext';
   if (!taglineFull) return `${tool.name} | AINext`;
   const sep = ' - ';
@@ -73,43 +73,44 @@ function buildSEOTitle(tool) {
 
 function renderToolPage(tool, related, origin) {
   const toolUrl = `tools/${tool.slug}-${tool.id}.html`;
+  const zhUrl = `tools/${tool.slug}-${tool.id}.html`;
   const title = buildSEOTitle(tool);
-  const tagline = tool.tagline_zh || tool.tagline || '';
-  const desc = (tool.description_zh || tool.description || '').replace(/\n/g, '<br>');
-  const catCN = CAT_CN[tool.category] || '';
-  const catLabel = catCN ? `AI${catCN}工具` : 'AI工具';
-  const rawDesc = (tool.description_zh || tool.description || tagline || '').replace(/\n/g, ' ');
+  const tagline = tool.tagline || '';
+  const desc = (tool.description || '').replace(/\n/g, '<br>');
+  const catEN = CAT_EN[tool.category] || '';
+  const catLabel = catEN ? `${catEN} AI Tools` : 'AI Tools';
+  const rawDesc = (tool.description || tagline || '').replace(/\n/g, ' ');
   let shortDesc = rawDesc.slice(0, 120);
-  const lastEnd = Math.max(shortDesc.lastIndexOf('。'), shortDesc.lastIndexOf('！'), shortDesc.lastIndexOf('？'));
+  const lastEnd = Math.max(shortDesc.lastIndexOf('.'), shortDesc.lastIndexOf('!'), shortDesc.lastIndexOf('?'));
   if (lastEnd > 60) shortDesc = shortDesc.slice(0, lastEnd + 1);
-  const metaDesc = `${tool.name} 是一款 ${catLabel}。${shortDesc} | AINext 精选`;
+  const metaDesc = `${tool.name} is a ${catLabel}. ${shortDesc} | AINext`;
   const thumb = tool.thumbnail || '';
-  const dateStr = new Date(tool.createdAt).toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' });
+  const dateStr = new Date(tool.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   const topics = tool.topics || [];
   const mediaImages = (tool.media || []).filter(m => m.type === 'image' && m.url);
-  const canonicalUrl = `https://www.ainext.com/${toolUrl}`;
+  const canonicalUrl = `https://www.ainext.com/en/${toolUrl}`;
 
   // Escape helper
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
   return `<!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<base href="/">
+<base href="/en/">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(metaDesc)}">
 <meta name="robots" content="index,follow">
-<link rel="alternate" hreflang="zh-CN" href="${esc(canonicalUrl)}">
-<link rel="alternate" hreflang="en" href="https://www.ainext.com/en/${esc(toolUrl)}">
-<link rel="alternate" hreflang="x-default" href="https://www.ainext.com/en/${esc(toolUrl)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="ainext-icon.svg">
-<link rel="apple-touch-icon" href="ainext-icon.svg">
+<link rel="icon" type="image/svg+xml" href="../ainext-icon.svg">
+<link rel="apple-touch-icon" href="../ainext-icon.svg">
 <link rel="canonical" href="${esc(canonicalUrl)}">
+<link rel="alternate" hreflang="zh-CN" href="https://www.ainext.com/${esc(zhUrl)}">
+<link rel="alternate" hreflang="en" href="${esc(canonicalUrl)}">
+<link rel="alternate" hreflang="x-default" href="${esc(canonicalUrl)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(metaDesc)}">
 <meta property="og:image" content="${mediaImages.length ? esc(mediaImages[0].url) : 'https://www.ainext.com/og-image.png'}">
@@ -121,10 +122,10 @@ function renderToolPage(tool, related, origin) {
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(metaDesc)}">
 <meta name="twitter:image" content="${mediaImages.length ? esc(mediaImages[0].url) : 'https://www.ainext.com/og-image.png'}">
-<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":tool.name,"url":canonicalUrl})}</script>
-<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AINext","item":"https://www.ainext.com/"},{"@type":"ListItem","position":2,"name":tool.name,"item":canonicalUrl}]})}</script>
+<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"WebPage","name":tool.name,"url":canonicalUrl,"inLanguage":"en"})}</script>
+<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AINext","item":"https://www.ainext.com/en/"},{"@type":"ListItem","position":2,"name":tool.name,"item":canonicalUrl}]})}</script>
 <script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"SoftwareApplication","name":tool.name,"description":metaDesc,"operatingSystem":"Web","applicationCategory":tool.category||"AI"})}</script>
-<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="../common.css">
 <style>
 .container{max-width:960px}
 .detail-hero{background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-card);overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.03);margin-top:20px}
@@ -172,11 +173,6 @@ function renderToolPage(tool, related, origin) {
 .related-name{font-size:14px;font-weight:600;color:var(--gray-900);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .related-tagline{font-size:12px;color:var(--gray-500);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .related-stats{display:flex;gap:10px;font-size:12px;color:var(--gray-400);margin-top:6px}
-.state-box{text-align:center;padding:80px 20px}
-.state-box h2{font-size:18px;font-weight:600;color:var(--gray-900);margin-bottom:8px}
-.state-box p{font-size:14px;color:var(--gray-500)}
-.spinner{width:28px;height:28px;border:3px solid var(--gray-200);border-top-color:var(--color-primary);border-radius:50%;animation:spin .8s linear infinite;margin:0 auto 10px}
-@keyframes spin{to{transform:rotate(360deg)}}
 .footer p{font-size:12px;color:var(--gray-400)}
 @media(max-width:768px){
   .detail-hero-name{font-size:22px}.detail-hero-thumb{width:48px;height:48px;border-radius:10px}
@@ -194,13 +190,12 @@ function renderToolPage(tool, related, origin) {
   .gallery-thumb{width:56px;height:34px}
 }
 </style>
-<script src="ga.js"></script>
-<script src="components.js"></script>
+<script src="../ga.js"></script>
+<script src="../components-en.js"></script>
 </head>
 <body>
 
-<script>document.write(headerHTML('返回列表','index.html'))</script>
-<div style="max-width:960px;margin:0 auto;padding:8px 24px 0;text-align:right;font-size:13px"><a href="/en/${esc(toolUrl)}" class="lang-switch" style="color:var(--color-primary);font-weight:600;text-decoration:none">🌐 English</a></div>
+<script>document.write(headerHTML('Back to list','index.html','Search AI tools...'))</script>
 
 <main>
   <div class="container" style="max-width:960px">
@@ -212,12 +207,12 @@ function renderToolPage(tool, related, origin) {
           <div class="detail-hero-tagline">${esc(tagline)}</div>
         </div>
         <div class="detail-hero-actions">
-          <a href="${esc(tool.website || '#')}" target="_blank" rel="noopener" class="btn-primary">🌐 访问官网</a>
-          ${tool.ph_url ? `<a href="${esc(tool.ph_url)}" target="_blank" rel="noopener" class="btn-outline">🚀 PH</a>` : ''}
+          <a href="${esc(tool.website || '#')}" target="_blank" rel="noopener" class="btn-primary">🌐 Visit Website</a>
+          ${tool.ph_url ? `<a href="${esc(tool.ph_url)}" target="_blank" rel="noopener" class="btn-outline">🚀 Product Hunt</a>` : ''}
         </div>
       </div>
       <div class="detail-hero-desc">
-        ${desc ? `<p style="font-size:15px;font-weight:500;color:var(--gray-900);margin-bottom:8px">${desc}</p>` : '<p>暂无更多描述</p>'}
+        ${desc ? `<p style="font-size:15px;font-weight:500;color:var(--gray-900);margin-bottom:8px">${desc}</p>` : '<p>No description available</p>'}
       </div>
       ${topics.length ? `
         <div class="detail-hero-topics">
@@ -226,49 +221,49 @@ function renderToolPage(tool, related, origin) {
       ` : ''}
       ${mediaImages.length ? `
         <div class="detail-hero-gallery" id="galleryMain">
-          <img src="${esc(mediaImages[0].url)}" alt="${esc(tool.name)} 截图" id="galleryMainImg" onerror="this.style.display='none';document.getElementById('galleryFallback').style.display='flex'">
+          <img src="${esc(mediaImages[0].url)}" alt="${esc(tool.name)} screenshot" id="galleryMainImg" onerror="this.style.display='none';document.getElementById('galleryFallback').style.display='flex'">
           <div class="gallery-placeholder" id="galleryFallback" style="display:none">📸 ${esc(tool.name)}</div>
           ${mediaImages.length > 1 ? `
-            <button class="gallery-nav prev" onclick="navigateGallery(-1)" aria-label="上一张截图"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg></button>
-            <button class="gallery-nav next" onclick="navigateGallery(1)" aria-label="下一张截图"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg></button>
+            <button class="gallery-nav prev" onclick="navigateGallery(-1)" aria-label="Previous screenshot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg></button>
+            <button class="gallery-nav next" onclick="navigateGallery(1)" aria-label="Next screenshot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg></button>
           ` : ''}
         </div>
         ${mediaImages.length > 1 ? `
           <div class="gallery-thumbs" id="galleryThumbs">
-            ${mediaImages.map((m, i) => `<div class="gallery-thumb${i === 0 ? ' active' : ''}" onclick="setGalleryImage(${i})"><img src="${esc(m.url)}" alt="${esc(tool.name)} 截图 ${i + 1}" loading="lazy" onerror="this.style.display='none'"></div>`).join('')}
+            ${mediaImages.map((m, i) => `<div class="gallery-thumb${i === 0 ? ' active' : ''}" onclick="setGalleryImage(${i})"><img src="${esc(m.url)}" alt="${esc(tool.name)} screenshot ${i + 1}" loading="lazy" onerror="this.style.display='none'"></div>`).join('')}
           </div>
         ` : ''}
       ` : ''}
     </div>
     <div class="detail-meta-bar" id="metaBar">
       <span>👍 ${tool.votesCount.toLocaleString()}</span>
-      <span>💬 ${tool.commentsCount} 评论</span>
+      <span>💬 ${tool.commentsCount} comments</span>
       <span>🕐 ${dateStr}</span>
     </div>
 
-    <div class="ad-slot ad-slot-detail-top"><div class="ad-placeholder">广告位 (响应式横幅)</div></div>
+    <div class="ad-slot ad-slot-detail-top"><div class="ad-placeholder">Advertisement (Responsive)</div></div>
 
     <section class="section">
-      <h2 class="section-title">💬 用户评论</h2>
+      <h2 class="section-title">💬 Comments</h2>
       <div class="comments-box">
-        <p>该工具在 Product Hunt 上有 <strong>${tool.commentsCount}</strong> 条评论。</p>
-        ${tool.ph_url ? `<a href="${esc(tool.ph_url)}" target="_blank" rel="noopener" class="comments-link">在 Product Hunt 上查看评论 →</a>` : ''}
+        <p>This tool has <strong>${tool.commentsCount}</strong> comments on Product Hunt.</p>
+        ${tool.ph_url ? `<a href="${esc(tool.ph_url)}" target="_blank" rel="noopener" class="comments-link">View comments on Product Hunt →</a>` : ''}
       </div>
     </section>
 
     <section class="section">
-      <h2 class="section-title">📋 基本信息</h2>
+      <h2 class="section-title">📋 Details</h2>
       <div class="info-grid">
-        <div class="info-item"><div class="info-label">上线日期</div><div class="info-value">${dateStr}</div></div>
-        <div class="info-item"><div class="info-label">点赞数</div><div class="info-value">${tool.votesCount.toLocaleString()}</div></div>
-        <div class="info-item"><div class="info-label">评论数</div><div class="info-value">${tool.commentsCount}</div></div>
-        <div class="info-item"><div class="info-label">数据来源</div><div class="info-value">网络公开数据</div></div>
+        <div class="info-item"><div class="info-label">Launched</div><div class="info-value">${dateStr}</div></div>
+        <div class="info-item"><div class="info-label">Upvotes</div><div class="info-value">${tool.votesCount.toLocaleString()}</div></div>
+        <div class="info-item"><div class="info-label">Comments</div><div class="info-value">${tool.commentsCount}</div></div>
+        <div class="info-item"><div class="info-label">Source</div><div class="info-value">Public data</div></div>
       </div>
     </section>
 
-    <div class="ad-slot ad-slot-detail-bottom"><div class="ad-placeholder">广告位 (响应式横幅)</div></div>
+    <div class="ad-slot ad-slot-detail-bottom"><div class="ad-placeholder">Advertisement (Responsive)</div></div>
 
-    ${related.length ? `<section class="section"><h2 class="section-title">🔗 相关推荐</h2><div class="related-grid">${related.map(r => `<a href="tools/${esc(r.slug)}-${esc(r.id)}.html" class="related-card"><div class="related-top"><img src="${esc(r.thumbnail || '')}" alt="${esc(r.name)}" class="related-img" loading="lazy" onerror="this.style.display='none'"><div class="related-name">${esc(r.name)}</div></div><div class="related-tagline">${esc(r.tagline_zh || r.tagline)}</div><div class="related-stats"><span>👍 ${r.votesCount.toLocaleString()}</span><span>💬 ${r.commentsCount}</span></div></a>`).join('')}</div></section>` : ''}
+    ${related.length ? `<section class="section"><h2 class="section-title">🔗 Related Tools</h2><div class="related-grid">${related.map(r => `<a href="tools/${esc(r.slug)}-${esc(r.id)}.html" class="related-card"><div class="related-top"><img src="${esc(r.thumbnail || '')}" alt="${esc(r.name)}" class="related-img" loading="lazy" onerror="this.style.display='none'"><div class="related-name">${esc(r.name)}</div></div><div class="related-tagline">${esc(r.tagline || '')}</div><div class="related-stats"><span>👍 ${r.votesCount.toLocaleString()}</span><span>💬 ${r.commentsCount}</span></div></a>`).join('')}</div></section>` : ''}
   </div>
 </main>
 
@@ -293,17 +288,17 @@ ${mediaImages.length > 1 ? `
 })();
 ` : ''}
 
-// Refresh dynamic stats (votes/comments) from latest tools-slim.json
+// Refresh dynamic stats from latest tools-slim.json
 (function(){
-  fetch('/tools-slim.json').then(function(r){ return r.json(); }).then(function(all){
+  fetch('../tools-slim.json').then(function(r){ return r.json(); }).then(function(all){
     var t = all.find(function(x){ return String(x.id) === '${tool.id}'; });
     if(!t) return;
     var bar = document.getElementById('metaBar');
-    if(bar) bar.innerHTML = '<span>👍 ' + t.votesCount.toLocaleString() + '</span><span>💬 ' + t.commentsCount + ' 评论</span><span>🕐 ${dateStr}</span>';
+    if(bar) bar.innerHTML = '<span>👍 ' + t.votesCount.toLocaleString() + '</span><span>💬 ' + t.commentsCount + ' comments</span><span>🕐 ${dateStr}</span>';
   }).catch(function(){});
 })();
 </script>
-<script src="ad.js"></script>
+<script src="../ad.js"></script>
 </body>
 </html>`;
 }
