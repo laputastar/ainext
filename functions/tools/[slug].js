@@ -200,7 +200,6 @@ function renderToolPage(tool, related, origin) {
 <body>
 
 <script>document.write(headerHTML('返回列表','index.html'))</script>
-<div style="max-width:960px;margin:0 auto;padding:8px 24px 0;text-align:right;font-size:13px"><a href="/en/${esc(toolUrl)}" class="lang-switch" style="color:var(--color-primary);font-weight:600;text-decoration:none">🌐 English</a></div>
 
 <main>
   <div class="container" style="max-width:960px">
