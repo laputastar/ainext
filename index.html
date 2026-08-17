@@ -108,6 +108,21 @@
 </head>
 <body>
 
+<script>
+// Auto-redirect English users to /en/ (client-side only, doesn't affect crawlers)
+(function(){
+  try {
+    var done = localStorage.getItem('ainext_lang');
+    if (done === 'en') return;
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (lang && lang.indexOf('zh') !== 0 && localStorage.getItem('ainext_lang_choice') !== 'zh') {
+      localStorage.setItem('ainext_lang', 'en');
+      window.location.replace('/en/');
+    }
+  } catch(e) {}
+})();
+</script>
+
 <script>document.write(headerHTML('','','搜索 AI 工具...'))</script>
 
 <section class="hero">

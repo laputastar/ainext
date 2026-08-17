@@ -102,6 +102,21 @@
 </head>
 <body>
 
+<script>
+// Auto-redirect Chinese users to / (client-side only, doesn't affect crawlers)
+(function(){
+  try {
+    var done = localStorage.getItem('ainext_lang');
+    if (done === 'zh') return;
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    if (lang && lang.indexOf('zh') === 0 && localStorage.getItem('ainext_lang_choice') !== 'en') {
+      localStorage.setItem('ainext_lang', 'zh');
+      window.location.replace('/');
+    }
+  } catch(e) {}
+})();
+</script>
+
 <script>document.write(headerHTML('','','Search AI tools...'))</script>
 
 <section class="hero">

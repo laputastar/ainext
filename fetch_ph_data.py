@@ -593,21 +593,62 @@ def post_process():
     
     save_to_json(tools, "tools.json")
     
-    print("🗺️ 生成 sitemap...")
-    urls = ['https://www.ainext.com/index.html', 'https://www.ainext.com/about.html', 'https://www.ainext.com/privacy.html', 'https://www.ainext.com/terms.html']
-    for t in tools: urls.append(f"https://www.ainext.com/tools/{t['slug']}-{t['id']}.html")
-    # Category pages
+    print("🗺️ 生成 sitemap（中英双语 + hreflang）...")
+    BASE = "https://www.ainext.com"
+    # 静态页（中/英）
+    static_zh = [
+        (f"{BASE}/", "/"),
+        (f"{BASE}/about.html", "about.html"),
+        (f"{BASE}/privacy.html", "privacy.html"),
+        (f"{BASE}/terms.html", "terms.html"),
+    ]
+    static_en = [
+        (f"{BASE}/en/", "index.html"),
+        (f"{BASE}/en/about.html", "about.html"),
+        (f"{BASE}/en/privacy.html", "privacy.html"),
+        (f"{BASE}/en/terms.html", "terms.html"),
+    ]
+
+    xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
+
+    def hreflang_block(zh_url, en_url):
+        return (f'    <xhtml:link rel="alternate" hreflang="zh-CN" href="{zh_url}"/>\n'
+                f'    <xhtml:link rel="alternate" hreflang="en" href="{en_url}"/>\n'
+                f'    <xhtml:link rel="alternate" hreflang="x-default" href="{en_url}"/>\n')
+
+    # 静态页对
+    for zh_url, _ in static_zh:
+        # 找到对应的英文 URL（index 特殊：/ 对应 /en/）
+        if zh_url.endswith("/"):
+            en_url = f"{BASE}/en/"
+        else:
+            fname = zh_url.rsplit("/", 1)[-1]
+            en_url = f"{BASE}/en/{fname}"
+        xml += f'  <url><loc>{zh_url}</loc>\n{hreflang_block(zh_url, en_url)}  </url>\n'
+        xml += f'  <url><loc>{en_url}</loc>\n{hreflang_block(zh_url, en_url)}  </url>\n'
+
+    # 工具详情页（中/英）
+    for t in tools:
+        zh_url = f"{BASE}/tools/{t['slug']}-{t['id']}.html"
+        en_url = f"{BASE}/en/tools/{t['slug']}-{t['id']}.html"
+        xml += f'  <url><loc>{zh_url}</loc>\n{hreflang_block(zh_url, en_url)}  </url>\n'
+        xml += f'  <url><loc>{en_url}</loc>\n{hreflang_block(zh_url, en_url)}  </url>\n'
+
+    # 分类页（中/英）
     try:
         cat_data = json.load(open("categories.json"))
         categories = cat_data.get("categories", [])
     except:
         categories = []
-    for c in categories: urls.append(f"https://www.ainext.com/category/{c['id']}.html")
-    xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-    for u in urls: xml += f'  <url><loc>{u}</loc></url>\n'
+    for c in categories:
+        zh_url = f"{BASE}/category/{c['id']}.html"
+        en_url = f"{BASE}/en/category/{c['id']}.html"
+        xml += f'  <url><loc>{zh_url}</loc>\n{hreflang_block(zh_url, en_url)}  </url>\n'
+        xml += f'  <url><loc>{en_url}</loc>\n{hreflang_block(zh_url, en_url)}  </url>\n'
+
     xml += '</urlset>'
     with open("sitemap.xml", "w", encoding="utf-8") as f: f.write(xml)
-    print(f"✅ Sitemap: {len(urls)} URLs")
+    print(f"✅ Sitemap: {len(tools) * 2 + len(categories) * 2 + len(static_zh) * 2} URLs（中英双语）")
 
 
 if __name__ == "__main__":

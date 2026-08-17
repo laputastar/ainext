@@ -17,7 +17,7 @@ var headerHTML = function(backText, backHref, searchPlaceholder) {
     '    </div>\n' +
     link +
     search +
-    '    <a href="/en/" class="lang-switch">English</a>\n' +
+    '    <a href="/en/" class="lang-switch" onclick="try{localStorage.setItem(\'ainext_lang_choice\',\'en\')}catch(e){}">English</a>\n' +
     '  </div>\n' +
     '</header>';
 };
