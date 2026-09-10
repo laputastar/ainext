@@ -168,27 +168,42 @@ def tool_hash(tool):
 
 
 def diff_prev(cur_tools, prev_tools):
-    """对比得出 新增/修改/删除 列表"""
+    """
+    对比得出 新增/修改/删除 列表。
+    返回时按优先级排序，保证写入额度被截断时优先保留最重要变更：
+      P0 = website 从 PH /r/ 中转修复为真实官网（影响用户点击体验，最紧急）
+      P1 = 新增工具
+      P2 = 其他字段变化（票数/翻译等）
+    """
     cur_map = {str(t["id"]): t for t in cur_tools}
     prev_map = {str(t["id"]): t for t in prev_tools}
 
-    puts = []       # (key, value)
-    deletes = []    # keys
+    p0 = []       # PH 中转 -> 真实官网
+    p1 = []       # 新增
+    p2 = []       # 其他变化
+    deletes = []  # keys
 
     for tid, t in cur_map.items():
         key = f"tool:{tid}"
-        h = tool_hash(t)
+        payload = json.dumps(t, ensure_ascii=False)
         if tid not in prev_map:
-            puts.append((key, json.dumps(t, ensure_ascii=False)))
+            p1.append((key, payload))
+            continue
+        if tool_hash(t) == tool_hash(prev_map[tid]):
+            continue
+        prev_w = prev_map[tid].get("website") or ""
+        cur_w = t.get("website") or ""
+        if "producthunt.com" in prev_w and "producthunt.com" not in cur_w:
+            p0.append((key, payload))     # 官网修复，优先
         else:
-            ph = tool_hash(prev_map[tid])
-            if h != ph:
-                puts.append((key, json.dumps(t, ensure_ascii=False)))
+            p2.append((key, payload))
 
     for tid in prev_map:
         if tid not in cur_map:
             deletes.append(f"tool:{tid}")
 
+    puts = p0 + p1 + p2
+    print(f"  📊 变更优先级: P0官网修复={len(p0)}, P1新增={len(p1)}, P2其他={len(p2)}")
     return puts, deletes
 
 
