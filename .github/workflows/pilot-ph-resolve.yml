@@ -36,4 +36,4 @@ jobs:
         run: gunzip -f tools.json.gz || echo "no gz found"
 
       - name: Run multi-strategy probe
-        run: python probe_resolve.py --n ${{ github.event.inputs.sample || '12' }}
+        run: python resolve_search.py --validate ${{ github.event.inputs.sample || '20' }}
