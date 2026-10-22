@@ -436,6 +436,16 @@ async def translate_tools(tools_json_path: str, force: bool = False):
         _write_slim(tools)
         return tools
 
+    # 3.5 排序：新发布的先翻
+    # 产能有限（当前仅一个免费引擎）时，若按数组原序翻，会先啃历史存量、
+    # 而每天新增的工具永远排在后面 —— 缺口只会越拉越大。改为按发布时间倒序，
+    # 保证「今天上新的工具明天就有中文」，历史欠账慢慢补。
+    if os.environ.get("TRANSLATE_NEWEST_FIRST", "1").strip() not in ("0", "false", "False"):
+        to_translate.sort(key=lambda x: (tools[x[0]].get("createdAt") or ""), reverse=True)
+        dates = [(tools[x[0]].get("createdAt") or "")[:10] for x in to_translate]
+        print(f"🆕 已按发布时间倒序：本轮从 {dates[0]} 的新工具开始，"
+              f"末尾是 {dates[-1]} 的历史欠账")
+
     total = len(to_translate)
     print(f"📝 共 {total} 条待翻译文本")
 
