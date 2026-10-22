@@ -1,0 +1,35 @@
+name: Pilot - PH URL Resolve (browser)
+
+# 实验用途：验证「用真实浏览器解析 PH /r/ 跟踪链」在 GitHub Actions 环境下能否通过 Cloudflare
+# 结论产出：日志里打印的成功率。跑通后可转正成正式批量任务
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pilot:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install playwright + chromium
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Decompress tools.json
+        run: |
+          gunzip -f tools.json.gz || echo "no gz found"
+
+      - name: Run browser resolver pilot
+        run: python resolve_browser.py --limit 20 --tools tools.json
