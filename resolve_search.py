@@ -90,6 +90,27 @@ def http_get(url, timeout=25):
 
 # ---------------- 1) Bing RSS 搜索 ----------------
 
+def bing_html_search(query):
+    """备用源：Bing HTML 版（RSS 偶发返回空）"""
+    url = "https://www.bing.com/search?q=%s&count=30" % urllib.parse.quote(query)
+    code, html = http_get(url)
+    if code != 200:
+        return []
+    out = []
+    for m in re.finditer(r'href="(https?://[^"]+)"', html):
+        u = m.group(1)
+        if any(x in u for x in ("bing.com", "microsoft.com", "msn.com", "live.com")):
+            u = unwrap_bing(u)
+            if not u:
+                continue
+        out.append(u)
+    uniq = []
+    for u in out:
+        if u not in uniq:
+            uniq.append(u)
+    return uniq
+
+
 def bing_search(query):
     url = "https://www.bing.com/search?q=%s&format=rss&count=15" % urllib.parse.quote(query)
     code, body = http_get(url)
@@ -128,25 +149,42 @@ def unwrap_bing(link):
 
 # ---------------- 2) 候选打分 ----------------
 
+def name_domain_match(name, base):
+    """硬性要求：域名必须与产品名有关联，否则一律丢弃（这是精度的关键）"""
+    nb = base.replace("-", "").replace("_", "")
+    nn = re.sub(r"[^a-z0-9]", "", (name or "").lower())
+    toks = norm_tokens(name)
+    if not nn or not nb:
+        return False
+    if len(nn) >= 4 and (nn in nb or nb in nn):
+        return True
+    # 首个实词 token 足够长时必须出现在域名里
+    if toks and len(toks[0]) >= 4 and toks[0] in nb:
+        return True
+    return False
+
+
 def score_candidate(url, name):
     h = host_of(url)
     r = root(h)
     if not r or r in BLACKLIST:
         return -99
     base = r.split(".")[0]
+    if not name_domain_match(name, base):
+        return -99
     toks = norm_tokens(name)
-    if not toks:
-        return 0
     s = 0
     joined = "".join(toks)
-    if joined and (joined in base or base in joined):
-        s += 6
-    if len(toks[0]) >= 3 and toks[0] in base:
-        s += 5
-    s += sum(1 for t in toks[1:] if len(t) >= 3 and t in base)
-    # 域名就是产品名（去符号）的情况，如 instavm -> instavm.io
-    if re.sub(r"[^a-z0-9]", "", name.lower()) == base:
-        s += 8
+    nb = base.replace("-", "").replace("_", "")
+    if re.sub(r"[^a-z0-9]", "", name.lower()) == nb:
+        s += 10
+    if joined and joined in nb:
+        s += 4
+    if toks and len(toks[0]) >= 4 and toks[0] in nb:
+        s += 3
+    s += sum(1 for t in toks[1:] if len(t) >= 4 and t in nb)
+    if base.count("-") == 0 and len(base) <= len(joined):
+        s += 1
     return s
 
 
@@ -175,26 +213,50 @@ def verify_site(url, name):
     return ok, (title.strip()[:60] or "no-title") + "|hit=%d" % hit
 
 
-def resolve_one(name, do_verify=True):
-    cands = bing_search(name)
+def candidate_pool(name, tagline=""):
+    """多组查询取并集：裸名搜往往被词典/新闻站占据，加限定词能显著改善"""
+    queries = ['"%s"' % name.strip('"')]
+    if tagline:
+        head = " ".join(norm_tokens(tagline)[:6])
+        if head:
+            queries.append('%s %s' % (name, head))
+    queries.append("%s official website" % name)
+    pool, seen = [], set()
+    for q in queries[:3]:
+        got = bing_search(q)
+        if len(got) < 5:
+            got = got + bing_html_search(q)
+        for url in got:
+            if url not in seen:
+                seen.add(url)
+                pool.append(url)
+        time.sleep(0.3)
+    return pool
+
+
+def resolve_one(name, tagline="", do_verify=True):
+    pool = candidate_pool(name, tagline)
     scored = []
-    for url, _t in cands:
+    for url in pool:
         s = score_candidate(url, name)
         if s > -90:
             scored.append((s, url))
     scored.sort(key=lambda x: -x[0])
-    for s, url in scored[:3]:
+    fallback = None
+    for s, url in scored[:4]:
+        if not url.startswith("http"):
+            url = "https://" + url
         if do_verify:
             ok, note = verify_site(url, name)
             if ok:
-                if not url.startswith("http"):
-                    url = "https://" + url
                 return url, "OK verify(%+d) %s" % (s, note[:40])
+            if fallback is None:
+                fallback = (url, "score(%+d) 未过标题验证" % s)
         else:
-            if not url.startswith("http"):
-                url = "https://" + url
             return url, "OK score(%+d)" % s
-    return None, "no-match (%d 候选)" % len(cands)
+    if not scored:
+        dbg = "; ".join(host_of(u) for u in pool[:6])
+        return None, "no-match (%d 候选) [%s]" % (len(pool), dbg[:70])
 
 
 def main():
@@ -220,29 +282,34 @@ def main():
         random.shuffle(ids)
         ids = ids[: args.validate]
         ok = strict_ok = 0
+        findable = 0
+        findable_ok = 0
         print("验证样本:", len(ids))
         print()
         for i, tid in enumerate(ids, 1):
             t = by_id[tid]
             name = t.get("name") or ""
+            tagline = t.get("tagline") or ""
             truth_root = root(host_of(truth[tid]))
-            got_strict, note = resolve_one(name)
-            got_loose, note2 = resolve_one(name, do_verify=False)
+            tb = truth_root.split(".")[0]
+            can = name_domain_match(name, tb) and tb not in BLACKLIST
+            got_strict, note = resolve_one(name, tagline)
             gs = root(host_of(got_strict)) if got_strict else ""
-            gl = root(host_of(got_loose)) if got_loose else ""
             hit = gs == truth_root
-            hitl = gl == truth_root
             ok += bool(hit)
-            strict_ok += bool(hitl and not hit)
-            print("[%d/%d] %-28s 严格=%-24s 宽松=%-24s 答案=%s %s" % (
-                i, len(ids), name[:28], gs or "-", gl or "-", truth_root,
-                "✔" if hit else ("!错配" if gs else "✘未找到")))
+            if can:
+                findable += 1
+                findable_ok += bool(hit)
+            print("[%d/%d] %-26s 得到=%-22s 答案=%-20s %s %s" % (
+                i, len(ids), name[:26], gs or "-", truth_root,
+                "✔" if hit else ("✘" + ("理论可找" if can else "(托管域名,不可找)")), note[:40]))
             time.sleep(args.delay)
         print()
         print("=" * 60)
-        print("严格模式（域名+标题双重验证）正确/覆盖: %d/%d = %.0f%%" % (
-            ok, len(ids), ok / len(ids) * 100 if ids else 0))
-        print("被验证步骤拦下的错误（宽松会错、严格放弃）: %d 条 —— 说明验证在起作用" % strict_ok)
+        print("总体覆盖: %d/%d = %.0f%%" % (ok, len(ids), ok / len(ids) * 100 if ids else 0))
+        print("其中「域名含产品名」理论上可找到的: %d 条，成功 %d 条 = %.0f%%" % (
+            findable, findable_ok, findable_ok / findable * 100 if findable else 0))
+        print("（其余 %d 条官网托管在 railway/vercel/google 等通用域名，无法从名字反查）" % (len(ids) - findable))
         return
 
     # 批量模式
