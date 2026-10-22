@@ -19,6 +19,8 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    # 翻译走 150 分钟预算，整体留足缓冲；真超过 330 分钟说明异常，宁可失败也不要挂死
+    timeout-minutes: 330
     permissions:
       contents: write
     steps:
@@ -59,8 +61,10 @@ jobs:
           RESOLVE_RETRY_HOURS: ${{ github.event.inputs.backfill == 'true' && '0' || '24' }}
 
       - name: Translate new tools (concurrent LLM)
+        # 时间预算：到点收尾并落盘提交，剩余留给下一轮，避免撞 job 硬超时导致全轮作废
         run: python translate_concurrent.py tools.json ${{ github.event.inputs.force_translate == 'true' && '--force' || '' }}
         env:
+          TRANSLATE_BUDGET_MIN: '150'
           GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
           GLM45_API_KEY: ${{ secrets.GLM45_API_KEY }}
           GLM46_API_KEY: ${{ secrets.GLM46_API_KEY }}
