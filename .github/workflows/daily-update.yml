@@ -22,9 +22,12 @@ jobs:
     permissions:
       contents: write
     steps:
+      # 凭证用内置 GITHUB_TOKEN：随 Job 自动签发、永不过期
+      # 不用手工 PAT（secrets.GH_TOKEN），否则 PAT 到期会直接卡死 checkout
       - uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
