@@ -135,8 +135,20 @@ def _write_slim(tools: list):
 
 # ── 翻译核心 ──────────────────────────────────────────
 
+# 这些措辞 = 账户层面没救了（欠费/无资源包），重试多少次都没用
+_FATAL_HINTS = ("余额不足", "无可用资源包", "请充值", "insufficient", "quota", "arrears")
+
+
 async def _probe_engine(session, engine):
-    """健康探测：发 1 条最小请求，返回 (是否可用, 说明)。"""
+    """
+    健康探测：发最小请求判断引擎状态，返回 (状态, 说明)。
+    状态: "ok" 可用 | "busy" 临时限流（保留但降速） | "dead" 永久失效（剔除）
+
+    踩坑：429 有两种截然不同的含义 ——
+      ·「余额不足或无可用资源包，请充值」= 账号没钱，永久失效
+      ·「该模型当前访问量过大，请您稍后再试」= 只是繁忙，稍后即可用
+    早期版本不区分，把唯一活着的引擎也一起剔了，导致整轮翻译 0 产出。
+    """
     url = engine["url"]() if callable(engine["url"]) else engine["url"]
     payload = {
         "model": engine["model"],
@@ -148,17 +160,36 @@ async def _probe_engine(session, engine):
         "Content-Type": "application/json",
         "Authorization": f"Bearer {engine['key']}",
     }
-    try:
-        async with session.post(url, json=payload, headers=headers,
-                                timeout=aiohttp.ClientTimeout(total=45)) as resp:
-            if resp.status == 200:
-                return True, "可用"
-            body = await resp.text()
-            note = _ERR_NOTE.get(resp.status, "未知错误")
-            detail = _extract_detail(body)
-            return False, f"HTTP {resp.status} ({note}) {detail}"
-    except Exception as e:
-        return False, f"{type(e).__name__}: {str(e)[:120]}"
+
+    last_status, last_detail = None, ""
+    for attempt in range(3):                       # 429 值得重试，它经常只是瞬时高峰
+        try:
+            async with session.post(url, json=payload, headers=headers,
+                                    timeout=aiohttp.ClientTimeout(total=45)) as resp:
+                if resp.status == 200:
+                    return "ok", "可用"
+                body = await resp.text()
+                last_status = resp.status
+                last_detail = _extract_detail(body)
+                note = _ERR_NOTE.get(resp.status, "未知错误")
+                low = last_detail.lower()
+                if any(h in low for h in _FATAL_HINTS):
+                    return "dead", f"HTTP {resp.status} ({note}) {last_detail}  ← 账号层面失效，需充值"
+                if resp.status == 429 and attempt < 2:
+                    await asyncio.sleep(15 * (attempt + 1))
+                    continue
+                return "dead", f"HTTP {resp.status} ({note}) {last_detail}"
+        except Exception as e:
+            last_status = "EXC"
+            last_detail = f"{type(e).__name__}: {str(e)[:120]}"
+            if attempt < 2:
+                await asyncio.sleep(10)
+                continue
+
+    # 三次都被 429 挡回，但措辞不是「欠费」→ 判定为繁忙，保留引擎并降速
+    if last_status == 429:
+        return "busy", f"429 繁忙（非欠费，措辞：{last_detail[:60]}）→ 保留但降速"
+    return "dead", f"{last_status} {last_detail}"
 
 
 def _extract_detail(body):
@@ -436,14 +467,21 @@ async def translate_tools(tools_json_path: str, force: bool = False):
     # 5.5 健康探测：逐个发 1 条最小请求，坏引擎直接剔除
     # 曾踩坑：4 引擎全部 429/410 时仍跑满 425 批 × 3 小时，最后只成功 50 条。
     print("🔍 健康探测中...")
-    healthy = []
+    healthy, busy = [], []
     async with aiohttp.ClientSession() as probe_sess:
         for e in active:
-            ok, note = await _probe_engine(probe_sess, e)
-            print(f"    {'✅' if ok else '❌'} {e['name']}: {note}")
-            if ok:
+            state, note = await _probe_engine(probe_sess, e)
+            icon = {"ok": "✅", "busy": "🕐", "dead": "❌"}[state]
+            print(f"    {icon} {e['name']}: {note}")
+            if state == "ok":
                 healthy.append(e)
-    active = healthy
+            elif state == "busy":
+                e = {**e, "rpm": 1}   # 繁忙引擎降速参与，别浪费它的额度
+                busy.append(e)
+    active = healthy + busy
+    if busy and not healthy:
+        print(f"    ⚠️ 无完全可用引擎，仅保留 {len(busy)} 个繁忙引擎降速运行 "
+              f"—— 若持续 429，本轮产出会很低")
 
     if not active:
         print("❌ 全部引擎不可用，跳过本轮翻译（保留已有中文，不阻塞后续步骤）")
