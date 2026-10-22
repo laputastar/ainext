@@ -1,0 +1,25 @@
+name: Pilot - Search endpoint probe
+
+# 实验用途：检测 GitHub Actions 出口 IP 上哪些搜索引擎端点可用（用于 name→官网 反查）
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run search endpoint probe
+        run: python probe_search.py --show 3
