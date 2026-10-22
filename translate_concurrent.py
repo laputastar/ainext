@@ -22,6 +22,22 @@ BATCH_SIZE = 10
 MAX_RETRIES = 2             # 单批最大重试（并发模式下不宜过高）
 CHECKPOINT_FILE = ".translate_checkpoint.json"
 
+# ── 错误可见化 ────────────────────────────────────────
+# 曾踩坑：429 分支直接 return None 且不打印，导致 4 个引擎全部失效时
+# 日志一片"重试 x/2"，跑满 3 小时后只报"翻译完成 50/4248"，真实原因被吞掉。
+_WARNED = set()
+_ERR_NOTE = {
+    400: "请求非法/模型名不存在",
+    401: "API Key 无效或已失效",
+    402: "账户余额不足/免费额度耗尽",
+    403: "无权限访问该模型",
+    404: "接口或模型不存在",
+    410: "模型已下线，需更换 model 名",
+    429: "限流：RPM 超限 或 配额已用尽",
+    500: "服务端错误",
+    503: "服务不可用",
+}
+
 # ── 引擎配置 ──────────────────────────────────────────
 # 每个引擎独立 RPM 限速，并发运行互不干扰
 # rpm: 每分钟最多请求数（免费模型建议 1-2）
@@ -110,6 +126,47 @@ def _write_slim(tools: list):
 
 # ── 翻译核心 ──────────────────────────────────────────
 
+async def _probe_engine(session, engine):
+    """健康探测：发 1 条最小请求，返回 (是否可用, 说明)。"""
+    url = engine["url"]() if callable(engine["url"]) else engine["url"]
+    payload = {
+        "model": engine["model"],
+        "messages": [{"role": "user", "content": "Reply with: OK"}],
+        "temperature": 0,
+        "max_tokens": 8,
+    }
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {engine['key']}",
+    }
+    try:
+        async with session.post(url, json=payload, headers=headers,
+                                timeout=aiohttp.ClientTimeout(total=45)) as resp:
+            if resp.status == 200:
+                return True, "可用"
+            body = await resp.text()
+            note = _ERR_NOTE.get(resp.status, "未知错误")
+            detail = _extract_detail(body)
+            return False, f"HTTP {resp.status} ({note}) {detail}"
+    except Exception as e:
+        return False, f"{type(e).__name__}: {str(e)[:120]}"
+
+
+def _extract_detail(body):
+    """从各家 API 的错误响应里抽出人话。"""
+    import json as _json
+    try:
+        d = _json.loads(body)
+    except Exception:
+        return body[:120].replace("\n", " ")
+    for k in ("message", "detail", "msg", "error_description"):
+        if isinstance(d, dict) and d.get(k):
+            return str(d[k])[:160]
+    if isinstance(d, dict) and isinstance(d.get("error"), dict):
+        return str(d["error"].get("message", ""))[:160]
+    return str(d)[:160]
+
+
 async def translate_batch(session, texts, engine):
     """用指定引擎翻译一批文本，返回结果列表或 None"""
     items = "\n".join(f"{i+1}. {t}" for i, t in enumerate(texts))
@@ -140,16 +197,22 @@ Output (JSON array only):"""
 
     try:
         async with session.post(url, json=payload, headers=headers, timeout=aiohttp.ClientTimeout(total=60)) as resp:
-            if resp.status == 429:
-                return None  # 限流，跳过本次
             if resp.status != 200:
                 body = await resp.text()
-                print(f"  [{engine['name']}] HTTP {resp.status}: {body[:100]}")
+                note = _ERR_NOTE.get(resp.status, "未知错误")
+                # 同一引擎的同类错误只报一次详情，避免刷屏，但必须可见
+                key = (engine["name"], resp.status)
+                if key not in _WARNED:
+                    _WARNED.add(key)
+                    print(f"  🚨 [{engine['name']}] HTTP {resp.status} ({note}): {body[:220]}")
                 return None
             data = await resp.json()
             content = data["choices"][0]["message"]["content"].strip()
     except Exception as e:
-        print(f"  [{engine['name']}] 请求异常: {str(e)[:80]}")
+        key = (engine["name"], "EXC")
+        if key not in _WARNED:
+            _WARNED.add(key)
+            print(f"  🚨 [{engine['name']}] 请求异常 {type(e).__name__}: {str(e)[:200]}")
         return None
 
     # 解析 JSON
@@ -331,6 +394,23 @@ async def translate_tools(tools_json_path: str, force: bool = False):
 
     if not active:
         print("❌ 所有引擎均未配置 API Key")
+        _write_slim(tools)
+        return tools
+
+    # 5.5 健康探测：逐个发 1 条最小请求，坏引擎直接剔除
+    # 曾踩坑：4 引擎全部 429/410 时仍跑满 425 批 × 3 小时，最后只成功 50 条。
+    print("🔍 健康探测中...")
+    healthy = []
+    async with aiohttp.ClientSession() as probe_sess:
+        for e in active:
+            ok, note = await _probe_engine(probe_sess, e)
+            print(f"    {'✅' if ok else '❌'} {e['name']}: {note}")
+            if ok:
+                healthy.append(e)
+    active = healthy
+
+    if not active:
+        print("❌ 全部引擎不可用，跳过本轮翻译（保留已有中文，不阻塞后续步骤）")
         _write_slim(tools)
         return tools
 
