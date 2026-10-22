@@ -18,7 +18,8 @@ import aiohttp
 import ssl as _ssl
 
 # ── 配置 ──────────────────────────────────────────────
-BATCH_SIZE = 10
+# 单批条数：可用引擎越少，越要靠加大单批来提吞吐（一次请求翻 20 条 = RPM1 也有 20 条/分钟）
+BATCH_SIZE = int(os.environ.get("TRANSLATE_BATCH", "20"))
 MAX_RETRIES = 2             # 单批最大重试（并发模式下不宜过高）
 CHECKPOINT_FILE = ".translate_checkpoint.json"
 
@@ -59,16 +60,24 @@ ENGINES = [
     {
         "name": "GLM-4.7-Flash",
         "url": "https://open.bigmodel.cn/api/paas/v4/chat/completions",
+        # 2026-10-22 体检：3 个智谱 Key 中只有这一个还有额度（另两个返回 429「余额不足」）。
+        # RPM 默认保守值，可用 TRANSLATE_RPM_GLM47 调整；真限流时代码会自动放大退避时间。
         "key_env": "GLM_API_KEY",
         "model": "glm-4.7-flash",
-        "rpm": 1,
+        "rpm": int(os.environ.get("TRANSLATE_RPM_GLM47", "3")),
     },
     {
+        # ⚠️ 2026-10-22 停用：
+        # 1) meta/llama-3.1-8b-instruct 已于 2026-08-26 EOL，返回 HTTP 410
+        # 2) 体检拉取 /v1/models 得到 83 个模型，但逐个实测全部 HTTP 404
+        #    "Function ... Not found for account ..." → 该 NVIDIA 账号未订阅任何可用模型
+        # 恢复条件：账号拿到 NIM 订阅后，把 enabled 改回 True 并换成实际可调用的模型名
         "name": "NVIDIA-Llama-3.1-8B",
         "url": "https://integrate.api.nvidia.com/v1/chat/completions",
         "key_env": "NVIDIA_API_KEY",
         "model": "meta/llama-3.1-8b-instruct",
         "rpm": 1,
+        "enabled": False,
     },
     # Long-Cat — 请补充 API 地址和 model name
     # {
@@ -236,6 +245,25 @@ Output (JSON array only):"""
     return None
 
 
+# ── 时间预算 ──────────────────────────────────────────
+# GitHub Actions job 硬超时 6 小时；翻译任务常被前面步骤吃掉时间。
+# 到点主动停 → 写回 tools.json → 后续步骤照常 commit，下一轮接着翻剩下的。
+TRANSLATE_BUDGET_MIN = float(os.environ.get("TRANSLATE_BUDGET_MIN", "150"))
+_BUDGET_DEADLINE = None  # 由 run_translation() 在开工时设定
+
+
+def _start_budget():
+    global _BUDGET_DEADLINE
+    _BUDGET_DEADLINE = time.time() + TRANSLATE_BUDGET_MIN * 60
+    print(f"⏱ 翻译时间预算: {TRANSLATE_BUDGET_MIN:.0f} 分钟（到点自动收尾，剩余下轮继续）")
+
+
+def _over_budget():
+    if _BUDGET_DEADLINE is None:
+        return False
+    return time.time() >= _BUDGET_DEADLINE
+
+
 class RateLimiter:
     """简易 RPM 限速器"""
     def __init__(self, rpm):
@@ -264,6 +292,10 @@ async def engine_worker(engine, queue, tools, stats, lock):
 
     try:
         while True:
+            # 时间预算：到点就停，已翻完的照常落盘提交，剩下的留给下一轮。
+            # 曾踩坑：GitHub Actions job 6 小时硬超时，超时的成果全部作废、白白重跑。
+            if _over_budget():
+                break
             try:
                 batch_items = queue.get_nowait()
             except asyncio.QueueEmpty:
@@ -287,8 +319,9 @@ async def engine_worker(engine, queue, tools, stats, lock):
                     ok = True
                     break
                 elif attempt < MAX_RETRIES:
-                    wait = 2 ** attempt
-                    print(f"  [{name}] ⚠️ 批次 {batch_idx} 重试 {attempt+1}/{MAX_RETRIES}", flush=True)
+                    # 退避放大：多数失败是 429 限流，2s/4s 太短，重试等于白刷
+                    wait = (5, 20)[attempt - 1] if attempt <= 2 else 30
+                    print(f"  [{name}] ⚠️ 批次 {batch_idx} 重试 {attempt+1}/{MAX_RETRIES}（退避 {wait}s）", flush=True)
                     await asyncio.sleep(wait)
             if not ok:
                 eng_stats["fail"] += 1
@@ -385,6 +418,9 @@ async def translate_tools(tools_json_path: str, force: bool = False):
     # 5. 筛选可用引擎
     active = []
     for eng in ENGINES:
+        if eng.get("enabled") is False:
+            print(f"  ⏭ {eng['name']}: 已停用（{eng.get('disabled_reason', '见配置注释')}）")
+            continue
         key = os.environ.get(eng["key_env"], "")
         if key:
             eng = {**eng, "key": key}
@@ -417,6 +453,7 @@ async def translate_tools(tools_json_path: str, force: bool = False):
     print(f"🚀 启动 {len(active)} 个并发引擎:")
     for e in active:
         print(f"    {e['name']} (RPM={e['rpm']})")
+    _start_budget()
 
     # 6. 恢复断点
     queue = asyncio.Queue()
@@ -445,8 +482,12 @@ async def translate_tools(tools_json_path: str, force: bool = False):
         os.remove(CHECKPOINT_FILE)
 
     remaining = total - stats["translated"]
-    print(f"\n✅ 翻译完成: {stats['translated']}/{total} 条成功"
-          + (f" (剩余 {remaining} 条)" if remaining else ""))
+    if _over_budget() and remaining:
+        print(f"\n⏱ 时间预算用尽：本轮翻译 {stats['translated']}/{total} 条，"
+              f"剩余 {remaining} 条留给下一轮（本轮成果已落盘，会正常提交）")
+    else:
+        print(f"\n✅ 翻译完成: {stats['translated']}/{total} 条成功"
+              + (f" (剩余 {remaining} 条)" if remaining else ""))
     _write_slim(tools)
     return tools
 
