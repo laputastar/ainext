@@ -257,6 +257,7 @@ def resolve_one(name, tagline="", do_verify=True):
                 fallback = (url, "score(%+d) 未过标题验证" % s)
         else:
             return url, "OK score(%+d)" % s
+    return None, "rejected (%d 候选/%d 合格但标题不符)" % (len(pool), len(scored))
     if not scored:
         dbg = "; ".join(host_of(u) for u in pool[:6])
         return None, "no-match (%d 候选) [%s]" % (len(pool), dbg[:70])
@@ -284,7 +285,7 @@ def main():
         random.seed(11)
         random.shuffle(ids)
         ids = ids[: args.validate]
-        ok = strict_ok = 0
+        ok = wrong = 0
         findable = 0
         findable_ok = 0
         print("验证样本:", len(ids))
@@ -300,6 +301,8 @@ def main():
             gs = root(host_of(got_strict)) if got_strict else ""
             hit = gs == truth_root
             ok += bool(hit)
+            if got_strict and not hit:
+                wrong += 1
             if can:
                 findable += 1
                 findable_ok += bool(hit)
@@ -309,7 +312,10 @@ def main():
             time.sleep(args.delay)
         print()
         print("=" * 60)
-        print("总体覆盖: %d/%d = %.0f%%" % (ok, len(ids), ok / len(ids) * 100 if ids else 0))
+        accepted = ok + wrong
+        print("总体覆盖（写对）: %d/%d = %.0f%%" % (ok, len(ids), ok / len(ids) * 100 if ids else 0))
+        print("接受写入 %d 条，其中错配 %d 条 => 精确率 %.0f%%" % (
+            accepted, wrong, (ok / accepted * 100) if accepted else 0))
         print("其中「域名含产品名」理论上可找到的: %d 条，成功 %d 条 = %.0f%%" % (
             findable, findable_ok, findable_ok / findable * 100 if findable else 0))
         print("（其余 %d 条官网托管在 railway/vercel/google 等通用域名，无法从名字反查）" % (len(ids) - findable))
