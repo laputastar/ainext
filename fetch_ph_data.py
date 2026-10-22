@@ -200,7 +200,24 @@ def resolve_all_websites(tools, max_workers=5, delay=0.0, retry_after_hours=RETR
     - 成功结果持久化到 website_map.json（不再重解）
     - 失败记录时间戳到 website_fail.json，超过 retry_after_hours 才重试，
       既保证逐渐消化存量，又避免每日狂刷触发 Cloudflare 429 限流
+
+    ⚠️ 2026-10-22 起默认停用（RESOLVE_DISABLE=1）：
+    PH 已对全部数据中心 IP 启用 Cloudflare Turnstile 挑战，实测 ——
+    curl 全套浏览器头 / Playwright(headless+完整 chromium，Actions 美国 IP) / curl_cffi TLS 伪装 /
+    r.jina.ai 代理 / Wayback 快照 **全部 0%**；且 PH GraphQL schema 里根本不存在真实官网字段
+    （Post.website 与 productLinks 均只返回 /r/ 跟踪链）。
+    继续请求只是每天白刷数千次 403，徒增被 PH 进一步限流的风险。
+    若将来 PH 解除封禁，设 RESOLVE_DISABLE=0 即可恢复。
     """
+    if os.environ.get("RESOLVE_DISABLE", "1").strip() not in ("0", "false", "False", ""):
+        cache = load_website_map()
+        pending = sum(1 for t in tools
+                      if str(t["id"]) not in cache
+                      and "producthunt.com/r/" in (t.get("website") or ""))
+        print(f"\n🔗 官网直链解析已停用（PH 全路径封禁，实测 0% 成功率）"
+              f"｜剩余未解析 {pending} 条，保留 producthunt.com/r/ 跳转（浏览器点击正常跳转）")
+        return cache
+
     cache = load_website_map()
     # 防御性清理：成功缓存里不应残留 PH 链接
     dirty = False
