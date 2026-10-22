@@ -1,0 +1,32 @@
+name: Translate Engine Health Check
+
+# 一次性体检：查清每个翻译 API Key 的真实状态，并自动寻找 NVIDIA 可用替代模型。
+# 起因：2026-10-22 日常更新跑了 3 小时只成功 50/4248 条翻译且毫无报错，
+#       根因是 429 分支被静默吞掉 + NVIDIA 模型 410 下线。本流程用于排查而非生产步骤。
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install aiohttp
+
+      - name: Run health check
+        run: python probe_translate.py
+        env:
+          GLM_API_KEY: ${{ secrets.GLM_API_KEY }}
+          GLM45_API_KEY: ${{ secrets.GLM45_API_KEY }}
+          GLM46_API_KEY: ${{ secrets.GLM46_API_KEY }}
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
