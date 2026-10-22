@@ -127,7 +127,7 @@ def bing_search(query):
         title = re.sub(r"<[^>]+>", "", (tm.group(1) if tm else "")).strip()
         real = unwrap_bing(link)
         if real:
-            out.append((real, title))
+            out.append(real)
     return out
 
 
@@ -226,7 +226,10 @@ def candidate_pool(name, tagline=""):
         got = bing_search(q)
         if len(got) < 5:
             got = got + bing_html_search(q)
-        for url in got:
+        for item in got:
+            url = item[0] if isinstance(item, tuple) else item
+            if not isinstance(url, str) or not url.startswith("http"):
+                continue
             if url not in seen:
                 seen.add(url)
                 pool.append(url)
